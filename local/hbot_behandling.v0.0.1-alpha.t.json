@@ -1676,7 +1676,17 @@
                 "units" : "m[H2O]",
                 "@type" : "DV_QUANTITY"
               },
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "125" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -2132,7 +2142,17 @@
                 "units" : "m[H2O]",
                 "@type" : "DV_QUANTITY"
               },
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "125" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
