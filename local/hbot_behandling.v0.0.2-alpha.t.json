@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "2f9ec9c9dffad934faf1fe68f8e41e8e",
+      "MD5-CAM-1.0.1" : "dec865c3bc62dee9529f52ecf974a726",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3332,6 +3332,13 @@
             "code" : "at0068.1",
             "text" : "Oksygen startet",
             "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er påbegynt."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           }
         },
         "es" : {
@@ -4733,7 +4740,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "occurrences" : "0..1",
               "nodeId" : "at0014.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -4849,6 +4856,13 @@
             "code" : "at0043.1",
             "text" : "Oksygen fullført",
             "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           }
         },
         "es" : { },
@@ -9189,6 +9203,13 @@
             "code" : "at0068.1",
             "text" : "Oksygen startet",
             "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er påbegynt."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           }
         },
         "es" : {
@@ -10743,7 +10764,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "occurrences" : "0..1",
               "nodeId" : "at0014.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -10859,6 +10880,13 @@
             "code" : "at0043.1",
             "text" : "Oksygen fullført",
             "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           }
         },
         "es" : { },
@@ -14523,7 +14551,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "occurrences" : "0..1",
               "nodeId" : "at0014.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -14639,6 +14667,13 @@
             "code" : "at0043.1",
             "text" : "Oksygen fullført",
             "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           }
         },
         "es" : { },
