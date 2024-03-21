@@ -1,0 +1,406 @@
+archetype (adl_version=1.4; uid=21e7a503-939d-4519-9e85-22071febb8f3)
+	openEHR-EHR-ACTION.care_pathway.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Bjørn Næss">
+				["organisation"] = <"DIPS ASA ">
+				["email"] = <"bna@dips.no">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2015-06-20">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS ASA">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Strukturerer hendelsesregistrering i et pasientforløp.">
+			keywords = <"forløp","behandlingslinje","behandlingsplan","protokoll","pasientforløp","pakkeforløp">
+			copyright = <"© Nasjonal IKT HF">
+			use = <"Benyttes for å registrere hendelser i et gitt pasientforløp">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record information about a high level clinical or administrative pathway carried out to organise the delivery of healthcare, and its constituent high level activities.">
+			copyright = <"© Nasjonal IKT HF">
+			use = <"Use to record information about a high level clinical or administrative pathway carried out to organise the delivery of healthcare, and its constituent high level activities.">
+			misuse = <"Not to be used to record the order for a care pathway. Use the INSTRUCTION.care_pathway_order archetype for this purpose.
+
+Not to be used to record information about a detailed care plan. Use other appropriate archetypes for this purpose.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Nasjonal IKT">
+		["original_namespace"] = <"no.nasjonalikt">
+		["original_publisher"] = <"Nasjonal IKT">
+		["custodian_namespace"] = <"no.nasjonalikt">
+		["MD5-CAM-1.0.1"] = <"4576dc11c6b7e738e0629cecd59dad0c">
+		["build_uid"] = <"e55db78e-da41-47b7-89cb-3acfefe5588b">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	ACTION[at0000] matches {    -- Care pathway
+		ism_transition matches {
+			ISM_TRANSITION[at0009] matches {    -- Pathway planned
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::526]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0009]    -- Pathway planned
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0017] matches {    -- Pathway postponed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::527]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0017]    -- Pathway postponed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0006] matches {    -- Pathway cancelled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0006]    -- Pathway cancelled
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0008] matches {    -- Event scheduled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::529]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0008]    -- Event scheduled
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0003] matches {    -- Event performed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0003]    -- Event performed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0016] matches {    -- Pathway suspended
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::530]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0016]    -- Pathway suspended
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0005] matches {    -- Pathway aborted
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::531]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0005]    -- Pathway aborted
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0007] matches {    -- Pathway completed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0007]    -- Pathway completed
+						}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Pathway name
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Event
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Reason
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- External event
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {true}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Additional details
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0011] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Healthcare provider identifier
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0013] occurrences matches {0..*} matches {    -- Healthcare provider details
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Care pathway">
+					description = <"A high level clinical or administrative pathway carried out to organise the delivery of healthcare.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Event">
+					description = <"The name of the event which was scheduled or performed.">
+					comment = <"This element is only relevant against the \"Event scheduled\" or \"Event performed\" care flow steps.">
+				>
+				["at0003"] = <
+					text = <"Event performed">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Pathway aborted">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Pathway cancelled">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Pathway completed">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Event scheduled">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Pathway planned">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Description">
+					description = <"Narrative description about the pathway or event.">
+				>
+				["at0011"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Healthcare provider identifier">
+					description = <"Identification of the healthcare provider or organisation responsible for the recorded care flow step.">
+				>
+				["at0013"] = <
+					text = <"Healthcare provider details">
+					description = <"Details about the healthcare provider or organisation responsible for the recorded care flow step.">
+				>
+				["at0014"] = <
+					text = <"External event">
+					description = <"Was the event performed outside of the healthcare provider responsible for the current health record?">
+				>
+				["at0016"] = <
+					text = <"Pathway suspended">
+					description = <"n">
+				>
+				["at0017"] = <
+					text = <"Pathway postponed">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Additional details">
+					description = <"Additional structured details about the care pathway or event.">
+				>
+				["at0019"] = <
+					text = <"Pathway name">
+					description = <"The name of the care pathway.">
+				>
+				["at0020"] = <
+					text = <"Reason">
+					description = <"Reason that the care flow step for the care pathway was carried out.">
+					comment = <"For example: 'Postponed - Patient not available', 'Cancelled - Adverse reaction'. Note: This is not the reason for the care pathway, but rather the specific reason that a care flow step was carried out, and will often be used to document some variance from the original 'Care pathway order'.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"care_pathway">
+					description = <"Registrer hendelser i et pasienforløp.">
+				>
+				["at0001"] = <
+					text = <"Tre">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Hendelse">
+					description = <"Hendelsen som skjedde. Benytt gjerne en terminology for å klassifisere hendelsene. ">
+				>
+				["at0003"] = <
+					text = <"Aktiv hendelse">
+					description = <"Benyttes for å registrere alle aktive hendelser i et forløp. Benytte hendelse med kode og beskrivelse for å spesifisere nærmere om hendelsen.">
+				>
+				["at0005"] = <
+					text = <"Avbryt">
+					description = <"Forløpet ble avbrutt (og ikke ferdigsstilt)">
+				>
+				["at0006"] = <
+					text = <"Kanseller">
+					description = <"Det initierte forløpet ble aldri igangsatt. Benytt hendelse og beskrivelse for å angi årsak.">
+				>
+				["at0007"] = <
+					text = <"Ferdig">
+					description = <"Dokumenterer at forløpet er ferdig. Alle handlinger i forløpet er utført og det forventes ikke nye hendelser. ">
+				>
+				["at0008"] = <
+					text = <"Sett opp første fremmøte">
+					description = <"Benyttes for å angi tidsfastsettelse av første fremmøte i forløpet.">
+				>
+				["at0009"] = <
+					text = <"Initier forløp">
+					description = <"Forløpet ble initiert (igangsatt), men er ikke i en aktiv fase.">
+				>
+				["at0010"] = <
+					text = <"Beskrivelse">
+					description = <"Utvidet beskrivelse av hendelsen. ">
+				>
+				["at0011"] = <
+					text = <"Tre">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Ansvarlig">
+					description = <"Lokal identifikator av den som var ansvarlig for denne hendelsen. ">
+				>
+				["at0013"] = <
+					text = <"Detaljer om ansvarlig">
+					description = <"Detaljer om helsetjenestetilbyder eller organisasjon som utførte hendelsen. ">
+				>
+				["at0014"] = <
+					text = <"Ekstern hendelse?">
+					description = <"Markerer at hendelse skjedde utenfor aktuell helsetilbyder.">
+				>
+				["at0016"] = <
+					text = <"Sett på vent">
+					description = <"Forløpet settes på vent. Benytt hendelse og beskrivelse for angi årsak. ">
+				>
+				["at0017"] = <
+					text = <"Utsett">
+					description = <"Forløpet ble utsatt. Bruk beskrivelse for å angi hvorfor. ">
+				>
+				["at0018"] = <
+					text = <"Detaljer">
+					description = <"Detaljer om nåværende oppgaven">
+				>
+				["at0019"] = <
+					text = <"Forløp">
+					description = <"Angir forløpet som følges opp.">
+				>
+				["at0020"] = <
+					text = <"Årsak">
+					description = <"Årsak til at det aktuelle prosesstrinnet ble utført.">
+					comment = <"For eksempel: Dersom administrering er utsatt pga pasienten ikke er tilgjengelig, velges prosesstrinnet \"Utsatt administrering\", og \"Pasienten er ikke tilgjengelig ved administreringstidspunktet\" dokumenteres i dette elementet. NB: Dette er ikke årsaken til forløpet, men de spesifikke årsakene til at det aktuelle prosesstrinnet ble utført. Dette vil som regel brukes for å dokumentere varians fra den opprinnelige ordineringen.">
+				>
+			>
+		>
+	>
