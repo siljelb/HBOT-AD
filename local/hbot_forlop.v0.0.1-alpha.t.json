@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "24b6538228ed3425d766dcdaf9ecf70d",
+      "MD5-CAM-1.0.1" : "6f32c785aa5dc189f5df3a3c84e4028d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2506,14 +2506,14 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Kardiovaskulær sykdom?",
+            "text" : "Har pasienten kjent kardiovaskulær sykdom?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
-            "text" : "Lungesykdom?",
+            "text" : "Har pasienten kjent lungesykdom?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
@@ -3570,6 +3570,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0016.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3831,13 +3832,13 @@
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
-            "text" : "Forløp planlagt",
+            "text" : "Planlagt",
             "description" : "Forløpet ble initiert (igangsatt), men er ikke i en aktiv fase."
           },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Forløp avlyst før første behandling",
+            "text" : "Avlyst før første behandling",
             "description" : "Det initierte forløpet ble aldri igangsatt. Benytt hendelse og beskrivelse for å angi årsak."
           },
           "at0008.1" : {
@@ -3855,13 +3856,13 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Forløp avbrutt etter oppstart",
+            "text" : "Avbrutt etter første behandling",
             "description" : "Forløpet ble avbrutt (og ikke ferdigsstilt)"
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
-            "text" : "Forløp fullført",
+            "text" : "Fullført",
             "description" : "Dokumenterer at forløpet er ferdig. Alle handlinger i forløpet er utført og det forventes ikke nye hendelser. "
           },
           "at0003.1" : {
@@ -5237,7 +5238,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A0F3403523FEE9FF7E648A02423C8131"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über den breiten Bereich des klinischen Managements, das in der Vergangenheit durchgeführt wurde, mit Ausnahme von Medikation oder chirurgischen/operativen Prozeduren.",
+          "keywords" : [ "Behandlung, Screening, Intervention, Behandlung, Fragebogen, Pflege, Unterstützung, Therapie" ],
+          "use" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über den breiten Bereich des klinischen Managements, das in der Vergangenheit durchgeführt wurde, mit Ausnahme von Medikation oder chirurgischen/operativen Prozeduren.\r\n\r\nHäufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:\r\n- Systematische Befragung in jedem Beratungsgespräch, zum Beispiel:\r\n--- Wurden Sie jemals ins Krankenhaus eingewiesen?\r\n--- Haben Sie jemals Kompressionsstrümpfe getragen?\r\n--- Wurden Sie jemals an ein Beatmungsgerät angeschlossen?\r\n--- Waren Sie schon einmal an der Dialyse?\r\n\r\n- Spezifische Befragung im Zusammenhang mit der Krankheitsüberwachung.\r\n--- Wurde der Patient bei der Aufnahme isoliert? Ja, Nein, Unbekannt.\r\n--- Hat der Patient eine Sauerstofftherapie zu Hause erhalten? Ja, Nein, Unbekannt.\r\n--- Wurde der Patient auf der Intensivstation aufgenommen? Ja, Nein, Unbekannt.\r\n\r\nDie Semantik dieses Archetyps ist absichtlich locker, und die Abfrage dieses Archetyps wäre normalerweise nur im Kontext jedes spezifischen Templates nützlich oder sicher. In einem Template würde normalerweise jedes Datenelement in die spezifische gestellte Frage umbenannt. Wo Wertesätze für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese für die lokale Verwendung angepasst werden, indem die „Text“-Auswahl verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nÜber die EVENT-Struktur aus dem Referenzmodell kann festgelegt werden, ob sich die Fragen auf einen Zeitpunkt oder einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einer Befragung zu unterscheiden, der Informationen über das Management enthält, das zu einem beliebigen Zeitpunkt in der Vergangenheit, und Informationen über das Management, das innerhalb eines bestimmten Zeitintervalls durchgeführt wurde - zum Beispiel den Unterschied zwischen \"Wurden Sie ins Krankenhaus eingeliefert? \" im Vergleich zu „Wurden Sie in den letzten 4 Wochen ins Krankenhaus eingeliefert?\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen das Vorhandensein von Management oder Behandlung identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über das Management oder die Behandlung unter Verwendung von für den klinischen Zweck spezifischen Archetypen aufzeichnet und aufbewahrt.",
+          "misuse" : "Nicht zur Darstellung von Antworten auf vordefinierte Screening-Fragen zu chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden. Verwenden Sie zu diesem Zweck den Archetyp OBSERVATION.procedure_screening.\r\n\r\nNicht zur Darstellung von Antworten auf vordefinierte Screening-Fragen zu Medikamenten, die in der Vergangenheit angewendet wurden. Verwenden Sie zu diesem Zweck den Archetyp OBSERVATION.medication_screening.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om utført håndtering av medisinske tilstander, med unntak av legemidler eller kirurgiske/operative prosedyrer.",
+          "keywords" : [ "behandling, kartlegging, intervensjon, spørreskjema, omsorg, støtte, terapi" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om utført håndtering av medisinske tilstander, med unntak av legemidler eller kirurgiske/operative prosedyrer.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Har du noen gang blitt innlagt på sykehus?\r\n--- Har du noen sinne brukt kompresjonsstrømper?\r\n--- Har du noen gang blitt lagt på respirator?\r\n--- Har du noen gang hatt dialyse?\r\n\r\n- Spesifikke spørsmål relatert til overvåkning av sykdommer.\r\n--- Ble pasienten isolert ved innleggelse? Ja, Nei, Ukjent.\r\n--- Fikk pasienten hjemmeoksygenbehandling? Ja, Nei, Ukjent.\r\n--- Ble pasienten lagt inn på intensivavdeling? Ja, Nei, Ukjent.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om sykdomshåndtering eller behandling som er gjennomført på et hvilket som helst tidspunkt og spørsmål om sykdomshåndtering eller behandling som er gjennomført i et tidsintervall. For eksempel; \"Har du vært innlagt i sykehus?\" sammenlignet med \"Har du vært innlagt i sykehus de siste 4 ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i kartleggingen identifiseres at en aktivitet knyttet til sykdomshåndtering eller behandling er tilstede, anbefales det at spesifikke detaljer om sykdomshåndteringen eller behandlingen registreres og lagres i pasientjournalen i arketyper som er spesifikke for dette formålet.",
+          "misuse" : "Brukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere, bruk arketypen OBSERVATION.procedure_screening for dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilken som helst legemiddel eller gruppe av legemidler, bruk arketypen OBSERVATION.medication_screening for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.",
+          "keywords" : [ "treatment, screening, intervention, questionnaire, care, support, therapy" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever been admitted to hospital? \r\n--- Have you ever worn compression stockings? \r\n--- Have you ever been placed on a ventilator? \r\n--- Have you ever been on dialysis?\r\n\r\n- Specific questioning related to disease surveillance.\r\n--- Was the patient isolated on admission? Yes, No, Unkown.\r\n--- Did the patient receive home oxygen therapy? Yes, No, Unkown.\r\n--- Was the patient admitted to ICU? Yes, No, Unkown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about management that has been performed at any time in the past and information about management performed within a specified time interval - for example the difference between \"Have you been admitted to hospital?\" compared to \"Have you been admitted to hospital in the past 4 weeks.\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of management or treatment, it is recommended that clinical system record and persist the specific details about the management or treatment using archetypes specific for the clinical purpose.",
+          "misuse" : "Not to be used to record answers to pre-defined screening questions about surgical/operative procedures that have been carried out in the past.\r\nUse the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to record answers to pre-defined screening questions about medications that have been used in the past. Use the OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "*To create a framework for recording answer to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures. (en)",
+          "keywords" : [ "*treatment, screening, intervention, questionnaire, care, support, therapy (en)" ],
+          "use" : "*Use to create a framework for recording answer to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever been admitted to hospital? \r\n--- Have you ever worn compression stockings? \r\n--- Have you ever been placed on a ventilator? \r\n--- Have you ever been on dialysis?\r\n\r\n- Specific questioning related to disease surveillance.\r\n--- Was the patient isolated on admission? Yes, No, Unkown.\r\n--- Did the patient receive home oxygen therapy? Yes, No, Unkown.\r\n--- Was the patient admitted to ICU? Yes, No, Unkown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about management that has been performed at any time in the past and information about management performed within a specified time interval - for example the difference between \"Have you been admitted to hospital?\" compared to \"Have you been admitted to hospital in the past 4 weeks.\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of management or treatment, it is recommended that clinical system record and persist the specific details about the management or treatment using archetypes specific for the clinical purpose. (en)",
+          "misuse" : "*Not to be used to to create a framework for recording answers to pre-defined screening questions about procedures carried out in the past. Use the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.management_screening.v1",
     "differential" : true,
@@ -5414,7 +5477,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.8" ],
+                                  "constraint" : [ "ac0.9" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -5696,10 +5759,10 @@
             "code" : "ac0.7",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -5742,10 +5805,10 @@
             "code" : "ac0.7",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -5768,10 +5831,10 @@
             "code" : "ac0.7",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -5794,10 +5857,10 @@
             "code" : "ac0.7",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         }
@@ -5844,6 +5907,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
           "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
@@ -5911,7 +5979,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "308B41E032E39BC7F1A94452A050D8DD"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Informationen zur einer Organisation, wie sie bekannt sind oder im Rahmen der klinischen Dokumentation verstanden werden.",
+          "keywords" : [ "Organisation, Anbieter, Versorger, Betreuer, Netzwerk, Verbund, Gruppe" ],
+          "use" : "Der Archetyp wird verwendet, um Informationen zur einer Organisation darzustellen, wie sie bekannt sind oder im Rahmen der klinischen Dokumentation verstanden werden, oft ad hoc oder wenn die Verwendung von einem formellen demografischen Register oder einem Index nicht angemessen oder nicht möglich ist.\r\nBeispiele beinhalten:\r\n- der Inhaber einer Patientenverfügung unter Verwendung des SLOT „Inhaber der Kopie“ innerhalb des Archetyps EVALUATION.advance_care_directive oder\r\n- Name und Kontaktdaten einer Organisation, die die Betreuung einer Person in ihrem zu Hause übernimmt.\r\n\r\nDieser Archetyp wurde entwickelt, um Angaben zu offiziell anerkannten Einrichtungen, wie einem eingetragenen Unternehmen, einem Krankenhaus und seinen anerkannten „Unterorganisationen“, wie einer operativ getrennten oder spezialisierten Satellitenklinik oder einem häuslichen Pflegedienst, zu enthalten. Es kann auch verwendet werden, um Kontaktinformationen über informellere Netzwerke oder Gruppen darzustellen, wie z. B. eine lokale Selbsthilfegruppe.\r\n\r\nDieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Details zu der Organisation oben auf dem Bewertungsformular angezeigt werden.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um ein offizielles Register oder einen Index darzustellen, zu ersetzen oder zu führen. Verwenden Sie zu diesem Zweck einen formellen Gesundheitsanbieter-Index (Health Provider Index) oder Archetypen, die auf dem openEHR Demographic Information Model basieren.\r\n\r\nDer Archetyp darf nicht verwendet werden, um den Pflegeort und ähnliche Datenelemente darzustellen, die formal in der Patientenakte unter Verwendung der Reference Model-Attribute dargestellt werden sollten.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera information om en organisation på det sätt som det behöver representeras i en journalanteckning.\r\n",
+          "keywords" : [ "organisation, leverantör, vårdgivare, vårdenhet, enhet, avdelning, nätverk, grupp" ],
+          "use" : "Används för att registrera information om en organisation som behöver representeras i journalen. Används exempelvis ad hoc eller i de fall då formella demografiska register eller kataloger inte kan användas istället. \r\nExempel inkluderar:\r\n- namn och kontaktuppgifter för en organisation som har en fysisk kopia av patientens önskemål om vård i händelse av att patienten inte längre kan kommunicera\r\n- namn och kontaktuppgifter för hemtjänst- eller hemsjukvårdsorganisation för en individ\r\n\r\nDenna arketyp har utformats för att dokumentera information om formellt erkända enheter, såsom ett registrerat företag, ett sjukhus och dess erkända \"underorganisationer\", såsom en separat eller specialiserad satellitklinik eller hemsjukvård. Den kan också användas för att dokumentera kontaktinformation om mer informella nätverk eller grupper, till exempel en lokal stödgrupp.\r\n\r\nDen här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domänexperter - exempelvis där granskare förväntar sig att se en organisations information i ett formulär.",
+          "misuse" : "*Not to be used to represent, replace or maintain an official register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the location of care and similar data elements that should be represented formally in the health record using the Reference Model attributes. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en organisasjon, som man har informasjon om eller har forstått, i det kliniske dokumentasjonsarbeidet.",
+          "keywords" : [ "organisasjon, leverandør, omsorgsperson, nettverk, gruppe" ],
+          "use" : "Brukes for å registrere detaljer om en organisasjon, som man har informasjon om eller har forstått, i det kliniske dokumentasjonsarbeidet, ofte ad hoc eller i de tilfeller når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.\r\n\r\nFor eksempel:\r\n- kopiinnhaver av av et fremtidig behandlingsvalg ved å bruke \"Kopiholder\"-SLOTet i arketypen \"EVALUATION.advance_care_directive\" (Fremtidig behandlingsvalg).\r\n- navn og kontaktdetaljer for en organisasjon som yter hjemmehjelp til en enkeltperson.\r\n\r\nDenne arketypen er utformet for å registrere detaljer om formelt anerkjente enheter, for eksempel en registrert virksomhet, et sykehus og dets \"underorganisasjoner\", en operativt separat eller spesialisert satellittklinikk eller hjemmetjeneste. Den kan også brukes til å registrere kontaktinformasjon om mer uformelle nettverk eller grupper, for eksempel en lokal støttegruppe.\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om en organisasjon i et vurderingsskjema.",
+          "misuse" : "Brukes ikke til å representere, erstatte eller vedlikeholde formelle demografiske opplysninger. Bruk et formelt pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.\r\n\r\nBrukes ikke for å representere behandlingssted eller lignende dataelementer, som skal representeres formelt i pasientjournalen. Bruk attributter fra Referansemodellen for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about an organisation as they are known or understood in the course of clinical documentation.",
+          "keywords" : [ "organisation, organization, provider, carer, network, group" ],
+          "use" : "Use to record details of an organisation as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype; or\r\n- the name and contact details of an organisation providing home care to an individual.\r\n\r\nThis archetype has been designed to carry details of formally recognised entities, such as a registered business, a hospital and its recognised 'sub-organisations', such as an operationally separate or specialised satellite clinic or home care service. It may also be used to carry contact information about more informal networks or groups, such as a local community support group.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an organisations' details on an assessment form.",
+          "misuse" : "Not to be used to represent, replace or maintain an official register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the location of care and similar data elements that should be represented formally in the health record using the Reference Model attributes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v1",
     "differential" : true,
