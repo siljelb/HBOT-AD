@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "07d61053ad5806587b949c47ffcbdb2f",
+      "MD5-CAM-1.0.1" : "62372070f02760e1cb4a78e0b95a7b7f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -163,7 +163,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 administrering",
+          "text" : "HBOT O2 kompresjon",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
