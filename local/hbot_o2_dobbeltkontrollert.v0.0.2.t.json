@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "fb4de90acbbd19dc34ee997b82e709dd",
+      "MD5-CAM-1.0.1" : "aba702d87ee5eb75000d4d2bc56a2f6b",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -154,7 +154,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 klargjort",
+          "text" : "HBOT O2 dobbeltkontrollert",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
@@ -170,7 +170,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 klargjort",
+          "text" : "HBOT O2 dobbeltkontrollert",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
       }
@@ -522,6 +522,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1861,13 +1862,18 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_BOOLEAN",
+                  "defaultValue" : {
+                    "value" : true,
+                    "@type" : "DV_BOOLEAN"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_BOOLEAN",
                       "rmTypeName" : "BOOLEAN",
-                      "constraint" : [ false ]
+                      "occurrences" : "0..1",
+                      "constraint" : [ true ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1969,7 +1975,7 @@
           "at0148.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0148.1",
-            "text" : "O2 klargjort",
+            "text" : "Oksygen dobbeltkontrollert",
             "description" : "Legemiddelet er fysisk istandgjort, for eksempel istandgjøring av en intravenøs blanding."
           }
         },
