@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "cd560673426de19b2c4cdb25b9a1e408",
+      "MD5-CAM-1.0.1" : "5af775b618cf29310855fae2dc84fa70",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1861,12 +1861,17 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_BOOLEAN",
+                  "defaultValue" : {
+                    "value" : false,
+                    "@type" : "DV_BOOLEAN"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_BOOLEAN",
                       "rmTypeName" : "BOOLEAN",
+                      "occurrences" : "0..1",
                       "constraint" : [ false ]
                     } ]
                   } ],
@@ -1969,7 +1974,7 @@
           "at0148.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0148.1",
-            "text" : "O2 klargjort",
+            "text" : "Oksygen klargjort",
             "description" : "Legemiddelet er fysisk istandgjort, for eksempel istandgjøring av en intravenøs blanding."
           }
         },
