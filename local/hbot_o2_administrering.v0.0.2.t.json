@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2f8cee8d92ffbcb380d042363b252951",
+      "MD5-CAM-1.0.1" : "91fe0c57694f79e87a0b9a6fcd38a4f0",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1809,6 +1809,18 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SNOMED-CT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "110474005",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Whole body hyperbaric oxygen therapy (procedure)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
