@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9a28e01846abcb97c5b4f2dc205d2118",
+      "MD5-CAM-1.0.1" : "50adfee0a1fca15e084428c346c2f88f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3400,7 +3400,7 @@
           "at0005.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.4",
-            "text" : "Har pasienten Kjent klaustrofobi/angst/engstelse?",
+            "text" : "Har pasienten kjent klaustrofobi/angst/engstelse?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
