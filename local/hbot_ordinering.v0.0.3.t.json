@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "91cf5e3c7f169f6d214f8104ad5979f1",
+      "MD5-CAM-1.0.1" : "0296e5e09686075a3e9ff148adbf8914",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2030,15 +2030,17 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_DURATION",
+                  "occurrences" : "0..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
+                      "occurrences" : "0..1",
                       "constraint" : [ {
-                        "lower" : "PT6S",
-                        "upper" : "PT6S",
+                        "lower" : "P6M",
+                        "upper" : "P6M",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
                         "lowerUnbounded" : false,
