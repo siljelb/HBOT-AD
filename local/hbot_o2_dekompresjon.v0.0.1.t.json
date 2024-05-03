@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5cdaff76553467f37b7e65ddf2ff8bcb",
+      "MD5-CAM-1.0.1" : "ef73ab61042dfe0648deeafa77f2e747",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3030,7 +3030,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "394908001",
-                        "value" : "Procedure stopped (situation)"
+                        "value" : "Behandlingen avbrytes"
                       } ]
                     } ]
                   } ],
