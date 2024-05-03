@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "4e88be6f4edfaddef282927b233707f2",
+      "MD5-CAM-1.0.1" : "5cdaff76553467f37b7e65ddf2ff8bcb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -163,7 +163,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 kompresjon",
+          "text" : "HBOT O2 dekompresjon",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
@@ -179,7 +179,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 kompresjon",
+          "text" : "HBOT O2 dekompresjon",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
       }
@@ -531,6 +531,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -971,6 +972,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1411,7 +1413,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0015.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1558,7 +1559,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0007.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1783,7 +1783,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "1..1",
+              "occurrences" : "0..0",
               "nodeId" : "at0140.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2513,6 +2513,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0039.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2610,6 +2611,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0068.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2658,7 +2660,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0047.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3005,7 +3006,67 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0014.3",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "SNOMED-CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "394908001",
+                        "value" : "Procedure stopped (situation)"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Nød-dekompresjon" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0014.2",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3081,11 +3142,86 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "pt-br" : { },
-        "sl" : { },
-        "en" : { },
-        "ar-sy" : { },
-        "ru" : { },
+        "pt-br" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Justificativa (2)",
+            "description" : "Razão pela qual a atividade ou cuidado foi identificada para que o procedimento fosse realizado.",
+            "comment" : "Por exemplo: o motivo do cancelamento ou suspensão de um procedimento."
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Justificativa (3)",
+            "description" : "Razão pela qual a atividade ou cuidado foi identificada para que o procedimento fosse realizado.",
+            "comment" : "Por exemplo: o motivo do cancelamento ou suspensão de um procedimento."
+          }
+        },
+        "sl" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en) (2)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en) (3)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          }
+        },
+        "en" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Reason (2)",
+            "description" : "Reason that the activity or care pathway step for the identified procedure was carried out.",
+            "comment" : "For example: the reason for the cancellation or suspension of the procedure."
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Reason (3)",
+            "description" : "Reason that the activity or care pathway step for the identified procedure was carried out.",
+            "comment" : "For example: the reason for the cancellation or suspension of the procedure."
+          }
+        },
+        "ar-sy" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en) (2)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en) (3)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          }
+        },
+        "ru" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en) (2)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en) (3)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          }
+        },
         "nb" : {
           "at0068.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3108,7 +3244,7 @@
           "at0041.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0041.1",
-            "text" : "HBOT avbrutt",
+            "text" : "Behandling avbrutt",
             "description" : "Prosedyren har blitt avbrutt."
           },
           "at0043.1" : {
@@ -3117,16 +3253,66 @@
             "text" : "HBOT fullført",
             "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
           },
+          "at0047.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047.1",
+            "text" : "Dekompresjon startet",
+            "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er utført."
+          },
           "at0014.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0014.1",
+            "text" : "Nød-dekompresjon",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
+          },
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.2",
             "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.3",
+            "text" : "Behandlingen avbrytes",
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           }
         },
-        "es" : { },
-        "de" : { }
+        "es" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Motivo (2)",
+            "description" : "Motivo por el cual una actividad o paso de la vía clínica del arquetipo fue ejecutado como parte del procedimiento",
+            "comment" : "Por ejemplo: motivo de cancelación o suspensión del procedimiento"
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Motivo (3)",
+            "description" : "Motivo por el cual una actividad o paso de la vía clínica del arquetipo fue ejecutado como parte del procedimiento",
+            "comment" : "Por ejemplo: motivo de cancelación o suspensión del procedimiento"
+          }
+        },
+        "de" : {
+          "at0014.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Grund (2)",
+            "description" : "Grund, warum die angegebene Aktivität für diese Prozedur durchgeführt wurde.",
+            "comment" : "Zum Beispiel: der Grund für den Abbruch oder die Unterbrechung der Prozedur."
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Grund (3)",
+            "description" : "Grund, warum die angegebene Aktivität für diese Prozedur durchgeführt wurde.",
+            "comment" : "Zum Beispiel: der Grund für den Abbruch oder die Unterbrechung der Prozedur."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
