@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "0aef98bd110beb9adfe19ffaa2c0b0b2",
+      "MD5-CAM-1.0.1" : "6d50d6f301a17c542c542cff16023ffe",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -163,7 +163,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 kompresjon",
+          "text" : "HBOT O2 komprimert",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
@@ -531,6 +531,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -971,6 +972,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1411,7 +1413,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0015.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2513,6 +2514,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0039.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2610,6 +2612,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0068.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2658,7 +2661,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0047.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2756,7 +2758,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0041.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3087,42 +3088,24 @@
         "ar-sy" : { },
         "ru" : { },
         "nb" : {
-          "at0068.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068.1",
-            "text" : "Kompresjon startet",
-            "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er påbegynt."
-          },
-          "at0039.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039.1",
-            "text" : "Behandling avlyst",
-            "description" : "Den planlagte prosedyren har blitt avlyst før den ble igangsatt."
-          },
-          "at0040.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0040.1",
-            "text" : "HBOT pauset",
-            "description" : "Prosedyren er suspendert/ midlertidig stanset."
-          },
-          "at0041.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041.1",
-            "text" : "HBOT avbrutt",
-            "description" : "Prosedyren har blitt avbrutt."
-          },
-          "at0043.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043.1",
-            "text" : "HBOT fullført",
-            "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
-          },
           "at0014.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0014.1",
             "text" : "Årsak",
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
+          },
+          "at0047.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047.1",
+            "text" : "På trykk",
+            "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er utført."
+          },
+          "at0041.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041.1",
+            "text" : "Behandling avbrutt",
+            "description" : "Prosedyren har blitt avbrutt."
           }
         },
         "es" : { },
