@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "33212b418e4c5ff20164aba1ae0afa42",
+      "MD5-CAM-1.0.1" : "02f3f7fa0acd8aaf574ded3653bbb4cf",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1307,12 +1307,52 @@
                       "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "278558000",
-                        "value" : "tannfylling har falt ut"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
                         "code" : "301354004",
                         "value" : "øresmerter"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "7973008",
+                        "value" : "unormalt syn"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "60119000",
+                        "value" : "utmattelse"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "33499000",
+                        "value" : "oksygenforgiftning"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "91175000",
+                        "value" : "krampeanfall"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "301357006",
+                        "value" : "smerter i frontalsinus"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "301356002",
+                        "value" : "smerter i maksillarsinus"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "19887002",
+                        "value" : "klaustrofobi"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "367545001",
+                        "value" : "engstelig stemningsleie"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "225624000",
+                        "value" : "panikkanfall"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "267036007",
+                        "value" : "kortpustethet"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "278558000",
+                        "value" : "tannfylling har falt ut"
                       } ]
                     } ]
                   } ],
