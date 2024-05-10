@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a88f20b016c82ff61bf0d1c4e4c05ab8",
+      "MD5-CAM-1.0.1" : "60e09b9264f4bec0d89f0c284e3183bd",
       "PARENT:MD5-CAM-1.0.1" : "BA031C5AA941FB7AD98139E0FBCBA346"
     },
     "details" : {
@@ -382,6 +382,7 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ISM_TRANSITION",
+        "occurrences" : "0..0",
         "nodeId" : "at0039.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -823,6 +824,20 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
             "occurrences" : "0..0",
+            "nodeId" : "at0069.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0006.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
             "nodeId" : "at0066.1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
@@ -874,6 +889,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
             "nodeId" : "at0014.1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
