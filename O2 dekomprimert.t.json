@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "51ef09995b4712eed28fbff62fca63d0",
+      "MD5-CAM-1.0.1" : "e049d29e435aa15d6b3f0af9de90c0f9",
       "PARENT:MD5-CAM-1.0.1" : "BA031C5AA941FB7AD98139E0FBCBA346"
     },
     "details" : {
@@ -529,7 +529,6 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ISM_TRANSITION",
-        "occurrences" : "0..0",
         "nodeId" : "at0047.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -627,6 +626,7 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ISM_TRANSITION",
+        "occurrences" : "0..0",
         "nodeId" : "at0041.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -675,6 +675,7 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ISM_TRANSITION",
+        "occurrences" : "0..0",
         "nodeId" : "at0043.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -817,6 +818,20 @@
             "rmTypeName" : "ELEMENT",
             "occurrences" : "0..0",
             "nodeId" : "at0048.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0069.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0006.1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
           }, {
@@ -1030,7 +1045,7 @@
         "at0047.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0047.1",
-          "text" : "Dekompresjon startet",
+          "text" : "Dekompresjon fullført",
           "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er utført."
         },
         "at0014.2" : {
