@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "f5876a5e482de6ad5ff3b86ca80b7bad",
+      "MD5-CAM-1.0.1" : "7744cf6dc53fe5c636a78618ad34c5d8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -164,7 +164,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "hbot_behandling.v0.0.1-alpha",
+          "text" : "HBOT behandling",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
