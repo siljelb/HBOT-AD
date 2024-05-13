@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "553bbc2d2ac0a5f96a07c6b2928a390b",
+      "MD5-CAM-1.0.1" : "e339fefc5b59274356855c6f5254b9f1",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -170,7 +170,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 dekompresjon",
+          "text" : "HBOT O2 dekomprimert",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
       }
