@@ -1,0 +1,3072 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "ab7e33c2-deb9-4d38-8599-91415f9ac2c4",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Silje Ljosland Bakke",
+      "organisation" : "Helse Vest IKT AS",
+      "email" : "silje.ljosland.bakke@helse-vest-ikt.no",
+      "date" : "2024-04-18"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "MD5-CAM-1.0.1" : "6258ee0a55c2ec2c3c268c88f3644817",
+      "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
+    },
+    "details" : {
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.encounter.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_encounter.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "1..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "hbot_o2_klargjort",
+          "description" : "*Interaction, contact or care event between a subject of care and healthcare provider(s).(en)"
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "hbot_o2_klargjort",
+          "description" : "*Interaction, contact or care event between a subject of care and healthcare provider(s).(en)"
+        }
+      },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "HBOT O2 pause",
+          "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
+        }
+      },
+      "ko" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "hbot_o2_klargjort",
+          "description" : "*Interaction, contact or care event between a subject of care and healthcare provider(s).(en)"
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "HBOT O2 pause",
+          "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "ed2cc0eb-c508-3e66-a7bc-0e3f3e3f196f",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "hbot_o2_pause.v0.0.3",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4c6402df-d5e1-43d1-a824-5442a4b17cf5",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : {
+        "date" : "2024-05-07"
+      },
+      "otherContributors" : [ ],
+      "lifecycleState" : {
+        "codeString" : "unmanaged"
+      },
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+        "custodian_organisation" : "openEHR Foundation",
+        "original_namespace" : "org.openehr",
+        "original_publisher" : "openEHR Foundation",
+        "custodian_namespace" : "org.openehr",
+        "MD5-CAM-1.0.1" : "038dd1a9c37c697493f04a708e903dca",
+        "PARENT:MD5-CAM-1.0.1" : "C529435A66F980C8EF3AC0FC9A554BC7"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.medication.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-medication-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "ism_transition",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0109.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "526" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0109" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0145.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "526" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0145" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0013.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "527" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0013" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0012.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "528" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0012" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0150.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "528" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0150" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0016.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "529" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0016" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0153.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "529" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0153" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0002" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0003" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0106.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0106" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0010" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0148.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0148" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0004.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0004" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0041.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0041" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0005" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0006" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0018" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0044.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0044" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0008.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "530" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0008" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0009.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "530" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0009" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0011.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "530" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0011" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0015.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0015" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0039.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0039" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0151.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0151" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0007" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0152.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0152" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0017",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "FEST",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "ID_92F7C25E-5E32-497E-B3E9-04159A8BF7C4",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "Oksygen 100%",
+                    "@type" : "DV_CODED_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "FEST"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "FEST" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "FEST",
+                        "code" : "ID_92F7C25E-5E32-497E-B3E9-04159A8BF7C4",
+                        "value" : "Oksygen 100%"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0156.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0132.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0138", "at0139" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0133.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0043.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0154.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0155.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0021.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "1..1",
+              "nodeId" : "at0140.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0147.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0141.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
+                  "nodeId" : "at0143.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SNOMED-CT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "110474005",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Whole body hyperbaric oxygen therapy (procedure)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "SNOMED-CT"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED-CT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "110474005",
+                            "value" : "Whole body hyperbaric oxygen therapy (procedure)"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0033.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0149.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_BOOLEAN",
+                  "defaultValue" : {
+                    "value" : false,
+                    "@type" : "DV_BOOLEAN"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_BOOLEAN",
+                      "rmTypeName" : "BOOLEAN",
+                      "occurrences" : "0..1",
+                      "constraint" : [ false ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0025.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0024.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0131.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-dosage-001.v2",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0131.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-dosage-002.v2",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0030",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0103.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : { },
+        "sl" : { },
+        "es-ar" : { },
+        "ru" : { },
+        "en" : { },
+        "nb" : {
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "O2 avbrutt",
+            "description" : "Legemiddelet er seponert etter at første dose er administrert, men før planlagt fullførelse av ordineringen."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Behandling avlyst",
+            "description" : "Den planlagte medisineringen er avbrutt før den første dosen er administrert."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "O2 startet igjen",
+            "description" : "Legemiddelet er inntatt av eller administrert til pasienten for første gang. Selv om dette i noen bruksområder som f.eks. sykehus kan utledes fra den første av en rekke administreringer, må det i andre bruksområder som f.eks. allmennpraksis spesifiseres spesifikt siden administreringer ikke dokumenteres på samme måte."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "O2 fullført",
+            "description" : "Medisineringen er fullført som ordinert."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "O2 pauset",
+            "description" : "Administrering av legemiddelet er satt på vent inntil videre, ordinasjonen er \"nullet\". Ingen ytterligere doser gis før kriterium eller dato for å sette medisineringen i gang igjen er møtt. Når dato eller kriterium for å ny oppstart settes, bør det gjøres et 'suspend_step' tilbake til \"Oppstartsdato satt\"."
+          },
+          "at0148.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Oksygen klargjort",
+            "description" : "Legemiddelet er fysisk istandgjort, for eksempel istandgjøring av en intravenøs blanding."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Pausenummer",
+            "description" : "Sekvensnummeret for den spesifikke handlingen som blir registrert.",
+            "comment" : "For eksempel: En vaksines sekvensnummer/ nummer i en rekkefølge."
+          }
+        },
+        "pt-br" : { },
+        "de" : { },
+        "sv" : { },
+        "zh-cn" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3022e055-48aa-3706-a09e-e22bc6b82768",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "fadef9d8-0582-461f-af17-d68e1034cc4c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "CB08CD70F6B0B3B1DCA82A5BC2628690"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der Kombination von Medikamentendosis und Verabreichungszeit an einem Tag im Kontext einer Medikamentenverordnung oder der Arzneimittelverwaltung oder gegebenenfalls für andere therapeutische/verschreibungspflichtige Produkte.",
+          "keywords" : [ "Medikation", "Verordnung", "verschreiben", "verordnen", "Therapie", "Substanz", "Wirkstoff", "Arzneimittel", "Medikament", "therapeutisch", "therapeutisches Erzeugnis", "Pharmazeutikum", "Produkt", "Posologie", "Dosierung", "Behandlung", "Fluid", "Flüssigkeit", "Ernährung", "Timing", "Zeitplan", "Verabreichung", "Applikation", "Dosis" ],
+          "use" : "Wird verwendet, um die Kombination einer Medikamentendosis und der Verabreichungszeiten innerhalb eines Tages, als Teil einer Medikamentenverordnung oder der Arzneimittelverwaltung oder gegebenenfalls für andere verschriebene therapeutische Produkte darzustellen.\r\nDas Zeitmuster für einen einzelnen Tag kann einfach eine einzelne Verabreichungszeit oder mehrere Verabreichungszeiten mit unterschiedlichem Komplexitätsgrad sein.\r\n\r\nTiming-Details, die nicht innerhalb eines Tages liegen, z. B. wöchentlicher oder monatlicher Rhythmus, werden im CLUSTER-Archetyp \"Verabreichungszeitpunkte - nicht täglich\" aufgeführt, der im CLUSTER-Archetyp \"Therapeutische Anweisungen\" (CLUSTER.therapeutic_direction) enthalten ist.\r\n\r\nIm Kontext einer therapeutischen INSTRUCTION kann dieser Archetyp in den SLOT \"Strukturierte Dosis- und Zeitangaben\" im CLUSTER \"Therapeutische Anweisung\" (CLUSTER.therapeutic_direction) eingefügt werden, um die Dosis und Details zum Zeitmuster der einzelnen beabsichtigten Verabreichungen eines therapeutischen Produktes darzustellen.\r\n\r\nIm Kontext eines ACTION-Archetyps fügen Sie diesen Archetyp direkt in den SLOT \"Dosis\" ein, um die Dosis und den Zeitpunkt der tatsächlichen Verabreichung eines therapeutischen Produktes darzustellen.\r\n\r\nSpezifische Start- / Stoppzeiten der Verabreichung sollten in einem CLUSTER-Archetyp \"Verabreichungszeitpunkte - täglich\" angegeben werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera kombinationen av läkemedelsmängd och administrationstid för en enda dag, som en del av en läkemedelsorder eller läkemedelshantering eller för andra lämpliga terapeutiska / förskrivningsbara föremål.",
+          "keywords" : [ "medicinering", "beställa", "ordinera", "terapi", "ämne", "läkemedel", "terapeutisk", "terapeutiskt bra", "läkemedel", "produkt", "dosering", "behandling", "vätska", "näring", "timing", "administration", "dos" ],
+          "use" : "Används för att registrera kombinationen av läkemedelsmängd och administreringstid för en enda dag, som en del av en läkemedelsorder eller läkemedelshantering eller för andra lämpliga terapeutiska / förskrivningsbara föremål.\r\nTidmönstret för en dag kan vara så enkelt som en enda administreringstid eller flera administreringstider med varierande nivåer av komplexitet.\r\n\r\nTidsuppgifter som inte ligger inom en enda dag, t.ex. vecko- eller månatliga tider, tas i CLUSTER 'Timing - non-daily' arketypen, inom CLUSTER 'Therapeutic direction' arketypen.\r\n\r\nI samband med en terapeutisk INSTRUCTION kan den här arketypen införas i 'Strukturerad dos och tidsriktning' SLOT i 'Therapeutic direction' CLUSTER för att registrera dos- och tidsdetaljer för mönstret för enstaka avsedda administrationer av en terapeutisk artikel.\r\n\r\nI samband med en ACTION-arketyp, sätt in den här arketypen direkt i 'Amount' SLOT för att registrera dosen och tidpunkten för den faktiska administreringen av ett terapeutisk objekt\r\n\r\nSpecifika administrationsstart / stopptider bör anges inom en innesluten CLUSTER 'Timing - daily' arketyp.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende.",
+          "keywords" : [ "legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "terapeutisk", "farmasøytisk", "produkt", "behandling", "væske", "ernæring", "timing", "administrering", "administrasjon", "dose" ],
+          "use" : "Brukes for å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende. Mønsteret for administrasjonstidspunkter innenfor en dag kan være så enkelt som ett administrasjonstidspunkt, eller flere administrasjonstidspunkter med forskjellige nivåer av kompleksitet.\r\n\r\nTimingdetaljer som ikke er innenfor én dag, f.eks. ukentlig eller månedlige timinger, håndteres av CLUSTER-arketypen \"Timing - repetering\" som benyttes i CLUSTER-arketypen \"Terapeutisk anvisning\".\r\n\r\nInnenfor en INSTRUCTION og i den igjen innenfor CLUSTER-arketypen \"Terapeutisk anvisning\" (CLUSTER.therapeutic_direction) for å registrere dose og timing av et ordinert produkt, som f.eks. et legemiddel.\r\n\r\nInnenfor en ACTION-arketype kan denne arketypen brukes for å registrere dosen og timing for den faktiske administreringen av det ordinerte produktet.\r\n\r\nSpesifikke tidspunkter for administrering og start/stopp-tidspunkter spesifiseres i CLUSTER-arketypen \"Timing - daglig\".",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\n",
+          "keywords" : [ "medicamento", "solicitação", "prescrever", "terapia", "substância", "fármaco", "terapêutico", "item terapêutico", "farmacêutico", "produto", "posologia", "tratamento", "fluido", "nutrição", "tempo", "administração", "dose" ],
+          "use" : "Usado para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\nO padrão de tempo diário pode ser simples como uma administração única ou múltiplas administrações com níveis variados de complexidade.\r\n\r\nOs detalhes de tempo que não estão dentro de um mesmo dia p.e. semanalmente ou mensalmente são incluídos dentro do arquétipo CLUSTER \"Timing repetition\" carregado dentro do arquétipo CLUSTER \"Therapeutic direction\".\r\n\r\nNo contexto de uma INSTRUÇÃO terapêutica este arquétipo pode ser inserido dentro do SLOT \"Dosage administration\" no CLUSTER \"Therapeutic direction\" para gravar a dose e detalhes de tempo do padrão de uma administração única de um item terapêutico.\r\n\r\nNo contexto de um arquétipo tipo ACTION insira este arquétipo diretamente no SLOT \"Amount\" para gravar a dose e tempo da administração de um item terapêutico.\r\n\r\nTempos específicos de início e parada de administração devem ser especificados dentro do arquétipo CLUSTER \"Timing - daily\".\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the combination of a medication amount and the administration timing within a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "fluid", "nutrition", "timing", "administration", "dose" ],
+          "use" : "Use to record the combination of a medication amount and the administration timing for a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items. \r\nThe timing pattern for a single day can be as simple as a single administration time, or multiple administration times with varying levels of complexity.\r\n\r\nTiming details which are not within a single day, for example, weekly or monthly timings, are carried in the CLUSTER 'Timing - non-daily' archetype carried within the CLUSTER 'Therapeutic direction' archetype.\r\n\r\nIn the context of a therapeutic INSTRUCTION, this archetype may be inserted into the 'Structured dose and timing directions' SLOT in the 'Therapeutic direction' CLUSTER to record the dose and timing details of the pattern of single intended administrations of a therapeutic item. \r\n\r\nIn the context of an ACTION archetype insert this archetype directly into the 'Amount' SLOT to record the dose and timing of the actual administration of a therapeutic item.\r\n\r\nSpecific administration start/stop times should be specified within a contained CLUSTER 'Timing - daily' archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.dosage.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-dosage-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0164.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "Integer",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0144.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0135.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0178.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0134.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "126" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "l/h" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/min" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/s" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/h" ]
+                  } ]
+                } ]
+              } ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0102.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "patternedConstraint" : "PTMS",
+                  "constraint" : [ {
+                    "lower" : "PT0S",
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0176.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Total pause",
+            "description" : "Kombinasjonen av legemiddeldose og administrasjonstidspunkter for en dag, innenfor sammenhengen legemiddelordinering eller legemiddelhåndtering.",
+            "comment" : "For eksempel \"2 tabletter kl. 18:00\" eller \"20 mg tre ganger om dagen\". Merk: Dette clusteret er laget for å repeteres for å kunne representere et fullstendig sett av doseringsmønstre for en enkelt Terapeutisk anvisning."
+          },
+          "at0102.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0102.1",
+            "text" : "Pausetid",
+            "description" : "Tidsperioden en enkelt dose av legemiddelet eller vaksinen skal administreres over.",
+            "comment" : "For eksempel \"Administreres over 10 minutter\"."
+          }
+        },
+        "pt-br" : { },
+        "de" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "afec6a4d-4301-4189-8605-c9b158325b37",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nazli Soltani, Natalia Strauch, Alexander Bachmeier",
+        "organisation" : "UMG, Medizinische Schule Hannover (MHH), Medizinische Hochschule Hannover, Heidelberg University Hospital",
+        "email" : "nazli.soltani@med.uni-goettingen.de, strauch.natalia@mh-hannover.de, Strauch.Natalia@mh-hannover.de, alexander.bachmeier@med.uni-heidelberg.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Therese Lindberg",
+        "organisation" : "Cambio CDS",
+        "email" : "therese.lindberg@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Debora Farage, Fernanda Maia, Laíse Figueiredo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "fadef9d8-0582-461f-af17-d68e1034cc4c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "CB08CD70F6B0B3B1DCA82A5BC2628690"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der Kombination von Medikamentendosis und Verabreichungszeit an einem Tag im Kontext einer Medikamentenverordnung oder der Arzneimittelverwaltung oder gegebenenfalls für andere therapeutische/verschreibungspflichtige Produkte.",
+          "keywords" : [ "Medikation", "Verordnung", "verschreiben", "verordnen", "Therapie", "Substanz", "Wirkstoff", "Arzneimittel", "Medikament", "therapeutisch", "therapeutisches Erzeugnis", "Pharmazeutikum", "Produkt", "Posologie", "Dosierung", "Behandlung", "Fluid", "Flüssigkeit", "Ernährung", "Timing", "Zeitplan", "Verabreichung", "Applikation", "Dosis" ],
+          "use" : "Wird verwendet, um die Kombination einer Medikamentendosis und der Verabreichungszeiten innerhalb eines Tages, als Teil einer Medikamentenverordnung oder der Arzneimittelverwaltung oder gegebenenfalls für andere verschriebene therapeutische Produkte darzustellen.\r\nDas Zeitmuster für einen einzelnen Tag kann einfach eine einzelne Verabreichungszeit oder mehrere Verabreichungszeiten mit unterschiedlichem Komplexitätsgrad sein.\r\n\r\nTiming-Details, die nicht innerhalb eines Tages liegen, z. B. wöchentlicher oder monatlicher Rhythmus, werden im CLUSTER-Archetyp \"Verabreichungszeitpunkte - nicht täglich\" aufgeführt, der im CLUSTER-Archetyp \"Therapeutische Anweisungen\" (CLUSTER.therapeutic_direction) enthalten ist.\r\n\r\nIm Kontext einer therapeutischen INSTRUCTION kann dieser Archetyp in den SLOT \"Strukturierte Dosis- und Zeitangaben\" im CLUSTER \"Therapeutische Anweisung\" (CLUSTER.therapeutic_direction) eingefügt werden, um die Dosis und Details zum Zeitmuster der einzelnen beabsichtigten Verabreichungen eines therapeutischen Produktes darzustellen.\r\n\r\nIm Kontext eines ACTION-Archetyps fügen Sie diesen Archetyp direkt in den SLOT \"Dosis\" ein, um die Dosis und den Zeitpunkt der tatsächlichen Verabreichung eines therapeutischen Produktes darzustellen.\r\n\r\nSpezifische Start- / Stoppzeiten der Verabreichung sollten in einem CLUSTER-Archetyp \"Verabreichungszeitpunkte - täglich\" angegeben werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera kombinationen av läkemedelsmängd och administrationstid för en enda dag, som en del av en läkemedelsorder eller läkemedelshantering eller för andra lämpliga terapeutiska / förskrivningsbara föremål.",
+          "keywords" : [ "medicinering", "beställa", "ordinera", "terapi", "ämne", "läkemedel", "terapeutisk", "terapeutiskt bra", "läkemedel", "produkt", "dosering", "behandling", "vätska", "näring", "timing", "administration", "dos" ],
+          "use" : "Används för att registrera kombinationen av läkemedelsmängd och administreringstid för en enda dag, som en del av en läkemedelsorder eller läkemedelshantering eller för andra lämpliga terapeutiska / förskrivningsbara föremål.\r\nTidmönstret för en dag kan vara så enkelt som en enda administreringstid eller flera administreringstider med varierande nivåer av komplexitet.\r\n\r\nTidsuppgifter som inte ligger inom en enda dag, t.ex. vecko- eller månatliga tider, tas i CLUSTER 'Timing - non-daily' arketypen, inom CLUSTER 'Therapeutic direction' arketypen.\r\n\r\nI samband med en terapeutisk INSTRUCTION kan den här arketypen införas i 'Strukturerad dos och tidsriktning' SLOT i 'Therapeutic direction' CLUSTER för att registrera dos- och tidsdetaljer för mönstret för enstaka avsedda administrationer av en terapeutisk artikel.\r\n\r\nI samband med en ACTION-arketyp, sätt in den här arketypen direkt i 'Amount' SLOT för att registrera dosen och tidpunkten för den faktiska administreringen av ett terapeutisk objekt\r\n\r\nSpecifika administrationsstart / stopptider bör anges inom en innesluten CLUSTER 'Timing - daily' arketyp.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende.",
+          "keywords" : [ "legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "terapeutisk", "farmasøytisk", "produkt", "behandling", "væske", "ernæring", "timing", "administrering", "administrasjon", "dose" ],
+          "use" : "Brukes for å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende. Mønsteret for administrasjonstidspunkter innenfor en dag kan være så enkelt som ett administrasjonstidspunkt, eller flere administrasjonstidspunkter med forskjellige nivåer av kompleksitet.\r\n\r\nTimingdetaljer som ikke er innenfor én dag, f.eks. ukentlig eller månedlige timinger, håndteres av CLUSTER-arketypen \"Timing - repetering\" som benyttes i CLUSTER-arketypen \"Terapeutisk anvisning\".\r\n\r\nInnenfor en INSTRUCTION og i den igjen innenfor CLUSTER-arketypen \"Terapeutisk anvisning\" (CLUSTER.therapeutic_direction) for å registrere dose og timing av et ordinert produkt, som f.eks. et legemiddel.\r\n\r\nInnenfor en ACTION-arketype kan denne arketypen brukes for å registrere dosen og timing for den faktiske administreringen av det ordinerte produktet.\r\n\r\nSpesifikke tidspunkter for administrering og start/stopp-tidspunkter spesifiseres i CLUSTER-arketypen \"Timing - daglig\".",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\n",
+          "keywords" : [ "medicamento", "solicitação", "prescrever", "terapia", "substância", "fármaco", "terapêutico", "item terapêutico", "farmacêutico", "produto", "posologia", "tratamento", "fluido", "nutrição", "tempo", "administração", "dose" ],
+          "use" : "Usado para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\nO padrão de tempo diário pode ser simples como uma administração única ou múltiplas administrações com níveis variados de complexidade.\r\n\r\nOs detalhes de tempo que não estão dentro de um mesmo dia p.e. semanalmente ou mensalmente são incluídos dentro do arquétipo CLUSTER \"Timing repetition\" carregado dentro do arquétipo CLUSTER \"Therapeutic direction\".\r\n\r\nNo contexto de uma INSTRUÇÃO terapêutica este arquétipo pode ser inserido dentro do SLOT \"Dosage administration\" no CLUSTER \"Therapeutic direction\" para gravar a dose e detalhes de tempo do padrão de uma administração única de um item terapêutico.\r\n\r\nNo contexto de um arquétipo tipo ACTION insira este arquétipo diretamente no SLOT \"Amount\" para gravar a dose e tempo da administração de um item terapêutico.\r\n\r\nTempos específicos de início e parada de administração devem ser especificados dentro do arquétipo CLUSTER \"Timing - daily\".\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the combination of a medication amount and the administration timing within a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "fluid", "nutrition", "timing", "administration", "dose" ],
+          "use" : "Use to record the combination of a medication amount and the administration timing for a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items. \r\nThe timing pattern for a single day can be as simple as a single administration time, or multiple administration times with varying levels of complexity.\r\n\r\nTiming details which are not within a single day, for example, weekly or monthly timings, are carried in the CLUSTER 'Timing - non-daily' archetype carried within the CLUSTER 'Therapeutic direction' archetype.\r\n\r\nIn the context of a therapeutic INSTRUCTION, this archetype may be inserted into the 'Structured dose and timing directions' SLOT in the 'Therapeutic direction' CLUSTER to record the dose and timing details of the pattern of single intended administrations of a therapeutic item. \r\n\r\nIn the context of an ACTION archetype insert this archetype directly into the 'Amount' SLOT to record the dose and timing of the actual administration of a therapeutic item.\r\n\r\nSpecific administration start/stop times should be specified within a contained CLUSTER 'Timing - daily' archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.dosage.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-dosage-002.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0164.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0144.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0135.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0178.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0134.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "126" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "l/h" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/min" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/s" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/h" ]
+                  } ]
+                } ]
+              } ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0102.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "patternedConstraint" : "PTMS",
+                  "constraint" : [ {
+                    "lower" : "PT0S",
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0176.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Dosage (2)",
+            "description" : "The combination of a medication amount and administration timing for a single day, in the context of a medication order or medication management.",
+            "comment" : "For example: '2 tablets at 6pm' or '20 mg three times per day'. Please note: this cluster allows multiple occurrences to enable representation of a complete set of dose patterns for a single dose direction."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Denne pausen",
+            "description" : "Kombinasjonen av legemiddeldose og administrasjonstidspunkter for en dag, innenfor sammenhengen legemiddelordinering eller legemiddelhåndtering.",
+            "comment" : "For eksempel \"2 tabletter kl. 18:00\" eller \"20 mg tre ganger om dagen\". Merk: Dette clusteret er laget for å repeteres for å kunne representere et fullstendig sett av doseringsmønstre for en enkelt Terapeutisk anvisning."
+          },
+          "at0102.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0102.1",
+            "text" : "Pausetid",
+            "description" : "Tidsperioden en enkelt dose av legemiddelet eller vaksinen skal administreres over.",
+            "comment" : "For eksempel \"Administreres over 10 minutter\"."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Dose (2)",
+            "description" : "A combinação de uma quantidade de medicamento e o tempo de administração para um único dia, no contexto de uma solicitação ou gestão de medicamento.\r\n",
+            "comment" : "Por exemplo: \"2 comprimidos às 18h\" ou \"20 mg três vezes ao dia\". Por favor note que: este cluster permite ocorrências múltiplas para possibilitar a representação de um conjunto completo de padrões de dose para uma orientação de dose única."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Dosierung (2)",
+            "description" : "Kombination von Medikamentendosis und Verabreichungszeit an einem Tag im Kontext einer Medikamentenverordnung oder der Arzneimittelverwaltung.",
+            "comment" : "Zum Beispiel: \"2 Tabletten um 18 Uhr\" oder \"20 mg dreimal täglich\". Bitte beachten Sie: Dieser Cluster kann mehrfach vorkommen, um einen vollständigen Satz von Dosismustern für eine einzelne Dosisanweisung darzustellen."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Dosering (2)",
+            "description" : "Kombinationen av läkemedelsmängd och administreringstidpunkt för en dag, i samband med en läkemedelsorder eller läkemedelshantering.",
+            "comment" : "Till exempel: \"2 tabletter kl. 18\" eller \"20 mg tre gånger per dag\". Observera: cluster tillåter här flera förekomster för att möjliggöra representation av en komplett uppsättning dosmönster för en enda dosriktning."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "afec6a4d-4301-4189-8605-c9b158325b37",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nazli Soltani, Natalia Strauch, Alexander Bachmeier",
+        "organisation" : "UMG, Medizinische Schule Hannover (MHH), Medizinische Hochschule Hannover, Heidelberg University Hospital",
+        "email" : "nazli.soltani@med.uni-goettingen.de, strauch.natalia@mh-hannover.de, Strauch.Natalia@mh-hannover.de, alexander.bachmeier@med.uni-heidelberg.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Therese Lindberg",
+        "organisation" : "Cambio CDS",
+        "email" : "therese.lindberg@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Debora Farage, Fernanda Maia, Laíse Figueiredo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
