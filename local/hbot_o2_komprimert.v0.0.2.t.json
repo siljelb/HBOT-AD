@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5dec402365082211b2fd9183a630269b",
+      "MD5-CAM-1.0.1" : "203ad0b634aa47e4c69791a18188b8af",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -208,7 +208,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "c2b58b1969b397fc491ed9cd27de904a",
-        "PARENT:MD5-CAM-1.0.1" : "4b6d964b71f90b6e0be8ff576917b40e"
+        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
       },
       "details" : {
         "de" : {
@@ -1039,7 +1039,38 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0061.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT0S",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0071.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -1178,12 +1209,11 @@
             "text" : "Behandling avbrutt",
             "description" : "Prosedyren har blitt avbrutt."
           },
-          "at0061.1" : {
+          "at0071.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0061.1",
+            "code" : "at0071.1",
             "text" : "Kompresjonstid",
-            "description" : "Den totale tiden som ble brukt til å fullføre prosedyren. Dette kan omfatte tidsbruk under den aktive fasen av prosedyren, og i tillegg tid da prosedyren var midlertidig stanset.",
-            "comment" : "Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre fullført\"."
+            "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           }
         },
         "es" : { },
