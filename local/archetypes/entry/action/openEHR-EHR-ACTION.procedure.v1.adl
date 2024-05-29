@@ -297,7 +297,7 @@ No utilizar para registrar detalles acerca del informe de la operación, para es
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"714c6c079260b3e3a3ac847874d8ef8f">
+		["MD5-CAM-1.0.1"] = <"4b6d964b71f90b6e0be8ff576917b40e">
 		["build_uid"] = <"da7303d8-e462-45e3-b0a7-aecbdc4e986a">
 		["revision"] = <"1.4.1">
 	>
@@ -569,7 +569,9 @@ definition
 					}
 					ELEMENT[at0071] occurrences matches {0..1} matches {    -- Pathway step duration
 						value matches {
-							DV_DURATION matches {*}
+							DV_DURATION matches {
+								value matches {|>=PT0S|}
+							}
 						}
 					}
 					allow_archetype CLUSTER[at0062] occurrences matches {0..*} matches {    -- Multimedia
