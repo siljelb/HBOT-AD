@@ -6,16 +6,27 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
+		["date"] = <"2024-05-30">
 		["name"] = <"Silje Ljosland Bakke">
 		["organisation"] = <"Helse Vest IKT AS">
 		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
-		["date"] = <"2024-05-30">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ff42edb404a9edeff334e18a38a222d6">
+		["MD5-CAM-1.0.1"] = <"11b02acfe52b3f47107b40bebb94c8b9">
 		["build_uid"] = <"10317c81-ec29-3a84-857b-f593b1c97296">
 	>
 
@@ -232,6 +243,114 @@ ontology
 				>
 				["at0025"] = <
 					text = <"Healthcare provider">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter (en)">
+					description = <"*encounter (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*Other party (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Type of encounter (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Planned (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Not planned (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Initiator (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Documenting part (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Other part (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Contact reached? (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*Modality (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*Face to face (en)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"*Telephone (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"*Video call (en)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"*Comment (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Purpose (en)">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"*Other party details (en)">
+					description = <"*Person, Organisation (en)">
+				>
+				["at0022"] = <
+					text = <"*Subject (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Next of kin (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Carer (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*Healthcare provider (en)">
 					description = <"">
 				>
 			>
