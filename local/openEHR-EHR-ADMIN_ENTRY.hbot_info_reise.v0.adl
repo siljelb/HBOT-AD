@@ -1,0 +1,84 @@
+archetype (adl_version=1.4; uid=bae7c4c4-2aca-442f-b7df-14eb97d79dff)
+	openEHR-EHR-ADMIN_ENTRY.hbot_info_reise.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Helse Vest IKT AS">
+		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
+		["date"] = <"2024-05-30">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"bd23b21aa524f6b843dcfeeedb259452">
+		["build_uid"] = <"cb23ae75-8a08-34d4-b6ca-06a147b3bc97">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- hbot_info_reise
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Pasienten har fått informasjon om at flyreiser rekvireres av Pasientreiser
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Pasienten har fått informasjon om at de selv må bestille og legge ut for tog, buss, og båt, og få refusjon fra Helfo
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Pasienten har fått informasjon om at det frarådes å kjøre egen bil til og fra behandlingen
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"hbot_info_reise">
+					description = <"hbot_info_reise">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Pasienten har fått informasjon om at flyreiser rekvireres av Pasientreiser">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Pasienten har fått informasjon om at de selv må bestille og legge ut for tog, buss, og båt, og få refusjon fra Helfo">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Pasienten har fått informasjon om at det frarådes å kjøre egen bil til og fra behandlingen">
+					description = <"">
+				>
+			>
+		>
+	>
