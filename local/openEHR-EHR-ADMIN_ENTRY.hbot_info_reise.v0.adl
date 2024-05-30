@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bd23b21aa524f6b843dcfeeedb259452">
+		["MD5-CAM-1.0.1"] = <"8511a4dfe9c5f2738b22076521328ef2">
 		["build_uid"] = <"cb23ae75-8a08-34d4-b6ca-06a147b3bc97">
 	>
 
@@ -46,6 +46,22 @@ definition
 						}
 					}
 					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Pasienten har fått informasjon om at det frarådes å kjøre egen bil til og fra behandlingen
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Har pasienten selv ytret behov for taxi?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0006,    -- Ja
+									at0007]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Pasienten har fått informasjon om at eventuell taxi til behandlingen må rekvireres av fastlege/henviser
 						value matches {
 							DV_BOOLEAN matches {*}
 						}
@@ -77,6 +93,22 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Pasienten har fått informasjon om at det frarådes å kjøre egen bil til og fra behandlingen">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Har pasienten selv ytret behov for taxi?">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Pasienten har fått informasjon om at eventuell taxi til behandlingen må rekvireres av fastlege/henviser">
 					description = <"">
 				>
 			>
