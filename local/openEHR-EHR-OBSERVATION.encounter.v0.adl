@@ -1,0 +1,239 @@
+archetype (adl_version=1.4; uid=c509d94f-d2bf-417d-8cf5-845569f74aef)
+	openEHR-EHR-OBSERVATION.encounter.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Helse Vest IKT AS">
+		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
+		["date"] = <"2024-05-30">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1e5097e5c16ba1bd506bf9e8c2890079">
+		["build_uid"] = <"10317c81-ec29-3a84-857b-f593b1c97296">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- encounter
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- Purpose
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Other party
+										value matches {
+											DV_TEXT matches {*}
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0022,    -- Subject
+													at0023,    -- Next of kin
+													at0024,    -- Carer
+													at0025]    -- Healthcare provider
+												}
+											}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Modality
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0015,    -- Face to face
+													at0016,    -- Telephone
+													at0017]    -- Video call
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Type of encounter
+										value matches {
+											DV_TEXT matches {*}
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0006,    -- Planned
+													at0007]    -- Not planned
+												}
+											}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Initiator
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0009,    -- Documenting part
+													at0010]    -- Other part
+												}
+											}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Contact reached?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012,    -- Yes
+													at0013]    -- No
+												}
+											}
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Other party details
+										include
+											archetype_id/value matches {/.*/}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0018] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"encounter">
+					description = <"encounter">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Other party">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Type of encounter">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Planned">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Not planned">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Initiator">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Documenting part">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Other part">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Contact reached?">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Modality">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Face to face">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Telephone">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Video call">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Purpose">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Other party details">
+					description = <"Person, Organisation">
+				>
+				["at0022"] = <
+					text = <"Subject">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Next of kin">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Carer">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Healthcare provider">
+					description = <"">
+				>
+			>
+		>
+	>
