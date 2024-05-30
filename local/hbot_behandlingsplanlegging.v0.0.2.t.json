@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "6c045942e4c8ca47fe5f0a2713ee4342",
+      "MD5-CAM-1.0.1" : "f8d8a5b97fc9c8237ca5c56a3a7b5c77",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -9076,21 +9076,8 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.6" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -9152,12 +9139,6 @@
             "code" : "at0022",
             "text" : "Specific procedure (2)",
             "description" : "Details about a specific procedure or grouping of procedures relevant for the screening purpose."
-          },
-          "ac0.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.6",
-            "description" : ""
           }
         },
         "nb" : {
@@ -9180,12 +9161,6 @@
             "text" : "Hvilket år var forrige behandling?",
             "description" : "Tidsangivelse for prosedyren.",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
-          },
-          "ac0.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
-            "description" : ""
           }
         },
         "de" : {
@@ -9194,12 +9169,6 @@
             "code" : "at0022",
             "text" : "Spezifische Prozedur (2)",
             "description" : "Details zu einer bestimmten Prozedur oder zu einer bestimmten Gruppe von Prozeduren, die für das Screening relevant sind."
-          },
-          "ac0.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
-            "description" : ""
           }
         },
         "it" : {
@@ -9208,12 +9177,6 @@
             "code" : "at0022",
             "text" : "Procedura specifica (2)",
             "description" : "*Details about a specific procedure or grouping of procedures relevant for the screening purpose. (en)"
-          },
-          "ac0.6" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
-            "description" : ""
           }
         }
       },
@@ -9248,6 +9211,11 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
           "members" : [ "at0023", "at0024" ]
         }
       }
