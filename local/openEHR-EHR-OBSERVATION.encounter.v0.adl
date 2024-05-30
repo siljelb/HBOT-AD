@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"11b02acfe52b3f47107b40bebb94c8b9">
+		["MD5-CAM-1.0.1"] = <"7fb8ea216f0851aed0163d0a05817118">
 		["build_uid"] = <"10317c81-ec29-3a84-857b-f593b1c97296">
 	>
 
@@ -68,6 +68,10 @@ definition
 												}
 											}
 										}
+									}
+									allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Other party details
+										include
+											archetype_id/value matches {/.*/}
 									}
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Modality
 										value matches {
@@ -120,10 +124,6 @@ definition
 										value matches {
 											DV_TEXT matches {*}
 										}
-									}
-									allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Other party details
-										include
-											archetype_id/value matches {/.*/}
 									}
 								}
 							}
@@ -250,7 +250,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Encounter (en)">
+					text = <"Kontakt">
 					description = <"*encounter (en)">
 				>
 				["at0001"] = <
@@ -258,7 +258,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Any event">
+					text = <"Uspesifisert hendelse">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
@@ -266,11 +266,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*Other party (en)">
+					text = <"Annen part">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*Type of encounter (en)">
+					text = <"Kontakttype">
 					description = <"">
 				>
 				["at0006"] = <
@@ -282,7 +282,7 @@ ontology
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Initiator (en)">
+					text = <"Initierende part">
 					description = <"">
 				>
 				["at0009"] = <
@@ -294,19 +294,19 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*Contact reached? (en)">
+					text = <"Oppnådd kontakt?">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*No (en)">
+					text = <"Nei">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*Modality (en)">
+					text = <"Modalitet">
 					description = <"">
 				>
 				["at0015"] = <
@@ -326,15 +326,15 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0019"] = <
-					text = <"*Comment (en)">
+					text = <"Kommentar">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*Purpose (en)">
+					text = <"Formål">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*Other party details (en)">
+					text = <"Detaljer om annen part">
 					description = <"*Person, Organisation (en)">
 				>
 				["at0022"] = <
