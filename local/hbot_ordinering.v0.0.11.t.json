@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ed0fb5b31df47986d5990b3b660a0ee4",
+      "MD5-CAM-1.0.1" : "29467c140dde06cffc67a034c4ad95ad",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -6032,6 +6032,15 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
           "occurrences" : "0..1",
+          "nodeId" : "at0.5",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-medication_order-002.v3",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "INSTRUCTION",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -6402,495 +6411,6 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "activities",
         "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ACTIVITY",
-          "occurrences" : "0..1",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "description",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ITEM_TREE",
-              "nodeId" : "at0002",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "nodeId" : "at0070.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "occurrences" : "1..1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "0..1",
-                          "terminologyId" : {
-                            "value" : "FEST"
-                          },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "FEST" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "FEST",
-                            "code" : "ID_E3BEE6A1-CEFC-4D77-9083-7B722A768DAB",
-                            "value" : "Diazepam tab 5 mg"
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..1",
-                  "nodeId" : "at0091.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "occurrences" : "1..1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "0..1",
-                          "terminologyId" : {
-                            "value" : "2.16.578.1.12.4.1.1.7477"
-                          },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "2.16.578.1.12.4.1.1.7477" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "2.16.578.1.12.4.1.1.7477",
-                            "code" : "53",
-                            "value" : "Oral bruk"
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0092.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0094.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0009.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0047.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_PARSABLE",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "formalism",
-                        "children" : [ {
-                          "@type" : "C_STRING",
-                          "rmTypeName" : "String",
-                          "occurrences" : "1..1",
-                          "constraint" : [ "text/html", "text/plain", "text/xml" ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..1",
-                  "nodeId" : "at0173.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0174.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0062.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0064.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0178",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0171.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0162.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0051",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0130.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0053.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "value",
-                                "children" : [ {
-                                  "@type" : "C_DURATION",
-                                  "rmTypeName" : "DURATION",
-                                  "occurrences" : "1..1",
-                                  "constraint" : [ {
-                                    "lower" : "PT0S",
-                                    "lowerIncluded" : true,
-                                    "upperIncluded" : false,
-                                    "lowerUnbounded" : false,
-                                    "upperUnbounded" : true
-                                  } ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0150",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0165.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0151.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0044.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0105.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0107.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0018.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0148.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0179.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0113.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0012.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0013.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0011.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0016.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0060.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_COUNT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "magnitude",
-                            "children" : [ {
-                              "@type" : "C_INTEGER",
-                              "rmTypeName" : "Integer",
-                              "occurrences" : "1..1",
-                              "constraint" : [ {
-                                "lower" : 0,
-                                "lowerIncluded" : true,
-                                "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
-                              } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0050.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DURATION",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_DURATION",
-                              "rmTypeName" : "DURATION",
-                              "occurrences" : "1..1",
-                              "patternedConstraint" : "PWDTH",
-                              "constraint" : [ {
-                                "lower" : "PT0H",
-                                "lowerIncluded" : true,
-                                "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
-                              } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0129.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0106.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0132.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at0168", "at0169" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0154.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0139.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0155.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0161.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0167.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
           "occurrences" : "0..1",
@@ -7417,13 +6937,6 @@
           }
         },
         "nb" : {
-          "at0173.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0173.1",
-            "text" : "Anvisning",
-            "description" : "Fritekstbeskrivelse av en spesifikk del av den overordnede anvisningen.",
-            "comment" : "I noen sammenhenger er det vanlig å dele den samlede fritekstbeskrivelsen av anvisningen inn i mer spesifikke segmenter. For eksempel kan det i sykehus være vanlig å dele de samlede anvisningene opp i \"Mengde\" og \"Administreringstidspunkt\", selv om begge er i fritekst. Segmentnavnene kan legges til i et templat eller i applikasjonen."
-          },
           "at0001.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.2",
@@ -7440,14 +6953,8 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Det er skrevet resepter for",
+            "text" : "Rinexin",
             "description" : "Ordinering av et legemiddel, en vaksine, parenteral væske, ernæringsprodukt eller medisinsk forbruksmateriell, for et spesifikt individ."
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Diazepam",
-            "description" : "Detaljer knyttet til ordineringen."
           }
         },
         "pt-br" : {
@@ -13547,7 +13054,162 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -13741,6 +13403,831 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4c15b9cb-adc7-492c-99aa-5ae4470032f2",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D05F7D6B585B61B2AE4189D7F6E56B5F"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation aller Aspekte einer Verordnung eines Arzneimittels, Impfstoffs, Ernährungsprodukts oder eines anderen therapeutischen Mittels für eine bestimmte Person.",
+          "keywords" : [ "Medikament", "Verordnung", "Rezept", "verschreiben", "verordnen", "Therapie", "Substanz", "Wirkstoff", "Arzneimittel", "therapeutisch", "OTC", "rezeptfrei", "therapeutisches Mittel", "Pharmazeutikum", "Produkt", "Posologie", "Dosierung", "Behandlung", "Flüssigkeit", "Ernährung", "Arzneimittelverordnung", "CPOE" ],
+          "use" : "Verwende diesen Archetypen, um alle Aspekte einer Verordnung eines Arzneimittels, Impfstoffs, Ernährungsprodukts oder medizinischen Bedarfs für eine bestimmte Person darzustellen.\r\n\r\nDer Archetyp ist für jede Arzneimittelart und die damit verbundene Verordnung bestimmt, unabhängig davon, ob sie von einem medizinischen Fachpersonal verschrieben wird oder, ob sie \"rezeptfrei\" erhältlich ist. Der Anwendungsbereich dieses Medikamenten-Archetyps umfasst auch Verordnungen von Impfungen, parenteralen Flüssigkeiten oder anderen therapeutischen Mitteln, wie Verbände, Ernährungsprodukte oder andere Erzeugnisse, die angewendet oder verabreicht werden, um eine therapeutische Wirkung zu erzielen, sowie ein gemeinsames Muster für die Datenerfassung haben.\r\n\r\nDer Archetyp ist für die Verwendung in einer Reihe von klinischen Kontexten konzipiert, einschließlich, aber nicht beschränkt auf:\r\n- eine Aufzeichnung in einer klinischen Beratung (COMPOSITION.encounter);\r\n- ein schriftliches Rezept eines Arztes, Zahnarztes, Krankenpflegers oder einer anders bezeichneten medizinischen Fachkraft für ein Arzneimittel oder ein Ernährungsprodukt, das ausgegeben und verabreicht werden soll (innerhalb eines COMPOSITION.prescription);\r\n- ein Element in einer aktuellen Medikamentenliste, einem Rezept oder einer Medikamentenübersicht (innerhalb der COMPOSITION.medication_list); und\r\n- ein Element in einem zusammenfassenden Dokuments, wie z.B. die Übertragung von Pflegeleistungen (COMPOSITION.transfer_summary) oder eine Überweisung (COMPOSITION.request).\r\n\r\nEine Medikamentenverordnung ist in meisten Fällen einfach - normalerweise für ein einzelnes Arzneimittel mit unkomplizierten Anweisungen für die Abgabe und Verabreichung. Dieser Archetyp soll jedoch auch komplexere therapeutische Verordnungen ermöglichen. Zum Beispiel:\r\n\r\n- eine reduzierte Dosis von Prednisolon über einen Zeitraum von Wochen;\r\n- Insulintitration mit Dosierung abhängig von Testergebnissen;\r\n- mehrere Medikamente, die gleichzeitig im Rahmen eines einzelnen Medikamentenplans verschrieben werden, wie beispielsweise eine Dreifachtherapie bei Magengeschwür;\r\n- intravenöse Verabreichung von Medikamenten oder Nahrungsergänzungsmitteln, einschließlich parenteraler Ernährung.\r\n\r\nDer Archetyp wurde daher so entworfen, um eine Reihe von Komplexitäten zuzulassen: \r\n- einfache Anweisungen bei Rezepten wie \"Furosemid 40 mg zwei Tabletten morgens und eine zum Mittagessen\", um die Kompatibilität mit bestehenden Systemen zu gewährleisten;\r\n- die Menge des Arzneimittels wird normalerweise in Form einer Anzahl und einer entsprechenden Dosiseinheit dargestellt. Alternativ kann jedoch auch ein Statement getroffen werden, um die Kompatibilität mit vorhandenen Systemen und die Abdeckung aller klinischen Szenarien sicherzustellen.\r\n- strukturierte Details für Dosis, Verabreichungsweg und Zeitpunkt, um eine vollständig berechenbare Spezifikation darzustellen.\r\n\r\nEs wurde auch so konzipiert, dass eine einzige Darstellung der Medikamentenverordnung folgendes darstellen kann:\r\n- komplexe aufeinanderfolgende Medikamentenverordnungen mit derselben Arzneimittelstärke werden innerhalb einer einzigen Verordnungsstruktur unterstützt;\r\n- mehrere Medikamentenverordnungen können verkettet werden, wenn verschiedene Medikamente oder Arzneizubereitungen nacheinander verabreicht werden müssen.\r\n\r\nDieser Archetyp eignet sich auch für die Verordnung von parenteralen Flüssigkeiten in Pflegeeinrichtungen, in denen es üblich ist, solche \"verordnungsfähige\" Stoffe herzustellen. In anderer Umgebung kann eine separate \"Verordnung parenteraler Flüssigkeit\" angebracht sein.\r\n\r\nSLOTs mit CLUSTER-Archetypen wurden aus drei Gründen verwendet, um einen Teil des Inhalts darzustellen:\r\n- um einen zentralen Archetyp zu erhalten, der für alle oben genannten Anwendungsfälle verwendet werden kann und dennoch Flexibilität bietet, wo es erforderlich ist, z.B. der SLOT „Arzneimitteldetails“', wo zusätzliche strukturierte Details hinzugefügt werden können. Ein Kandidat-Archetyp wird für Arzneimittel vorgeschlagen. Es ist möglich, dass in Zukunft andere CLUSTER-Archetypen für andere Zwecke, wie z.B. komplexe Verordnungen von parenteraler Ernährung, benötigt werden;\r\n- Unterstützung der Wiederverwendung von Archetypen in Situationen, in denen der Inhalt auch in anderen klinischen Kontexten verwendet wird, hauptsächlich im zugehörigen Archetyp ACTION.medication, um tatsächliche Abgabe, Verabreichung usw. darzustellen; und\r\n- um weniger genutzten Inhalt aus dem zentralen Archetyp-Framework zu entfernen.\r\n\r\nMehrfache Verordnungen können als separate Aktivitäten innerhalb dieser einzigen Archetypen-Instanz dargestellt werden, um eng gebundene Verordnungen verschiedener Medikamente zu tragen, z.B. H. pylori-Therapie, wenn diese nicht als einzelne Packung verschrieben wird.\r\n\r\nBeachten Sie, dass diese Verwendungen sowohl die Anwendungsfälle der FHIR-Profile „Medikation Order“ als auch „Medikation Statement“ zusammenfassen. D.h. dieser Archetyp ist eine Übereinstimmung für beide FHIR-Ressourcen, die im entsprechenden Kontext verwendet werden.",
+          "misuse" : "Nicht zur Repräsentation der Aktivitäten im Zusammenhang mit der Ausführung der Verordnung von Medikamenten, Impfstoffen, Nahrungsmitteln oder therapeutischen Mitteln verwenden, z. B. Angaben zur tatsächlichen Verabreichung oder Abgabe. Verwenden Sie dafür den Archetyp ACTION.medication.\r\n\r\nNicht zur Repräsentation der Verordnung von Blutprodukten verwenden, da dies einen grundlegend anderen klinischen Prozess beinhaltet und wahrscheinlich andere unterstützende Informationen erfordert. Verwenden Sie dafür den Archetyp INSTRUCTION.transfusion.\r\n\r\nNicht zur Repräsentation der Verordnung zum Einsetzen von Implantaten oder medizinischen Geräten wie Herzschrittmachern und Defibrillatoren verwenden. Verwenden Sie dafür den Archetyp INSTRUCTION.procedure",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera samtliga aspekter av en beställning av ett läkemedel, vaccin, näringspreparat eller annat terapeutiskt produkt för en identifierad individ.",
+          "keywords" : [ "medicinering", "order", "beställning", "ordinera", "terapi", "substans", "läkemedel", "terapeutisk", "farmaceutisk", "produkt", "dosering", "behandling", "vätska", "näring", "medicin" ],
+          "use" : "Används för att registrera samtliga aspekter av en beställning av ett läkemedel, vaccin, näringspreparat eller annan terapeutisk produkt för en identifierad individ.\r\n\r\nDen här arketypen är avsedd att användas för alla typer av läkemedel och relaterade ordrar, oavsett om de ordinerats av vårdpersonal eller är tillgängligt för köp \"över disk\". Omfattningen av denna arketyp inkluderar även beställning av vaccin, parenterala vätskor och andra terapeutiska produkter, såsom bandage, näringspreparat eller andra föremål som appliceras eller administreras för att uppnå en terapeutisk effekt. \r\n\r\nDenna arketyp är utformad för att användas vid ett flertal kliniska sammanhang, bland annat: \r\n- dokumentation i ett kliniskt samråd (COMPOSITION.encounter);\r\n- skriftlig ordination av en läkare, tandläkare, sjuksköterska eller annan utsedd hälso- och sjukvårdspersonal för ett läkemedel eller ett näringsperparat som ska dispenseras och administreras (COMPOSITION.prescription);\r\n- objekt i aktuell läkemedelslista, ordination eller läkemedelsjournal (COMPOSITION.medication_list); och\r\n- objekt i ett sammanfattande dokument för exempelvis vårdöverföring (COMPOSITION.transfer_summary) eller en remiss (COMPOSITION.request).\r\n\r\nI många fall är en läkemedelsbeställning simpel och omfattar vanligtvis en läkemedelsartikel med okomplicerade instruktioner för dosering och administrering. Denna arketyp är dock utformad för att även möjliggöra mer komplexa beställningar. Till exempel:\r\n- en reducerande dos av prednisolon under en period på några veckor;\r\n- titrering av insulin, med dosering beroende på testresultat;\r\n- flera läkemedel (del av samma läkemedelsregim) som ordinerats samtidigt. Exempelvis trippelbehandling för magsår; och\r\n- intravenös administrering av läkemedel eller näringstillskott, inklusive parenteral nutrition. \r\n\r\nArketypen har därför utformats för att hantera olika komplexiteter:\r\n- enkla beställningsinstruktioner som \"furosemid 40 mg två tabletter på morgonen och en vid lunch\" för att säkerställa kompatibilitet med befintliga system; och\r\n- läkemedelsmängden betecknas vanligtvis genom antal och motsvarande dosenhet. För att säkerställa kompatibilitet med befintliga system samt omfatta alla kliniska scenarier, kan det dock finnas alternativa redogörelser; genom att \r\n- strukturera detaljer för dosering, administreringsväg och tidpunkt för att uppnå fullständig specifikation. \r\n\r\nArketypen har även utformats så att strukturen för alla läkemedelsbeställningar omfattar:\r\n- komplexa och sekventiella läkemedelsbeställningar med samma beredningsstyrka; och\r\n- flera läkemedelsbeställningar kan under omständigheter där olika läkemedel eller preparat måste ges i följd länkas.\r\n\r\nArketypen är även lämplig för beställning av parenterala vätskor, trots att dessa normalt är \"ordinationsbara\" artiklar. I andra fall kan dock en separat \"parenteral vätskebeställning\" vara lämpligt. \r\n\r\nDe SLOTs som innehåller CLUSTER-arketyper används för att representera vis del av innehållet. Detta grundas på tre skäl:\r\n- För att säkerställa att en kärnarketyp kan användas för alla ovanstående användningsfall, samt möjliggöra flexibilitet där det behövs. Under exempelvis ”Detaljer om beredning” kan ytterligare information tilläggas. För läkemedel föreslås en kandidatarketyp. Det är även möjligt att andra CLUSTER-arketyper i framtiden kan krävas för ytterlige ändamål, såsom komplexa parenterala nutritionsordrar;\r\n- för att stödja återanvändning av arketyper i situationer där innehållet används i flera kliniska sammanhang, i synnerhet ACTION.medication-arketypen som används för registrering av dispensering, administrering osv; och\r\n- för att avlägsna mindre vanligt förekommande innehåll från kärnarketypen.\r\n\r\nFlera beställningar kan representeras som separata aktiviteter inom denna arketypsinstans, för hantering av beställningar av olika läkemedel, exempelvis terapi för H. pylori när det inte ordineras som enpack.\r\n\r\nDet bör nämnas att dessa användningsområden omfattar både fall av FHIR-läkemedelsorder och läkemedelsutlåtande. Denna arketyp är således anpassad för båda FHIR-resurserna, och används i lämpligt sammanhang.",
+          "misuse" : "Ska inte användas för att registrera aktiviteter relaterade till att utföra en beställning av läkemedel, vaccin, näringspreparat eller terapeutiska produkter, såsom information om administrering eller dispensering. Använd i stället ACTION.medication för detta ändamål.\r\n\r\nSka inte användas för att registrera beställning av blodprodukter, då denna aktivitet kräver annan klinisk process. Använd i stället INSTRUCTION.transfusion för detta ändamål.\r\n\r\nSka inte användas för att registrera beställning av insättning av implantat eller medicintekniska produkter som pacemaker och defibrillatorer. Använd i stället INSTRUCTION.procedure för detta ändamål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere alle aspekter av ordinering av et legemiddel, en vaksine, ernæringsprodukt eller medisinsk forbruksmateriell for et spesifikt individ.",
+          "keywords" : [ "medikasjon", "foreskriving", "forordning", "forordne", "terapi", "substans", "stoff", "virkestoff", "medikament", "legemiddel", "terapeutisk", "medisinsk forbruksmateriell", "ordinering", "preparat", "spesialpreparat", "diagnostikum", "forskrivning", "forskriving", "resept", "legemiddelhåndtering", "farmasøytisk", "produkt", "posologi", "ordinasjon", "rekvirering", "behandling", "væske", "ernæring", "ordinere", "medisin", "medisiner", "medisinering" ],
+          "use" : "Brukes for å registrere alle aspekter av ordinering av et legemiddel, en vaksine, enæringsvare eller medisinsk forbruksmateriell for et spesifikt individ.\r\n\r\nArketypen kan brukes i alle legemiddelrelaterte ordineringer, enten de er for reseptpliktige legemidler ordinert av en kliniker, eller for reseptfrie legemidler. Arketypen dekker også ordinering av vaksiner, parenterale væsker, eller medisinsk forbruksmateriell, som bandasjer, ernæringsprodukter eller andre varer som påføres eller administreres for å ha en terapeutisk effekt, og der dataene som skal registreres er de samme.\r\n\r\nArketypen er designet for bruk i en rekke ulike kliniske sammenhenger, for eksempel:\r\n- en registrering i en klinisk konsultasjon (COMPOSITION.encounter).\r\n- en resept skrevet av en lege, tannlege eller annet helsepersonell, på et legemiddel eller ernæringsprosdukt som skal utdeles eller administreres (i en COMPOSITION.prescription).\r\n- et element i en legemiddelliste, resept eller legemiddelkurve (COMPOSITION.medication_list)\r\n- et element i et oppsummeringsdokument som f.eks. en epikrise (COMPOSITION.transfer_summary) eller en henvisning (COMPOSITION.request).\r\n\r\nMerk at disse bruksområdene omfatter FHIR-ressursene for både Medication Order og Medication Statement.\r\n\r\nI mange tilfeller vil legemiddelordineringen være enkel - typisk for en enkelt legemiddelvare med ukompliserte instruksjoner for utdeling og administrering. Arketypen er imidlertid også utviklet for å tillate mer komplekse ordineringer, for eksempel:\r\n- ved nedtrapping av en prednisolondose over flere uker.\r\n- ved titrering av insulin, hvor dosering er avhengig av prøveresultater.\r\n- flere legemidler ordinert på samme tidspunkt som en del av et samlet behandlingsregime, for eksempel trippelbehandling for magesår.\r\n- ved parenteral administrering av legemidler eller ernæring, inkludert parenteral ernæring.\r\n\r\nArketypen er derfor utviklet for å tillate ulik kompleksitet, fra\r\n- enkle fritekstinstrukser for ordineringer som \"Furosemid 40 mg, to tabletter om morgenen og en til lunsj\" for å sikre kompatibilitet med eksisterende systemer, og\r\n- legemiddelmengden representeres som regel ved et tall med tilhørende måleenhet, alternativt med fritekst for å sikre kompatibilitet med eksisterende systemer og for å dekke alle kliniske scenarier\r\ntil\r\n- strukturerte detaljer for dose, administreringssvei og administreringsstidspunkter for at datamaskiner skal kunne lese og gjøre beregninger med dataene.\r\n\r\nArketypen er designet slik at en enkel legemiddelordinering kan representere:\r\n-komplekse sekvensielle legemiddelordineringer som bruker samme preparatstyrke i samme ordineringsstruktur.\r\n-flere legemiddelordineringer kan lenkes, der ulike legemidler eller blandinger må administreres sekvensielt.\r\n\r\nArketypen er også egnet for å ordinere væsker, der det er vanlig at disse ordineres. I andre sammenhenger kan det være mer passende å bruke en egen arketype for væskeforordninger.\r\n\r\nMengden av et legemiddel representeres vanligvis med et tall og en enhet, men det kan også dokumenteres i fritekst for å sikre kompatibilitet med eksisterende systemer og for å dekke alle scenarier.\r\n\r\nSLOTer med CLUSTER-arketyper brukes for å representere deler av innholdet av tre årsaker:\r\n- For å sikre en kjernearketype som kan brukes i alle de overnevnte brukscasene, men likevel være fleksibel der det trengs, f.eks. i SLOTet \"Legemiddeldetaljer\" der ytterligere strukturerte detaljer kan legges til. Det er foreslått en arketype for detaljer om legemidler, og det kan tenkes at man i fremtiden vil trenge andre CLUSTER-arketyper for andre formål, som f.eks. komplekse ordineringer av parenteral ernæring.\r\n- for å tillate gjenbruk av arketyper i situasjoner hvor innholdet også brukes i andre kliniske kontekster, i hovedsak i den tilhørende arketypen ACTION.medication for å registrere faktisk utdeling, administrering osv.\r\n- for å fjerne mindre brukt innhold fra arketypens rammeverk.\r\n\r\nDet er mulig å legge inn flere ordinasjoner som aktiviteter innenfor én instans av arketypen for å representere tett sammenbundne ordinasjoner av forskjellige legemidler, for eksempel en legemiddelpakke mot H. pylori der denne ikke ordineres som en enkelt pakning.\r\n\r\nMerk at disse bruksområdene innbefatter FHIR-ressursene for både \"Medication Order\" og \"Medication Statement\", det vil si at denne arketypen matcher begge disse FHIR-ressursene i passende brukssammenhenger.",
+          "misuse" : "Skal ikke brukes for å registrere faktisk administrering eller utdeling av legemidler, vaksiner, parenterale væsker, ernæringsprodukter eller medisinsk forbruksmateriell. Bruk arketypen ACTION.medication for dette formålet.\r\n\r\nSkal ikke brukes for å registrere ordinering av blodkomponenter, som omfatter en fundamentalt ulik klinisk prosess og sannsynligvis vil trenge ulik støtteinformasjon. Bruk arketypen INSTRUCTION.transfusion for dette formålet.\r\n\r\nSkal ikke brukes for å registrere ordinering av innlegging av implantater og medisinsk utstyr som pacemakere og defibrillatorer. Bruk arketypen INSTRUCTION.procedure for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Registrar todos los aspectos de una orden de medicamento, vacuna, producto nutricional u otro ítem terapéutico para un individuo identificado.",
+          "keywords" : [ "medicamento", "orden", "prescribir", "prescripción", "terapéutica", "substancia", "droga", "terapéutico", "sin receta", "insumo terapéutico", "fármaco", "producto", "posología", "tratamiento", "fluido", "nutrición", "CPOE" ],
+          "use" : "Utilizar para el registro de todos los aspectos de una orden de medicamento, vacuna, producto nutricional u otro ítem terapéutico para un individuo identificado.\r\n\r\nSu objetivo es la utilización para cualquier orden de medicamento o ítems relacionados, ya sea que los prescriba un profesional de la salud o que se encuentren disponibles sin receta médica. El alcance de este arquetipo de medicamento incluye órdenes de vacuna, fluidos parenterales u otros insumos terpéuticos tales como vendajes, productos nutricionales u otros ítems que se aplican o son administrados para obtener un efecto terapéutico, y que tiene un patrón común de registro de datos.\r\n\r\nEste arquetipo seta diseñado para ser utilizado en un conjunto de contexto clínicos que incluyen, pero no se limitan, a:\r\n- un registro de una consulta clínica (COMPOSITION.encounter);\r\n- una prescripción escrita por un médico, odontólogo, enfermero u otro profesional de la salud, para una medicación o producto nutricional a ser dispensado y administrado (como parte de una COMPOSITION.prescription);\r\n- un ítem incluido en una lista de medicamentos recibidos actualmente, en una prescripción o en una lista de medicamentos (como parte de una COMPOSITION.medication_list); y como\r\n- un ítem incluido en un documento de resumen, tal como una transferencia de sitio de cuidados (COMPOSITION.transfer_summary) o una interconsulta (COMPOSITION.request).\r\n\r\nEn muchos casos una orden de medicamento será simple -típicamente para un solo ítem medicamentoso con instrucciones carentes de complejidad para su dispensación y administración. Sin embargo, este arquetipo también esta diseñado para permitir órdenes terapéuticas mas complejas, como por ejemplo:\r\n- la reducción de una dosis de prednisolona a lo largo de un período de semanas;\r\n- la titulación de insulina, donde la dosis dependerá de los resultados de una prueba;\r\n- la prescripción simultanea de varios medicamentos como parte de un régimen único de medicamentos, tales como la terapia triple para la úlcera péptica; y\r\n- la administración endovenosa de medicamentos o suplementos nutricionales, incluyendo nutrición parenteral.\r\n\r\nEl arquetipo ha sido por lo tanto diseñado para permitir diversos rangos de complejidad, desde:\r\n- instrucciones narrativas simples para órdenes tales como \"furosemida 40 miligramos, dos tabletas por la mañana y una al almuerzo\", para asegurar la compatibilidad con sistemas existentes\r\n- la cantidad de la medicación, usualmente representada en términos de un número y su correspondiente unidad de dosis, pero que alternativamente puede ser representada mediante una narrativa para asegurar compatibilidad con sistemas existentes y la cobertura de diferentes escenarios clínicos; hasta\r\n- el detalle estructurado de la dosis, vía de administración y temporalidad, para así representar una especificación completamente computable.\r\n\r\nTambién ha sido diseñado de modo tal que la estructura de una sola orden de medicamento permita representar:\r\n- una secuencia compleja de órdenes de medicamento que utiliza la misma potencia del preparado como una sola estructura de orden; y\r\n- múltiples órdenes de medicamentos encadenadas en circunstancias donde diferentes medicamentos o preparados deben ser administrados conforme a una secuencia.\r\n\r\nEste arquetipo es también adecuado para ordenar fluidos en entornos de cuidado donde es de uso corriente que estos ítems sean \"prescribibles\". EN otros contextos una orden separada de fluido parenteral podría ser mas apropiada.\r\n\r\nLos SLOTs que contienen arquetipos CLUSTER han sido utilizados para representar parte del contenido por tres razones:\r\n- Para asegurar un arquetipo de base que pueda ser utilizado en todos los casos arriba descritos pero que permitan flexibilidad alli donde esta es requerida, como por ejemplo el SLOT `Detalles de la preparación´ en el cual un mayor detalle estructurado puede ser agregado. Se ha sugerido un arquetipo candidato para Medicaciones. Es posible que otros arquetipos CLUSTER sean necesarios en el futuro para otros propósitos tal como las órdenes de nutrición parenteral compleja;\r\n- Para permitir la re-utilización del arquetipo en situaciones en las cuales el contenido ha sido identificado como utilizado también en otros contextos clínicos, en particular en forma apareada como el arquetipo ACTION.medication, para el registro de la dispensación, administración, etc. concretas; y\r\n- Para remover del arquetipo base los contenidos menos comúnmente utilizados.\r\n\r\nVarias órdenes pueden ser representadas como actividades separadas dentro de una sola instancia de este arquetipo, para el uso de órdenes fuertemente vinculadas (como la terapia del Helicobacter Pylori) cuando estas nos son prescriptas como paquete único.\r\n\r\nDebe tenerse en cuenta que estos usos subsumen lso casos de uso tanto de la Orden de Medicamento FHIR como de la Declaración de Medicamento, es decir que este arquetipo coincide con ambos recursos FHIR, utilizados en el contexto apropiado.",
+          "misuse" : "No debe ser utilizado para el registro de las actividades relacionadas con el cumplimiento de la orden del medicamento, vacuna, producto nutricional o ítem terapéutico, tal como los detalles de su administración o dispensa. Se debe utilizar el ACTION.medication para este propósito.\r\n\r\nNo debe ser utilizado para el registro de órdenes de sangre o sus preparados, lo cual involucra un proceso clínico fundamentalmente diferente que muy probablemente requiera otro tipo de información. Se debe utilizar el ACTION.transfusion para este propósito.\r\n\r\nNo debe ser utilizado para el registro de órdenes de inserción de implantes o dispositivos médicos tales como marcapasos o defibriladores. Se debe utilizar el ACTION.procedure para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar todos os aspectos de uma prescrição de medicamento, vacina, produtos nutricionais ou outros itens terapêuticos para um indivíduo identificado.",
+          "keywords" : [ "medicamento", "prescrição", "prescrever", "terapia", "substância", "droga", "terapêutico", "Otc", "produto terapêutico", "Farmacêutico", "produtos", "Posologia", "tratamento", "Solução", "nutrição", "Prescrição Eletrônica" ],
+          "use" : "Utilizado para registrar todos os aspectos da prescrição de medicamentos, vacinas, produtos nutricionais ou outros itens terapêuticos, para um indivíduo identificado.\r\n\r\nDestina-se a ser usado para qualquer tipo de medicamento e prescrição relacionada, quer seja prescrito por um profissional de saúde ou disponível para compra \"no balcão\"da farmácia. O escopo deste arquétipo de medicamentos também inclui prescrições de vacinas, fluidos parenterais ou outros produtos terapêuticos, como bandagens, produtos nutricionais ou outros ítens que possuem um padrão comum para o seu registro e são aplicados ou administrados com vistas a um efeito terapêutico. \r\n\r\nEste arquétipo é projetado para ser usado em vários contextos clínicos, incluindo, entre outros:\r\n- um registro em uma consulta clínica (COMPOSITION.encounter);\r\n- uma receita escrita por um médico, dentista, ou outro profissional de saúde autorizado para prescrever uma medicamento ou produto nutricional a ser dispensado e administrado (COMPOSITION.prescription);\r\n- um ítem em uma lista atual de medicamento, receita ou carta de medicamentos (dentro de COMPOSITION.medication_list); e\r\n- um ítem em um documento de resumo, como a transferência de cuidados (COMPOSITION.transfer_summary) ou um documento de contra-referência (COMPOSITION.request).\r\n\r\nEm muitos casos, uma prescrição de medicamento será simples - tipicamente para um único item de medicamento com instruções simples para a sua dispensação e administração. No entanto, este arquétipo foi também projetado para permitir prescrições mais complexas. Por exemplo:\r\n\r\n-\tuma redução de dose de prednisolona durante um período de semanas;\r\n-\tfracionamento de insulina, com dosagem dependente dos resultados do teste;\r\n-\tmedicamentos múltiplos prescritos simultaneamente como parte de um regime de fármaco único, como uma terapia tripla para úlcera péptica; e\r\n-\tadministração intravenosa de medicamentos ou suplementos nutricionais, incluindo nutrição parenteral.\r\n\r\nO arquétipo foi, portanto, projetado para atender prescrições de maior complexidade, como, por exemplo: \r\n-\tinstruções narrativas simples tais como \"furosemida 40mg dois comprimidos pela manhã e um no almoço\" para assegurar a compatibilidade com os sistemas existentes; \r\n-\ta quantidade do medicamento geralmente é representada por um número e uma unidade de dose correspondente, no entanto, pode haver uma descrição em texto livre para garantir a compatibilidade com os sistemas existentes e a cobertura de todos os cenários clínicos; através de\r\n-\tdetalhes estruturados para a dose, via e duração para representar uma especificação totalmente computável.\r\n\r\nEste arquétipo foi também projetado para que uma única estrutura de prescrição de medicamento possa representar:\r\n\r\n-\tPrescrições sequencias complexas de medicamento com a mesma concentração de preparação representados em uma única estrutura de prescrição; e\r\n-\tmúltiplas prescrições de medicamentos que podem ser encadeadas em circunstâncias em que diferentes medicamentos ou preparações precisem ser administrados sequencialmente.\r\n\r\nEste arquétipo é também adequado para prescrição de soluções parenterais, em cenários de atendimento onde é normal prescrever estes itens. Em outras cenários, uma prescrição separada de soluções parenterais poderá ser mais apropriada.\r\n\r\nSLOTs contendo arquétipos do tipo CLUSTER foram utilizados ​​para representar parte do conteúdo por três razões:\r\n-\tPara garantir que um arquétipo básico possa ser utilizado em todos os casos de uso descritos acima, oferecendo flexibilidade onde for necessário, por exemplo, o SLOT de \"Detalhes da preparação\", permite que detalhes adicionais estruturados da preparação possam ser adicionados. Existe um arquétipo sugerido para medicamentos. É possível que outros arquétipos do tipo CLUSTER sejam necessários no futuro, para outros fins, como pedidos complexos de nutrição parenteral;\r\n-\tapoiar a reutilização do arquétipo em situações em que o conteúdo foi identificado como sendo utilizado também em outros contextos clínicos, em particular o arquétipo ACTION.medication (para deste arquéitpo) para gravação de distribuição real, administração, etc. e\r\n-\tremover o conteúdo de menor utilização do núcleo do arquétipo. \r\n\r\nVárias prescrições podem ser representadas como atividades separadas nesta instância de arquétipo, para, por exemplo, representar prescrições de diferentes medicamentos, conectadas entre si, como ocorre na terapia de H. pylori, quando se opta por não prescrever como um único pacote.\r\n\r\nObservar que esses casos de usos acima descritos incluem os casos de uso da Prescrição de Medicamento e Medicamentos do FHIR. Isto é, este arquétipo é uma correspondência para ambos os recursos do FHIR, desde que utilizado no contexto apropriado.",
+          "misuse" : "Não deve ser utilizado para registrar as atividades relacionadas à realização da prescrição de medicação, vacina, produto nutricional ou item terapêutico, como detalhes sobre a administração ou a dispensação. Use o arquétipo ACTION.medication para este propósito.\r\n\r\nNão deve ser utilizado para registrar o pedido de produtos sanguíneos, o que envolve um processo clínico fundamentalmente diferente e é provável que exija informações adicionais diferentes. Use o arquétipo INSTRUCTION.transfusion para este propósito.\r\n\r\nNão deve ser utilizado para registrar a ordem de inserção de implantes ou dispositivos médicos, como marcapassos e desfibriladores. Utilize o procedimento INSTRUCTION.Para este fim.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "fluid", "nutrition", "CPOE", "medicine" ],
+          "use" : "Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.",
+          "misuse" : "Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Enregistrar tots els aspectes d'una ordre de medicació, vacuna, producte nutricional o un altre element terapèutic per a un individu identificat.",
+          "keywords" : [ "medicació", "ordre", "prescriure", "teràpia", "substància", "fàrmac", "terapèutica", "otc", "element terapèutic", "farmacèutica", "producte", "posologia", "tractament", "fluid", "nutrició", "CPOE", "medicina" ],
+          "use" : "Utilitzar per a registrar tots els aspectes d'una ordre de medicació, vacuna, producte nutricional o un altre element terapèutic per a un individu identificat.\r\n\r\nEstà destinat a ser emprat per a qualsevol classe de medicació i ordre relacionada, estigui prescrita per un professional sanitari o disponible per la compra \"sense recepta\". L'àmbit d'aplicació d'aquest arquetip de medicació també inclou ordres de vacunació, fluids parenterals o altres productes terapèutics, com ara embenats, productes nutricionals o altres productes que s'apliquen o s'administren per tindre un efecte terapèutic i que tenen un patró comú per al registre de dades.\r\n\r\nAquest arquetip està dissenyat per ser emprat en diversos contextos clínics, incloent-hi però no limitat a:\r\n- un registre en una consulta clínica (COMPOSICIÓ.trobada);\r\n- una recepta escrita per un metge, dentista, infermer facultatiu o un altre professional de la salut designat a distribuir o administrar una medicació o producte nutricional (dins d'una COMPOSICIÓ.prescripció);\r\n- un element en una llista actual de medicació, recepta o gràfic de mediació (dins de COMPOSICIÓ.llista_medicació); i\r\n- un element en un document de resum com ara un trasllat d'atenció (COMPOSICIÓ.resum_trasllat) o una derivació (COMPOSICIÓ.sol·licitud).\r\n\r\nEn molts casos, una ordre de medicació serà simple ― generalment per a un únic element de medicació amb instruccions senzilles per a la dispensació i administració. No obstant això, aquest arquetip també està dissenyat per permetre ordres terapèutiques més complexes. Per exemple:\r\n\r\n- una dosi de reducció de prednisolona durant un període de setmanes;\r\n- titulació (valoració) de la insulina, amb dosificació depenent dels resultats de la prova;\r\n- múltiples medicaments prescrits simultàniament com a part d'un règim d’un únic fàrmac, com una triple teràpia per a úlcera pèptica; i\r\n- Administració intravenosa de medicaments o suplements nutricionals, incloent-hi la nutrició parenteral.\r\n\r\nPer tant, l'arquetip ha estat dissenyat per permetre un rang de complexitat, des de:\r\n- instruccions narratives senzilles per a ordres com \"furosemida 40mg dos comprimits al matí i una al dinar\" per garantir la compatibilitat amb sistemes existents; i\r\n- la quantitat de medicació es representa normalment en termes d'una xifra i la corresponent unitat de dosi, però alternativament pot haver-hi una declaració narrativa per assegurar la compatibilitat amb sistemes existents i la cobertura de tots els escenaris clínics; a través de\r\n- detall estructurat per dosi, ruta i temps d'administració per representar una especificació totalment mesurable.\r\n\r\nTambé s'ha dissenyat de manera que una única estructura d'ordre de medicació pugui representar:\r\n- ordres complexes de medicació seqüencial utilitzant la mateixa dosificació de preparació per ser recolzada dins d'una única estructura d'ordre; i\r\n- es poden encadenar múltiples ordres de medicació en circumstàncies on cal donar seqüencialment diferents medicaments o preparats.\r\nAquest arquetip també és adequat per ordenar fluids parenterals, en entorns assistencials on és pràctica normal fer aquests elements \"prescriptibles\". En altres entorns pot ser apropiada una \"ordre de fluid parental\" separat.\r\n\r\nEls SLOTs que contenen arquetips CLUSTER s'han utilitzat per representar una mica del contingut per tres raons:\r\n- Per a garantir un arquetip central que es pot utilitzar per a tots els anteriors casos d'ús, però permet flexibilitat quan sigui necessari, per exemple el SLOT «Detall de preparació» on es pot afegir detall estructurat addicional. Es va suggerir un arquetip candidat per a Medicacions. És possible que altres arquetips CLUSTER en el futur es puguin necessitar per a altres propòsits com ordres complexes de nutrició parenteral;\r\n- donar suport a la reutilització d'arquetips en situacions en què el contingut s'ha identificat com a també fet servit en altres contextos clínics, en particular l'arquetip aparellat ACCIÓ.medicació per registrar la dispensació real, administració, etc; i\r\n- per a eliminar el contingut menys habitualment usat del marc de l'arquetip base.\r\n\r\nMúltiples ordres es poden representar com a activitats separades dins d'un únic arquetip per portar ordres estretament lligades de diferents medicaments, per exemple, la teràpia H. Pylori quan això no es prescriu com un sol paquet.\r\n\r\nCal assenyalar que aquests usos subsumeixen tant els casos d'ús de l'Ordre de Medicació FHIR com els de la Declaració de Medicació. És a dir, aquest arquetip coincideix amb els dos recursos FHIR, utilitzats en el context apropiat.",
+          "misuse" : "No utilitzar-se per a registrar les activitats relacionades amb la realització de l'ordre de medicació, vacuna, producte nutricional o terapèutic, com ara detalls sobre l'administració actual o dispensació. Utilitzeu la ACCIÓ.medicació per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre de productes sanguinis, el qual implica un procés clínic fonamentalment diferent i és probable que requereixi informació de suport diferent. Utilitzeu INSTRUCCIÓ.transfusió per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre d'inserció d'implants o dispositius mèdics com marcapassos i desfibril·ladors. Utilitzeu INSTRUCCIÓ.procediment per a aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-INSTRUCTION.medication_order.v3",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-INSTRUCTION.ovl-medication_order-002.v3"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "INSTRUCTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "activities",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ACTIVITY",
+          "occurrences" : "0..1",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "description",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ITEM_TREE",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0070.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "FEST"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "FEST" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "FEST",
+                            "code" : "ID_E3BEE6A1-CEFC-4D77-9083-7B722A768DAB",
+                            "value" : "Diazepam tab 5 mg"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0091.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "2.16.578.1.12.4.1.1.7477"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "2.16.578.1.12.4.1.1.7477" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "2.16.578.1.12.4.1.1.7477",
+                            "code" : "53",
+                            "value" : "Oral bruk"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0092.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0094.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0009.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0047.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_PARSABLE",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "formalism",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "String",
+                          "occurrences" : "1..1",
+                          "constraint" : [ "text/html", "text/plain", "text/xml" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0173.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0174.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0062.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0064.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0178",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0171.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0162.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0051",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0130.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0053.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_DURATION",
+                                  "rmTypeName" : "DURATION",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : "PT0S",
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : false,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : true
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0150",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0165.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0151.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0044.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0105.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0107.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0018.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0148.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0179.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0113.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0012.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0011.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0016.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0060.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_COUNT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "magnitude",
+                            "children" : [ {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "Integer",
+                              "occurrences" : "1..1",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : false,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0050.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DURATION",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_DURATION",
+                              "rmTypeName" : "DURATION",
+                              "occurrences" : "1..1",
+                              "patternedConstraint" : "PWDTH",
+                              "constraint" : [ {
+                                "lower" : "PT0H",
+                                "lowerIncluded" : true,
+                                "upperIncluded" : false,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0129.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0106.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0132.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0168", "at0169" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0154.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0139.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0155.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0161.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0167.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0005",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Medication order (2)",
+            "description" : "An order for a medication, vaccine, nutritional product or other therapeutic item for an identified individual."
+          }
+        },
+        "nb" : {
+          "at0173.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0173.1",
+            "text" : "Anvisning",
+            "description" : "Fritekstbeskrivelse av en spesifikk del av den overordnede anvisningen.",
+            "comment" : "I noen sammenhenger er det vanlig å dele den samlede fritekstbeskrivelsen av anvisningen inn i mer spesifikke segmenter. For eksempel kan det i sykehus være vanlig å dele de samlede anvisningene opp i \"Mengde\" og \"Administreringstidspunkt\", selv om begge er i fritekst. Segmentnavnene kan legges til i et templat eller i applikasjonen."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Diazepam",
+            "description" : "Ordinering av et legemiddel, en vaksine, parenteral væske, ernæringsprodukt eller medisinsk forbruksmateriell, for et spesifikt individ."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Diazepam",
+            "description" : "Detaljer knyttet til ordineringen."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Prescrição de Medicamentos (2)",
+            "description" : "Prescrição de medicamentos, vacina, produtos nutricionais ou outro item de tratamento para um indivíduo identificado."
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Orden de medicamento (2)",
+            "description" : "Una orden para un medicamento, vacuna, producto nutricional u otro ítem terapéutico para un individuo identificado."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Verordnung von Arzneimittel (2)",
+            "description" : "Verschreibung eines Medikaments, Impfstoffs, Ernährungsprodukts oder anderen therapeutischen Mittels für eine bestimmte Person."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Läkemedelsbeställning (2)",
+            "description" : "En beställning av ett läkemedel, vaccin, näringspreparat eller annat terapeutiskt produkt för en identifierad individ."
+          }
+        },
+        "ca" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Ordre mèdica (2)",
+            "description" : "Una ordre per una medicació, vacuna, producte nutricional o altre element terapèutic per a un individu identificat."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "ba7170cc-81a0-447d-8d4a-103566f889f8",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Emma Malm",
+        "organisation" : "Karolinska Universitetssjukhuset",
+        "email" : "emma.malm@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand, Silje Ljosland Bakke",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral",
+        "email" : "amarch@cas.austral.edu.ar"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "accreditation" : "R.N.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Jaqueline Peredo",
+        "email" : "jperedo2003@gmail.com"
       },
       "otherDetails" : { }
     } ]
