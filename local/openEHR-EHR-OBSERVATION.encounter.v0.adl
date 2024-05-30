@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1e5097e5c16ba1bd506bf9e8c2890079">
+		["MD5-CAM-1.0.1"] = <"ff42edb404a9edeff334e18a38a222d6">
 		["build_uid"] = <"10317c81-ec29-3a84-857b-f593b1c97296">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- encounter
+	OBSERVATION[at0000] matches {    -- Encounter
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -131,7 +131,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"encounter">
+					text = <"Encounter">
 					description = <"encounter">
 				>
 				["at0001"] = <
