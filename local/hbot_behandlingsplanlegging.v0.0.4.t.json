@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "55f250fc3bf57c08395578c3ed9f0f43",
+      "MD5-CAM-1.0.1" : "890f2f91d695d5df76a3cfcb8272d5e6",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1661,15 +1661,6 @@
           "unique" : false
         },
         "children" : [ {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ADMIN_ENTRY",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-hbot_info_reise-001.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
           "occurrences" : "0..1",
@@ -8178,7 +8169,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2680055602768664777655A2038C43E6"
+        "PARENT:MD5-CAM-1.0.1" : "5E574D6BBAB51E31A81716AD14B6781D"
       },
       "details" : {
         "de" : {
@@ -8687,24 +8678,6 @@
           }
         },
         "nb" : {
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Annen part",
-            "description" : ""
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Kontakttype",
-            "description" : ""
-          },
-          "at0008.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.1",
-            "text" : "Initierende part",
-            "description" : ""
-          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -9306,57 +9279,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "f0c61a1a-5bd1-42b6-9669-6f385d65f2b6",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8511a4dfe9c5f2738b22076521328ef2"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.hbot_info_reise.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-hbot_info_reise-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ADMIN_ENTRY",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "nb" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "cb23ae75-8a08-34d4-b6ca-06a147b3bc97",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "nb"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "94f881aa-4125-402b-8535-d4c566405c91",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -9368,7 +9290,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A0F3403523FEE9FF7E648A02423C8131"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über den breiten Bereich des klinischen Managements, das in der Vergangenheit durchgeführt wurde, mit Ausnahme von Medikation oder chirurgischen/operativen Prozeduren.",
+          "keywords" : [ "Behandlung, Screening, Intervention, Behandlung, Fragebogen, Pflege, Unterstützung, Therapie" ],
+          "use" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über den breiten Bereich des klinischen Managements, das in der Vergangenheit durchgeführt wurde, mit Ausnahme von Medikation oder chirurgischen/operativen Prozeduren.\r\n\r\nHäufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:\r\n- Systematische Befragung in jedem Beratungsgespräch, zum Beispiel:\r\n--- Wurden Sie jemals ins Krankenhaus eingewiesen?\r\n--- Haben Sie jemals Kompressionsstrümpfe getragen?\r\n--- Wurden Sie jemals an ein Beatmungsgerät angeschlossen?\r\n--- Waren Sie schon einmal an der Dialyse?\r\n\r\n- Spezifische Befragung im Zusammenhang mit der Krankheitsüberwachung.\r\n--- Wurde der Patient bei der Aufnahme isoliert? Ja, Nein, Unbekannt.\r\n--- Hat der Patient eine Sauerstofftherapie zu Hause erhalten? Ja, Nein, Unbekannt.\r\n--- Wurde der Patient auf der Intensivstation aufgenommen? Ja, Nein, Unbekannt.\r\n\r\nDie Semantik dieses Archetyps ist absichtlich locker, und die Abfrage dieses Archetyps wäre normalerweise nur im Kontext jedes spezifischen Templates nützlich oder sicher. In einem Template würde normalerweise jedes Datenelement in die spezifische gestellte Frage umbenannt. Wo Wertesätze für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese für die lokale Verwendung angepasst werden, indem die „Text“-Auswahl verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nÜber die EVENT-Struktur aus dem Referenzmodell kann festgelegt werden, ob sich die Fragen auf einen Zeitpunkt oder einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einer Befragung zu unterscheiden, der Informationen über das Management enthält, das zu einem beliebigen Zeitpunkt in der Vergangenheit, und Informationen über das Management, das innerhalb eines bestimmten Zeitintervalls durchgeführt wurde - zum Beispiel den Unterschied zwischen \"Wurden Sie ins Krankenhaus eingeliefert? \" im Vergleich zu „Wurden Sie in den letzten 4 Wochen ins Krankenhaus eingeliefert?\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen das Vorhandensein von Management oder Behandlung identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über das Management oder die Behandlung unter Verwendung von für den klinischen Zweck spezifischen Archetypen aufzeichnet und aufbewahrt.",
+          "misuse" : "Nicht zur Darstellung von Antworten auf vordefinierte Screening-Fragen zu chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden. Verwenden Sie zu diesem Zweck den Archetyp OBSERVATION.procedure_screening.\r\n\r\nNicht zur Darstellung von Antworten auf vordefinierte Screening-Fragen zu Medikamenten, die in der Vergangenheit angewendet wurden. Verwenden Sie zu diesem Zweck den Archetyp OBSERVATION.medication_screening.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om utført håndtering av medisinske tilstander, med unntak av legemidler eller kirurgiske/operative prosedyrer.",
+          "keywords" : [ "behandling, kartlegging, intervensjon, spørreskjema, omsorg, støtte, terapi" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om utført håndtering av medisinske tilstander, med unntak av legemidler eller kirurgiske/operative prosedyrer.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Har du noen gang blitt innlagt på sykehus?\r\n--- Har du noen sinne brukt kompresjonsstrømper?\r\n--- Har du noen gang blitt lagt på respirator?\r\n--- Har du noen gang hatt dialyse?\r\n\r\n- Spesifikke spørsmål relatert til overvåkning av sykdommer.\r\n--- Ble pasienten isolert ved innleggelse? Ja, Nei, Ukjent.\r\n--- Fikk pasienten hjemmeoksygenbehandling? Ja, Nei, Ukjent.\r\n--- Ble pasienten lagt inn på intensivavdeling? Ja, Nei, Ukjent.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om sykdomshåndtering eller behandling som er gjennomført på et hvilket som helst tidspunkt og spørsmål om sykdomshåndtering eller behandling som er gjennomført i et tidsintervall. For eksempel; \"Har du vært innlagt i sykehus?\" sammenlignet med \"Har du vært innlagt i sykehus de siste 4 ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i kartleggingen identifiseres at en aktivitet knyttet til sykdomshåndtering eller behandling er tilstede, anbefales det at spesifikke detaljer om sykdomshåndteringen eller behandlingen registreres og lagres i pasientjournalen i arketyper som er spesifikke for dette formålet.",
+          "misuse" : "Brukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere, bruk arketypen OBSERVATION.procedure_screening for dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilken som helst legemiddel eller gruppe av legemidler, bruk arketypen OBSERVATION.medication_screening for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.",
+          "keywords" : [ "treatment, screening, intervention, questionnaire, care, support, therapy" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever been admitted to hospital? \r\n--- Have you ever worn compression stockings? \r\n--- Have you ever been placed on a ventilator? \r\n--- Have you ever been on dialysis?\r\n\r\n- Specific questioning related to disease surveillance.\r\n--- Was the patient isolated on admission? Yes, No, Unkown.\r\n--- Did the patient receive home oxygen therapy? Yes, No, Unkown.\r\n--- Was the patient admitted to ICU? Yes, No, Unkown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about management that has been performed at any time in the past and information about management performed within a specified time interval - for example the difference between \"Have you been admitted to hospital?\" compared to \"Have you been admitted to hospital in the past 4 weeks.\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of management or treatment, it is recommended that clinical system record and persist the specific details about the management or treatment using archetypes specific for the clinical purpose.",
+          "misuse" : "Not to be used to record answers to pre-defined screening questions about surgical/operative procedures that have been carried out in the past.\r\nUse the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to record answers to pre-defined screening questions about medications that have been used in the past. Use the OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "*To create a framework for recording answer to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures. (en)",
+          "keywords" : [ "*treatment, screening, intervention, questionnaire, care, support, therapy (en)" ],
+          "use" : "*Use to create a framework for recording answer to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever been admitted to hospital? \r\n--- Have you ever worn compression stockings? \r\n--- Have you ever been placed on a ventilator? \r\n--- Have you ever been on dialysis?\r\n\r\n- Specific questioning related to disease surveillance.\r\n--- Was the patient isolated on admission? Yes, No, Unkown.\r\n--- Did the patient receive home oxygen therapy? Yes, No, Unkown.\r\n--- Was the patient admitted to ICU? Yes, No, Unkown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about management that has been performed at any time in the past and information about management performed within a specified time interval - for example the difference between \"Have you been admitted to hospital?\" compared to \"Have you been admitted to hospital in the past 4 weeks.\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of management or treatment, it is recommended that clinical system record and persist the specific details about the management or treatment using archetypes specific for the clinical purpose. (en)",
+          "misuse" : "*Not to be used to to create a framework for recording answers to pre-defined screening questions about procedures carried out in the past. Use the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.management_screening.v1",
     "differential" : true,
