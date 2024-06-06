@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ef8c87a4db412c849e6b887d147a0468">
+		["MD5-CAM-1.0.1"] = <"78a280ca4f4b8d9d6bb2597c8a6ad3e6">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -40,6 +40,22 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Reason
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0002] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Other party
 						value matches {
 							DV_TEXT matches {*}
@@ -58,7 +74,7 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Modality
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Mode of contact
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -82,22 +98,6 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Reason
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Comment
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-				}
-			}
-		}
-		protocol matches {
-			ITEM_TREE[at0002] matches {    -- Item tree
-				items cardinality matches {0..*; unordered} matches {
 					allow_archetype CLUSTER[at0033] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
@@ -298,7 +298,7 @@ ontology
 					description = <"Structured details about the other party of the contact.">
 				>
 				["at0010"] = <
-					text = <"Modality">
+					text = <"Mode of contact">
 					description = <"The mode of contact.">
 				>
 				["at0011"] = <
@@ -371,7 +371,8 @@ ontology
 				>
 				["at0034"] = <
 					text = <"Reason">
-					description = <"">
+					description = <"Reason that the care flow step for the contact was carried out.">
+					comment = <"For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'.">
 				>
 			>
 		>
