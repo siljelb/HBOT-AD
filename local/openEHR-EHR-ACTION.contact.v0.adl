@@ -6,16 +6,27 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
+		["date"] = <"2024-06-06">
 		["name"] = <"Silje Ljosland Bakke">
 		["organisation"] = <"Helse Vest IKT AS">
 		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
-		["date"] = <"2024-06-06">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"78a280ca4f4b8d9d6bb2597c8a6ad3e6">
+		["MD5-CAM-1.0.1"] = <"a213accee0d0831789d1ecf45b15edc5">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -373,6 +384,127 @@ ontology
 					text = <"Reason">
 					description = <"Reason that the care flow step for the contact was carried out.">
 					comment = <"For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Kontakt">
+					description = <"*contact (en)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Formål">
+					description = <"*The purpose of the contact. (en)">
+				>
+				["at0004"] = <
+					text = <"Annen part">
+					description = <"*The other party of the contact. (en)">
+				>
+				["at0005"] = <
+					text = <"*Subject (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Next of kin (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Carer (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Healthcare provider (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Detaljer om annen part">
+					description = <"*Structured details about the other party of the contact. (en)">
+				>
+				["at0010"] = <
+					text = <"Kontaktmåte">
+					description = <"*The mode of contact. (en)">
+				>
+				["at0011"] = <
+					text = <"*Face to face (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Telephone (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Video call (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Initierende part">
+					description = <"*The initiator of the contact. (en)">
+				>
+				["at0018"] = <
+					text = <"*Documenting part (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Other part (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Kommentar">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Kontakt planlagt">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Kontakt avlyst">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Kontakt tidfestet">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Kontakt oppnådd">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Kontakt utsatt">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Kontakt satt på pause">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Kontakt avbrutt">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Kontakt fullført">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Kontakt ikke oppnådd">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Ytterligere informasjon">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Årsak">
+					description = <"*Reason that the care flow step for the contact was carried out. (en)">
+					comment = <"*For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'. (en)">
 				>
 			>
 		>
