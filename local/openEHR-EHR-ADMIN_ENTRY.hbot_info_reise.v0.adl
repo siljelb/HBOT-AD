@@ -6,18 +6,29 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
+		["date"] = <"2024-05-30">
 		["name"] = <"Silje Ljosland Bakke">
 		["organisation"] = <"Helse Vest IKT AS">
 		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
-		["date"] = <"2024-05-30">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
 		>
 	>
 	other_details = <
@@ -26,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8511a4dfe9c5f2738b22076521328ef2">
+		["MD5-CAM-1.0.1"] = <"229a32c41a198d5a6cb685fa758fcf1f">
 		["build_uid"] = <"cb23ae75-8a08-34d4-b6ca-06a147b3bc97">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] matches {    -- hbot_info_reise
+	ADMIN_ENTRY[at0000] matches {    -- HBOT kartlegging reise
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -76,7 +87,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"hbot_info_reise">
+					text = <"HBOT kartlegging reise">
 					description = <"hbot_info_reise">
 				>
 				["at0001"] = <
@@ -109,6 +120,46 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Pasienten har fått informasjon om at eventuell taxi til behandlingen må rekvireres av fastlege/henviser">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*HBOT kartlegging reise (nb)">
+					description = <"*hbot_info_reise (nb)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Pasienten har fått informasjon om at flyreiser rekvireres av Pasientreiser (nb)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"*Pasienten har fått informasjon om at de selv må bestille og legge ut for tog, buss, og båt, og få refusjon fra Helfo (nb)">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"*Pasienten har fått informasjon om at det frarådes å kjøre egen bil til og fra behandlingen (nb)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Har pasienten selv ytret behov for taxi? (nb)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Ja (nb)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Nei (nb)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Pasienten har fått informasjon om at eventuell taxi til behandlingen må rekvireres av fastlege/henviser (nb)">
 					description = <"">
 				>
 			>
