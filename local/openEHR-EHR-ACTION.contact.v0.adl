@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a213accee0d0831789d1ecf45b15edc5">
+		["MD5-CAM-1.0.1"] = <"345146138df063d5fcd514b68fcae464">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -410,19 +410,19 @@ ontology
 					description = <"*The other party of the contact. (en)">
 				>
 				["at0005"] = <
-					text = <"*Subject (en)">
+					text = <"Pasienten selv">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*Next of kin (en)">
+					text = <"Pårørende">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Carer (en)">
+					text = <"Omsorgsgiver">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Healthcare provider (en)">
+					text = <"Helsepersonell">
 					description = <"">
 				>
 				["at0009"] = <
