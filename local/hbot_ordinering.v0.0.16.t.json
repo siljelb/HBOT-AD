@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2d0592775008b3636c15a83574ada1f0",
+      "MD5-CAM-1.0.1" : "a4ea7ac881cadfe221b93c8c9ffaf9c5",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -9169,45 +9169,18 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
+                  "rmTypeName" : "DV_TEXT",
                   "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "2.16.578.1.12.4.1.1.7321",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "1",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "Notat om pasient",
-                    "@type" : "DV_CODED_TEXT"
+                    "value" : "Opprinnelig ordinasjon",
+                    "@type" : "DV_TEXT"
                   },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
+                    "rmAttributeName" : "value",
                     "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "2.16.578.1.12.4.1.1.7321"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "2.16.578.1.12.4.1.1.7321" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "2.16.578.1.12.4.1.1.7321",
-                        "code" : "1",
-                        "value" : "Notat om pasient"
-                      }, {
-                        "terminologyId" : "2.16.578.1.12.4.1.1.7321",
-                        "code" : "4",
-                        "value" : "Supplerende opplysninger"
-                      }, {
-                        "terminologyId" : "2.16.578.1.12.4.1.1.7321",
-                        "code" : "6",
-                        "value" : "Henvendelse om pasient"
-                      } ]
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Opprinnelig ordinasjon" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
