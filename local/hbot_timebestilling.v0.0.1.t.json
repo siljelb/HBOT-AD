@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b7e3558d42de57ec35f4778594ebf8ef",
+      "MD5-CAM-1.0.1" : "7e6f93e820fb9f81f680522923e4dbca",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2521,7 +2521,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DF466B3BA4DA90B7B200882370BFA1CC"
+        "PARENT:MD5-CAM-1.0.1" : "F599CFD8A1049A510A4D4DAA1B1C9EB9"
       },
       "details" : {
         "de" : {
@@ -2796,16 +2796,32 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0178.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0179.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -2832,6 +2848,18 @@
             "text" : "Antall behandlinger",
             "description" : "Maksimalt antall administreringer som skal gis innenfor denne anvisningen.",
             "comment" : "For eksempel \"kun én dose\" = 1, eller \"3 doser á 400 mg hver 12 time\" = 3."
+          },
+          "at0179.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0179.1",
+            "text" : "Dato siste behandlingsdag",
+            "description" : "Dato og valgfri tid når det er planlagt å seponere admininstrasjonen."
+          },
+          "at0178.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0178.1",
+            "text" : "Dato første behandlingsdag",
+            "description" : "Dato og valgfri tid for oppstart av administreringen."
           }
         },
         "pt-br" : { },
@@ -3114,7 +3142,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "1..1",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0145.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -3139,7 +3167,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "1..1",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0144.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
