@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ed1192cea6930c72018f2708895f2ae1",
+      "MD5-CAM-1.0.1" : "8ee83f241b47ac82185d51863749a592",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -213,7 +213,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT timebestilling",
+          "text" : "HBOT timebestilling spl",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
