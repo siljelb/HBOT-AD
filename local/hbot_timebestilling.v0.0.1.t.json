@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a5426c9b2a2b1cb47f5ca08692d00c7e",
+      "MD5-CAM-1.0.1" : "1874684f0043c4eb140216e9d867d060",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -6630,6 +6630,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.12",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartleggingsspørsmål om sykdomshåndtering2",
+            "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge sykdomshåndtering, inkludert men er ikke begrenset til behandlinger, terapier, sykehusinnleggelser.",
+            "comment" : "Svarene kan være selvrapporterte."
           }
         },
         "de" : {
