@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "da42901b1f76020949bfe4c935c3c792",
+      "MD5-CAM-1.0.1" : "5be89281e814f2520605bfbaba4b537a",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -10437,7 +10437,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11431,9 +11430,15 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
-            "text" : "Antall pauser",
+            "text" : "Pausenummer",
             "description" : "Sekvensnummeret for den spesifikke handlingen som blir registrert.",
             "comment" : "For eksempel: En vaksines sekvensnummer/ nummer i en rekkefølge."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "O2 startet igjen",
+            "description" : "Legemiddelet er inntatt av eller administrert til pasienten for første gang. Selv om dette i noen bruksområder som f.eks. sykehus kan utledes fra den første av en rekke administreringer, må det i andre bruksområder som f.eks. allmennpraksis spesifiseres spesifikt siden administreringer ikke dokumenteres på samme måte."
           }
         },
         "pt-br" : {
