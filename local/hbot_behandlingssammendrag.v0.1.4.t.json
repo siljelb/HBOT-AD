@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "ad69d62f6b592618e28278796f30171b",
+      "MD5-CAM-1.0.1" : "20ee343671bf4ba1eceb672286a85ba8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1594,7 +1594,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0071.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1735,6 +1734,19 @@
             "code" : "at0043.1",
             "text" : "Behandling fullført",
             "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
+          },
+          "at0071.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071.1",
+            "text" : "Total tid med oksygen på trykk",
+            "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "Total tid på trykk",
+            "description" : "Den totale tiden som ble brukt til å fullføre prosedyren. Dette kan omfatte tidsbruk under den aktive fasen av prosedyren, og i tillegg tid da prosedyren var midlertidig stanset.",
+            "comment" : "Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre fullført\"."
           }
         },
         "es" : { },
