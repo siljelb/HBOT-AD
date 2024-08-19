@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9989b87e58390bf1a3b6f656d8c11079",
+      "MD5-CAM-1.0.1" : "2a91a4d3312bf656fd5270ec421c0940",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -511,7 +511,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0036.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -815,7 +814,14 @@
         "en" : { },
         "ar-sy" : { },
         "ru" : { },
-        "nb" : { },
+        "nb" : {
+          "at0036.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036.1",
+            "text" : "Fordeling utført",
+            "description" : "Tidspunkt for prosedyre er fastsatt."
+          }
+        },
         "es" : { },
         "de" : { }
       },
