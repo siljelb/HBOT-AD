@@ -86,6 +86,13 @@ Om inget annat anges så antas värden på 21% O₂, FiO₂ på 0,21 och syrgasf
 \"Inandad syrekoncentration\" innebär mängden syre som har ordinerats eller administrerats som normalt registreras i patientjournal t.ex. \"patienten är på 30% syre\" och är inte avsedd att fånga den faktiska \"fysiologiska\" mängden syre som patienten får, vilket kan variera beroende på administrationssätt och andra yttre förhållanden, till exempel om personen andas ytligt eller är tar ofta bort näsgrimman.">
 			misuse = <"Använd ej för andra gaser, exempelvis lustgas.">
 		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Para registrar la cantidad de oxígeno administrada al sujeto en el momento de la observación. Se asumen valores de 21% de O2, FiO2 de 0,21 y velocidad de flujo de oxígeno de cero.">
+			keywords = <"respirando","oxígeno","ambiental","FiO2">
+			copyright = <"© openEHR Foundation">
+			use = <"Puede ser usado dentro de un arquetipo ACTION para especificar oxígenoterapia o dentro de arquetipos OBSERVATION tales como Gases arteriales o Respiraciones, como parte del estado del paciente, donde el conocimiento de la concentración de oxígeno ambiental es crítica para la interpretación de la observación.">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For registrering av andel oksygen tilgjengelig i den luften pasienten innånder på observasjonstidspunktet, eller mengden oksygen som skal gis dersom registreringen er del av en forordning.">
@@ -104,13 +111,6 @@ Hvis det ikke er angitt nærmere og ingen ekstra oksygentilførsel er gitt, kan 
 Selv om konseptnavnet i denne arketypen er \"Innåndet oksygen\" betyr det ikke at individet nødvendigvis puster inn den mengden oksygen/oksygenblanding som er ordinert eller gitt. 
  For eksempel kan det være rapportert i kliniske journaler at \"pasienten får 3 liter O₂ på nesekateter\". Den faktisk innpustede oksygenblandingen vil variere med administrasjonsmåte eller andre utenomforliggende faktorer, for eksempel om individet puster overfladisk eller til stadighet fjerner nesekateter.">
 			misuse = <"Skal ikke brukes for andre innpustede gasser, som for eksempel nitrogenoksid.">
-		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Para registrar la cantidad de oxígeno administrada al sujeto en el momento de la observación. Se asumen valores de 21% de O2, FiO2 de 0,21 y velocidad de flujo de oxígeno de cero.">
-			keywords = <"respirando","oxígeno","ambiental","FiO2">
-			copyright = <"© openEHR Foundation">
-			use = <"Puede ser usado dentro de un arquetipo ACTION para especificar oxígenoterapia o dentro de arquetipos OBSERVATION tales como Gases arteriales o Respiraciones, como parte del estado del paciente, donde el conocimiento de la concentración de oxígeno ambiental es crítica para la interpretación de la observación.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -138,7 +138,7 @@ Where not specifically recorded values of 21% O₂, FiO₂ of 0.21 and oxygen fl
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"448c39150290cbacdd654dc281a8e49d">
+		["MD5-CAM-1.0.1"] = <"a856d9c55a397798bd5ac8c1d232e3ea">
 		["build_uid"] = <"fc2cf5d1-34d8-45fc-8b72-fa5549e51aeb">
 		["revision"] = <"1.0.2">
 	>
@@ -191,35 +191,6 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0059] occurrences matches {0..1} matches {    -- Atmospheric pressure
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::125]>
-						list = <
-							["1"] = <
-								units = <"bar">
-								magnitude = <|>=0.0|>
-							>
-							["2"] = <
-								units = <"cm[H2O]">
-								magnitude = <|>=0.0|>
-							>
-							["3"] = <
-								units = <"kPa">
-								magnitude = <|>=0.0|>
-							>
-							["4"] = <
-								units = <"atm">
-								magnitude = <|>=0.0|>
-							>
-							["5"] = <
-								units = <"m[H2O]">
-								magnitude = <|>=0.0|>
-							>
-						>
-					>
-				}
-			}
 			allow_archetype CLUSTER[at0058] occurrences matches {0..*} matches {    -- Oxygen delivery detail
 				include
 					archetype_id/value matches {/.*/}
@@ -267,10 +238,6 @@ ontology
 					description = <"Weitere Details über die Methode der Sauerstoffzufuhr.">
 					comment = <"Zum Beispiel Details der Befeuchtung oder der assistierten Beatmung.">
 				>
-				["at0059"] = <
-					text = <"*Atmospheric pressure (en)">
-					description = <"*The atmospheric pressure of the inspired air. (en)">
-				>
 			>
 		>
 		["es-ar"] = <
@@ -309,10 +276,6 @@ ontology
 					description = <"*Further details of the method of oxygen delivery.(en)">
 					comment = <"*For example, details of assisted ventilation (CPAP etc), tubing, humidification.(en)">
 				>
-				["at0059"] = <
-					text = <"*Atmospheric pressure (en)">
-					description = <"*The atmospheric pressure of the inspired air. (en)">
-				>
 			>
 		>
 		["en"] = <
@@ -350,10 +313,6 @@ ontology
 					text = <"Oxygen delivery detail">
 					description = <"Further details of the method of oxygen delivery.">
 					comment = <"For example details of humidification or assisted ventilation.">
-				>
-				["at0059"] = <
-					text = <"Atmospheric pressure">
-					description = <"The atmospheric pressure of the inspired air.">
 				>
 			>
 		>
@@ -394,10 +353,6 @@ ontology
 					description = <"Ytterligere detaljer om administrasjonsmåter for oksygentilførselen.">
 					comment = <"For eksempel detaljer om fukting eller assistert ventilering.">
 				>
-				["at0059"] = <
-					text = <"*Atmospheric pressure (en)">
-					description = <"*The atmospheric pressure of the inspired air. (en)">
-				>
 			>
 		>
 		["sv"] = <
@@ -436,10 +391,6 @@ ontology
 					text = <"Detaljer om administrationssätt">
 					description = <"Ytterligare detaljer om administrationssätt för syrgas.">
 					comment = <"Exempelvis detaljer om befuktning eller assisterad ventilation.">
-				>
-				["at0059"] = <
-					text = <"*Atmospheric pressure (en)">
-					description = <"*The atmospheric pressure of the inspired air. (en)">
 				>
 			>
 		>
