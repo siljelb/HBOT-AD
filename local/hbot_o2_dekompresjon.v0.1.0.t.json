@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "18c332ffbd2cb9da2e87be3af36caf83",
+      "MD5-CAM-1.0.1" : "a53b7284b105c88254dbff157fc9d9ba",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3795,7 +3795,7 @@
                   "@type" : "C_DURATION",
                   "rmTypeName" : "DURATION",
                   "occurrences" : "1..1",
-                  "patternedConstraint" : "PDTHMS",
+                  "patternedConstraint" : "PTMS",
                   "constraint" : [ {
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
@@ -4161,7 +4161,7 @@
                   "@type" : "C_DURATION",
                   "rmTypeName" : "DURATION",
                   "occurrences" : "1..1",
-                  "patternedConstraint" : "PDTHMS",
+                  "patternedConstraint" : "PTMS",
                   "constraint" : [ {
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
