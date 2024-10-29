@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=78a6ff1a-4bfc-4b21-8af2-17a111d4976a)
+archetype (adl_version=1.4; uid=78a6ff1a-4bfc-4b21-8af2-17a111d4976a)
 	openEHR-EHR-INSTRUCTION.service_request.v1
 
 concept
-	[at0000]	-- Service request
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -15,17 +16,22 @@ language
 			>
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2009-12-08">
 		["name"] = <"Dr Ian McNicoll">
 		["organisation"] = <"Ocean Informatics, United Kingdom">
 		["email"] = <"ian.mcnicoll@oceaninformatics.com">
-		["date"] = <"2009-12-08">
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Fatima Almeida, Critical SW, Portugal","Tomas Alme, DIPS ASA, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Anita Bjørnnes, Helse Bergen, Norway","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom","Heather Grain, Llewelyn Grain Informatics, Australia","Knut Harboe, Stavanger Universitetssjukehus, Norway","Sam Heard, Ocean Informatics, Australia","Ingrid Heitmann, Oslo universitetssykehus HF, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Hilde Hollås, DIPS AS, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Lars Ivar Mehlum, Helse Bergen HF, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Shinji Kobayashi, Kyoto University, Japan","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hallvard Lærum, Direktoratet for e-helse, Norway","Rose Mari Eikås, Helse Bergen, Norway","Ole Martin Sand, DIPS ASA, Norway","Hildegard McNicoll, freshEHR Clinical Informatics Ltd., United Kingdom","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Pablo Pazos, CaboLabs.com Health Informatics, Uruguay","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Line Silsand, Universitetssykehuset i Nord-Norge, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Line Sæle, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Richard Townley-O'Neill, Australian Digital Health Agency, Australia","Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway">
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Generisk forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner.">
+			keywords = <"rekvisisjon","bestilling","foreskriving","tjeneste","tjenesteyter","rekvirere","bestille","anmodning","forespørre","forespørsel","anmode","tilsyn","henvisning","henvising">
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF, Nasjonal IKT HF">
 			use = <"Brukes til å registrere en forespørsel om en helserelatert tjeneste eller aktivitet som skal utføres av en kliniker, organisasjon eller virksomhet.
 
 Arketypen er designer som et rammeverk som kan brukes som grunnlag for:
@@ -40,13 +46,12 @@ Kliniske brukseksempler:
 En grunnleggende antagelse for denne arketypen er at den er en forespørsel for én enkelt helsetjeneste. Dersom man trenger en gjentagende tjeneste, kan dette spesifiseres ved å bruke arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\".
 
 I mange situasjoner vil det være mulig å registrere stegene som gjennomgås i utførelsen av forespørselen ved hjelp av den generiske arketypen ACTION.service. Imidlertid vil det være mange tilfeller der det vil være behov for en spesifikk ACTION-arketype, for å kunne oppfylle behov om spesifikke dataelementer, registreringsmønstre eller prosesstrinn. Eksempler på dette er ACTION.screening og ACTION.health_education.">
-			keywords = <"rekvisisjon", "bestilling", "foreskriving", "tjeneste", "tjenesteyter", "rekvirere", "bestille", "anmodning", "forespørre", "forespørsel", "anmode", "tilsyn", "henvisning", "henvising">
-			misuse = <"">
-			copyright = <"© openEHR Foundation, Nasjonal IKT HF, Nasjonal IKT HF">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Generic request framework for a health-related service or activity to be delivered by a clinician, organisation or agency.">
+			keywords = <"request","order","service","provide","referral">
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF, Nasjonal IKT HF">
 			use = <"Use to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.
 
 This archetype has been designed as a framework that can be used as the basis for:
@@ -61,13 +66,8 @@ Clinical use cases:
 The default assumption for this archetype is that it's a request for a single service. If a series of services are required, use the CLUSTER.service_direction archetype within the 'Complex timing' SLOT.
 
 In many situations it will be possible to record the steps that occur as part of this request being carried out using the corresponding generic ACTION.service. However, there will be many occasions where the required ACTION archetype will be very specific for purpose, as the data requirements for recording provision of many health-related services will need quite unique data elements, recording patterns or pathway steps. For example: ACTION.screening or ACTION.health_education.">
-			keywords = <"request", "order", "service", "provide", "referral">
-			misuse = <"">
-			copyright = <"© openEHR Foundation, Nasjonal IKT HF, Nasjonal IKT HF">
 		>
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Fatima Almeida, Critical SW, Portugal", "Tomas Alme, DIPS ASA, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Anita Bjørnnes, Helse Bergen, Norway", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Knut Harboe, Stavanger Universitetssjukehus, Norway", "Sam Heard, Ocean Informatics, Australia", "Ingrid Heitmann, Oslo universitetssykehus HF, Norway", "Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway", "Anca Heyd, DIPS ASA, Norway", "Hilde Hollås, DIPS AS, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Lars Ivar Mehlum, Helse Bergen HF, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Shinji Kobayashi, Kyoto University, Japan", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hallvard Lærum, Direktoratet for e-helse, Norway", "Rose Mari Eikås, Helse Bergen, Norway", "Ole Martin Sand, DIPS ASA, Norway", "Hildegard McNicoll, freshEHR Clinical Informatics Ltd., United Kingdom", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Bjørn Næss, DIPS ASA, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Pablo Pazos, CaboLabs.com Health Informatics, Uruguay", "Rune Pedersen, Universitetssykehuset i Nord Norge, Norway", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Line Sæle, Nasjonal IKT HF, Norway", "Nyree Taylor, Ocean Informatics, Australia", "John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)", "Richard Townley-O'Neill, Australian Digital Health Agency, Australia", "Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Nasjonal IKT">
@@ -76,67 +76,67 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"662517860A4CD65197A7E737FD63FA2E">
+		["MD5-CAM-1.0.1"] = <"aec697e7581e4290d4a6770d5056cbdb">
 		["build_uid"] = <"e85cf2a6-6988-4ac7-bd03-f8551e1a087f">
 		["revision"] = <"1.0.2">
 	>
 
 definition
-	INSTRUCTION[at0000] matches {	-- Service request
+	INSTRUCTION[at0000] matches {    -- Service request
 		activities cardinality matches {0..*; unordered} matches {
-			ACTIVITY[at0001] occurrences matches {1..*} matches {	-- Current Activity
+			ACTIVITY[at0001] occurrences matches {0..*} matches {    -- Current Activity
 				description matches {
-					ITEM_TREE[at0009] matches {	-- Tree
+					ITEM_TREE[at0009] matches {    -- Tree
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0121] matches {	-- Service name
+							ELEMENT[at0121] matches {    -- Service name
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0148] occurrences matches {0..1} matches {	-- Service type
+							ELEMENT[at0148] occurrences matches {0..1} matches {    -- Service type
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0135] occurrences matches {0..1} matches {	-- Description
+							ELEMENT[at0135] occurrences matches {0..1} matches {    -- Description
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0062] occurrences matches {0..*} matches {	-- Reason for request
+							ELEMENT[at0062] occurrences matches {0..*} matches {    -- Reason for request
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0064] occurrences matches {0..1} matches {	-- Reason description
+							ELEMENT[at0064] occurrences matches {0..1} matches {    -- Reason description
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0152] occurrences matches {0..*} matches {	-- Clinical indication
+							ELEMENT[at0152] occurrences matches {0..*} matches {    -- Clinical indication
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0065] occurrences matches {0..*} matches {	-- Intent
+							ELEMENT[at0065] occurrences matches {0..*} matches {    -- Intent
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0068] occurrences matches {0..1} matches {	-- Urgency
+							ELEMENT[at0068] occurrences matches {0..1} matches {    -- Urgency
 								value matches {
 									DV_CODED_TEXT matches {
 										defining_code matches {
 											[local::
-											at0136, 	-- Emergency
-											at0137, 	-- Urgent
-											at0138]	-- Routine
+											at0136,    -- Emergency
+											at0137,    -- Urgent
+											at0138]    -- Routine
 										}
 									}
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0040] occurrences matches {0..1} matches {	-- Service due
+							ELEMENT[at0040] occurrences matches {0..1} matches {    -- Service due
 								value matches {
 									DV_DATE_TIME matches {*}
 									DV_INTERVAL<DV_DATE_TIME> matches {
@@ -150,52 +150,52 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
-							allow_archetype CLUSTER[at0151] occurrences matches {0..*} matches {	-- Complex timing
+							allow_archetype CLUSTER[at0151] occurrences matches {0..*} matches {    -- Complex timing
 								include
 									archetype_id/value matches {/openEHR-EHR-CLUSTER\.service_direction(-[a-zA-Z0-9_]+)*\.v0/}
 							}
-							ELEMENT[at0145] occurrences matches {0..1} matches {	-- Service period start
+							ELEMENT[at0145] occurrences matches {0..1} matches {    -- Service period start
 								value matches {
 									DV_DATE_TIME matches {*}
 								}
 							}
-							ELEMENT[at0144] occurrences matches {0..1} matches {	-- Service period expiry
+							ELEMENT[at0144] occurrences matches {0..1} matches {    -- Service period expiry
 								value matches {
 									DV_DATE_TIME matches {*}
 								}
 							}
-							ELEMENT[at0147] occurrences matches {0..1} matches {	-- Indefinite?
+							ELEMENT[at0147] occurrences matches {0..1} matches {    -- Indefinite?
 								value matches {
 									DV_BOOLEAN matches {
-										value matches {True}
+										value matches {true}
 									}
 								}
 							}
-							allow_archetype CLUSTER[at0132] occurrences matches {0..*} matches {	-- Specific details
+							allow_archetype CLUSTER[at0132] occurrences matches {0..*} matches {    -- Specific details
 								include
 									archetype_id/value matches {/.*/}
 							}
-							allow_archetype CLUSTER[at0149] occurrences matches {0..*} matches {	-- Supporting information
+							allow_archetype CLUSTER[at0149] occurrences matches {0..*} matches {    -- Supporting information
 								include
 									archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
 							}
-							ELEMENT[at0076] occurrences matches {0..1} matches {	-- Supplementary information
+							ELEMENT[at0076] occurrences matches {0..1} matches {    -- Supplementary information
 								value matches {
 									DV_BOOLEAN matches {
-										value matches {True}
+										value matches {true}
 									}
 								}
 							}
-							ELEMENT[at0078] occurrences matches {0..1} matches {	-- Information description
+							ELEMENT[at0078] occurrences matches {0..1} matches {    -- Information description
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							allow_archetype CLUSTER[at0116] occurrences matches {0..*} matches {	-- Patient requirements
+							allow_archetype CLUSTER[at0116] occurrences matches {0..*} matches {    -- Patient requirements
 								include
 									archetype_id/value matches {/.*/}
 							}
-							ELEMENT[at0150] occurrences matches {0..1} matches {	-- Comment
+							ELEMENT[at0150] occurrences matches {0..1} matches {    -- Comment
 								value matches {
 									DV_TEXT matches {*}
 								}
@@ -206,38 +206,38 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0008] matches {	-- Tree
+			ITEM_TREE[at0008] matches {    -- Tree
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0010] occurrences matches {0..1} matches {	-- Requester order identifier
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Requester order identifier
 						value matches {
 							DV_TEXT matches {*}
 							DV_IDENTIFIER matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0141] occurrences matches {0..1} matches {	-- Requester
+					allow_archetype CLUSTER[at0141] occurrences matches {0..1} matches {    -- Requester
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Receiver order identifier
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Receiver order identifier
 						value matches {
 							DV_TEXT matches {*}
 							DV_IDENTIFIER matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0142] occurrences matches {0..1} matches {	-- Receiver
+					allow_archetype CLUSTER[at0142] occurrences matches {0..1} matches {    -- Receiver
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0127] occurrences matches {0..1} matches {	-- Request status
+					ELEMENT[at0127] occurrences matches {0..1} matches {    -- Request status
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0128] occurrences matches {0..*} matches {	-- Distribution list
+					allow_archetype CLUSTER[at0128] occurrences matches {0..*} matches {    -- Distribution list
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.distribution\.v1/}
 					}
-					allow_archetype CLUSTER[at0112] occurrences matches {0..*} matches {	-- Extension
+					allow_archetype CLUSTER[at0112] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -245,8 +245,6 @@ definition
 			}
 		}
 	}
-
-
 
 ontology
 	term_definitions = <
