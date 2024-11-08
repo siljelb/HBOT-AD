@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "cd8d653d0a865fe2b95229faa6f8afd8"
+      "MD5-CAM-1.0.1" : "51fcd57dd0168ee3d1408e96d3fbea05"
     },
     "details" : {
       "ko" : {
@@ -821,6 +821,15 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-management_screening-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "SECTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-010.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -9223,15 +9232,6 @@
           "unique" : false
         },
         "children" : [ {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.33",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-010.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
           "occurrences" : "0..1",
