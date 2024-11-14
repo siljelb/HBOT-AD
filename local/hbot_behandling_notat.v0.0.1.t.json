@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "805f2cd48480e9f6729c24b654d45a9b",
+      "MD5-CAM-1.0.1" : "b27de72ebd132b14e296e33bdc553f02",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -268,7 +268,14 @@
             "description" : "Narrative description of health-related events, health status, findings, opinions at a specific point-in-time."
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Notat",
+            "description" : "Fritekstbeskrivelse av helserelaterte hendelser, status, funn eller oppfatninger på et spesifikt tidspunkt."
+          }
+        },
         "es-ar" : { },
         "nl" : { },
         "de" : { }
