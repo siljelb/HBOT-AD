@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "ac5cf5c373842c628b4570550426d952"
+      "MD5-CAM-1.0.1" : "65e197d52fee88f9175ee169db33a024"
     },
     "details" : {
       "ko" : {
@@ -6297,7 +6297,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "AD58266282A2377CC38F4EC004AE4867"
+        "PARENT:MD5-CAM-1.0.1" : "9f7bc42ff15f369a2c744229b38190d3"
       },
       "details" : {
         "nb" : {
@@ -6313,6 +6313,19 @@
           "use" : "For å registrere hjelpebehov hos pasienter eller sykehjemsbeboere.\r\nArketypen benyttet i sin helhet gir en fullverdig Barthel ADL-indeks og i slike brukstilfeller må alle datafelt i arketypen settes som mandatory i templaten.\r\nDeler av arketypen kan benyttes sammen med andre arketyper f.eks. arketypen STRATIFY: Vurderingsverktøy for fallrisiko hos eldre. I disse brukstilfellene skal feltet \"Totalskår\" ikke brukes.\r\n\r\nOBS: Maryland State Medical Society har copyright på Barthel indeks. Den kan brukes til ikke-kommersielle formål med følgende sitat:\r\nMahoney FI, Barthel D. “Functional evaluation: the Barthel Index.” Maryland State Med Journal 1965;14:56-61. Used with permission. \r\n\r\nFor modifisering eller kommersiell bruk kreves det tillatelse.",
           "misuse" : "Om en kun bruker enkeltelementer fra scoringen må feltet \"Totalskår\" ikke benyttes, siden summering av enkeltelementer fra arketypen vil gi ufullstendig totalskår.",
           "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -6437,7 +6450,8 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : { },
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6455,7 +6469,17 @@
       },
       "codeString" : "nb"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "en"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "cc0b1986-a6d0-4963-a34e-6faa57b268aa",
