@@ -6,13 +6,6 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
-	translations = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			author = <
-			>
-		>
-	>
 
 description
 	original_author = <
@@ -45,10 +38,6 @@ Mahoney FI, Barthel D. “Functional evaluation: the Barthel Index.” Maryland 
 For modifisering eller kommersiell bruk kreves det tillatelse.">
 			misuse = <"Om en kun bruker enkeltelementer fra scoringen må feltet \"Totalskår\" ikke benyttes, siden summering av enkeltelementer fra arketypen vil gi ufullstendig totalskår.">
 		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			copyright = <"© openEHR Foundation">
-		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -59,7 +48,7 @@ http://legeforeningen.no/Fagmed/Norsk-geriatrisk-forening/Geriatrisk-test--og-un
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"9f7bc42ff15f369a2c744229b38190d3">
+		["MD5-CAM-1.0.1"] = <"adc0dd23f7f8f681a67498d8a70468e9">
 		["build_uid"] = <"163aa5a1-7fe9-4140-8177-8f7e121d9745">
 		["revision"] = <"1.0.0">
 	>
@@ -345,193 +334,6 @@ pusse tenner og barbere seg.">
 				["at0044"] = <
 					text = <"Nedsatt kontroll">
 					description = <"Nedsatt kontroll og enkelte \"uhell\" eller trenger hjelp til evt. å sette stikkpiller/klyx.">
-				>
-			>
-		>
-		["en"] = <
-			items = <
-				["at0000"] = <
-					text = <"*Barthel ADL-indeks (nb)">
-					description = <"*Barthel ADL-indeks er en sjekkliste for selvstendighet i basale aktiviteter i dagliglivet (ADL). (nb)">
-					comment = <"*Barthel ADL-indeks er opprinnelig oversatt til norsk ved Knut Laake. Denne norske versjonen er redigert i 2008 av Ingvild Saltvedt, Jorunn L. Helbostad, Unni Sveen, Pernille Thingstad, Olav Sletvold og Torgeir Bruun Wyller på grunnlag av flere tidligere norske oversettelser og med hovedvekt på originalpublikasjonen fra 1965. (nb)">
-				>
-				["at0001"] = <
-					text = <"List">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"History">
-					description = <"@ internal @">
-				>
-				["at0003"] = <
-					text = <"*Uspesifisert hendelse (nb)">
-					description = <"*Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon. (nb)">
-				>
-				["at0004"] = <
-					text = <"*Blærekontroll (nb)">
-					description = <"*Evne til å kontrollere vannlating. (nb)">
-				>
-				["at0005"] = <
-					text = <"*Helt inkontinent (nb)">
-					description = <"*Helt inkontinent eller trenger permanent kateter. (nb)">
-				>
-				["at0006"] = <
-					text = <"*Nedsatt kontroll (nb)">
-					description = <"*Nedsatt kontroll og enkelte \"uhell\" eller holder seg tørr med uridom eller kateter, men trenger hjelp for å bruke dette. (nb)">
-				>
-				["at0007"] = <
-					text = <"*Kontinent (nb)">
-					description = <"*Holder seg evt. tørr ved bruk av uridom 
-eller mestrer bruk av kateter på egen hånd. (nb)">
-				>
-				["at0008"] = <
-					text = <"*Tarmkontroll (nb)">
-					description = <"*Evne til å kontrollere avføring. (nb)">
-				>
-				["at0009"] = <
-					text = <"*Bading/dusj (nb)">
-					description = <"*Evne til å bade eller dusje på egen hånd. (nb)">
-				>
-				["at0010"] = <
-					text = <"*Trenger hjelp (nb)">
-					description = <"*Trenger hjelp. (nb)">
-				>
-				["at0011"] = <
-					text = <"*Selvhjulpen (nb)">
-					description = <"*Helt selvhjulpen. (nb)">
-				>
-				["at0012"] = <
-					text = <"*Påkledning (nb)">
-					description = <"*Evne til å velge og ta på seg klær. (nb)">
-				>
-				["at0013"] = <
-					text = <"*Trenger hjelp til mer enn halvparten (nb)">
-					description = <"*Trenger hjelp til mer enn halvparten ved påkledning. (nb)">
-				>
-				["at0014"] = <
-					text = <"*Trenger hjelp, men klarer halvparten innen rimelig tid (nb)">
-					description = <"*Trenger hjelp, men klarer halvparten innen rimelig tid. (nb)">
-				>
-				["at0016"] = <
-					text = <"*Sumskår (nb)">
-					description = <"*Summen av de 10 elementene i Barthel ADL-indeks. Tall på 0-9 indikerer høyt hjelpebehov, 10-19 moderat hjelpebehov og 20 er selvhjulpen. (nb)">
-					comment = <"*Dette feltet skal ikke brukes dersom man kun benytter utvalgte felt i arketypen. (nb)">
-				>
-				["at0017"] = <
-					text = <"*Mobilitet (nb)">
-					description = <"*Evne til å forflytte seg til fots eller i rullestol. (nb)">
-				>
-				["at0018"] = <
-					text = <"*Kan ikke kjøre rullestol uten hjelp (nb)">
-					description = <"*Kan ikke kjøre rullestol uten hjelp. (nb)">
-				>
-				["at0019"] = <
-					text = <"*Kan ikke gå (nb)">
-					description = <"*Kan ikke gå, men kan kjøre rullestol uten hjelp 50 meter. (nb)">
-				>
-				["at0020"] = <
-					text = <"*Kan gå med rullator og/eller støtte/tilsyn (nb)">
-					description = <"*Kan gå 50 meter med rullator og/eller støtte/tilsyn av en person. (nb)">
-				>
-				["at0021"] = <
-					text = <"*Forflytning mellom seng og stol (nb)">
-					description = <"*Evne til forflytning mellom seng og stol. (nb)">
-				>
-				["at0022"] = <
-					text = <"*Kan ikke sitte (nb)">
-					description = <"*Sengeliggende. (nb)">
-				>
-				["at0023"] = <
-					text = <"*Kan sitte, men trenger mye hjelp ved forflytning (nb)">
-					description = <"*Kan sitte, men trenger mye hjelp ved forflytning. (nb)">
-				>
-				["at0024"] = <
-					text = <"*Klarer forflytning med litt hjelp eller tilsyn (nb)">
-					description = <"*Klarer forflytning med litt hjelp eller tilsyn. (nb)">
-				>
-				["at0025"] = <
-					text = <"*Selvhjulpen (nb)">
-					description = <"*Klarer også å låse rullestol og bevege 
-fotstøtte. (nb)">
-				>
-				["at0026"] = <
-					text = <"*Spising (nb)">
-					description = <"*Evne til å ta til seg mat. (nb)">
-				>
-				["at0027"] = <
-					text = <"*Helt avhengig av hjelp (nb)">
-					description = <"*Helt avhengig av hjelp. (nb)">
-				>
-				["at0028"] = <
-					text = <"*Behov for noe hjelp (nb)">
-					description = <"*Behov for noe hjelp, f.eks. til å skjære opp maten. (nb)">
-				>
-				["at0029"] = <
-					text = <"*Selvhjulpen (nb)">
-					description = <"*Helt selvhjulpen. Kan bruke nødvendige hjelpemidler 
-og spiser innen rimelig tid. (nb)">
-				>
-				["at0030"] = <
-					text = <"*Toalettbesøk (nb)">
-					description = <"*Evne til å gå på toalettet. (nb)">
-				>
-				["at0031"] = <
-					text = <"*Kan ikke bruke toalett (nb)">
-					description = <"*Kan ikke bruke toalett. (nb)">
-				>
-				["at0032"] = <
-					text = <"*Trenger hjelp (nb)">
-					description = <"*Trenger hjelp til forflytning, klær, tørke seg. (nb)">
-				>
-				["at0033"] = <
-					text = <"*Selvhjulpen (nb)">
-					description = <"*Selvhjulpen ved toalettbesøk eller bruk av toalettstol. Ordner klær, tørker seg, spyler toalettet eller tømmer 
-bekken. (nb)">
-				>
-				["at0034"] = <
-					text = <"*Personlig hygiene (nb)">
-					description = <"*Evne til å ivareta personlig hygiene med f.eks. tannpuss, barbering og kroppsvask. (nb)">
-				>
-				["at0035"] = <
-					text = <"*Trenger hjelp (nb)">
-					description = <"*Trenger hjelp til en eller flere oppgaver. (nb)">
-				>
-				["at0036"] = <
-					text = <"*Selvhjulpen (nb)">
-					description = <"*Selvhjulpen. Klarer å vaske ansiktet, kjemme håret, 
-pusse tenner og barbere seg. (nb)">
-				>
-				["at0037"] = <
-					text = <"*Helt inkontinent (nb)">
-					description = <"*Helt inkontinent eller hyppige \"uhell\". (nb)">
-				>
-				["at0038"] = <
-					text = <"*Kontinent (nb)">
-					description = <"*Klarer selv evt. å sette stikkpille/klyx. (nb)">
-				>
-				["at0039"] = <
-					text = <"*Kan gå uten hjelp, evt med stokk/krykker (nb)">
-					description = <"*Klarer å gå 50 meter, kan bruke stokk eller krykker, men ikke annet ganghjelpemiddel. (nb)">
-				>
-				["at0040"] = <
-					text = <"*Trappegang (nb)">
-					description = <"*Evne til å gå i trapper. (nb)">
-				>
-				["at0041"] = <
-					text = <"*Kan ikke gå i trapp (nb)">
-					description = <"*Kan ikke gå i trapp. (nb)">
-				>
-				["at0042"] = <
-					text = <"*Trenger hjelp/tilsyn (nb)">
-					description = <"*Trenger hjelp/tilsyn av en person. (nb)">
-				>
-				["at0043"] = <
-					text = <"*Selvhjulpen (nb)">
-					description = <"*Kan evt. bruke ganghjelpemidler. (nb)">
-				>
-				["at0044"] = <
-					text = <"*Nedsatt kontroll (nb)">
-					description = <"*Nedsatt kontroll og enkelte \"uhell\" eller trenger hjelp til evt. å sette stikkpiller/klyx. (nb)">
 				>
 			>
 		>
