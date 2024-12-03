@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "8255194af726f1042456393f1082ab04"
+      "MD5-CAM-1.0.1" : "0095893c5fd3371e76768907e6cd58ec"
     },
     "details" : {
       "ko" : {
@@ -14756,8 +14756,8 @@
                     "@type" : "C_INTEGER",
                     "rmTypeName" : "INTEGER",
                     "constraint" : [ {
-                      "lower" : 2,
-                      "upper" : 2,
+                      "lower" : 0,
+                      "upper" : 0,
                       "lowerIncluded" : true,
                       "upperIncluded" : true,
                       "lowerUnbounded" : false,
