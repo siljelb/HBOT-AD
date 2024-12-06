@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "e8b623d49f8c0fd3e094fb4eb53b88ec"
+      "MD5-CAM-1.0.1" : "5edd8fce4d26f720ada7dd017cd75646"
     },
     "details" : {
       "ko" : {
@@ -7427,7 +7427,7 @@
                                 "children" : [ {
                                   "@type" : "C_STRING",
                                   "rmTypeName" : "STRING",
-                                  "constraint" : [ "Insulinpumpe" ]
+                                  "constraint" : [ "Kontinuerlig blodsukkermåling" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
