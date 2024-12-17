@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "2659624af3b1dc856402741114b72673"
+      "MD5-CAM-1.0.1" : "8ec5f355e46ec1687ef02aa3f63fb70b"
     },
     "details" : {
       "ko" : {
@@ -21218,7 +21218,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0023",
+              "occurrences" : "1..1",
+              "nodeId" : "at0023.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
