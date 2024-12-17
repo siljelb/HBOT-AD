@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "8ec5f355e46ec1687ef02aa3f63fb70b"
+      "MD5-CAM-1.0.1" : "a43f8a4d0044c6131836fc44a7a4ef6b"
     },
     "details" : {
       "ko" : {
@@ -6795,7 +6795,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0025.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -7247,7 +7246,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0035.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -7389,7 +7387,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0035.2",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -8377,7 +8374,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0035.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -10522,7 +10518,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0150.5",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -17120,7 +17115,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0150.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
