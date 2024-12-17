@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "780090bd63f419a3771fa88a1a2fbfb6"
+      "MD5-CAM-1.0.1" : "2659624af3b1dc856402741114b72673"
     },
     "details" : {
       "ko" : {
@@ -21345,7 +21345,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.4" ],
+                                  "constraint" : [ "ac0.5" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -21437,10 +21437,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -21458,10 +21458,10 @@
             "description" : "Er det spesifikke legemiddelet eller gruppen av legemidler noen gang brukt?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.\r\n\r\nEksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være:\r\nNåværende bruk [Individet bruker for tiden det spesifikke legemiddelet enten fast eller ved behov.],\r\nAldri brukt [Individet har aldri brukt det spesifikke legemiddelet.],\r\nTidligere bruk [Individet har tidligere brukt det spesifikke legemiddelet, men bruker det for tiden ikke.],\r\nUsikker [Det er ikke kjent hvorvidt individet bruker eller har brukt det spesifikke legemiddelet.]."
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -21472,10 +21472,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -21486,10 +21486,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -21516,6 +21516,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0036", "at0037", "at0039" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0036", "at0037" ]
         }
       }
     },
