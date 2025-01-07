@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "ed7f9acc3f348c00d8f3980bd2c70b83"
+      "MD5-CAM-1.0.1" : "1e2f4ac1d66299158f6b64d7c31d3e67"
     },
     "details" : {
       "ko" : {
@@ -12561,7 +12561,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "occurrences" : "1..1",
           "nodeId" : "at0001.2",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -12589,7 +12588,7 @@
                         "children" : [ {
                           "@type" : "C_STRING",
                           "rmTypeName" : "STRING",
-                          "constraint" : [ "Fjerne parykk/extensions" ]
+                          "constraint" : [ "Fjerne parykk/extensions", "Dekk til pålimt parykk med plast, og dekk med putetrekk fuktet med NaCl" ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -12865,16 +12864,10 @@
           }
         },
         "nb" : {
-          "at0001.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.2",
-            "text" : "Fjerne parykk/extensions",
-            "description" : "Beskrivelse av tjenesten som forespørres."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Fjerne parykk/extensions",
+            "text" : "Tiltak parykk/extensions",
             "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
           }
         }
