@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7194a60228aab574faa40b7afb3ce7f5",
+      "MD5-CAM-1.0.1" : "5d7c7949af88485b93b9a4ea8cc0a589",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3776,7 +3776,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "3c00e9dcd69f335047bc25f452667217",
-        "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
+        "PARENT:MD5-CAM-1.0.1" : "aec697e7581e4290d4a6770d5056cbdb"
       },
       "details" : {
         "nb" : {
@@ -7544,14 +7544,25 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "value",
+                                "rmAttributeName" : "defining_code",
                                 "children" : [ {
-                                  "@type" : "C_STRING",
-                                  "rmTypeName" : "STRING",
-                                  "constraint" : [ "Taxitruck" ]
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "417157002",
+                                    "value" : "Patient transport booked by practice (situation)"
+                                  } ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -7659,6 +7670,15 @@
                             } ]
                           } ],
                           "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_ARCHETYPE_ROOT",
+                          "rmTypeName" : "CLUSTER",
+                          "occurrences" : "0..1",
+                          "nodeId" : "at0036.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ],
+                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-questionnaire_details-001.v0",
+                          "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -7997,14 +8017,14 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Har pasienten behov for taxitruck?",
+            "text" : "Har pasienten behov for portør til og fra behandling?",
             "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
-            "text" : "Taxitruck",
+            "text" : "Daglig transport",
             "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
           },
           "at0022.2" : {
@@ -9448,6 +9468,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0023", "at0024", "at0027" ]
         }
       }
     },
@@ -10628,6 +10653,145 @@
         "email" : "yampeku@veratech.es"
       },
       "accreditation" : "Native speaker. First Certificate in English",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "262b69bf-5b26-47d3-bac8-7ce88e1eda4a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "59E94735AEED244EC1254164679FF462"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.questionnaire_details.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-questionnaire_details-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0001.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Taxitruck", "Rullestol", "Gående" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Seng", "Taxitruck", "Rullestol", "Gående" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "ANY (2)",
+            "description" : "A specific question about the disorder, symptom, procedure or similar.",
+            "comment" : "The specific question should be coded with a terminology, where possible."
+          }
+        },
+        "nb" : {
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.2",
+            "text" : "Hotell",
+            "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
+            "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Inneliggende",
+            "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
+            "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "77207349-8e14-418e-8be0-3d28aa22cfdc",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
