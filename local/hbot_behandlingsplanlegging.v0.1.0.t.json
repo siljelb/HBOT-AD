@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "78b97fefa219f69661d6dfc771d68598",
+      "MD5-CAM-1.0.1" : "2cb59dd0792f70688760adff4faa7e40",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -8017,7 +8017,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Har pasienten behov for transport til og fra hver behandling?",
+            "text" : "Har pasienten behov for daglig transport til og fra behandling?",
             "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
