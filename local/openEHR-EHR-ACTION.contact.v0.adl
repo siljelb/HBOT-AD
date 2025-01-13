@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"345146138df063d5fcd514b68fcae464">
+		["MD5-CAM-1.0.1"] = <"f4c009572339e22da828233e96647095">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -92,7 +92,8 @@ definition
 									[local::
 									at0011,    -- Face to face
 									at0012,    -- Telephone
-									at0013]    -- Video call
+									at0013,    -- Video call
+									at0035]    -- Messaging
 								}
 							}
 							DV_TEXT matches {*}
@@ -385,6 +386,10 @@ ontology
 					description = <"Reason that the care flow step for the contact was carried out.">
 					comment = <"For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'.">
 				>
+				["at0035"] = <
+					text = <"Messaging">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -505,6 +510,10 @@ ontology
 					text = <"Årsak">
 					description = <"*Reason that the care flow step for the contact was carried out. (en)">
 					comment = <"*For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'. (en)">
+				>
+				["at0035"] = <
+					text = <"*Messaging (en)">
+					description = <"">
 				>
 			>
 		>
