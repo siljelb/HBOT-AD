@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5d7c7949af88485b93b9a4ea8cc0a589",
+      "MD5-CAM-1.0.1" : "78b97fefa219f69661d6dfc771d68598",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -8017,7 +8017,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Har pasienten behov for portør til og fra behandling?",
+            "text" : "Har pasienten behov for transport til og fra hver behandling?",
             "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -10712,6 +10712,31 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..1",
+          "nodeId" : "at0001.3",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Taxi" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -10748,6 +10773,13 @@
             "text" : "ANY (2)",
             "description" : "A specific question about the disorder, symptom, procedure or similar.",
             "comment" : "The specific question should be coded with a terminology, where possible."
+          },
+          "at0001.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "ANY (3)",
+            "description" : "A specific question about the disorder, symptom, procedure or similar.",
+            "comment" : "The specific question should be coded with a terminology, where possible."
           }
         },
         "nb" : {
@@ -10762,6 +10794,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Inneliggende",
+            "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
+            "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "at0001.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.3",
+            "text" : "Hjemmeboende",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
           }
