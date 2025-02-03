@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "06919e2fe0cd2a59e37e697e0f6266b5",
+      "MD5-CAM-1.0.1" : "9f25eac2a20ef95d0e00ac57427418c5",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1579,68 +1579,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0006.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "SNOMED-CT"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED-CT" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "301354004",
-                        "value" : "øresmerter"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "91175000",
-                        "value" : "krampeanfall"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "301357006",
-                        "value" : "smerter i bihule i pannen"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "301356002",
-                        "value" : "smerter i bihule i kinn"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "19887002",
-                        "value" : "klaustrofobi"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "367545001",
-                        "value" : "engstelse"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "225624000",
-                        "value" : "panikkanfall"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "267036007",
-                        "value" : "kortpustethet"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0066.1",
               "attributes" : [ ],
@@ -1791,51 +1729,11 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "pt-br" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Complicações (2)",
-            "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
-            "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
-          }
-        },
-        "sl" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Complication(en) (2)",
-            "description" : "*Details about any complication arising from the procedure.(en)",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
-          }
-        },
-        "en" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Complication (2)",
-            "description" : "Details about any complication arising from the procedure.",
-            "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
-          }
-        },
-        "ar-sy" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Complication(en) (2)",
-            "description" : "*Details about any complication arising from the procedure.(en)",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
-          }
-        },
-        "ru" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Complication(en) (2)",
-            "description" : "*Details about any complication arising from the procedure.(en)",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
-          }
-        },
+        "pt-br" : { },
+        "sl" : { },
+        "en" : { },
+        "ar-sy" : { },
+        "ru" : { },
         "nb" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1880,33 +1778,10 @@
             "text" : "Total tid på trykk",
             "description" : "Den totale tiden som ble brukt til å fullføre prosedyren. Dette kan omfatte tidsbruk under den aktive fasen av prosedyren, og i tillegg tid da prosedyren var midlertidig stanset.",
             "comment" : "Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre fullført\"."
-          },
-          "at0006.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006.1",
-            "text" : "Komplikasjoner",
-            "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
-            "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
           }
         },
-        "es" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Complicación (2)",
-            "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
-          }
-        },
-        "de" : {
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Komplikationen (2)",
-            "description" : "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.",
-            "comment" : "Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters."
-          }
-        }
+        "es" : { },
+        "de" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
