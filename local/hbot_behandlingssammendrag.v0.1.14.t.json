@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "19066ad5612e2235c88e3eb7fc661b07",
+      "MD5-CAM-1.0.1" : "d7023e0d3d9dafe074620bd75e994ec0",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1824,10 +1824,10 @@
             "description" : "Den totale tiden som ble brukt til å fullføre prosedyren. Dette kan omfatte tidsbruk under den aktive fasen av prosedyren, og i tillegg tid da prosedyren var midlertidig stanset.",
             "comment" : "Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre fullført\"."
           },
-          "at0006.2" : {
+          "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006.2",
-            "text" : "Annen komplikasjon",
+            "code" : "at0006.1",
+            "text" : "Komplikasjoner",
             "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
             "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
           }
