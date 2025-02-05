@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "c600de0a3c520072f02044a4a2e08897"
+      "MD5-CAM-1.0.1" : "136727fe6656b6331d885aa31dc6bd93"
     },
     "details" : {
       "ko" : {
@@ -34600,20 +34600,10 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.22" ],
+                                  "constraint" : [ "ac0.24" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_BOOLEAN",
-                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -34741,10 +34731,10 @@
             "text" : "Management activity (3)",
             "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
           },
-          "ac0.22" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.22",
+            "code" : "ac0.24",
             "description" : ""
           }
         },
@@ -34799,10 +34789,10 @@
             "text" : "Oppholdstype",
             "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
           },
-          "ac0.22" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.22",
+            "code" : "ac0.24",
             "description" : ""
           }
         },
@@ -34837,10 +34827,10 @@
             "text" : "Managementaktivität (3)",
             "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
           },
-          "ac0.22" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.22",
+            "code" : "ac0.24",
             "description" : ""
           }
         },
@@ -34875,10 +34865,10 @@
             "text" : "*Management activity (en) (3)",
             "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
           },
-          "ac0.22" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.22",
+            "code" : "ac0.24",
             "description" : ""
           }
         }
@@ -34989,6 +34979,16 @@
         "ac0.22" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.22",
+          "members" : [ "at0023" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0023" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
           "members" : [ "at0023" ]
         }
       }
