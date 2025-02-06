@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "92d685d3a02ea0021cd34c3539edefa8",
+      "MD5-CAM-1.0.1" : "06e62ee9b1bbabf8c2ddfc4bb4b05e75",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -10583,14 +10583,25 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "value",
+                                "rmAttributeName" : "defining_code",
                                 "children" : [ {
-                                  "@type" : "C_STRING",
-                                  "rmTypeName" : "STRING",
-                                  "constraint" : [ "Ledsager" ]
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "1227441000202105",
+                                    "value" : "frisk ledsager til syk person"
+                                  } ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
