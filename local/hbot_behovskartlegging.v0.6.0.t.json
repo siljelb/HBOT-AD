@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "23b2a1922130dae88c157b33ef926c98"
+      "MD5-CAM-1.0.1" : "8f608eb8e5d9839c48342b39c5fcd14c"
     },
     "details" : {
       "ko" : {
@@ -9980,7 +9980,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Påkledning",
+            "text" : "Tilrettelegge for problemer med påkledning",
             "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
           }
         }
@@ -16631,7 +16631,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Forflytning",
+            "text" : "Tilrettelegge for problemer med forflytning",
             "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
           }
         }
@@ -35935,6 +35935,15 @@
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "1..1",
+          "nodeId" : "at0.27",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-adl-002.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
           "occurrences" : "1..1",
           "nodeId" : "at0.25",
@@ -35955,10 +35964,19 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
           "occurrences" : "1..1",
-          "nodeId" : "at0.15",
+          "nodeId" : "at0.29",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-adl-002.v0",
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-adl-003.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "INSTRUCTION",
+          "occurrences" : "1..1",
+          "nodeId" : "at0.30",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-012.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -35971,21 +35989,21 @@
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "INSTRUCTION",
+          "rmTypeName" : "OBSERVATION",
           "occurrences" : "1..1",
-          "nodeId" : "at0.20",
+          "nodeId" : "at0.32",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-012.v1",
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-adl-004.v0",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "OBSERVATION",
+          "rmTypeName" : "INSTRUCTION",
           "occurrences" : "1..1",
-          "nodeId" : "at0.19",
+          "nodeId" : "at0.33",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-adl-003.v0",
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-011.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -35995,24 +36013,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-ACTION.ovl-service-015.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
-          "nodeId" : "at0.24",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-011.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "OBSERVATION",
-          "occurrences" : "1..1",
-          "nodeId" : "at0.23",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-adl-004.v0",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
