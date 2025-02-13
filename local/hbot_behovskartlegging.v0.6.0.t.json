@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "527a297f8738273d682d05c9985dfbd1"
+      "MD5-CAM-1.0.1" : "a477aff5af8dbe640590debdf6a65516"
     },
     "details" : {
       "ko" : {
@@ -1780,7 +1780,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.8",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -10293,6 +10293,12 @@
             "code" : "at0001.5",
             "text" : "Måle blodglukose",
             "description" : "Beskrivelse av tjenesten som forespørres."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Måle blodglukose",
+            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
           }
         }
       },
