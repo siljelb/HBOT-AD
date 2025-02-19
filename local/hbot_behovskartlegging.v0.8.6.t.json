@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "3b411cc87fd8088c26c724592008344c"
+      "MD5-CAM-1.0.1" : "6c8ac1b8728fe31874b2cf19b2d36a88"
     },
     "details" : {
       "ko" : {
@@ -38991,19 +38991,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "708" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -39045,7 +39033,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "[psi]/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "p",
+            "description" : "@ units @",
+            "code" : "[psi]/min"
+          }
+        },
         "nb" : {
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -39053,6 +39048,12 @@
             "text" : "Kompresjonshastighet",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "[psi]/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "psi/min",
+            "description" : "@ units @",
+            "code" : "[psi]/min"
           }
         }
       },
@@ -53995,19 +53996,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "708" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -54055,6 +54044,12 @@
             "code" : "at0000",
             "text" : "Questionnaire details (2)",
             "description" : "Predetermined questions which provides additional details about a condition, symptom, procedure or similar."
+          },
+          "[psi]/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "p",
+            "description" : "@ units @",
+            "code" : "[psi]/min"
           }
         },
         "nb" : {
@@ -54064,6 +54059,12 @@
             "text" : "Kompresjonshastighet",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "[psi]/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "psi/min",
+            "description" : "@ units @",
+            "code" : "[psi]/min"
           }
         }
       },
