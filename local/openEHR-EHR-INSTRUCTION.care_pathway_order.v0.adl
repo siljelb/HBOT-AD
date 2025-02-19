@@ -28,19 +28,18 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"Brukes for å initiere et spesifikt klinisk forløp for pasienten. ">
+			purpose = <"*To order a clinical plan or pathway to be initiated. (en)">
 			keywords = <"pasientforløp","pakkeforløp">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"Benytt denne når pasienten skal inn i et spesifikt forløp. Med forløp menes her behandlingslinje, behandlingsprotokoll, etc.
-
-*This Instruction should be used to initiate plans that should facilitate a specific pathway for the patient. The purpose of the Instruction is to give enough information for the healthcare provider to follow up the treament as a trajectory.(en)">
+			use = <"*Use to order a clinical plan or pathway to be initiated. (en)">
+			misuse = <"*Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To order a clinical care pathway to be initiated.">
+			purpose = <"To order a clinical plan or pathway to be initiated.">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"Use to order a clinical care pathway to be initiated.">
-			misuse = <"Not to be used to record information about events carried out as part of the execution of the pathway. Use the ACTION.care_pathway archetype for this purpose.">
+			use = <"Use to order a clinical plan or pathway to be initiated.">
+			misuse = <"Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.">
 		>
 	>
 	other_details = <
@@ -51,25 +50,29 @@ description
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"be4a4cdcfc7728b68f9061d84569086d">
+		["MD5-CAM-1.0.1"] = <"565ec49eaeb5268ed9f67715f294c5cf">
 		["build_uid"] = <"a70401d0-adc8-4e42-b50d-32eac9390a2a">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	INSTRUCTION[at0000] matches {    -- Care pathway order
+	INSTRUCTION[at0000] matches {    -- Plan/pathway order
 		activities cardinality matches {0..*; unordered} matches {
-			ACTIVITY[at0001] occurrences matches {0..1} matches {    -- Current Activity
-				action_archetype_id matches {/openEHR-EHR-ACTION\.trajectory_follow_up\.v1/}
+			ACTIVITY[at0001] occurrences matches {0..1} matches {    -- Order
 				description matches {
 					ITEM_TREE[at0002] matches {    -- Tree
 						items cardinality matches {0..*; unordered} matches {
-							ELEMENT[at0003] occurrences matches {0..1} matches {    -- Pathway name
+							ELEMENT[at0003] occurrences matches {0..1} matches {    -- Plan/pathway name
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0012] occurrences matches {0..1} matches {    -- Specific care pathway
+							ELEMENT[at0005] occurrences matches {0..1} matches {    -- Description
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0014] occurrences matches {0..*} matches {    -- Clinical indication
 								value matches {
 									DV_TEXT matches {*}
 								}
@@ -79,19 +82,12 @@ definition
 									DV_DATE_TIME matches {*}
 								}
 							}
-							ELEMENT[at0005] occurrences matches {0..1} matches {    -- Description
+							allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {    -- Additional details
+							}
+							ELEMENT[at0013] occurrences matches {0..1} matches {    -- Comment
 								value matches {
 									DV_TEXT matches {*}
 								}
-							}
-							ELEMENT[at0011] occurrences matches {0..1} matches {    -- External start?
-								value matches {
-									DV_BOOLEAN matches {
-										value matches {true}
-									}
-								}
-							}
-							allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {    -- Additional details
 							}
 						}
 					}
@@ -101,15 +97,6 @@ definition
 		protocol matches {
 			ITEM_TREE[at0007] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Healthcare provider identifier
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Healthcare provider details
-						include
-							archetype_id/value matches {/.*/}
-					}
 					allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
@@ -124,11 +111,11 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Care pathway order">
-					description = <"Order for a clinical care pathway to be initiated.">
+					text = <"Plan/pathway order">
+					description = <"Order for a clinical plan or pathway to be initiated.">
 				>
 				["at0001"] = <
-					text = <"Current Activity">
+					text = <"Order">
 					description = <"Current Activity">
 				>
 				["at0002"] = <
@@ -136,55 +123,49 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Pathway name">
-					description = <"The name of the care pathway.">
+					text = <"Plan/pathway name">
+					description = <"The name of the plan or pathway.">
+					comment = <"For example: 'Breast cancer pathway' or 'Multidisciplinary care plan'. Coding of the clinical indication with a terminology is preferred, where possible.">
 				>
 				["at0004"] = <
 					text = <"Start date/time">
-					description = <"The date/time when the care pathway was originally started. Some pathways may have started before and outside of the current healthcare provider, while others are started within the context of the current healthcare provider.">
+					description = <"Date/time when the ordered plan or pathway should commence.">
 				>
 				["at0005"] = <
 					text = <"Description">
-					description = <"Narrative description of the care pathway.">
+					description = <"Narrative description of the plan or pathway.">
 				>
 				["at0006"] = <
 					text = <"Additional details">
-					description = <"Additional structured details about the care pathway.">
+					description = <"Additional structured details about the plan or pathway.">
 				>
 				["at0007"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0008"] = <
-					text = <"Healthcare provider identifier">
-					description = <"Identification of the healthcare provider or organisation responsible for initiating the care pathway.">
-				>
-				["at0009"] = <
-					text = <"Healthcare provider details">
-					description = <"Details about the healthcare provider or organisation responsible for initiating the care pathway.">
-				>
 				["at0010"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 				>
-				["at0011"] = <
-					text = <"External start?">
-					description = <"Was the care pathway started outside of the healthcare provider responsible for the current health record?">
+				["at0013"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the plan/pathway order not captured in other fields.">
 				>
-				["at0012"] = <
-					text = <"Specific care pathway">
-					description = <"Use to define a more specific definition of the care pathway.">
+				["at0014"] = <
+					text = <"Clinical indication">
+					description = <"The clinical reason for ordering the plan or pathway.">
+					comment = <"For example: 'Cancer'. Coding of the clinical indication with a terminology is preferred, where possible.">
 				>
 			>
 		>
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"care_pathway_order">
-					description = <"Basisinstruksjon for å starte et klinisk forløp">
+					text = <"*Plan/pathway order (en)">
+					description = <"*Order for a clinical plan or pathway to be initiated. (en)">
 				>
 				["at0001"] = <
-					text = <"Nåværende aktivitet">
+					text = <"*Order (en)">
 					description = <"Nåværende aktivitet">
 				>
 				["at0002"] = <
@@ -192,44 +173,38 @@ ontology
 					description = <"*@ internal @(en)">
 				>
 				["at0003"] = <
-					text = <"Forløp">
-					description = <"Angir hvilket forløp som igangsettes">
+					text = <"*Plan/pathway name (en)">
+					description = <"*The name of the plan or pathway. (en)">
+					comment = <"*For example: 'Breast cancer pathway' or 'Multidisciplinary care plan'. Coding of the clinical indication with a terminology is preferred, where possible. (en)">
 				>
 				["at0004"] = <
 					text = <"Dato/tid for start">
-					description = <"Definerer når dette forløpet faktisk startet - siden noen forløp har startet før bestilling registreres">
+					description = <"*Date/time when the ordered plan or pathway should commence. (en)">
 				>
 				["at0005"] = <
 					text = <"Beskrivelse">
-					description = <"Nærmere beskrivelse av og om forløpet">
+					description = <"*Narrative description of the plan or pathway. (en)">
 				>
 				["at0006"] = <
 					text = <"Detaljer">
-					description = <"Benytt CLUSTER for å gi strukturerte detaljer om forløpet">
+					description = <"*Additional structured details about the plan or pathway. (en)">
 				>
 				["at0007"] = <
 					text = <"Tre">
 					description = <"*@ internal @(en)">
 				>
-				["at0008"] = <
-					text = <"Ansvarlig">
-					description = <"Lokal ID for helsetjenestetilbyder som startet forløpet. Ofte vil dette være samme organisasjon som registrerer bestillingen. ">
-				>
-				["at0009"] = <
-					text = <"Detaljer om ansvarlig">
-					description = <"Strukturerte detaljer om helsetjenestetilbyderen. ">
-				>
 				["at0010"] = <
 					text = <"Utvidelse">
 					description = <"Tilleggsinformasjon for å registrere lokalt innhold om bestillingen. ">
 				>
-				["at0011"] = <
-					text = <"Ekstern start">
-					description = <"Benyttes for å markere om forløpet startet utenfor nåværende helsetjenestetilbyder.">
+				["at0013"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the plan/pathway order not captured in other fields. (en)">
 				>
-				["at0012"] = <
-					text = <"Spesifikt forløp">
-					description = <"Angir et mer spesifikt forløp. F.eks. kan forløp \"tykk-/endetarmskreft\" gjøes mer spesifikk gjennom behandlingslinjen Ca. Recti">
+				["at0014"] = <
+					text = <"*Clinical indication (en)">
+					description = <"*The clinical reason for ordering the plan or pathway. (en)">
+					comment = <"*For example: 'Cancer'. Coding of the clinical indication with a terminology is preferred, where possible. (en)">
 				>
 			>
 		>
