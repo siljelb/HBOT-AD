@@ -64,7 +64,7 @@ Not to be used to record an information about a patient trajectory or other desc
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"4cfd9b15bf26be6551d6f834f2fdffea">
+		["MD5-CAM-1.0.1"] = <"6cabf5359a33e117bdb89fb66b31fe43">
 		["build_uid"] = <"e55db78e-da41-47b7-89cb-3acfefe5588b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -184,6 +184,22 @@ definition
 					}
 				}
 			}
+			ISM_TRANSITION[at0023] matches {    -- Plan/pathway scheduled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::529]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0023]    -- Plan/pathway scheduled
+						}
+					}
+				}
+			}
 		}
 		description matches {
 			ITEM_TREE[at0001] matches {    -- Tree
@@ -295,6 +311,10 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the plan/pathway not captured in other fields.">
 				>
+				["at0023"] = <
+					text = <"Plan/pathway scheduled">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -364,6 +384,10 @@ ontology
 				["at0022"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the plan/pathway not captured in other fields. (en)">
+				>
+				["at0023"] = <
+					text = <"*Plan/pathway scheduled (en)">
+					description = <"">
 				>
 			>
 		>
