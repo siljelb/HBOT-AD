@@ -28,20 +28,36 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"*To order a clinical plan or pathway to be initiated. (en)">
+			purpose = <"*To order the initiation of a clinical plan or pathway to guide the management of an identified problem or condition. (en)">
 			keywords = <"pasientforløp","pakkeforløp">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"*Use to order a clinical plan or pathway to be initiated. (en)">
-			misuse = <"*Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.
+			use = <"*Use to order the initiation of a clinical plan or pathway to guide the management of an identified problem or condition.
+
+The scope of this archetype includes, but is not limited to orders for:
+- Care plans
+- Cancer care pathways
+- Mental health pathways
+- Standardised pathways for any type of medical or surgical treatment, such as allergen immunotherapy (AIT) or elective hyperbaric oxygen therapy (HBOT) (en)">
+			misuse = <"*Not to be used to record information about the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.
+
+Not to be used to record the specific orders for activities to be carried out as part of a plan or pathway. Use separate and specific instances of INSTRUCTION.service_request or similar archetypes for this purpose. Examples of specific activities include but are not limited to, MDT meetings or appointments.
 
 Not to be used to record an order for a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To order a clinical plan or pathway to be initiated.">
+			purpose = <"To order the initiation of a clinical plan or pathway to guide the management of an identified problem or condition.">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"Use to order a clinical plan or pathway to be initiated.">
-			misuse = <"Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.
+			use = <"Use to order the initiation of a clinical plan or pathway to guide the management of an identified problem or condition.
+
+The scope of this archetype includes, but is not limited to orders for:
+- Care plans
+- Cancer care pathways
+- Mental health pathways
+- Standardised pathways for any type of medical or surgical treatment, such as allergen immunotherapy (AIT) or elective hyperbaric oxygen therapy (HBOT)">
+			misuse = <"Not to be used to record information about the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.
+
+Not to be used to record the specific orders for activities to be carried out as part of a plan or pathway. Use separate and specific instances of INSTRUCTION.service_request or similar archetypes for this purpose. Examples of specific activities include but are not limited to, MDT meetings or appointments.
 
 Not to be used to record an order for a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose.">
 		>
@@ -54,7 +70,7 @@ Not to be used to record an order for a patient trajectory or other descriptive/
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"565ec49eaeb5268ed9f67715f294c5cf">
+		["MD5-CAM-1.0.1"] = <"8f97f2d82782bdece1c62df1e1c04a74">
 		["build_uid"] = <"a70401d0-adc8-4e42-b50d-32eac9390a2a">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -62,7 +78,7 @@ Not to be used to record an order for a patient trajectory or other descriptive/
 definition
 	INSTRUCTION[at0000] matches {    -- Plan/pathway order
 		activities cardinality matches {0..*; unordered} matches {
-			ACTIVITY[at0001] occurrences matches {0..1} matches {    -- Order
+			ACTIVITY[at0001] occurrences matches {0..*} matches {    -- Order
 				description matches {
 					ITEM_TREE[at0002] matches {    -- Tree
 						items cardinality matches {0..*; unordered} matches {
@@ -116,7 +132,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Plan/pathway order">
-					description = <"Order for a clinical plan or pathway to be initiated.">
+					description = <"An order for a clinical plan or pathway to guide the management of an identified problem or condition.">
 				>
 				["at0001"] = <
 					text = <"Order">
@@ -137,7 +153,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Description">
-					description = <"Narrative description of the plan or pathway.">
+					description = <"Narrative description about the plan or pathway order.">
 				>
 				["at0006"] = <
 					text = <"Additional details">
@@ -166,7 +182,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"*Plan/pathway order (en)">
-					description = <"*Order for a clinical plan or pathway to be initiated. (en)">
+					description = <"*An order for a clinical plan or pathway to guide the management of an identified problem or condition. (en)">
 				>
 				["at0001"] = <
 					text = <"*Order (en)">
@@ -187,7 +203,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Beskrivelse">
-					description = <"*Narrative description of the plan or pathway. (en)">
+					description = <"*Narrative description about the plan or pathway order. (en)">
 				>
 				["at0006"] = <
 					text = <"Detaljer">
