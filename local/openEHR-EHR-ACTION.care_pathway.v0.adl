@@ -28,19 +28,22 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"Strukturerer hendelsesregistrering i et pasientforløp.">
+			purpose = <"*To record information about a clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
 			keywords = <"forløp","behandlingslinje","behandlingsplan","protokoll","pasientforløp","pakkeforløp">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"Benyttes for å registrere hendelser i et gitt pasientforløp">
+			use = <"*To record information about a clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
+			misuse = <"*Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
+
+Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record information about a high level clinical or administrative pathway carried out to organise the delivery of healthcare, and its constituent high level activities.">
+			purpose = <"To record information about a clinical plan or pathway carried out to organise the delivery of healthcare.">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"Use to record information about a high level clinical or administrative pathway carried out to organise the delivery of healthcare, and its constituent high level activities.">
-			misuse = <"Not to be used to record the order for a care pathway. Use the INSTRUCTION.care_pathway_order archetype for this purpose.
+			use = <"To record information about a clinical plan or pathway carried out to organise the delivery of healthcare.">
+			misuse = <"Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
-Not to be used to record information about a detailed care plan. Use other appropriate archetypes for this purpose.">
+Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.">
 		>
 	>
 	other_details = <
@@ -49,15 +52,15 @@ Not to be used to record information about a detailed care plan. Use other appro
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"4576dc11c6b7e738e0629cecd59dad0c">
+		["MD5-CAM-1.0.1"] = <"4959d4adb829a66c2df777dba17313de">
 		["build_uid"] = <"e55db78e-da41-47b7-89cb-3acfefe5588b">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	ACTION[at0000] matches {    -- Care pathway
+	ACTION[at0000] matches {    -- Plan/pathway
 		ism_transition matches {
-			ISM_TRANSITION[at0009] matches {    -- Pathway planned
+			ISM_TRANSITION[at0009] matches {    -- Plan/pathway planned
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -68,12 +71,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0009]    -- Pathway planned
+							[local::at0009]    -- Plan/pathway planned
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0017] matches {    -- Pathway postponed
+			ISM_TRANSITION[at0017] matches {    -- Plan/pathway postponed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -84,12 +87,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0017]    -- Pathway postponed
+							[local::at0017]    -- Plan/pathway postponed
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0006] matches {    -- Pathway cancelled
+			ISM_TRANSITION[at0006] matches {    -- Plan/pathway cancelled
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -100,28 +103,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0006]    -- Pathway cancelled
+							[local::at0006]    -- Plan/pathway cancelled
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0008] matches {    -- Event scheduled
-				current_state matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[openehr::529]
-						}
-					}
-				}
-				careflow_step matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0008]    -- Event scheduled
-						}
-					}
-				}
-			}
-			ISM_TRANSITION[at0003] matches {    -- Event performed
+			ISM_TRANSITION[at0003] matches {    -- Plan/pathway active
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -132,12 +119,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0003]    -- Event performed
+							[local::at0003]    -- Plan/pathway active
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0016] matches {    -- Pathway suspended
+			ISM_TRANSITION[at0016] matches {    -- Plan/pathway suspended
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -148,12 +135,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0016]    -- Pathway suspended
+							[local::at0016]    -- Plan/pathway suspended
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0005] matches {    -- Pathway aborted
+			ISM_TRANSITION[at0005] matches {    -- Plan/pathway abandoned
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -164,12 +151,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0005]    -- Pathway aborted
+							[local::at0005]    -- Plan/pathway abandoned
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0007] matches {    -- Pathway completed
+			ISM_TRANSITION[at0007] matches {    -- Plan/pathway completed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -180,7 +167,7 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0007]    -- Pathway completed
+							[local::at0007]    -- Plan/pathway completed
 						}
 					}
 				}
@@ -189,12 +176,7 @@ definition
 		description matches {
 			ITEM_TREE[at0001] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Pathway name
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Event
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Plan/pathway name
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -209,14 +191,12 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {    -- External event
-						value matches {
-							DV_BOOLEAN matches {
-								value matches {true}
-							}
-						}
-					}
 					allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Additional details
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
 					}
 				}
 			}
@@ -224,12 +204,7 @@ definition
 		protocol matches {
 			ITEM_TREE[at0011] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Healthcare provider identifier
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0013] occurrences matches {0..*} matches {    -- Healthcare provider details
+					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -243,163 +218,140 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Care pathway">
-					description = <"A high level clinical or administrative pathway carried out to organise the delivery of healthcare.">
+					text = <"Plan/pathway">
+					description = <"A clinical plan or pathway carried out to organise the delivery of healthcare.">
 				>
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
-					text = <"Event">
-					description = <"The name of the event which was scheduled or performed.">
-					comment = <"This element is only relevant against the \"Event scheduled\" or \"Event performed\" care flow steps.">
-				>
 				["at0003"] = <
-					text = <"Event performed">
+					text = <"Plan/pathway active">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Pathway aborted">
+					text = <"Plan/pathway abandoned">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Pathway cancelled">
+					text = <"Plan/pathway cancelled">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Pathway completed">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Event scheduled">
+					text = <"Plan/pathway completed">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"Pathway planned">
+					text = <"Plan/pathway planned">
 					description = <"">
 				>
 				["at0010"] = <
 					text = <"Description">
-					description = <"Narrative description about the pathway or event.">
+					description = <"Narrative description about the plan/pathway.">
 				>
 				["at0011"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0012"] = <
-					text = <"Healthcare provider identifier">
-					description = <"Identification of the healthcare provider or organisation responsible for the recorded care flow step.">
-				>
-				["at0013"] = <
-					text = <"Healthcare provider details">
-					description = <"Details about the healthcare provider or organisation responsible for the recorded care flow step.">
-				>
-				["at0014"] = <
-					text = <"External event">
-					description = <"Was the event performed outside of the healthcare provider responsible for the current health record?">
-				>
 				["at0016"] = <
-					text = <"Pathway suspended">
+					text = <"Plan/pathway suspended">
 					description = <"n">
 				>
 				["at0017"] = <
-					text = <"Pathway postponed">
+					text = <"Plan/pathway postponed">
 					description = <"">
 				>
 				["at0018"] = <
 					text = <"Additional details">
-					description = <"Additional structured details about the care pathway or event.">
+					description = <"Additional structured details about the plan/pathway.">
 				>
 				["at0019"] = <
-					text = <"Pathway name">
-					description = <"The name of the care pathway.">
+					text = <"Plan/pathway name">
+					description = <"The name of the plan/pathway.">
 				>
 				["at0020"] = <
 					text = <"Reason">
-					description = <"Reason that the care flow step for the care pathway was carried out.">
-					comment = <"For example: 'Postponed - Patient not available', 'Cancelled - Adverse reaction'. Note: This is not the reason for the care pathway, but rather the specific reason that a care flow step was carried out, and will often be used to document some variance from the original 'Care pathway order'.">
+					description = <"Reason that the care flow step for the plan/pathway was carried out.">
+					comment = <"For example: 'Postponed - Patient not available', 'Cancelled - Adverse reaction'. Note: This is not the reason for the path/pathway, but rather the specific reason that a care flow step was carried out, and will often be used to document some variance from the original 'Plan/pathway order'.">
+				>
+				["at0021"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0022"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the plan/pathway not captured in other fields.">
 				>
 			>
 		>
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"care_pathway">
-					description = <"Registrer hendelser i et pasienforløp.">
+					text = <"*Plan/pathway (en)">
+					description = <"*A clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
 				>
 				["at0001"] = <
 					text = <"Tre">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
-					text = <"Hendelse">
-					description = <"Hendelsen som skjedde. Benytt gjerne en terminology for å klassifisere hendelsene. ">
-				>
 				["at0003"] = <
-					text = <"Aktiv hendelse">
+					text = <"*Plan/pathway active (en)">
 					description = <"Benyttes for å registrere alle aktive hendelser i et forløp. Benytte hendelse med kode og beskrivelse for å spesifisere nærmere om hendelsen.">
 				>
 				["at0005"] = <
-					text = <"Avbryt">
+					text = <"*Plan/pathway abandoned (en)">
 					description = <"Forløpet ble avbrutt (og ikke ferdigsstilt)">
 				>
 				["at0006"] = <
-					text = <"Kanseller">
+					text = <"*Plan/pathway cancelled (en)">
 					description = <"Det initierte forløpet ble aldri igangsatt. Benytt hendelse og beskrivelse for å angi årsak.">
 				>
 				["at0007"] = <
-					text = <"Ferdig">
+					text = <"*Plan/pathway completed (en)">
 					description = <"Dokumenterer at forløpet er ferdig. Alle handlinger i forløpet er utført og det forventes ikke nye hendelser. ">
 				>
-				["at0008"] = <
-					text = <"Sett opp første fremmøte">
-					description = <"Benyttes for å angi tidsfastsettelse av første fremmøte i forløpet.">
-				>
 				["at0009"] = <
-					text = <"Initier forløp">
+					text = <"*Plan/pathway planned (en)">
 					description = <"Forløpet ble initiert (igangsatt), men er ikke i en aktiv fase.">
 				>
 				["at0010"] = <
 					text = <"Beskrivelse">
-					description = <"Utvidet beskrivelse av hendelsen. ">
+					description = <"*Narrative description about the plan/pathway. (en)">
 				>
 				["at0011"] = <
 					text = <"Tre">
 					description = <"@ internal @">
 				>
-				["at0012"] = <
-					text = <"Ansvarlig">
-					description = <"Lokal identifikator av den som var ansvarlig for denne hendelsen. ">
-				>
-				["at0013"] = <
-					text = <"Detaljer om ansvarlig">
-					description = <"Detaljer om helsetjenestetilbyder eller organisasjon som utførte hendelsen. ">
-				>
-				["at0014"] = <
-					text = <"Ekstern hendelse?">
-					description = <"Markerer at hendelse skjedde utenfor aktuell helsetilbyder.">
-				>
 				["at0016"] = <
-					text = <"Sett på vent">
+					text = <"*Plan/pathway suspended (en)">
 					description = <"Forløpet settes på vent. Benytt hendelse og beskrivelse for angi årsak. ">
 				>
 				["at0017"] = <
-					text = <"Utsett">
+					text = <"*Plan/pathway postponed (en)">
 					description = <"Forløpet ble utsatt. Bruk beskrivelse for å angi hvorfor. ">
 				>
 				["at0018"] = <
 					text = <"Detaljer">
-					description = <"Detaljer om nåværende oppgaven">
+					description = <"*Additional structured details about the plan/pathway. (en)">
 				>
 				["at0019"] = <
-					text = <"Forløp">
-					description = <"Angir forløpet som følges opp.">
+					text = <"*Plan/pathway name (en)">
+					description = <"*The name of the plan/pathway. (en)">
 				>
 				["at0020"] = <
 					text = <"Årsak">
-					description = <"Årsak til at det aktuelle prosesstrinnet ble utført.">
-					comment = <"For eksempel: Dersom administrering er utsatt pga pasienten ikke er tilgjengelig, velges prosesstrinnet \"Utsatt administrering\", og \"Pasienten er ikke tilgjengelig ved administreringstidspunktet\" dokumenteres i dette elementet. NB: Dette er ikke årsaken til forløpet, men de spesifikke årsakene til at det aktuelle prosesstrinnet ble utført. Dette vil som regel brukes for å dokumentere varians fra den opprinnelige ordineringen.">
+					description = <"*Reason that the care flow step for the plan/pathway was carried out. (en)">
+					comment = <"*For example: 'Postponed - Patient not available', 'Cancelled - Adverse reaction'. Note: This is not the reason for the path/pathway, but rather the specific reason that a care flow step was carried out, and will often be used to document some variance from the original 'Plan/pathway order'. (en)">
+				>
+				["at0021"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0022"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the plan/pathway not captured in other fields. (en)">
 				>
 			>
 		>
