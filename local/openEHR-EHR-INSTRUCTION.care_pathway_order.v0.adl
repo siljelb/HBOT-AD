@@ -32,14 +32,18 @@ description
 			keywords = <"pasientforløp","pakkeforløp">
 			copyright = <"© Nasjonal IKT HF">
 			use = <"*Use to order a clinical plan or pathway to be initiated. (en)">
-			misuse = <"*Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose. (en)">
+			misuse = <"*Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.
+
+Not to be used to record an order for a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To order a clinical plan or pathway to be initiated.">
 			copyright = <"© Nasjonal IKT HF">
 			use = <"Use to order a clinical plan or pathway to be initiated.">
-			misuse = <"Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.">
+			misuse = <"Not to be used to record information the execution of the plan or pathway. Use the ACTION.plan_pathway archetype for this purpose.
+
+Not to be used to record an order for a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose.">
 		>
 	>
 	other_details = <
