@@ -28,10 +28,10 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"*To record information about a clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
+			purpose = <"*To record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare. (en)">
 			keywords = <"forløp","behandlingslinje","behandlingsplan","protokoll","pasientforløp","pakkeforløp">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"*To record information about a clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
+			use = <"*Use to record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare. (en)">
 			misuse = <"*Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
 Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.
@@ -40,9 +40,9 @@ Not to be used to record an information about a patient trajectory or other desc
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record information about a clinical plan or pathway carried out to organise the delivery of healthcare.">
+			purpose = <"To record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare.">
 			copyright = <"© Nasjonal IKT HF">
-			use = <"To record information about a clinical plan or pathway carried out to organise the delivery of healthcare.">
+			use = <"Use to record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare.">
 			misuse = <"Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
 Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.
@@ -56,13 +56,13 @@ Not to be used to record an information about a patient trajectory or other desc
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"4959d4adb829a66c2df777dba17313de">
+		["MD5-CAM-1.0.1"] = <"4cfd9b15bf26be6551d6f834f2fdffea">
 		["build_uid"] = <"e55db78e-da41-47b7-89cb-3acfefe5588b">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	ACTION[at0000] matches {    -- Plan/pathway
+	ACTION[at0000] matches {    -- Plan/pathway management
 		ism_transition matches {
 			ISM_TRANSITION[at0009] matches {    -- Plan/pathway planned
 				current_state matches {
@@ -222,8 +222,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Plan/pathway">
-					description = <"A clinical plan or pathway carried out to organise the delivery of healthcare.">
+					text = <"Plan/pathway management">
+					description = <"Activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare.">
 				>
 				["at0001"] = <
 					text = <"Tree">
@@ -292,8 +292,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Plan/pathway (en)">
-					description = <"*A clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
+					text = <"*Plan/pathway management (en)">
+					description = <"*Activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare. (en)">
 				>
 				["at0001"] = <
 					text = <"Tre">
