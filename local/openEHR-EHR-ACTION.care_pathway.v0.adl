@@ -34,7 +34,9 @@ description
 			use = <"*To record information about a clinical plan or pathway carried out to organise the delivery of healthcare. (en)">
 			misuse = <"*Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
-Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose. (en)">
+Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.
+
+Not to be used to record an information about a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -43,7 +45,9 @@ Not to be used to record information about the details of a plan or pathway, suc
 			use = <"To record information about a clinical plan or pathway carried out to organise the delivery of healthcare.">
 			misuse = <"Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
-Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.">
+Not to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.
+
+Not to be used to record an information about a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose.">
 		>
 	>
 	other_details = <
