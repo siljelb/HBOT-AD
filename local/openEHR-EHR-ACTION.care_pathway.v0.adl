@@ -35,6 +35,7 @@ description
 
 This archetype has been designed to support recording the high level management of a clinical plan or pathway. Examples include, but are not limited to:
 - Cancer care pathways
+- Multidisciplinary care plans
 - Standardised high level pathways for any type of medical or surgical treatment, such as allergen immunotherapy (AIT) or elective hyperbaric oxygen therapy (HBOT). (en)">
 			misuse = <"*Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
@@ -50,6 +51,7 @@ Not to be used to record an information about a patient trajectory or other desc
 
 This archetype has been designed to support recording the high level management of a clinical plan or pathway. Examples include, but are not limited to:
 - Cancer care pathways
+- Multidisciplinary care plans
 - Standardised high level pathways for any type of medical or surgical treatment, such as allergen immunotherapy (AIT) or elective hyperbaric oxygen therapy (HBOT).">
 			misuse = <"Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.
 
