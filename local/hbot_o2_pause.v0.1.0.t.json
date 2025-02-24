@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "917030cd0090d008c0287f5ac7c70e16",
+      "MD5-CAM-1.0.1" : "0ce2939dc95eb638f11b1877b8953e57",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -4058,37 +4058,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0014.3",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "SNOMED-CT"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED-CT" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "394908001",
-                        "value" : "Behandlingen avbrytes"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -4223,6 +4194,13 @@
             "code" : "at0041.1",
             "text" : "Behandling avbrutt",
             "description" : "Prosedyren har blitt avbrutt."
+          },
+          "at0014.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.3",
+            "text" : "Årsak",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           },
           "at0071.1" : {
             "@type" : "ARCHETYPE_TERM",
