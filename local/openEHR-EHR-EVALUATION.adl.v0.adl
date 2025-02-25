@@ -51,7 +51,7 @@ This archetype has been designed to be used in a variety of contexts. For exampl
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"33a5ef07d4b374794c36987b74758316">
+		["MD5-CAM-1.0.1"] = <"443c8c52f8cfc89278045248fe6c8d66">
 		["build_uid"] = <"44462901-6e03-4b37-9002-c429992ffdc0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -61,7 +61,7 @@ definition
 		data matches {
 			ITEM_TREE[at0003] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Activity name
+					ELEMENT[at0004] matches {    -- Activity name
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -79,9 +79,15 @@ definition
 									at0007,    -- Independent
 									at0008,    -- Independent with equipment
 									at0009,    -- Requires assistance
-									at0010]    -- Dependent
+									at0010,    -- Dependent
+									at0019]    -- Not applicable
 								}
 							}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0018] occurrences matches {0..*} matches {    -- Limitation
+						value matches {
 							DV_TEXT matches {*}
 						}
 					}
@@ -97,7 +103,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0013] occurrences matches {0..*} matches {    -- Equipment
 						include
-							archetype_id/value matches {/.*/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- Additional details
 						include
@@ -193,6 +199,15 @@ ontology
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
+				["at0018"] = <
+					text = <"Limitation">
+					description = <"A limitation of the individual in carrying out the identified activity.">
+					comment = <"For example: 'Difficulty holding drinks' or 'Difficulty cutting up food'.">
+				>
+				["at0019"] = <
+					text = <"Not applicable">
+					description = <"Assessment of the activity is not applicable to the individual.">
+				>
 			>
 		>
 		["nb"] = <
@@ -262,6 +277,15 @@ ontology
 					text = <"Tilleggsinformasjon">
 					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR.">
+				>
+				["at0018"] = <
+					text = <"*Limitation (en)">
+					description = <"*A limitation of the individual in carrying out the identified activity. (en)">
+					comment = <"*For example: 'Difficulty holding drinks' or 'Difficulty cutting up food'. (en)">
+				>
+				["at0019"] = <
+					text = <"*Not applicable (en)">
+					description = <"*Assessment of the activity is not applicable to the individual. (en)">
 				>
 			>
 		>
