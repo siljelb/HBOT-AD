@@ -28,19 +28,19 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere detaljer om et individs evne til å utføre en spesifikk ADL-aktivitet.">
-			use = <"Brukes for å registrere detaljer om et individs evne til å utføre en spesifikk ADL-aktivitet.
+			purpose = <"*To record summary information about an individual's ability to perform an identified activity of daily living. (en)">
+			use = <"*Use to record summary information about an individual's ability to perform an identified activity of daily living.
 
-Registrer én instans av arketypen for hver aktivitet.">
+This archetype has been designed to be used in a variety of contexts. For example, recording an ADL assessment during a clinical consultation; as part of a persistent care plan; or to provide a summary statement within a nursing admission or discharge report. It is intended to be instantiated once for each identified ADL activity. (en)">
 			misuse = <"Brukes ikke til å registrere resultatene av formelle kartleggingsverktøy, skåringer eller skalaer for vurdering av ADL-ferdigheter, for eksempel Barthel indeks. Bruk spesifikke arketyper for hver skår eller skala, for eksempel OBSERVATION.modified_barthel_index.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record details about an individual's ability to perform an identified activity of daily living.">
+			purpose = <"To record summary information about an individual's ability to perform an identified activity of daily living.">
 			copyright = <"© openEHR Foundation">
-			use = <"Use to record details about an individual's ability to perform an identified activity of daily living.
+			use = <"Use to record summary information about an individual's ability to perform an identified activity of daily living.
 
-Record one instance of the archetype for each identified activity.">
+This archetype has been designed to be used in a variety of contexts. For example, recording an ADL assessment during a clinical consultation; as part of a persistent care plan; or to provide a summary statement within a nursing admission or discharge report. It is intended to be instantiated once for each identified ADL activity.">
 			misuse = <"Not to be used to record the results of formal instruments, scores or scales, assessing capability for activities of daily living, such as the Barthel Index - use specific archetypes for each score or scale, such as OBSERVATION.modified_barthel_index.">
 		>
 	>
@@ -51,13 +51,13 @@ Record one instance of the archetype for each identified activity.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1E5481D8F5F761A100CA63F8E4980049">
+		["MD5-CAM-1.0.1"] = <"33a5ef07d4b374794c36987b74758316">
 		["build_uid"] = <"44462901-6e03-4b37-9002-c429992ffdc0">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	EVALUATION[at0000] matches {    -- ADL assessment
+	EVALUATION[at0000] matches {    -- ADL activity summary
 		data matches {
 			ITEM_TREE[at0003] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
@@ -128,8 +128,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"ADL assessment">
-					description = <"Details about an individual's ability to perform an identified activity of daily living.">
+					text = <"ADL activity summary">
+					description = <"Summary information about an individual's ability to perform an identified activity of daily living.">
 				>
 				["at0003"] = <
 					text = <"Tree">
@@ -198,8 +198,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"ADL-kartlegging">
-					description = <"Detaljer om et individs evne til å utføre en spesifikk ADL-aktivitet.">
+					text = <"*ADL activity summary (en)">
+					description = <"*Summary information about an individual's ability to perform an identified activity of daily living. (en)">
 				>
 				["at0003"] = <
 					text = <"Tree">
