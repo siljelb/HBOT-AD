@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2e1c5fb2e7f6c0704451636bc5fd0685",
+      "MD5-CAM-1.0.1" : "ce498eb9a38551cc113d52fc9644b5c2",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -172,7 +172,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT behandling underveisnotat",
+          "text" : "HBO behandling arbeidsdokument",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
@@ -188,7 +188,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBO behandling arbeidsnotat",
+          "text" : "HBO behandling arbeidsdokument",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
       }
