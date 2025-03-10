@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c0ceb0fcc3cf8af4597d8d2498f64794",
+      "MD5-CAM-1.0.1" : "7ae5441df8e45a23d547dfbe1a991b2d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -8648,6 +8648,12 @@
             "text" : "Kammerventilasjon",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kammerventilasjon",
+            "description" : "Forhåndsdefinerte spørsmål som tilfører detaljer om en tilstand, symptom, prosedyre eller lignende."
           }
         }
       },
@@ -9595,6 +9601,12 @@
             "text" : "Antall",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Antall",
+            "description" : "Forhåndsdefinerte spørsmål som tilfører detaljer om en tilstand, symptom, prosedyre eller lignende."
           }
         }
       },
@@ -10665,6 +10677,12 @@
             "text" : "psi/min",
             "description" : "@ units @",
             "code" : "[psi]/min"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kompresjonshastighet",
+            "description" : "Forhåndsdefinerte spørsmål som tilfører detaljer om en tilstand, symptom, prosedyre eller lignende."
           }
         }
       },
@@ -11611,6 +11629,12 @@
             "text" : "Dekompresjonshastighet",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Dekompresjonshastighet",
+            "description" : "Forhåndsdefinerte spørsmål som tilfører detaljer om en tilstand, symptom, prosedyre eller lignende."
           }
         }
       },
