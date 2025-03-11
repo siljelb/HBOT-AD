@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "dc752c104c1f5c7dc87f06330cf47748",
+      "MD5-CAM-1.0.1" : "2c5f1b9388f266311a9c14ca26e1b2fe",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -122,19 +122,28 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.33",
+        "nodeId" : "at0.44",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1",
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.41",
+        "nodeId" : "at0.43",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
+        "archetypeRef" : "Intervensjoner data",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.33",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -154,15 +163,6 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ACTION.ovl-service-001.v1",
         "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.43",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "Intervensjoner data",
-        "referenceType" : "templateId"
       } ]
     } ],
     "attributeTuples" : [ ]
