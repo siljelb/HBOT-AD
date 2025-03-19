@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "b4c9f7efe90b9d32ba3d0b8d2fc39458"
+      "MD5-CAM-1.0.1" : "0e97ac29e58bbe4edc4bf6546d102b57"
     },
     "details" : {
       "ko" : {
@@ -10330,7 +10330,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -10627,14 +10626,7 @@
             "description" : "Current Activity."
           }
         },
-        "nb" : {
-          "at0001.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.5",
-            "text" : "Leiring",
-            "description" : "Beskrivelse av tjenesten som forespørres."
-          }
-        }
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -14465,14 +14457,7 @@
             "description" : "Current Activity."
           }
         },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Justere flow på maske",
-            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
-          }
-        }
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -58366,14 +58351,7 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Justere flow på maske",
-            "description" : "En helserelatert tjeneste eller aktivitet utført av en kliniker, organisasjon eller virksomhet."
-          }
-        },
+        "nb" : { },
         "nl" : { }
       },
       "termBindings" : { },
