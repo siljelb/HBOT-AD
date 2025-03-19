@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "cdc86a159610a59c3019dad648cf84a8"
+      "MD5-CAM-1.0.1" : "e3a789e0d9576d66b4083c2d5beb680e"
     },
     "details" : {
       "ko" : {
@@ -451,7 +451,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.74",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -460,7 +460,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.78",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -469,7 +469,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.80",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -478,7 +478,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.82",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -8718,6 +8718,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11778,6 +11779,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.3",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -12175,6 +12177,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.2",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -12572,6 +12575,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.4",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -45930,7 +45934,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -45939,7 +45943,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -46304,7 +46308,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -46313,7 +46317,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -46741,7 +46745,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -46750,7 +46754,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -47178,7 +47182,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -47187,7 +47191,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -47605,7 +47609,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -47615,7 +47619,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -47624,7 +47628,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48042,7 +48046,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -48052,7 +48056,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48061,7 +48065,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48479,7 +48483,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -48489,7 +48493,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48498,7 +48502,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48916,7 +48920,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -48926,7 +48930,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48935,7 +48939,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49353,7 +49357,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -49363,7 +49367,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49372,7 +49376,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49790,7 +49794,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -49800,7 +49804,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49809,7 +49813,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50164,7 +50168,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -50174,7 +50178,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50183,7 +50187,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50601,7 +50605,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -50611,7 +50615,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50620,7 +50624,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50975,7 +50979,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -50985,7 +50989,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50994,7 +50998,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51412,7 +51416,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -51422,7 +51426,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51431,7 +51435,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51849,7 +51853,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -51859,7 +51863,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51868,7 +51872,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52286,7 +52290,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -52296,7 +52300,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52305,7 +52309,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52660,7 +52664,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -52670,7 +52674,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52679,7 +52683,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53097,7 +53101,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -53107,7 +53111,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53116,7 +53120,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53534,7 +53538,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -53544,7 +53548,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53553,7 +53557,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53908,7 +53912,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -53918,7 +53922,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53927,7 +53931,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54345,7 +54349,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -54355,7 +54359,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54364,7 +54368,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54782,7 +54786,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -54792,7 +54796,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54801,7 +54805,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55219,7 +55223,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -55229,7 +55233,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55238,7 +55242,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55593,7 +55597,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -55603,7 +55607,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55612,7 +55616,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56030,7 +56034,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -56040,7 +56044,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56049,7 +56053,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56467,7 +56471,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -56477,7 +56481,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56486,7 +56490,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56841,7 +56845,7 @@
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
-        "existence" : "1..1",
+        "existence" : "0..1",
         "cardinality" : {
           "@type" : "CARDINALITY",
           "interval" : "1..*",
@@ -56851,7 +56855,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56860,7 +56864,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "1..1",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
