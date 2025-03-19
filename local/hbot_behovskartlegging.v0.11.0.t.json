@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "e3a789e0d9576d66b4083c2d5beb680e"
+      "MD5-CAM-1.0.1" : "768c0d685b1087019018ce5b365942d0"
     },
     "details" : {
       "ko" : {
@@ -183,7 +183,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
+        "occurrences" : "1..1",
         "nodeId" : "at0.16",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -487,7 +487,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.84",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -496,7 +496,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.86",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -505,7 +505,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.88",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -514,7 +514,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.90",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -523,7 +523,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.92",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -897,7 +897,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.16",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -906,7 +906,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.18",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1798,7 +1798,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.30",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1807,7 +1807,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.32",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1816,7 +1816,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.34",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2253,7 +2253,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.31",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2262,7 +2262,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.33",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2271,7 +2271,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.35",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2280,7 +2280,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.37",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2717,7 +2717,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.18",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2726,7 +2726,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.20",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -3172,7 +3172,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.12",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -3978,7 +3978,7 @@
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "ac0.25" ],
+                          "constraint" : [ "ac0.31" ],
                           "selectedTerminologies" : [ ]
                         } ]
                       } ],
@@ -4801,12 +4801,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -4836,6 +4830,12 @@
             "code" : "at0016.1",
             "text" : "*Risk factors(en) (9)",
             "description" : "*Details about each possible risk factor.(en)"
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "de" : {
@@ -4893,12 +4893,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -4928,6 +4922,12 @@
             "code" : "at0016.1",
             "text" : "Risikofaktoren (9)",
             "description" : "Angaben zu jedem möglichen Risikofaktor."
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "en" : {
@@ -4985,12 +4985,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -5020,6 +5014,12 @@
             "code" : "at0016.1",
             "text" : "Risk factors (9)",
             "description" : "Details about each possible risk factor."
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "es-ar" : {
@@ -5077,12 +5077,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -5112,6 +5106,12 @@
             "code" : "at0016.1",
             "text" : "Factores de riesgo (9)",
             "description" : "Detalles acerca de cada factor de riesgo posible."
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "sv" : {
@@ -5169,12 +5169,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -5204,6 +5198,12 @@
             "code" : "at0016.1",
             "text" : "Riskfaktorer (9)",
             "description" : "Detaljer om varje möjlig riskfaktor."
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "fi" : {
@@ -5261,12 +5261,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -5296,6 +5290,12 @@
             "code" : "at0016.1",
             "text" : "*Risk factors(en) (9)",
             "description" : "*Details about each possible risk factor.(en)"
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "nb" : {
@@ -5359,12 +5359,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -5394,6 +5388,12 @@
             "code" : "at0016.9",
             "text" : "PEG-sonde",
             "description" : "Detaljer om hver enkelt mulige risikofaktor."
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "it" : {
@@ -5451,12 +5451,6 @@
             "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.25",
-            "description" : ""
-          },
           "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -5486,6 +5480,12 @@
             "code" : "at0016.1",
             "text" : "Fattori di rischio (9)",
             "description" : "Dettagliati su ogni possibile fattore di rischio."
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         }
       },
@@ -5640,6 +5640,11 @@
         "ac0.30" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.30",
+          "members" : [ "at0018" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
           "members" : [ "at0018" ]
         }
       }
@@ -9103,6 +9108,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -9495,6 +9501,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -9893,6 +9900,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -10331,6 +10339,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -12973,6 +12982,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -13370,6 +13380,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.6",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -13767,6 +13778,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.7",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14164,6 +14176,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14556,6 +14569,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14941,6 +14955,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -15333,6 +15348,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.4",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -15731,6 +15747,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -16122,6 +16139,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -19600,7 +19618,8 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "nodeId" : "at0001",
+          "occurrences" : "1..1",
+          "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "description",
@@ -19999,7 +20018,8 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "nodeId" : "at0001",
+          "occurrences" : "1..1",
+          "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "description",
@@ -22243,6 +22263,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.5",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -22640,6 +22661,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -23031,6 +23053,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.7",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -23428,6 +23451,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.7",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -25196,7 +25220,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.35",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -25205,7 +25229,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.37",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -25214,7 +25238,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.39",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -25223,7 +25247,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.41",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -34399,6 +34423,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
+          "occurrences" : "1..1",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -34922,7 +34947,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.12",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -34931,7 +34956,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "SECTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.14",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -47619,7 +47644,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -47628,7 +47653,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48056,7 +48081,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48065,7 +48090,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48493,7 +48518,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48502,7 +48527,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48930,7 +48955,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -48939,7 +48964,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49367,7 +49392,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49376,7 +49401,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49804,7 +49829,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -49813,7 +49838,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50178,7 +50203,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50187,7 +50212,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50615,7 +50640,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50624,7 +50649,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50989,7 +51014,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -50998,7 +51023,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51426,7 +51451,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51435,7 +51460,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51863,7 +51888,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -51872,7 +51897,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52300,7 +52325,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52309,7 +52334,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52674,7 +52699,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -52683,7 +52708,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53111,7 +53136,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53120,7 +53145,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53548,7 +53573,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53557,7 +53582,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53922,7 +53947,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -53931,7 +53956,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54359,7 +54384,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54368,7 +54393,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54796,7 +54821,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -54805,7 +54830,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55233,7 +55258,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55242,7 +55267,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55607,7 +55632,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -55616,7 +55641,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56044,7 +56069,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56053,7 +56078,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56481,7 +56506,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56490,7 +56515,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56855,7 +56880,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -56864,7 +56889,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -58273,7 +58298,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
+              "occurrences" : "1..1",
               "nodeId" : "at0036.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -59652,7 +59677,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
+              "occurrences" : "1..1",
               "nodeId" : "at0036.2",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -59661,7 +59686,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "nodeId" : "at0036.3",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -59670,7 +59695,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "nodeId" : "at0036.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -60796,7 +60821,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
+              "occurrences" : "1..1",
               "nodeId" : "at0027.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -61832,7 +61857,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
+              "occurrences" : "1..1",
               "nodeId" : "at0036.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -62895,7 +62920,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
+              "occurrences" : "1..1",
               "nodeId" : "at0027.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -63930,7 +63955,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
+              "occurrences" : "1..1",
               "nodeId" : "at0027.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
