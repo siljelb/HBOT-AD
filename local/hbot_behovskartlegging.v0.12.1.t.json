@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "910fcee5962730ddb544e046534bdaf8"
+      "MD5-CAM-1.0.1" : "c52806744c3ccc9281bc01d35bacf78f"
     },
     "details" : {
       "ko" : {
@@ -6202,6 +6202,12 @@
                           } ],
                           "attributeTuples" : [ ]
                         }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0035.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
                           "@type" : "C_ARCHETYPE_ROOT",
                           "rmTypeName" : "CLUSTER",
                           "occurrences" : "1..1",
@@ -6268,6 +6274,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035.1",
+            "text" : "Kommentar",
             "description" : ""
           }
         },
@@ -6859,6 +6877,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
             "description" : ""
           }
         },
@@ -7535,6 +7559,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.7",
             "description" : ""
+          },
+          "at0035.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Kommentar",
+            "description" : ""
           }
         },
         "de" : {
@@ -7973,7 +8009,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0025.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -8599,6 +8634,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Kommentar",
+            "description" : ""
           }
         },
         "de" : {
@@ -9046,6 +9087,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -9127,7 +9169,22 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9520,7 +9577,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9919,7 +9991,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10234,6 +10321,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.5",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -10358,7 +10446,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10662,6 +10765,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.5",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -10750,7 +10854,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11807,7 +11926,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12111,6 +12245,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.3",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -12205,7 +12340,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12509,6 +12659,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.2",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -12603,7 +12754,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0121.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12907,6 +13073,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.4",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -13001,7 +13168,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13305,6 +13487,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.5",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -13399,7 +13582,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13703,6 +13901,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.6",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -13797,7 +13996,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -14101,6 +14315,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.7",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -14195,7 +14410,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -14588,7 +14818,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -14974,7 +15219,22 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -15367,7 +15627,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -15766,7 +16041,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -16070,6 +16360,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -16158,7 +16449,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -16544,7 +16850,22 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -16905,6 +17226,13 @@
             "text" : "Behandlingsdag nummer",
             "description" : "",
             "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Anvisningsbeskrivelse",
+            "description" : "",
+            "comment" : "For eksempel: \"Klokken 07:00 hver mandag, 30 minutters varighet, de neste tre månedene\"."
           }
         }
       },
@@ -17083,7 +17411,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.4" ],
+                              "constraint" : [ "ac0.5" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -17130,10 +17458,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -17150,10 +17478,23 @@
             "text" : "Beskrivelse",
             "description" : ""
           },
-          "ac0.4" : {
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Aktivitetsnavn",
+            "description" : "",
+            "comment" : "For eksempel bevegelighet i seng, overføring, mobilitet, påkledning, personlig hygiene eller spising."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Evne",
+            "description" : ""
+          },
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -17179,6 +17520,11 @@
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
+          "members" : [ "at0007", "at0009" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
           "members" : [ "at0007", "at0009" ]
         }
       }
@@ -17354,7 +17700,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.5" ],
+                              "constraint" : [ "ac0.6" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -17407,10 +17753,10 @@
             "text" : "ADL assessment (2)",
             "description" : ""
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -17427,10 +17773,23 @@
             "text" : "Beskrivelse",
             "description" : ""
           },
-          "ac0.5" : {
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Aktivitetsnavn",
+            "description" : "",
+            "comment" : "For eksempel bevegelighet i seng, overføring, mobilitet, påkledning, personlig hygiene eller spising."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Evne",
+            "description" : ""
+          },
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         }
@@ -17461,6 +17820,11 @@
         "ac0.5" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
+          "members" : [ "at0007", "at0008", "at0009" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
           "members" : [ "at0007", "at0008", "at0009" ]
         }
       }
@@ -17710,6 +18074,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Aktivitetsnavn",
+            "description" : "",
+            "comment" : "For eksempel bevegelighet i seng, overføring, mobilitet, påkledning, personlig hygiene eller spising."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Evne",
             "description" : ""
           }
         }
@@ -17994,6 +18371,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Aktivitetsnavn",
+            "description" : "",
+            "comment" : "For eksempel bevegelighet i seng, overføring, mobilitet, påkledning, personlig hygiene eller spising."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Evne",
             "description" : ""
           }
         }
@@ -18882,6 +19272,13 @@
             "text" : "Behandlingsdag nummer",
             "description" : "",
             "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Anvisningsbeskrivelse",
+            "description" : "",
+            "comment" : "For eksempel: \"Klokken 07:00 hver mandag, 30 minutters varighet, de neste tre månedene\"."
           }
         }
       },
@@ -19259,6 +19656,13 @@
             "text" : "Behandlingsdag nummer",
             "description" : "",
             "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Anvisningsbeskrivelse",
+            "description" : "",
+            "comment" : "For eksempel: \"Klokken 07:00 hver mandag, 30 minutters varighet, de neste tre månedene\"."
           }
         }
       },
@@ -19636,6 +20040,13 @@
             "text" : "Behandlingsdag nummer",
             "description" : "",
             "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Anvisningsbeskrivelse",
+            "description" : "",
+            "comment" : "For eksempel: \"Klokken 07:00 hver mandag, 30 minutters varighet, de neste tre månedene\"."
           }
         }
       },
@@ -19772,6 +20183,12 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0148.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0135.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
@@ -19933,6 +20350,13 @@
                   "nodeId" : "at0078.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0150.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -20030,6 +20454,27 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0135" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135.1",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
           }
         }
       },
@@ -20177,6 +20622,12 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0135.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0062.1",
                   "attributes" : [ ],
@@ -20333,6 +20784,13 @@
                   "nodeId" : "at0078.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0150.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -20430,6 +20888,27 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0135" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135.1",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
           }
         }
       },
@@ -21348,6 +21827,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Navn på kroppssted",
+            "description" : "",
+            "comment" : "Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at \"Navn på kroppssted\" registreres så anatomisk spesifikt som mulig. For eksempel; registrer \"øvre øyelokk\" heller enn \"øyelokk\" med \"øvre\" som kvalifikator; \"femte ribben\" heller enn \"ribben\" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer. Dette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte dersom mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi. \r\n\r\nDersom navn på kroppssted er oppgitt i arketypen som denne arketypen er nøstet inn i, kan dette dataelementet være redundant. Imidlertid kan det være fornuftig å dobbeltregistrere navnet på kroppstedet for å støtte semantiske spørringer basert på denne arketypen i stedet for i arketypen den er nøstet inn i."
           }
         },
         "pt-br" : {
@@ -22044,6 +22530,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Navn på kroppssted",
+            "description" : "",
+            "comment" : "Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at \"Navn på kroppssted\" registreres så anatomisk spesifikt som mulig. For eksempel; registrer \"øvre øyelokk\" heller enn \"øyelokk\" med \"øvre\" som kvalifikator; \"femte ribben\" heller enn \"ribben\" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer. Dette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte dersom mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi. \r\n\r\nDersom navn på kroppssted er oppgitt i arketypen som denne arketypen er nøstet inn i, kan dette dataelementet være redundant. Imidlertid kan det være fornuftig å dobbeltregistrere navnet på kroppstedet for å støtte semantiske spørringer basert på denne arketypen i stedet for i arketypen den er nøstet inn i."
           }
         },
         "pt-br" : {
@@ -22586,6 +23079,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.5",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -22680,7 +23174,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -22984,6 +23493,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -23072,7 +23582,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -23376,6 +23901,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.7",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -23470,7 +23996,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -23774,6 +24315,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0150.7",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -23868,7 +24410,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -24448,6 +25005,12 @@
                           } ],
                           "attributeTuples" : [ ]
                         }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0035.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
                           "@type" : "C_ARCHETYPE_ROOT",
                           "rmTypeName" : "CLUSTER",
                           "occurrences" : "0..1",
@@ -24857,6 +25420,25 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.25",
+            "description" : ""
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0004.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Navn på sykdomshåndtering",
+            "description" : "",
+            "comment" : "For eksempel: \r\n- Innlagt på sykehus\r\n- Innlagt på intensivavdeling\r\n- Bruk av kompresjonstrømper\r\n- Daglige sårskift\r\n- ECMO\r\n\r\nKoding av \"Navn på sykdomshåndtering/behandling\" med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035.1",
+            "text" : "Kommentar",
             "description" : ""
           }
         },
@@ -26172,6 +26754,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -26250,6 +26838,13 @@
               "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -26326,7 +26921,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -27041,6 +27656,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -27117,6 +27738,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -27216,7 +27844,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -27938,6 +28586,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -28014,6 +28668,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -28113,7 +28774,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse av tjenesten, som passer for "
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -28835,6 +29516,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -28911,6 +29598,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -29010,7 +29704,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -29732,6 +30446,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -29808,6 +30528,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -29907,7 +30634,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse av tjenesten, som passer for "
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -30629,6 +31376,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -30705,6 +31458,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -30804,7 +31564,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -31526,6 +32306,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -31602,6 +32388,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -31701,7 +32494,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -32423,6 +33236,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -32499,6 +33318,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -32598,7 +33424,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -33320,6 +34166,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -33396,6 +34248,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -33495,7 +34354,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -34217,6 +35096,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -34293,6 +35178,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -34392,7 +35284,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -34835,7 +35747,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -35665,7 +36592,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -36064,7 +37006,22 @@
             "description" : ""
           }
         },
-        "nb" : { }
+        "nb" : {
+          "at0135.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+          },
+          "at0121.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -36736,6 +37693,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -36812,6 +37775,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -36911,7 +37881,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -37633,6 +38623,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -37787,7 +38783,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -38502,6 +39518,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -38578,6 +39600,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -38677,7 +39706,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -39399,6 +40448,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -39475,6 +40530,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -39574,7 +40636,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -40296,6 +41378,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -40372,6 +41460,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -40471,7 +41566,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -41193,6 +42308,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -41271,6 +42392,13 @@
               "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -41347,7 +42475,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -42062,6 +43210,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -42138,6 +43292,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -42237,7 +43398,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -42959,6 +44140,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -43035,6 +44222,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -43134,7 +44328,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -43856,6 +45070,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -43932,6 +45152,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -44031,7 +45258,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -44753,6 +46000,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -44831,6 +46084,13 @@
               "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -44907,7 +46167,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -45622,6 +46902,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -45698,6 +46984,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -45797,7 +47090,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -57355,10 +58668,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "defaultValue" : {
-                "units" : "l/min",
-                "@type" : "DV_QUANTITY"
-              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -57608,6 +58917,13 @@
             "code" : "at0059",
             "text" : "*Atmospheric pressure (en)",
             "description" : ""
+          },
+          "at0051.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0051",
+            "text" : "Flow",
+            "description" : "",
+            "comment" : "For eksempel '5 l/min'."
           }
         },
         "sv" : {
@@ -58331,6 +59647,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -58494,7 +59816,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -59046,6 +60388,13 @@
             "code" : "at0000.1",
             "text" : "Annet utstyr",
             "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Spesifikt spørsmål",
+            "description" : "",
+            "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
           }
         }
       },
@@ -59710,6 +61059,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -59786,6 +61141,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -59891,7 +61253,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -60854,6 +62236,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -60930,6 +62318,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -61038,7 +62433,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -61890,6 +63305,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -61966,6 +63387,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -62074,7 +63502,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -62953,6 +64401,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -63029,6 +64483,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -63116,7 +64577,27 @@
         "en" : { },
         "pt-br" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : { }
       },
       "termBindings" : { },
@@ -63988,6 +65469,12 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0032.1",
               "attributes" : [ {
@@ -64064,6 +65551,13 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -64172,7 +65666,27 @@
             "description" : ""
           }
         },
-        "nb" : { },
+        "nb" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Beskrivelse",
+            "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "For eksempel \"Sarkom MDT-møte\" eller \"Henvisning til fysioterapi\". Koding av det spesifikke tjenestenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Beskrivelse",
+            "description" : ""
+          }
+        },
         "nl" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
