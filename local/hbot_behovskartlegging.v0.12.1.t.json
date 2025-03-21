@@ -5401,6 +5401,108 @@
             "text" : "Risikofaktor",
             "description" : ""
           },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0013.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Risikofaktor",
+            "description" : ""
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "at0030.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Kommentar",
+            "description" : ""
+          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
