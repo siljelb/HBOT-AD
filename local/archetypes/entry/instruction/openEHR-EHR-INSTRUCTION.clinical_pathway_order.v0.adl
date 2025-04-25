@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=379354ab-4621-404c-8e4b-84dc476e5941)
+archetype (adl_version=1.4; uid=3a0aa802-df3c-44e7-bf78-3446943607fd)
 	openEHR-EHR-INSTRUCTION.clinical_pathway_order.v0
 
 concept
@@ -70,8 +70,8 @@ Not to be used to record an order for a patient trajectory or other descriptive/
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"be4a4cdcfc7728b68f9061d84569086d">
-		["build_uid"] = <"a70401d0-adc8-4e42-b50d-32eac9390a2a">
+		["MD5-CAM-1.0.1"] = <"35FB510002B1FB7286AB6240DCFA983A">
+		["build_uid"] = <"4e1414fb-bce6-4276-b7a3-2a9a5ab410d8">
 		["revision"] = <"0.0.1-alpha">
 	>
 
