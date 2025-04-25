@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=21e7a503-939d-4519-9e85-22071febb8f3)
+archetype (adl_version=1.4; uid=3f15bb8f-bd9b-4fcb-9d0a-9df3fe83ed9c)
 	openEHR-EHR-ACTION.clinical_pathway.v0
 
 concept
@@ -66,8 +66,8 @@ Not to be used to record an information about a patient trajectory or other desc
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"4576dc11c6b7e738e0629cecd59dad0c">
-		["build_uid"] = <"e55db78e-da41-47b7-89cb-3acfefe5588b">
+		["MD5-CAM-1.0.1"] = <"852042339410E91B4F780CD8C8DFC570">
+		["build_uid"] = <"ec90429a-8c23-452a-b236-5082018471fc">
 		["revision"] = <"0.0.1-alpha">
 	>
 
