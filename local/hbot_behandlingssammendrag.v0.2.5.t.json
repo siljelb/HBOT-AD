@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "2660ca0c776925ec05b4f9779c219412",
+      "MD5-CAM-1.0.1" : "107bf82f67ac2c32bfc927360df49643",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -35072,7 +35072,7 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Forløpet er aktivt",
+            "text" : "Forløpet pågår",
             "description" : "Benyttes for å registrere alle aktive hendelser i et forløp. Benytte hendelse med kode og beskrivelse for å spesifisere nærmere om hendelsen."
           },
           "at0024.1" : {
