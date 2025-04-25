@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "be0ccc14e187a1dac42d4c20c43f3f96",
+      "MD5-CAM-1.0.1" : "effac16cabf5bb41ca63fbc12eca749e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1320,8 +1320,8 @@
                         "upper" : "P1Y",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1715,8 +1715,8 @@
                         "upper" : "P6M",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -5174,7 +5174,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "be4a4cdcfc7728b68f9061d84569086d"
+        "PARENT:MD5-CAM-1.0.1" : "01671bc702f7e63073b07778a0e19fe2"
       },
       "details" : {
         "nb" : {
@@ -5364,7 +5364,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4576dc11c6b7e738e0629cecd59dad0c"
+        "PARENT:MD5-CAM-1.0.1" : "cca9f0df2d692e114cfab8eb4acede48"
       },
       "details" : {
         "nb" : {
@@ -5791,7 +5791,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Forløpshåndtering",
+            "description" : "*Activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare. (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6615,8 +6622,8 @@
                                     "lower" : "PT0S",
                                     "lowerIncluded" : true,
                                     "upperIncluded" : false,
-                                    "lowerUnbounded" : false,
-                                    "upperUnbounded" : true
+                                    "upperUnbounded" : true,
+                                    "lowerUnbounded" : false
                                   } ]
                                 } ]
                               } ],
@@ -6754,8 +6761,8 @@
                                 "lower" : 0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -6786,8 +6793,8 @@
                                 "lower" : "PT0H",
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -7987,8 +7994,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -8126,8 +8133,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8141,8 +8148,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8156,8 +8163,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8171,8 +8178,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -8211,8 +8218,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -8238,8 +8245,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -8263,8 +8270,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -8504,8 +8511,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -8553,8 +8560,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -8584,8 +8591,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -8608,8 +8615,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -8646,8 +8653,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -10018,8 +10025,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -14064,8 +14071,8 @@
                                     "lower" : "PT0S",
                                     "lowerIncluded" : true,
                                     "upperIncluded" : false,
-                                    "lowerUnbounded" : false,
-                                    "upperUnbounded" : true
+                                    "upperUnbounded" : true,
+                                    "lowerUnbounded" : false
                                   } ]
                                 } ]
                               } ],
@@ -14203,8 +14210,8 @@
                                 "lower" : 0,
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -14235,8 +14242,8 @@
                                 "lower" : "PT0H",
                                 "lowerIncluded" : true,
                                 "upperIncluded" : false,
-                                "lowerUnbounded" : false,
-                                "upperUnbounded" : true
+                                "upperUnbounded" : true,
+                                "lowerUnbounded" : false
                               } ]
                             } ]
                           } ],
@@ -15481,8 +15488,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -15620,8 +15627,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -15635,8 +15642,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -15650,8 +15657,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -15665,8 +15672,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -15705,8 +15712,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -15732,8 +15739,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -15757,8 +15764,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -15998,8 +16005,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -16046,8 +16053,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -16077,8 +16084,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -16101,8 +16108,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -16139,8 +16146,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
