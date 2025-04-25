@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "56b5338d81f2ecc47036a8064fadf876",
+      "MD5-CAM-1.0.1" : "1f5ebfca160a023764c2b988776dd145",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -34504,7 +34504,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "cca9f0df2d692e114cfab8eb4acede48"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "*To record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare. (en)",
+          "keywords" : [ "forløp", "behandlingslinje", "behandlingsplan", "protokoll", "pasientforløp", "pakkeforløp" ],
+          "use" : "*Use to record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare.\r\n\r\nThis archetype has been designed to support recording the high level management of a clinical plan or pathway. Examples include, but are not limited to:\r\n- Cancer care pathways\r\n- Multidisciplinary care plans\r\n- Standardised high level pathways for any type of medical or surgical treatment, such as allergen immunotherapy (AIT) or elective hyperbaric oxygen therapy (HBOT). (en)",
+          "misuse" : "*Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.\r\n\r\nNot to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.\r\n\r\nNot to be used to record an information about a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose. (en)",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare.",
+          "keywords" : [ ],
+          "use" : "Use to record information about activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare.\r\n\r\nThis archetype has been designed to support recording the high level management of a clinical plan or pathway. Examples include, but are not limited to:\r\n- Cancer care pathways\r\n- Multidisciplinary care plans\r\n- Standardised high level pathways for any type of medical or surgical treatment, such as allergen immunotherapy (AIT) or elective hyperbaric oxygen therapy (HBOT).",
+          "misuse" : "Not to be used to record the order for a plan or pathway. Use the INSTRUCTION.plan_pathway_order archetype for this purpose.\r\n\r\nNot to be used to record information about the details of a plan or pathway, such as activities, goals, interventions or outcomes. Use other appropriate archetypes for this purpose.\r\n\r\nNot to be used to record an information about a patient trajectory or other descriptive/observational concepts. Use other appropriate archetypes for this purpose.",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.clinical_pathway.v0",
     "differential" : true,
@@ -34980,6 +35013,40 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0011",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0024.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -35012,6 +35079,13 @@
             "code" : "at0003.1",
             "text" : "Forløpet er aktivt",
             "description" : "Benyttes for å registrere alle aktive hendelser i et forløp. Benytte hendelse med kode og beskrivelse for å spesifisere nærmere om hendelsen."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Forløpsidentifikator",
+            "description" : "*Unique identifier for the plan/pathway. (en)",
+            "comment" : "*This data element allows for multiple occurrences to be defined more explicitly at run-time, if required. (en)"
           }
         }
       },
