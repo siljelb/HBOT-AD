@@ -70,7 +70,7 @@ Not to be used to record an order for a patient trajectory or other descriptive/
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"35FB510002B1FB7286AB6240DCFA983A">
+		["MD5-CAM-1.0.1"] = <"01671bc702f7e63073b07778a0e19fe2">
 		["build_uid"] = <"4e1414fb-bce6-4276-b7a3-2a9a5ab410d8">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -117,6 +117,12 @@ definition
 		protocol matches {
 			ITEM_TREE[at0007] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0015] occurrences matches {0..*} matches {    -- Plan/pathway identifier
+						value matches {
+							DV_TEXT matches {*}
+							DV_IDENTIFIER matches {*}
+						}
+					}
 					allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
@@ -176,6 +182,11 @@ ontology
 					description = <"The clinical reason for ordering the plan or pathway.">
 					comment = <"For example: 'Cancer'. Coding of the clinical indication with a terminology is preferred, where possible.">
 				>
+				["at0015"] = <
+					text = <"Plan/pathway identifier">
+					description = <"Unique identifier for the plan/pathway.">
+					comment = <"This data element allows for multiple occurrences to be defined more explicitly at run-time, if required.">
+				>
 			>
 		>
 		["nb"] = <
@@ -225,6 +236,11 @@ ontology
 					text = <"*Clinical indication (en)">
 					description = <"*The clinical reason for ordering the plan or pathway. (en)">
 					comment = <"*For example: 'Cancer'. Coding of the clinical indication with a terminology is preferred, where possible. (en)">
+				>
+				["at0015"] = <
+					text = <"*Plan/pathway identifier (en)">
+					description = <"*Unique identifier for the plan/pathway. (en)">
+					comment = <"*This data element allows for multiple occurrences to be defined more explicitly at run-time, if required. (en)">
 				>
 			>
 		>
