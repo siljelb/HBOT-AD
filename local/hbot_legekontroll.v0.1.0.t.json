@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "0483b4341ec031413e2302981e56cec0",
+      "MD5-CAM-1.0.1" : "a0c7c841740fada790880900d7302f12",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -952,7 +952,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0009.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1291,7 +1290,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0023.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1485,6 +1483,12 @@
             "text" : "Forløpet er fullført",
             "description" : "Dokumenterer at forløpet er ferdig. Alle handlinger i forløpet er utført og det forventes ikke nye hendelser. "
           },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Forløpet er planlagt",
+            "description" : "Forløpet ble initiert (igangsatt), men er ikke i en aktiv fase."
+          },
           "at0019.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0019.1",
@@ -1496,6 +1500,12 @@
             "code" : "at0000.1",
             "text" : "Forløpshåndtering",
             "description" : "*Activities related to the establishment and overall management of a plan or pathway carried out to organise the delivery of healthcare. (en)"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Forløpet er tidfestet",
+            "description" : ""
           },
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
