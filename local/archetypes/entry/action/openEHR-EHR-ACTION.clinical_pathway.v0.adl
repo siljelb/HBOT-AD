@@ -66,7 +66,7 @@ Not to be used to record an information about a patient trajectory or other desc
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"852042339410E91B4F780CD8C8DFC570">
+		["MD5-CAM-1.0.1"] = <"cca9f0df2d692e114cfab8eb4acede48">
 		["build_uid"] = <"ec90429a-8c23-452a-b236-5082018471fc">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -234,6 +234,12 @@ definition
 		protocol matches {
 			ITEM_TREE[at0011] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0024] occurrences matches {0..*} matches {    -- Plan/pathway identifier
+						value matches {
+							DV_TEXT matches {*}
+							DV_IDENTIFIER matches {*}
+						}
+					}
 					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
@@ -317,6 +323,11 @@ ontology
 					text = <"Plan/pathway scheduled">
 					description = <"">
 				>
+				["at0024"] = <
+					text = <"Plan/pathway identifier">
+					description = <"Unique identifier for the plan/pathway.">
+					comment = <"This data element allows for multiple occurrences to be defined more explicitly at run-time, if required.">
+				>
 			>
 		>
 		["nb"] = <
@@ -390,6 +401,11 @@ ontology
 				["at0023"] = <
 					text = <"*Plan/pathway scheduled (en)">
 					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Plan/pathway identifier (en)">
+					description = <"*Unique identifier for the plan/pathway. (en)">
+					comment = <"*This data element allows for multiple occurrences to be defined more explicitly at run-time, if required. (en)">
 				>
 			>
 		>
