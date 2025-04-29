@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "a3ff70f9269d62ae1b2b488ff34af6d4",
+      "MD5-CAM-1.0.1" : "43c5215aa45818c583af33c269b5d390",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -462,6 +462,78 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
           "occurrences" : "0..1",
+          "nodeId" : "at0.60",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-003.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.61",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-004.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.62",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-006.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.63",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-007.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.64",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-005.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.65",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-006.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.66",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-008.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.67",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-009.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
           "nodeId" : "at0.13",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -475,78 +547,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-005.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.45",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-003.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.47",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-004.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.49",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-006.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.51",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-007.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.53",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-005.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.55",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-medication-006.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.57",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-008.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.59",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-009.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
