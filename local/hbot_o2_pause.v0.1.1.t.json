@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "486003e9a9fd752e8c82bef91db477cf",
+      "MD5-CAM-1.0.1" : "9c6452744aa115d0ef8b87e03b395c14",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1963,8 +1963,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -2351,8 +2351,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -2450,8 +2450,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2465,8 +2465,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2480,8 +2480,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2495,8 +2495,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2534,8 +2534,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -2789,8 +2789,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -2888,8 +2888,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2903,8 +2903,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2918,8 +2918,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2933,8 +2933,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
+                      "upperUnbounded" : true,
+                      "lowerUnbounded" : false
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -2972,8 +2972,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
                   } ]
                 } ]
               } ],
@@ -3143,7 +3143,7 @@
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : {
-        "date" : "2025-02-24"
+        "date" : "2025-04-29"
       },
       "otherContributors" : [ ],
       "lifecycleState" : {
@@ -3158,7 +3158,7 @@
         "original_namespace" : "org.openehr",
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
-        "MD5-CAM-1.0.1" : "aadfbf415c77a0734cab24e3d934c452",
+        "MD5-CAM-1.0.1" : "e9abb174fd58674e5bd2ff5732aebca6",
         "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
       },
       "details" : {
@@ -4025,8 +4025,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -4055,8 +4055,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
