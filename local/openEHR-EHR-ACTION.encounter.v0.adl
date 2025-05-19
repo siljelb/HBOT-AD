@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0e60d0c50c983855111517f0e332fd4a">
+		["MD5-CAM-1.0.1"] = <"7520327c2162f4bf706438fbd569a2a6">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -230,7 +230,7 @@ definition
 					}
 				}
 			}
-			ISM_TRANSITION[at0031] matches {    -- Contact completed
+			ISM_TRANSITION[at0031] matches {    -- Encounter completed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -241,7 +241,7 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0031]    -- Contact completed
+							[local::at0031]    -- Encounter completed
 						}
 					}
 				}
@@ -354,7 +354,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Contact completed">
+					text = <"Encounter completed">
 					description = <"">
 				>
 				["at0033"] = <
@@ -475,7 +475,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Kontakt fullført">
+					text = <"*Encounter completed (en)">
 					description = <"">
 				>
 				["at0033"] = <
