@@ -1,0 +1,496 @@
+archetype (adl_version=1.4; uid=e847d136-7043-45ba-ace9-eebe8e39ec07)
+	openEHR-EHR-ACTION.encounter.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2024-06-06">
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Helse Vest IKT AS">
+		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"287826c983dfab502ac68daa80ef1301">
+		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
+	>
+
+definition
+	ACTION[at0000] matches {    -- encounter
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Encounter name
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Reason
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0002] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Other party
+						value matches {
+							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0005,    -- Subject
+									at0006,    -- Next of kin
+									at0007,    -- Carer
+									at0008]    -- Healthcare provider
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0009] occurrences matches {0..1} matches {    -- Other party details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Mode
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0011,    -- Face to face
+									at0012,    -- Telephone
+									at0013,    -- Video call
+									at0035]    -- Messaging
+								}
+							}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Initiator
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0018,    -- Documenting part
+									at0019]    -- Other part
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0033] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+		ism_transition matches {
+			ISM_TRANSITION[at0024] matches {    -- Encounter planned
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::526]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0024]    -- Encounter planned
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0025] matches {    -- Encounter cancelled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0025]    -- Encounter cancelled
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0026] matches {    -- Encounter scheduled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::529]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0026]    -- Encounter scheduled
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0028] matches {    -- Encounter postponed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::527]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0028]    -- Encounter postponed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0027] matches {    -- Encounter performed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0027]    -- Encounter performed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0029] matches {    -- Encounter suspended
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::530]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0029]    -- Encounter suspended
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0030] matches {    -- Encounter abandoned
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::531]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0030]    -- Encounter abandoned
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0031] matches {    -- Contact completed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0031]    -- Contact completed
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"encounter">
+					description = <"contact">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Encounter name">
+					description = <"Identification of the encounter by name.">
+				>
+				["at0004"] = <
+					text = <"Other party">
+					description = <"The other party of the encounter.">
+				>
+				["at0005"] = <
+					text = <"Subject">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Next of kin">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Carer">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Healthcare provider">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Other party details">
+					description = <"Structured details about the other party of the encounter.">
+				>
+				["at0010"] = <
+					text = <"Mode">
+					description = <"The mode of encounter.">
+				>
+				["at0011"] = <
+					text = <"Face to face">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Telephone">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Video call">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Initiator">
+					description = <"The initiator of the encounter.">
+				>
+				["at0018"] = <
+					text = <"Documenting part">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Other part">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Encounter planned">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Encounter cancelled">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Encounter scheduled">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Encounter performed">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Encounter postponed">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Encounter suspended">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Encounter abandoned">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Contact completed">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Reason">
+					description = <"Reason that the care flow step for the encounter was carried out.">
+					comment = <"For example: the reason for the cancellation or suspension of the encounter. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'.">
+				>
+				["at0035"] = <
+					text = <"Messaging">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"encounter">
+					description = <"*contact (en)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"*Encounter name (en)">
+					description = <"*Identification of the encounter by name. (en)">
+				>
+				["at0004"] = <
+					text = <"Annen part">
+					description = <"*The other party of the encounter. (en)">
+				>
+				["at0005"] = <
+					text = <"Pasienten selv">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Pårørende">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Omsorgsgiver">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Helsepersonell">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Detaljer om annen part">
+					description = <"*Structured details about the other party of the encounter. (en)">
+				>
+				["at0010"] = <
+					text = <"*Mode (en)">
+					description = <"*The mode of encounter. (en)">
+				>
+				["at0011"] = <
+					text = <"*Face to face (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Telephone (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Video call (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Initierende part">
+					description = <"*The initiator of the encounter. (en)">
+				>
+				["at0018"] = <
+					text = <"*Documenting part (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Other part (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Kommentar">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Encounter planned (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*Encounter cancelled (en)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*Encounter scheduled (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Encounter performed (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"*Encounter postponed (en)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*Encounter suspended (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Encounter abandoned (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Kontakt fullført">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Ytterligere informasjon">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Årsak">
+					description = <"*Reason that the care flow step for the encounter was carried out. (en)">
+					comment = <"*For example: the reason for the cancellation or suspension of the encounter. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'. (en)">
+				>
+				["at0035"] = <
+					text = <"*Messaging (en)">
+					description = <"">
+				>
+			>
+		>
+	>
