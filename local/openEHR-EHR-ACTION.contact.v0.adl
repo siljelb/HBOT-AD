@@ -37,16 +37,16 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f4c009572339e22da828233e96647095">
+		["MD5-CAM-1.0.1"] = <"4f7e2eace1674c3c7a4ce7f091ac635a">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
 definition
-	ACTION[at0000] matches {    -- Contact
+	ACTION[at0000] matches {    -- Encounter
 		description matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Purpose
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Encounter name
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -118,7 +118,7 @@ definition
 			}
 		}
 		ism_transition matches {
-			ISM_TRANSITION[at0024] matches {    -- Contact planned
+			ISM_TRANSITION[at0024] matches {    -- Encounter planned
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -129,12 +129,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0024]    -- Contact planned
+							[local::at0024]    -- Encounter planned
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0025] matches {    -- Contact cancelled
+			ISM_TRANSITION[at0025] matches {    -- Encounter cancelled
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -145,44 +145,44 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0025]    -- Contact cancelled
+							[local::at0025]    -- Encounter cancelled
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0026] matches {    -- Contact scheduled
+			ISM_TRANSITION[at0026] matches {    -- Encounter scheduled
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[openehr::524]
+							[openehr::529]
 						}
 					}
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0026]    -- Contact scheduled
+							[local::at0026]    -- Encounter scheduled
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0028] matches {    -- Contact postponed
+			ISM_TRANSITION[at0028] matches {    -- Encounter postponed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[openehr::524]
+							[openehr::527]
 						}
 					}
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0028]    -- Contact postponed
+							[local::at0028]    -- Encounter postponed
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0027] matches {    -- Contact reached
+			ISM_TRANSITION[at0027] matches {    -- Encounter performed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -193,28 +193,12 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0027]    -- Contact reached
+							[local::at0027]    -- Encounter performed
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0032] matches {    -- Contact not reached
-				current_state matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[openehr::524]
-						}
-					}
-				}
-				careflow_step matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0032]    -- Contact not reached
-						}
-					}
-				}
-			}
-			ISM_TRANSITION[at0029] matches {    -- Contact suspended
+			ISM_TRANSITION[at0029] matches {    -- Encounter suspended
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -225,23 +209,23 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0029]    -- Contact suspended
+							[local::at0029]    -- Encounter suspended
 						}
 					}
 				}
 			}
-			ISM_TRANSITION[at0030] matches {    -- Contact aborted
+			ISM_TRANSITION[at0030] matches {    -- Encounter abandoned
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[openehr::524]
+							[openehr::531]
 						}
 					}
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0030]    -- Contact aborted
+							[local::at0030]    -- Encounter abandoned
 						}
 					}
 				}
@@ -270,7 +254,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Contact">
+					text = <"Encounter">
 					description = <"contact">
 				>
 				["at0001"] = <
@@ -282,7 +266,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Purpose">
+					text = <"Encounter name">
 					description = <"The purpose of the contact.">
 				>
 				["at0004"] = <
@@ -342,39 +326,35 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"Contact planned">
+					text = <"Encounter planned">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"Contact cancelled">
+					text = <"Encounter cancelled">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"Contact scheduled">
+					text = <"Encounter scheduled">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"Contact reached">
+					text = <"Encounter performed">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"Contact postponed">
+					text = <"Encounter postponed">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"Contact suspended">
+					text = <"Encounter suspended">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Contact aborted">
+					text = <"Encounter abandoned">
 					description = <"">
 				>
 				["at0031"] = <
 					text = <"Contact completed">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"Contact not reached">
 					description = <"">
 				>
 				["at0033"] = <
@@ -395,7 +375,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Kontakt">
+					text = <"*Encounter (en)">
 					description = <"*contact (en)">
 				>
 				["at0001"] = <
@@ -407,7 +387,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Formål">
+					text = <"*Encounter name (en)">
 					description = <"*The purpose of the contact. (en)">
 				>
 				["at0004"] = <
@@ -467,39 +447,35 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"Kontakt planlagt">
+					text = <"*Encounter planned (en)">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"Kontakt avlyst">
+					text = <"*Encounter cancelled (en)">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"Kontakt tidfestet">
+					text = <"*Encounter scheduled (en)">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"Kontakt oppnådd">
+					text = <"*Encounter performed (en)">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"Kontakt utsatt">
+					text = <"*Encounter postponed (en)">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"Kontakt satt på pause">
+					text = <"*Encounter suspended (en)">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Kontakt avbrutt">
+					text = <"*Encounter abandoned (en)">
 					description = <"">
 				>
 				["at0031"] = <
 					text = <"Kontakt fullført">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"Kontakt ikke oppnådd">
 					description = <"">
 				>
 				["at0033"] = <
