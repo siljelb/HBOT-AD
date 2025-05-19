@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "8825c2b9a99a84c9e46de6dba51a409b",
+      "MD5-CAM-1.0.1" : "7388b7d9d9a58e06b8c531cf0554520c",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -9100,7 +9100,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0025.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -9198,7 +9197,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0028.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -9295,6 +9293,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0032.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -9537,13 +9536,25 @@
           "at0027.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0027.1",
-            "text" : "Ja",
+            "text" : "Snakket med",
             "description" : ""
           },
           "at0032.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0032.1",
             "text" : "Nei",
+            "description" : ""
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Ikke behov",
+            "description" : ""
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Ringer seinere",
             "description" : ""
           }
         }
