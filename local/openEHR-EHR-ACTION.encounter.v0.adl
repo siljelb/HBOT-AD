@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a4981794f92221e86845c7ed6f08ad54">
+		["MD5-CAM-1.0.1"] = <"0e60d0c50c983855111517f0e332fd4a">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
 definition
-	ACTION[at0000] matches {    -- encounter
+	ACTION[at0000] matches {    -- Encounter
 		description matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -254,7 +254,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"encounter">
+					text = <"Encounter">
 					description = <"contact">
 				>
 				["at0001"] = <
@@ -375,7 +375,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Kontakt">
+					text = <"*Encounter (en)">
 					description = <"*contact (en)">
 				>
 				["at0001"] = <
