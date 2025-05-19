@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"287826c983dfab502ac68daa80ef1301">
+		["MD5-CAM-1.0.1"] = <"a4981794f92221e86845c7ed6f08ad54">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -375,7 +375,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"encounter">
+					text = <"Kontakt">
 					description = <"*contact (en)">
 				>
 				["at0001"] = <
@@ -387,7 +387,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"*Encounter name (en)">
+					text = <"Kontaktnavn">
 					description = <"*Identification of the encounter by name. (en)">
 				>
 				["at0004"] = <
@@ -415,7 +415,7 @@ ontology
 					description = <"*Structured details about the other party of the encounter. (en)">
 				>
 				["at0010"] = <
-					text = <"*Mode (en)">
+					text = <"Modalitet">
 					description = <"*The mode of encounter. (en)">
 				>
 				["at0011"] = <
@@ -447,31 +447,31 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*Encounter planned (en)">
+					text = <"Kontakt planlagt">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"*Encounter cancelled (en)">
+					text = <"Kontakt avlyst">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"*Encounter scheduled (en)">
+					text = <"Kontakt tidfestet">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Encounter performed (en)">
+					text = <"Kontakt utført">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Encounter postponed (en)">
+					text = <"Kontakt utsatt">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*Encounter suspended (en)">
+					text = <"Kontakt satt på pause">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"*Encounter abandoned (en)">
+					text = <"Kontakt avbrutt">
 					description = <"">
 				>
 				["at0031"] = <
