@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7520327c2162f4bf706438fbd569a2a6">
+		["MD5-CAM-1.0.1"] = <"56b3548a5a54ad0cbb0fa0a87983bba9">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -475,7 +475,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"*Encounter completed (en)">
+					text = <"Kontakt fullført">
 					description = <"">
 				>
 				["at0033"] = <
