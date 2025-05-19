@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4f7e2eace1674c3c7a4ce7f091ac635a">
+		["MD5-CAM-1.0.1"] = <"03528896ad15ea07ff50b39af3908a5b">
 		["build_uid"] = <"479669d1-8367-323a-8d6d-10f8a3f23831">
 	>
 
@@ -85,7 +85,7 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Mode of contact
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Mode
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -267,11 +267,11 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Encounter name">
-					description = <"The purpose of the contact.">
+					description = <"Identification of the encounter by name.">
 				>
 				["at0004"] = <
 					text = <"Other party">
-					description = <"The other party of the contact.">
+					description = <"The other party of the encounter.">
 				>
 				["at0005"] = <
 					text = <"Subject">
@@ -291,11 +291,11 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Other party details">
-					description = <"Structured details about the other party of the contact.">
+					description = <"Structured details about the other party of the encounter.">
 				>
 				["at0010"] = <
-					text = <"Mode of contact">
-					description = <"The mode of contact.">
+					text = <"Mode">
+					description = <"The mode of encounter.">
 				>
 				["at0011"] = <
 					text = <"Face to face">
@@ -311,7 +311,7 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Initiator">
-					description = <"The initiator of the contact.">
+					description = <"The initiator of the encounter.">
 				>
 				["at0018"] = <
 					text = <"Documenting part">
@@ -363,8 +363,8 @@ ontology
 				>
 				["at0034"] = <
 					text = <"Reason">
-					description = <"Reason that the care flow step for the contact was carried out.">
-					comment = <"For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'.">
+					description = <"Reason that the care flow step for the encounter was carried out.">
+					comment = <"For example: the reason for the cancellation or suspension of the encounter. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'.">
 				>
 				["at0035"] = <
 					text = <"Messaging">
@@ -388,11 +388,11 @@ ontology
 				>
 				["at0003"] = <
 					text = <"*Encounter name (en)">
-					description = <"*The purpose of the contact. (en)">
+					description = <"*Identification of the encounter by name. (en)">
 				>
 				["at0004"] = <
 					text = <"Annen part">
-					description = <"*The other party of the contact. (en)">
+					description = <"*The other party of the encounter. (en)">
 				>
 				["at0005"] = <
 					text = <"Pasienten selv">
@@ -412,11 +412,11 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Detaljer om annen part">
-					description = <"*Structured details about the other party of the contact. (en)">
+					description = <"*Structured details about the other party of the encounter. (en)">
 				>
 				["at0010"] = <
-					text = <"Kontaktmåte">
-					description = <"*The mode of contact. (en)">
+					text = <"*Mode (en)">
+					description = <"*The mode of encounter. (en)">
 				>
 				["at0011"] = <
 					text = <"*Face to face (en)">
@@ -432,7 +432,7 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Initierende part">
-					description = <"*The initiator of the contact. (en)">
+					description = <"*The initiator of the encounter. (en)">
 				>
 				["at0018"] = <
 					text = <"*Documenting part (en)">
@@ -484,8 +484,8 @@ ontology
 				>
 				["at0034"] = <
 					text = <"Årsak">
-					description = <"*Reason that the care flow step for the contact was carried out. (en)">
-					comment = <"*For example: the reason for the cancellation or suspension of the contact. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'. (en)">
+					description = <"*Reason that the care flow step for the encounter was carried out. (en)">
+					comment = <"*For example: the reason for the cancellation or suspension of the encounter. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical pathway process, such as 'Postponed' due to 'Patient was ill', or 'Cancelled' due to 'Patient changed their mind'. (en)">
 				>
 				["at0035"] = <
 					text = <"*Messaging (en)">
