@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "92a410ee15cf752f1cced3a27983befa",
+      "MD5-CAM-1.0.1" : "274d1f6eedf176a7debb9937713e7b7c",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -29260,10 +29260,10 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "ICD10"
+                    "value" : "ICD-10"
                   },
                   "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "ICD10" ]
+                  "selectedTerminologies" : [ "ICD-10" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -29295,7 +29295,7 @@
         "nb" : { }
       },
       "termBindings" : {
-        "ICD10" : {
+        "ICD-10" : {
           "ac0.1" : "terminology:ICD10"
         }
       },
@@ -29363,10 +29363,10 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "ICD10"
+                    "value" : "ICD-10"
                   },
                   "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "ICD10" ]
+                  "selectedTerminologies" : [ "ICD-10" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -29398,7 +29398,7 @@
         "nb" : { }
       },
       "termBindings" : {
-        "ICD10" : {
+        "ICD-10" : {
           "ac0.1" : "terminology:ICD10"
         }
       },
