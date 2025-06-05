@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a15cfeb58b726d18b565083c99caf6a2",
+      "MD5-CAM-1.0.1" : "92a410ee15cf752f1cced3a27983befa",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -677,7 +677,7 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "1..1",
-              "nodeId" : "at0046.2",
+              "nodeId" : "at0043.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnosis_dips-001.v1",
@@ -7775,7 +7775,7 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "1..1",
-              "nodeId" : "at0046.2",
+              "nodeId" : "at0043.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnosis_dips-002.v1",
