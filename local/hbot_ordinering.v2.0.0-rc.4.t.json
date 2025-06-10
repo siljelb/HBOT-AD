@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "274d1f6eedf176a7debb9937713e7b7c",
+      "MD5-CAM-1.0.1" : "d2bcfd3a9520511318641b544aae1587",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -29225,7 +29225,22 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3838F1F72D72B92D05C24EBA84A50482"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir detaljert informasjon som supplement til arketypen probelm/diagnose.",
+          "keywords" : [ ],
+          "use" : "Angir detaljert informasjon som supplement til arketypen problem/diagnose. Kan benyttes for å sette spesifikke medisinske koder (terminologier) f.eks. ICD, SnomedCT.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1",
     "differential" : true,
@@ -29252,20 +29267,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "ICD-10"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "ICD-10" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -29294,11 +29296,7 @@
       "termDefinitions" : {
         "nb" : { }
       },
-      "termBindings" : {
-        "ICD-10" : {
-          "ac0.1" : "terminology:ICD10"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -29328,7 +29326,22 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3838F1F72D72B92D05C24EBA84A50482"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir detaljert informasjon som supplement til arketypen probelm/diagnose.",
+          "keywords" : [ ],
+          "use" : "Angir detaljert informasjon som supplement til arketypen problem/diagnose. Kan benyttes for å sette spesifikke medisinske koder (terminologier) f.eks. ICD, SnomedCT.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1",
     "differential" : true,
@@ -29355,20 +29368,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "ICD-10"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "ICD-10" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -29397,11 +29397,7 @@
       "termDefinitions" : {
         "nb" : { }
       },
-      "termBindings" : {
-        "ICD-10" : {
-          "ac0.1" : "terminology:ICD10"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
