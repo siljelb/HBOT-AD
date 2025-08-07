@@ -64015,7 +64015,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -64081,7 +64081,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -64130,15 +64130,9 @@
           },
           "[psi]/min" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "p",
-            "description" : "",
+            "text" : "psi/min",
+            "description" : "pounds per square inch per minute",
             "code" : "[psi]/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*psi/min (nb)",
-            "description" : "*decaPascals per second (nb)",
-            "code" : "daPa/s"
           }
         },
         "nb" : {
@@ -64152,7 +64146,7 @@
           "[psi]/min" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "psi/min",
-            "description" : "",
+            "description" : "pounds per square inch per minutt",
             "code" : "[psi]/min"
           },
           "at0000.1" : {
@@ -64160,12 +64154,6 @@
             "code" : "at0000.1",
             "text" : "Kompresjonshastighet",
             "description" : ""
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "psi/min",
-            "description" : "decaPascals per second",
-            "code" : "daPa/s"
           }
         }
       },
@@ -65243,7 +65231,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -65309,7 +65297,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -65361,12 +65349,6 @@
             "text" : "psi/min",
             "description" : "@ units @",
             "code" : "[psi]/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*psi/min (nb)",
-            "description" : "*decaPascals per second (nb)",
-            "code" : "daPa/s"
           }
         },
         "nb" : {
@@ -65388,12 +65370,6 @@
             "text" : "psi/min",
             "description" : "@ units @",
             "code" : "[psi]/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "psi/min",
-            "description" : "decaPascals per second",
-            "code" : "daPa/s"
           }
         }
       },
