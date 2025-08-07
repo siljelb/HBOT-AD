@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "0a75ef22ce2d430d7e51b71e8d1ea397",
+      "MD5-CAM-1.0.1" : "d4e543042c3eda6deec15a1b5adcc1db",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -10884,7 +10884,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -10951,7 +10951,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -11000,21 +11000,9 @@
           },
           "[psi]/min" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "p",
+            "text" : "psi/min",
             "description" : "@ units @",
             "code" : "[psi]/min"
-          },
-          "/min" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*p (nb)",
-            "description" : "*per minute (nb)",
-            "code" : "/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*p (nb)",
-            "description" : "*decaPascals per second (nb)",
-            "code" : "daPa/s"
           }
         },
         "nb" : {
@@ -11036,18 +11024,6 @@
             "code" : "at0000.1",
             "text" : "Kompresjonshastighet",
             "description" : "Forhåndsdefinerte spørsmål som tilfører detaljer om en tilstand, symptom, prosedyre eller lignende."
-          },
-          "/min" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "psi/min",
-            "description" : "per minute",
-            "code" : "/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "psi/min",
-            "description" : "decaPascals per second",
-            "code" : "daPa/s"
           }
         }
       },
@@ -11998,7 +11974,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -12064,7 +12040,7 @@
                       "members" : [ {
                         "@type" : "C_STRING",
                         "rmTypeName" : "STRING",
-                        "constraint" : [ "daPa/s" ]
+                        "constraint" : [ "[psi]/min" ]
                       }, {
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
@@ -12116,12 +12092,6 @@
             "text" : "p",
             "description" : "@ units @",
             "code" : "[psi]/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*p (nb)",
-            "description" : "*decaPascals per second (nb)",
-            "code" : "daPa/s"
           }
         },
         "nb" : {
@@ -12143,12 +12113,6 @@
             "text" : "psi/min",
             "description" : "@ units @",
             "code" : "[psi]/min"
-          },
-          "daPa/s" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "psi/min",
-            "description" : "decaPascals per second",
-            "code" : "daPa/s"
           }
         }
       },
