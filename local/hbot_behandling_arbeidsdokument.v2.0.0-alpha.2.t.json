@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2105c901facf708bdad5f261f4abbe0f",
+      "MD5-CAM-1.0.1" : "0a75ef22ce2d430d7e51b71e8d1ea397",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -11908,19 +11908,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "708" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -11930,6 +11918,10 @@
                 }, {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "precision",
                   "children" : [ ]
                 } ],
                 "tuples" : [ {
@@ -11942,15 +11934,165 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lower" : 0.0,
+                      "lower" : 1.0,
+                      "upper" : 5.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
+                      "upperUnbounded" : false,
+                      "lowerUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "constraint" : [ {
+                      "lower" : 1,
+                      "upper" : 1,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "upperUnbounded" : false,
                       "lowerUnbounded" : false
                     } ]
                   } ]
                 } ]
               } ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "lower",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "708" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "precision",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "daPa/s" ]
+                      }, {
+                        "@type" : "C_REAL",
+                        "rmTypeName" : "REAL",
+                        "constraint" : [ {
+                          "lower" : 1.0,
+                          "upper" : 5.0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false,
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 1,
+                          "upper" : 1,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true,
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "upper",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "708" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "precision",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "daPa/s" ]
+                      }, {
+                        "@type" : "C_REAL",
+                        "rmTypeName" : "REAL",
+                        "constraint" : [ {
+                          "lower" : 1.0,
+                          "upper" : 5.0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false,
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 1,
+                          "upper" : 1,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true,
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -11968,6 +12110,18 @@
             "code" : "at0000",
             "text" : "Questionnaire details (2)",
             "description" : "Predetermined questions which provides additional details about a condition, symptom, procedure or similar."
+          },
+          "[psi]/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "p",
+            "description" : "@ units @",
+            "code" : "[psi]/min"
+          },
+          "daPa/s" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*p (nb)",
+            "description" : "*decaPascals per second (nb)",
+            "code" : "daPa/s"
           }
         },
         "nb" : {
@@ -11983,6 +12137,18 @@
             "code" : "at0000.1",
             "text" : "Dekompresjonshastighet",
             "description" : "Forhåndsdefinerte spørsmål som tilfører detaljer om en tilstand, symptom, prosedyre eller lignende."
+          },
+          "[psi]/min" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "psi/min",
+            "description" : "@ units @",
+            "code" : "[psi]/min"
+          },
+          "daPa/s" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "psi/min",
+            "description" : "decaPascals per second",
+            "code" : "daPa/s"
           }
         }
       },
