@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5e1a2abea062790913aea4bd5097780d",
+      "MD5-CAM-1.0.1" : "d12be164a4dcecc8af8db50c354de5ac",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -5650,7 +5650,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0068.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -5663,19 +5662,24 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
-                          "occurrences" : "1..1",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "2.16.578.1.12.4.1.1.8304"
                           },
-                          "constraint" : [ "at0136", "at0137", "at0138" ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "2.16.578.1.12.4.1.1.8304" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "2.16.578.1.12.4.1.1.8304",
+                            "code" : "0",
+                            "value" : "Øyeblikkelig hjelp"
+                          }, {
+                            "terminologyId" : "2.16.578.1.12.4.1.1.8304",
+                            "code" : "N",
+                            "value" : "Elektiv"
+                          } ]
                         } ]
                       } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -5895,7 +5899,23 @@
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "ec307185-156f-3cfd-aab3-96c9fb547480",
