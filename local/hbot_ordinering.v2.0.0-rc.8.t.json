@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "aaf25ed7b2abb6ed084916fddb94382b",
+      "MD5-CAM-1.0.1" : "b0742d9bef558363df30e42b06a3a081",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -18234,6 +18234,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0103.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -21744,6 +21745,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0103.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -24510,6 +24512,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0103.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
