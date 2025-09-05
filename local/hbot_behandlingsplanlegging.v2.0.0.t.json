@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b5fb9ab3a32bbc27d32b2f3dfaa79e65",
+      "MD5-CAM-1.0.1" : "69794664021770eb545fe68b5e53c19a",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -11378,7 +11378,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0030.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11536,6 +11535,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0027.1",
             "text" : "Snakket med",
+            "description" : ""
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Forsøkt ringt, oppnår ikke kontakt",
             "description" : ""
           }
         }
