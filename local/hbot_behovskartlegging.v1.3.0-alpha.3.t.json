@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "40e5e389ac6859f271640f686da006fd"
+      "MD5-CAM-1.0.1" : "c0a2607880021cb8f942d343d4abc128"
     },
     "details" : {
       "ko" : {
@@ -69226,6 +69226,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0153.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -69715,7 +69716,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -69764,7 +69764,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -70373,7 +70372,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "occurrences" : "0..1",
               "nodeId" : "at0033.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -70394,6 +70393,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0024.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -70444,12 +70444,18 @@
         "ru" : { },
         "en" : { },
         "nb" : {
-          "at0024.1" : {
+          "at0018.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.1",
+            "code" : "at0018.1",
+            "text" : "Legemiddel ikke administrert",
+            "description" : "En enkeltdose er holdt tilbake og ikke administrert (\"nullet\"). Det er ingen forventing om at den aktuelle dosen skal gis på et senere tidspunkt, men neste dose administreres i henhold til ordineringen."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
             "text" : "Anvisning",
-            "description" : "Ytterligere fritekstdetaljer om aktiviteten eller prosesstrinnet som ikke representeres i andre elementer, inkludert detaljer om varians mellom den planlagte handlingen og handlingen som faktisk ble utført.",
-            "comment" : "For eksempel \"Pasienten var på røntgenavdelingen\" eller \"Utilsiktet intravenøs injeksjon under intramuskulær administrering\"."
+            "description" : "Enhver instruksjon som gis til pasienten eller en omsorgsperson når prosesstrinnet utføres.",
+            "comment" : "For eksempel \"unngå grapefrukt\", \"ta minst 2 timer før sengetid\" eller \"ta med mat\". Kan kodes med en terminologi der det er klinisk passende."
           }
         },
         "pt-br" : { },
