@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "17db87bde151aee5e24c0513df58b51e",
+      "MD5-CAM-1.0.1" : "23d1c73ab330f7b7d145d28ce5310886",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1720,8 +1720,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -1751,8 +1751,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -7055,8 +7055,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -7086,8 +7086,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -8185,8 +8185,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -8216,8 +8216,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -9352,8 +9352,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -9383,8 +9383,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -12687,8 +12687,8 @@
                         "lower" : 1,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -17135,8 +17135,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -17234,8 +17234,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -17249,8 +17249,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -17264,8 +17264,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -17279,8 +17279,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -17318,8 +17318,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -19666,8 +19666,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -19765,8 +19765,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -19780,8 +19780,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -19795,8 +19795,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -19810,8 +19810,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -19849,8 +19849,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -20136,8 +20136,8 @@
                     "lower" : 1,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -20235,8 +20235,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -20250,8 +20250,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -20265,8 +20265,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -20280,8 +20280,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   }, {
                     "@type" : "C_STRING",
@@ -20319,8 +20319,8 @@
                     "lower" : "PT0S",
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -21356,8 +21356,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -21387,8 +21387,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -23371,7 +23371,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0027.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -23447,8 +23446,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 } ]
@@ -23554,7 +23553,15 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0027.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.1",
+            "text" : "Behandlingsdag",
+            "description" : "Plasseringen av dette analyseresultatet i den overordnede rekkefølgen av resultater.",
+            "comment" : "For eksempel \"1\", \"2\", \"3\". Dersom det er flere analyseresultater i en rapport gjør \"Resultatrekkefølge\" rekkefølgen i svarrapporten eksplisitt."
+          }
+        },
         "pt-br" : { },
         "de" : { },
         "nl" : { },
@@ -23889,7 +23896,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0027.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -23965,8 +23971,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 } ]
@@ -24072,7 +24078,15 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0027.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.1",
+            "text" : "Behandlingsdag",
+            "description" : "Plasseringen av dette analyseresultatet i den overordnede rekkefølgen av resultater.",
+            "comment" : "For eksempel \"1\", \"2\", \"3\". Dersom det er flere analyseresultater i en rapport gjør \"Resultatrekkefølge\" rekkefølgen i svarrapporten eksplisitt."
+          }
+        },
         "pt-br" : { },
         "de" : { },
         "nl" : { },
@@ -24483,8 +24497,8 @@
                       "lower" : 0.0,
                       "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "upperUnbounded" : true,
-                      "lowerUnbounded" : false
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
                     } ]
                   } ]
                 } ]
@@ -27011,8 +27025,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -27041,8 +27055,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -28211,8 +28225,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -28241,8 +28255,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -29453,8 +29467,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -29483,8 +29497,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -30695,8 +30709,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -30725,8 +30739,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
