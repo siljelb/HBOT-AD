@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e1c3334902d5d7255450022f18e7e589",
+      "MD5-CAM-1.0.1" : "65c5c6c66f41b429c26a4789e27e583a",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -793,7 +793,7 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
+              "rmTypeName" : "EVENT",
               "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
