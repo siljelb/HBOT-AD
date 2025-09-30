@@ -114,7 +114,7 @@ This archetype is deliberately designed as a CLUSTER class archetype so that the
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"627563bf6c3f78f4779a0a4d8dc70260">
+		["MD5-CAM-1.0.1"] = <"60a9d6af50b917c78ddd5e850dc05f62">
 		["build_uid"] = <"a90753d4-595a-46e7-9c96-fcbe8611865e">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -127,7 +127,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Citation
+			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Citation
 				value matches {
 					DV_BOOLEAN matches {*}
 					DV_CODED_TEXT matches {*}
