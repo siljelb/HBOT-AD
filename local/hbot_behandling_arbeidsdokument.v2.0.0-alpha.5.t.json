@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7319992b61f859b482ceb2c42663f395",
+      "MD5-CAM-1.0.1" : "59901155962bf36923ed6d325793593b",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1821,9 +1821,10 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerIncluded" : false,
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : true,
+                      "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
                   } ]
@@ -2345,9 +2346,10 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerIncluded" : false,
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : true,
+                      "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
                   } ]
@@ -2870,9 +2872,10 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerIncluded" : false,
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : true,
+                      "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
                   } ]
@@ -7972,9 +7975,10 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerIncluded" : false,
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : true,
+                      "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
                   } ]
@@ -8483,9 +8487,10 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerIncluded" : false,
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
                       "upperIncluded" : false,
-                      "lowerUnbounded" : true,
+                      "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
                   } ]
