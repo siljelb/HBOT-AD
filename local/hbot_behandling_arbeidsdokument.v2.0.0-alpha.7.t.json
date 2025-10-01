@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "275725ffc4c89db1eac861fdc044d3d4",
+      "MD5-CAM-1.0.1" : "3604b61438576405969383d3aeaaff8d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1810,10 +1810,6 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "precision",
-                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -1830,17 +1826,6 @@
                       "upperIncluded" : false,
                       "lowerUnbounded" : false,
                       "upperUnbounded" : true
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 2,
-                      "upper" : 2,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
