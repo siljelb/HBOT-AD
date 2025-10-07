@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9f09e6e1fd84fece342886e5f39e713a",
+      "MD5-CAM-1.0.1" : "1d106de148c9846e18176e8d29ed11dd",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -5390,7 +5390,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0153.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
