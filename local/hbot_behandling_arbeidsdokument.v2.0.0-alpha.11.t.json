@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "4ed73ca8416680a5253a81a4a7764021",
+      "MD5-CAM-1.0.1" : "bf12a9534d48d7a5b50cd391c5936098",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -6481,7 +6481,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..1",
               "nodeId" : "at0033.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -6570,13 +6569,6 @@
         "ru" : { },
         "en" : { },
         "nb" : {
-          "at0033.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0033.1",
-            "text" : "Anvisning",
-            "description" : "Enhver instruksjon som gis til pasienten eller en omsorgsperson når prosesstrinnet utføres.",
-            "comment" : "For eksempel \"unngå grapefrukt\", \"ta minst 2 timer før sengetid\" eller \"ta med mat\". Kan kodes med en terminologi der det er klinisk passende."
-          },
           "at0018.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0018.1",
