@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "621bbd361ab3bc430ce95a0c7e6c2732",
+      "MD5-CAM-1.0.1" : "a1b08a6893892c2fbe9a3263003d3eac",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -4355,6 +4355,23 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..1",
+          "nodeId" : "at0001.4",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0001.2",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4390,6 +4407,13 @@
             "text" : "ANY (3)",
             "description" : "A specific question about the disorder, symptom, procedure or similar.",
             "comment" : "The specific question should be coded with a terminology, where possible."
+          },
+          "at0001.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ANY (4)",
+            "description" : "A specific question about the disorder, symptom, procedure or similar.",
+            "comment" : "The specific question should be coded with a terminology, where possible."
           }
         },
         "nb" : {
@@ -4417,6 +4441,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.3",
             "text" : "Skal tidligere glukosemålinger vises?",
+            "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
+            "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
+          },
+          "at0001.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.4",
+            "text" : "Skal premedikasjon vises?",
             "description" : "Et spesifikt spørsmål om tilstanden, symptomet, prosedyren eller lignende.",
             "comment" : "Det spesifikke spørsmålet bør kodes med en terminologi, der dette er mulig."
           }
@@ -7706,7 +7737,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8B02F2D7FC54D282E09D2F23B3E67F05"
+        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000"
       },
       "details" : {
         "de" : {
