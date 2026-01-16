@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c187e0d6ebbd60ee83131e0bc043daa4",
+      "MD5-CAM-1.0.1" : "9cabfd159e73659bfaafd5a0d0ccc0c2",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1849,7 +1849,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CEA1A3EEE2DAC904730EB146397D7BE9"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et sammendrag av en terapeutisk intervensjon som har startet eller blitt utført.",
+          "keywords" : [ "behandling, forløp, protokoll, terapi, terapeutisk, kirurgi, omsorg, prosedyre, forebyggende, diagnostisk" ],
+          "use" : "Bruk for å registrere et sammendrag av en terapeutisk intervensjon som har startet eller blitt utført.\r\n\r\nEksempler på bruk inkluderer, men er ikke begrenset til:\r\n- Et stråleterapiforløp som en del av en kreftbehandling.\r\n- En medisinsk behandlingsserie som har blitt gitt.\r\n- Et kirurgisk inngrep som har blitt utført.\r\n- Kognitiv atferdsterapi brukt i behandling av depresjon.\r\n- En rekke omsorgsintervensjoner for å støtte psykisk og fysisk velvære, for eksempel emosjonell støtte til pasienter som gjennomgår kreftbehandling.\r\n- Støttetiltak i kommunale eller andre offentlige tjenester for å bedre sosiale faktorer, som ustabil boligsituasjon og sosial isolasjon.\r\n- Livsstilsveiledning med mål om å fremme sunne vaner og forbedre generell livskvalitet.\r\n- Hjemmebaserte tjenester til eldre for å støtte selvstendighet og livskvalitet.\r\n\r\nElementet \"Intervensjonskategori\" kan brukes til å dokumentere en overordnet gruppering av \"Intervensjonsnavn\". Tilsvarende kan \"Intervensjonstype\" brukes til å spesifisere metoden eller prosessen som ble benyttet for å gjennomføre intervensjonen. For eksempel:\r\n- Kategori: \"Kreftbehandling\", Navn: \"Stråleterapi\", og Type: \"Brakyterapi\"\r\n- Kategori: \"Kirurgisk\", Navn: \"Appendektomi\", og Type: \"Laparoskopisk\"\r\n- Kategori: \"Psykososial\", Navn: \"Kort intervensjon for røykeslutt\", og Type: \"Motiverende intervju (MI)\".",
+          "misuse" : "Skal ikke brukes til å registrere alle detaljer om hver enkelt intervensjonshendelse eller aktivitet. Bruk en passende ACTION-arketype til dette formålet.\r\n\r\nSkal ikke brukes til et sammendrag av planlagte eller foreslåtte intervensjoner som ikke er påbegynt. Bruk andre passende arketyper for dette formålet, for eksempel EVALUATION.recommendation (Anbefaling) , hvilken som helst INSTRUCTION, eller en ACTION i tilstand \"Planned\" or \"Scheduled\".\r\n\r\nSkal ikke brukes til å registrere individets vaksinasjonsstatus eller status for immunisering mot en spesifikk sykdom eller agens. Bruk EVALUATION.vaccination_summary arketypen til dette formålet.\r\n\r\nSkal ikke brukes i tilfeller der det finnes mer spesifikke sammendragsarketyper for den aktuelle intervensjonen, for eksempel 'Vaccination summary' (Vaksinasjonssammendrag), 'Transfusion summary' eller 'Medication summary' (Legemiddelsammendrag). Bruk de tilgjengelige spesifikke arketypene til slike formål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a summary of a commenced or completed therapeutic intervention.",
+          "keywords" : [ "treatment", "course", "protocol", "therapy", "therapeutic", "surgery", "management", "care", "procedure", "preventive", "diagnostic" ],
+          "use" : "Use to record a summary of a commenced or completed therapeutic intervention.\r\n\r\nExamples of use include, but are not limited to:\r\n- A course of radiotherapy carried out as part of a cancer protocol.\r\n- A course of medical treatment that has been administered.\r\n- A surgical procedure that has been performed.\r\n- Cognitive behavioural therapy sessions used in the treatment of depression.\r\n- A series of caregiving interventions used to support mental and physical well-being, such as providing emotional support to patients undergoing cancer treatment.\r\n- Community support programs designed to mitigate social factors like housing instability and social isolation.\r\n- Lifestyle counseling sessions aimed at promoting healthy behaviors and improving overall well-being.\r\n- Home care services offered to an elderly individual to support independence and quality of life.\r\n\r\nThe 'Intervention category' element can be used to record an overarching grouping of the 'Intervention name'. Similarly, the 'Intervention type' can be used to further specify the method or process used to deliver the intervention. For example:\r\n- Category: \"Cancer treatment\", Name: \"Radiotherapy, and Type: \"Brachytherapy\"\r\n- Category: \"Surgical\", Name: \"Appendectomy\", and Type: \"Laparoscopic\"\r\n- Category: \"Psychosocial\", Name: \"Smoking cessation brief intervention\", and Type: \"Motivational interviewing technique\".",
+          "misuse" : "Not to be used to record all details of each intervention event or activity. Use an appropriate ACTION archetype for this purpose, for example ACTION.procedure.\r\n\r\nNot to be used for summarising planned or proposed interventions which have not been started. Use other appropriate archetypes for this purpose, for example EVALUATION.recommendation, any INSTRUCTION, or an ACTION in a ‘planned’ or ‘scheduled’ state.\r\n\r\nNot to be used to record the individual's immunisation or vaccination status for a specific vaccine or disease/agent. Use the EVALUATION.vaccination_summary archetype for this purpose.\r\n\r\nNot to be used in cases where there are more specific summary archetypes available for the intervention in question, for example 'Vaccination summary', 'Transfusion summary' or 'Medication summary'. Use the available specific archetypes for such purposes.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.intervention_summary.v1",
     "differential" : true,
@@ -1993,31 +2024,13 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0032.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0004.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2099,6 +2112,15 @@
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-service_direction-002.v1",
               "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0019.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-service_direction-003.v1",
+              "referenceType" : "archetypeOverlay"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2128,14 +2150,6 @@
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_IDENTIFIER",
-                  "defaultValue" : {
-                    "@type" : "DV_IDENTIFIER"
-                  },
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "attributes" : [ ],
@@ -2240,7 +2254,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2B84E288EC80F7D109E4C564852BFBDB"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.",
+          "keywords" : [ "rekvirering", "rekvirere", "tjeneste", "prosedyre", "undersøkelse", "behandling", "timing", "tidsangivelse", "timedefinisjon", "tidspunkt", "instruks", "bestilling", "bestille" ],
+          "use" : "Brukes for å registrere en detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.\r\n\r\nDenne arketypen er utviklet for å nøstes i SLOTet \"Kompleks timing\" i arketypen INSTRUCTION.service_request (Helsetjenesteforespørsel), men kan benyttes i andre arketyper der det er klinisk relevant. Det kan være nødvendig med flere instanser av denne arketypen for å representerer komplekse forespørsler etter tjenester, særlig tjenester som endrer frekvens eller leveringsmønstre over tid.\r\n\r\nHver tjenesteanvisning gir en detaljert veiledning om en eller flere sekvensielle aktiviteter, der hver aktivitet inneholder en \"Mengde\" og en \"Timing innenfor en dag\" (arketypen \"Timing - døgn\"), sammen med den overordnede varigheten av anvisningen og detaljer om repeterende mønstre utover en enkelt dag. Hvert aktivitetspar gjør det mulig å beskrive et komplekst mønster, for eksempel 2 timer hjemmesykepleie om morgenen og en time om kvelden.\r\n\r\nHver tjenesteanvisning kan være gyldig i en begrenset tidsperiode, over et begrenset nummer hendelser beskrevet i dataelementet \"Totalmengde\".\r\n\r\nDen totale mengden for hele tjenesteanvisningen registreres i arketypen INSTRUCTION.service_request (Helsetjenesteforespørsel).\r\n\r\nFor eksempel: \r\n- Hjemmesykepleier 2 timer om morgenen og 1 time om kvelden over en tidsperiode på 6 måneder. Etterfulgt av kun 1 time om morgenen i 6 uker.\r\n- Dialyseblodprøvepakke tas på onsdager i den andre uken av Januar, Februar, April, Mai, Juli, August, Oktober, November.\r\n- INR daglig i 1 uke, ukentlig i 1 måned og månedlig i 6 måneder.\r\n- Vitale observasjoner hver time i 4 timer, deretter hver andre time i 12 timer.\r\n\r\nArketypen kan gis nye navn i et templat eller en applikasjon for å representere en spesifikk hendelse som f.eks. \"første fire timer eller operasjon\".",
+          "misuse" : "Skal ikke brukes for å registrere tidsangivelse om en rekvirering eller ordinering der det er behov for en doseangivelse, som legemiddel- eller transfusjonsordinasjoner. Bruk arketypen CLUSTER.therapeutic_direction (Terapeutisk anvisning) for dette formålet.",
+          "copyright" : "© openEHR Foundation, Alberta Health Services (Canada)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured details of a complex direction for an ordered or requested service.",
+          "keywords" : [ "request", "service", "procedure", "examination", "treatment", "timing" ],
+          "use" : "Use to record structured details of a single, complex direction for an ordered or requested service. \r\n\r\nThis archetype has been designed to be nested within the 'Complex timing' SLOT in the INSTRUCTION.service_request archetype, but may be used within other clinically relevant archetypes, as required. Multiple instances of this archetype may be required to represent a complex order for services, especially ones with changing frequency or patterns of delivery over time.\r\n\r\nEach service direction provides detailed guidance about one or more sequential activities, each comprising an amount and an intradaily timing, together with an overall direction duration and details of any repetitive pattern outside a single day. Each activity pair allows for a complex intradaily pattern to be described, such as 2 hours of nursing assistance in the morning and one hour in the evening.\r\n\r\nEach service direction may apply for a fixed duration of time, or fixed number of services, which is specified using the 'Total amount' data element.\r\n\r\nThe total amount for the entire service request, is recorded in the INSTRUCTION.service_request.\r\n\r\nFor example: \r\n- 'Home nursing assistance for 2 hours in the morning and 1 hour in the evening for a period of 6 weeks, followed by 1 hour in the morning only for a further 6 weeks';\r\n- 'Dialysis blood test package to be carried out: The second Wednesday of the month in January, March, May, July, September and November';\r\n- 'INR daily for one week, weekly for one month, monthly for six months'; or\r\n- 'Vital signs observations every hour for four hours, then every two hours for 12 hours'.\r\n\r\nThe CLUSTER can be renamed in template or at run-time to represent a specific service direction such as 'First four hours after surgery'.",
+          "misuse" : "Not to be used to record information about any request or order where a dosage is required, for example medication or transfusion orders. Use the CLUSTER.therapeutic_direction for these purposes.",
+          "copyright" : "© openEHR Foundation, Alberta Health Services (Canada)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.service_direction.v1",
     "differential" : true,
@@ -2491,6 +2538,13 @@
             "text" : "Antall utførte behandlinger",
             "description" : "Tilsiktet rekkefølge for denne anvisningen i den overordnede anvisningssekvensen.",
             "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Behandlinger",
+            "description" : "Detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.",
+            "comment" : "For eksempel: En sekvens av vitale observasjoner de første 24 timene postoperativt, eller en forespørsel om hjemmesykepleie morgen og kveld, gradvis redusert over en måned."
           }
         }
       },
@@ -2538,7 +2592,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2B84E288EC80F7D109E4C564852BFBDB"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.",
+          "keywords" : [ "rekvirering", "rekvirere", "tjeneste", "prosedyre", "undersøkelse", "behandling", "timing", "tidsangivelse", "timedefinisjon", "tidspunkt", "instruks", "bestilling", "bestille" ],
+          "use" : "Brukes for å registrere en detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.\r\n\r\nDenne arketypen er utviklet for å nøstes i SLOTet \"Kompleks timing\" i arketypen INSTRUCTION.service_request (Helsetjenesteforespørsel), men kan benyttes i andre arketyper der det er klinisk relevant. Det kan være nødvendig med flere instanser av denne arketypen for å representerer komplekse forespørsler etter tjenester, særlig tjenester som endrer frekvens eller leveringsmønstre over tid.\r\n\r\nHver tjenesteanvisning gir en detaljert veiledning om en eller flere sekvensielle aktiviteter, der hver aktivitet inneholder en \"Mengde\" og en \"Timing innenfor en dag\" (arketypen \"Timing - døgn\"), sammen med den overordnede varigheten av anvisningen og detaljer om repeterende mønstre utover en enkelt dag. Hvert aktivitetspar gjør det mulig å beskrive et komplekst mønster, for eksempel 2 timer hjemmesykepleie om morgenen og en time om kvelden.\r\n\r\nHver tjenesteanvisning kan være gyldig i en begrenset tidsperiode, over et begrenset nummer hendelser beskrevet i dataelementet \"Totalmengde\".\r\n\r\nDen totale mengden for hele tjenesteanvisningen registreres i arketypen INSTRUCTION.service_request (Helsetjenesteforespørsel).\r\n\r\nFor eksempel: \r\n- Hjemmesykepleier 2 timer om morgenen og 1 time om kvelden over en tidsperiode på 6 måneder. Etterfulgt av kun 1 time om morgenen i 6 uker.\r\n- Dialyseblodprøvepakke tas på onsdager i den andre uken av Januar, Februar, April, Mai, Juli, August, Oktober, November.\r\n- INR daglig i 1 uke, ukentlig i 1 måned og månedlig i 6 måneder.\r\n- Vitale observasjoner hver time i 4 timer, deretter hver andre time i 12 timer.\r\n\r\nArketypen kan gis nye navn i et templat eller en applikasjon for å representere en spesifikk hendelse som f.eks. \"første fire timer eller operasjon\".",
+          "misuse" : "Skal ikke brukes for å registrere tidsangivelse om en rekvirering eller ordinering der det er behov for en doseangivelse, som legemiddel- eller transfusjonsordinasjoner. Bruk arketypen CLUSTER.therapeutic_direction (Terapeutisk anvisning) for dette formålet.",
+          "copyright" : "© openEHR Foundation, Alberta Health Services (Canada)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured details of a complex direction for an ordered or requested service.",
+          "keywords" : [ "request", "service", "procedure", "examination", "treatment", "timing" ],
+          "use" : "Use to record structured details of a single, complex direction for an ordered or requested service. \r\n\r\nThis archetype has been designed to be nested within the 'Complex timing' SLOT in the INSTRUCTION.service_request archetype, but may be used within other clinically relevant archetypes, as required. Multiple instances of this archetype may be required to represent a complex order for services, especially ones with changing frequency or patterns of delivery over time.\r\n\r\nEach service direction provides detailed guidance about one or more sequential activities, each comprising an amount and an intradaily timing, together with an overall direction duration and details of any repetitive pattern outside a single day. Each activity pair allows for a complex intradaily pattern to be described, such as 2 hours of nursing assistance in the morning and one hour in the evening.\r\n\r\nEach service direction may apply for a fixed duration of time, or fixed number of services, which is specified using the 'Total amount' data element.\r\n\r\nThe total amount for the entire service request, is recorded in the INSTRUCTION.service_request.\r\n\r\nFor example: \r\n- 'Home nursing assistance for 2 hours in the morning and 1 hour in the evening for a period of 6 weeks, followed by 1 hour in the morning only for a further 6 weeks';\r\n- 'Dialysis blood test package to be carried out: The second Wednesday of the month in January, March, May, July, September and November';\r\n- 'INR daily for one week, weekly for one month, monthly for six months'; or\r\n- 'Vital signs observations every hour for four hours, then every two hours for 12 hours'.\r\n\r\nThe CLUSTER can be renamed in template or at run-time to represent a specific service direction such as 'First four hours after surgery'.",
+          "misuse" : "Not to be used to record information about any request or order where a dosage is required, for example medication or transfusion orders. Use the CLUSTER.therapeutic_direction for these purposes.",
+          "copyright" : "© openEHR Foundation, Alberta Health Services (Canada)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.service_direction.v1",
     "differential" : true,
@@ -2787,7 +2874,353 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tjenesteanvisning (2)",
+            "text" : "Behandlinger før operasjon",
+            "description" : "Detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.",
+            "comment" : "For eksempel: En sekvens av vitale observasjoner de første 24 timene postoperativt, eller en forespørsel om hjemmesykepleie morgen og kveld, gradvis redusert over en måned."
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Antall planlagte behandlinger",
+            "description" : "Det totale antall tjenester eller timer som er tilgjengelige for alle aktiviteter i denne anvisningen.",
+            "comment" : "For eksempel: \"Gjennomfør kun en gang\" = 1, eller \"30 timer\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Antall utførte behandlinger",
+            "description" : "Tilsiktet rekkefølge for denne anvisningen i den overordnede anvisningssekvensen.",
+            "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "4deab281-79b1-4e37-906b-1cee262a4957",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke og John Tore Valand, Liv Laugen",
+        "organisation" : "Helse Vest IKT og Helse Bergen HF, ​Oslo University Hospital, Norway",
+        "email" : "john.tore.valand@helse-bergen.no, liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "921551dc-a072-4d8e-b889-22ffd5c787d4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "2B84E288EC80F7D109E4C564852BFBDB"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.",
+          "keywords" : [ "rekvirering", "rekvirere", "tjeneste", "prosedyre", "undersøkelse", "behandling", "timing", "tidsangivelse", "timedefinisjon", "tidspunkt", "instruks", "bestilling", "bestille" ],
+          "use" : "Brukes for å registrere en detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.\r\n\r\nDenne arketypen er utviklet for å nøstes i SLOTet \"Kompleks timing\" i arketypen INSTRUCTION.service_request (Helsetjenesteforespørsel), men kan benyttes i andre arketyper der det er klinisk relevant. Det kan være nødvendig med flere instanser av denne arketypen for å representerer komplekse forespørsler etter tjenester, særlig tjenester som endrer frekvens eller leveringsmønstre over tid.\r\n\r\nHver tjenesteanvisning gir en detaljert veiledning om en eller flere sekvensielle aktiviteter, der hver aktivitet inneholder en \"Mengde\" og en \"Timing innenfor en dag\" (arketypen \"Timing - døgn\"), sammen med den overordnede varigheten av anvisningen og detaljer om repeterende mønstre utover en enkelt dag. Hvert aktivitetspar gjør det mulig å beskrive et komplekst mønster, for eksempel 2 timer hjemmesykepleie om morgenen og en time om kvelden.\r\n\r\nHver tjenesteanvisning kan være gyldig i en begrenset tidsperiode, over et begrenset nummer hendelser beskrevet i dataelementet \"Totalmengde\".\r\n\r\nDen totale mengden for hele tjenesteanvisningen registreres i arketypen INSTRUCTION.service_request (Helsetjenesteforespørsel).\r\n\r\nFor eksempel: \r\n- Hjemmesykepleier 2 timer om morgenen og 1 time om kvelden over en tidsperiode på 6 måneder. Etterfulgt av kun 1 time om morgenen i 6 uker.\r\n- Dialyseblodprøvepakke tas på onsdager i den andre uken av Januar, Februar, April, Mai, Juli, August, Oktober, November.\r\n- INR daglig i 1 uke, ukentlig i 1 måned og månedlig i 6 måneder.\r\n- Vitale observasjoner hver time i 4 timer, deretter hver andre time i 12 timer.\r\n\r\nArketypen kan gis nye navn i et templat eller en applikasjon for å representere en spesifikk hendelse som f.eks. \"første fire timer eller operasjon\".",
+          "misuse" : "Skal ikke brukes for å registrere tidsangivelse om en rekvirering eller ordinering der det er behov for en doseangivelse, som legemiddel- eller transfusjonsordinasjoner. Bruk arketypen CLUSTER.therapeutic_direction (Terapeutisk anvisning) for dette formålet.",
+          "copyright" : "© openEHR Foundation, Alberta Health Services (Canada)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured details of a complex direction for an ordered or requested service.",
+          "keywords" : [ "request", "service", "procedure", "examination", "treatment", "timing" ],
+          "use" : "Use to record structured details of a single, complex direction for an ordered or requested service. \r\n\r\nThis archetype has been designed to be nested within the 'Complex timing' SLOT in the INSTRUCTION.service_request archetype, but may be used within other clinically relevant archetypes, as required. Multiple instances of this archetype may be required to represent a complex order for services, especially ones with changing frequency or patterns of delivery over time.\r\n\r\nEach service direction provides detailed guidance about one or more sequential activities, each comprising an amount and an intradaily timing, together with an overall direction duration and details of any repetitive pattern outside a single day. Each activity pair allows for a complex intradaily pattern to be described, such as 2 hours of nursing assistance in the morning and one hour in the evening.\r\n\r\nEach service direction may apply for a fixed duration of time, or fixed number of services, which is specified using the 'Total amount' data element.\r\n\r\nThe total amount for the entire service request, is recorded in the INSTRUCTION.service_request.\r\n\r\nFor example: \r\n- 'Home nursing assistance for 2 hours in the morning and 1 hour in the evening for a period of 6 weeks, followed by 1 hour in the morning only for a further 6 weeks';\r\n- 'Dialysis blood test package to be carried out: The second Wednesday of the month in January, March, May, July, September and November';\r\n- 'INR daily for one week, weekly for one month, monthly for six months'; or\r\n- 'Vital signs observations every hour for four hours, then every two hours for 12 hours'.\r\n\r\nThe CLUSTER can be renamed in template or at run-time to represent a specific service direction such as 'First four hours after surgery'.",
+          "misuse" : "Not to be used to record information about any request or order where a dosage is required, for example medication or transfusion orders. Use the CLUSTER.therapeutic_direction for these purposes.",
+          "copyright" : "© openEHR Foundation, Alberta Health Services (Canada)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.service_direction.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-service_direction-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "Integer",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0005.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT1S",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0008" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : "PT1S",
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0011.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Service direction (3)",
+            "description" : "Structured details of a complex direction for an ordered or requested service.",
+            "comment" : "For example: a sequence of vital signs obervations over the first 24 hours post-operatively; or a request for home nursing attendance in the morning and evening, gradually reducing over a month."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Behandlinger etter operasjon",
             "description" : "Detaljert beskrivelse av en kompleks anvisning for en rekvirert eller bestilt tjeneste.",
             "comment" : "For eksempel: En sekvens av vitale observasjoner de første 24 timene postoperativt, eller en forespørsel om hjemmesykepleie morgen og kveld, gradvis redusert over en måned."
           },
