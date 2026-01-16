@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "6c7e6cbeb928abef2a80bd1ccac1dfa0",
+      "MD5-CAM-1.0.1" : "d42fddd4a4421054da770f614587b1ed",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -151,21 +151,21 @@
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.26",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-intervention_summary-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..1",
         "nodeId" : "at0.23",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-progress_note-001.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.25",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-intervention_summary-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -1930,7 +1930,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0058.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -1944,18 +1943,9 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0054.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -1980,6 +1970,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0051.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1987,6 +1978,11 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -2025,7 +2021,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0005.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2038,19 +2033,15 @@
                     "rmAttributeName" : "defining_code",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "at0021", "at0022", "at0061", "at0060" ]
+                      "constraint" : [ "ac0.2" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -2153,15 +2144,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "nb" : {
-          "at0051.1" : {
+        "en" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0051.1",
-            "text" : "Antall utførte behandlinger",
-            "description" : "Posisjonen til denne intervensjonen innenfor en sekvens definert av en bredere behandlingsprotokoll.",
-            "comment" : "For eksempel: Førstelinje-, andrelinje- eller rednings-/salvage-behandlinger."
-          },
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "nb" : {
           "at0032.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0032.1",
@@ -2175,12 +2166,29 @@
             "text" : "Siste behandlingsdag",
             "description" : "Dato/tidspunkt da den identifiserte intervensjonen ble fullført, eller avsluttet før den ble fullført.",
             "comment" : "For eksempel datoen da den siste i en serie med cellegiftinfusjoner ble gitt."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0021", "at0022", "at0061", "at0060" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0021", "at0022", "at0061", "at0060" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "38266ed6-52da-48d7-b8d7-7e8f26be6c62",
@@ -2240,7 +2248,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2467,6 +2474,13 @@
             "text" : "Antall planlagte behandlinger",
             "description" : "Det totale antall tjenester eller timer som er tilgjengelige for alle aktiviteter i denne anvisningen.",
             "comment" : "For eksempel: \"Gjennomfør kun en gang\" = 1, eller \"30 timer\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Antall utførte behandlinger",
+            "description" : "Tilsiktet rekkefølge for denne anvisningen i den overordnede anvisningssekvensen.",
+            "comment" : "For eksempel \"1\", \"2\", \"3\". \r\nI tilfeller med flere anvisninger spesifiserer \"Anvisningsrekkefølge\" i hvilken rekkefølge anvisningene skal utføres. For eksempel (1) 4 ganger daglig i 3 dager, (2) to ganger daglig i 4 dager, (3) 1 gang daglig i 7 dager."
           }
         }
       },
