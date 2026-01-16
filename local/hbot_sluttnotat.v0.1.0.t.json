@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "36cf7f97f7da89192932bda41b3f01dd",
+      "MD5-CAM-1.0.1" : "ae4cfcacddd0bb8471a9fff89d50e37e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -952,6 +952,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0009.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1049,6 +1050,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1097,6 +1099,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1290,6 +1293,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0023.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1385,7 +1389,9 @@
                         "terminologyId" : "SNOMED-CT",
                         "code" : "110474005",
                         "value" : "Whole body hyperbaric oxygen therapy (procedure)",
-                        "translations" : { }
+                        "translations" : {
+                          "nb" : "Whole body hyperbaric oxygen therapy (procedure)"
+                        }
                       } ]
                     } ]
                   } ],
