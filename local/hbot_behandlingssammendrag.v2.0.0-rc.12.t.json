@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "e686a294caef1dd7a976613c8aa0f5a0",
+      "MD5-CAM-1.0.1" : "7c390d13337191b5a6bd3c8e3f941e36",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -212,6 +212,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "Intervensjoner",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.52",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Legemidler",
         "referenceType" : "templateId"
       } ]
     } ],
