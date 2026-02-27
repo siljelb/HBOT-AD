@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "206d4d569784466e788624eedf8cdb5e",
+      "MD5-CAM-1.0.1" : "53e885529e851511c42d4797c47e2109",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2817,7 +2817,9 @@
                     "terminologyId" : "NLK",
                     "code" : "NPU10113",
                     "value" : "kB-Glukose",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "kB-Glukose"
+                    }
                   } ]
                 } ]
               } ],
@@ -2848,6 +2850,10 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "precision",
+                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -2864,6 +2870,17 @@
                       "upperIncluded" : false,
                       "lowerUnbounded" : false,
                       "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "constraint" : [ {
+                      "lower" : 2,
+                      "upper" : 2,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
                     } ]
                   } ]
                 } ]
