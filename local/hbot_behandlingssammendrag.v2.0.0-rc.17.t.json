@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
-      "MD5-CAM-1.0.1" : "9b9262d791f00e54c463f26516639f65",
+      "MD5-CAM-1.0.1" : "6e7f3aefb80532da5197476dd5a881c6",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -31204,8 +31204,17 @@
                   "terminologyId" : {
                     "value" : "NCMP"
                   },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "NCMP" ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "NCMP" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "NCMP",
+                    "code" : "WLGP24",
+                    "value" : "Hyperbar oksygenbehandling - tabell 14/90"
+                  }, {
+                    "terminologyId" : "NCMP",
+                    "code" : "WLGP29",
+                    "value" : "Hyperbar oksygenbehandling INA"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -31229,8 +31238,18 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0005.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         } ]
       } ],
@@ -31244,11 +31263,7 @@
         "nb" : { },
         "en" : { }
       },
-      "termBindings" : {
-        "NCMP" : {
-          "ac0.1" : "terminology:NCMP"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
