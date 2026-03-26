@@ -532,7 +532,7 @@ No s'ha de fer servir per registrar un informe d'operació o procediment complet
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a245d40a637c921f5b1f35e69ffa21b3">
+		["MD5-CAM-1.0.1"] = <"07e420d0fa9e37ced9c8b4fc6b10b7ea">
 		["build_uid"] = <"07d855c5-18e5-4939-b19a-a56dfa268d59">
 		["revision"] = <"1.4.11-alpha">
 	>
@@ -817,6 +817,11 @@ definition
 							}
 						}
 					}
+					ELEMENT[at0074] occurrences matches {0..1} matches {    -- Pathway step duration
+						value matches {
+							DV_DURATION matches {*}
+						}
+					}
 					allow_archetype CLUSTER[at0062] occurrences matches {0..*} matches {    -- Multimedia
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.media_file\.v1/}
@@ -1054,6 +1059,10 @@ ontology
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
 			>
 		>
 		["sl"] = <
@@ -1240,6 +1249,10 @@ This element is meant to allow for multiple types of impact, including but not l
 					text = <"*Start datetime (en)">
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
 			>
 		>
@@ -1436,6 +1449,10 @@ This element is intended to allow for multiple types of impact, including but no
 					description = <"The date or datetime when the procedure was actually started.">
 					comment = <"For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step.">
 				>
+				["at0074"] = <
+					text = <"Pathway step duration">
+					description = <"The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step.">
+				>
 			>
 		>
 		["ar-sy"] = <
@@ -1617,6 +1634,10 @@ This element is intended to allow for multiple types of impact, including but no
 					text = <"*Start datetime (en)">
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
 			>
 		>
@@ -1805,6 +1826,10 @@ This element is meant to allow for multiple types of impact, including but not l
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
 			>
 		>
 		["nb"] = <
@@ -1990,6 +2015,10 @@ This element is meant to allow for multiple types of impact, including but not l
 					text = <"*Start datetime (en)">
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
 			>
 		>
@@ -2183,6 +2212,10 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -2368,6 +2401,10 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					text = <"*Start datetime (en)">
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
 			>
 		>
@@ -2559,6 +2596,10 @@ This element is meant to allow for multiple types of impact, including but not l
 					text = <"*Start datetime (en)">
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
 			>
 		>
@@ -2752,6 +2793,10 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
 			>
 		>
 		["ca"] = <
@@ -2943,6 +2988,10 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
 			>
 		>
 		["zh-cn"] = <
@@ -3128,6 +3177,10 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 					text = <"*Start datetime (en)">
 					description = <"*The date or datetime when the procedure was actually started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+				>
+				["at0074"] = <
+					text = <"*Pathway step duration (en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
 			>
 		>
