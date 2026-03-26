@@ -532,7 +532,7 @@ No s'ha de fer servir per registrar un informe d'operació o procediment complet
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"45BC112EC407C650BE2526518737BED2">
+		["MD5-CAM-1.0.1"] = <"8f016784435eafe851deaff9b807de52">
 		["build_uid"] = <"07d855c5-18e5-4939-b19a-a56dfa268d59">
 		["revision"] = <"1.4.11-alpha">
 	>
@@ -751,6 +751,11 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0072] occurrences matches {0..1} matches {    -- Intent
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 					ELEMENT[at0065] occurrences matches {0..*} matches {    -- Method
 						value matches {
 							DV_TEXT matches {*}
@@ -791,6 +796,11 @@ definition
 						}
 					}
 					ELEMENT[at0066] occurrences matches {0..1} matches {    -- Scheduled date/time
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0073] occurrences matches {0..1} matches {    -- Start datetime
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
@@ -1034,6 +1044,14 @@ ontology
 					text = <"*DV_TEXT (en)">
 					description = <"">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
+					description = <"">
+				>
 			>
 		>
 		["sl"] = <
@@ -1210,6 +1228,14 @@ For example: Two patients have the same diagnosis. First-degree burn.
 One is a healthy person, the other is a diabetic patient.
 The impact for that problem in a diabetic patient is HIGHER (more risk of infection..., longuer time healing).
 This element is meant to allow for multiple types of impact, including but not limited to: clinical treatment, home functioning, work life.">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
+					description = <"">
 				>
 			>
 		>
@@ -1396,6 +1422,14 @@ The impact of that procedure on the pianist is GREATER (longer sick leave, need 
 
 This element is intended to allow for multiple types of impact, including but not limited to: clinical treatment, home functioning, or work life.">
 				>
+				["at0072"] = <
+					text = <"Intent">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Start datetime">
+					description = <"">
+				>
 			>
 		>
 		["ar-sy"] = <
@@ -1566,6 +1600,14 @@ This element is intended to allow for multiple types of impact, including but no
 				>
 				["at0071"] = <
 					text = <"*DV_TEXT (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
 					description = <"">
 				>
 			>
@@ -1745,6 +1787,14 @@ One is a healthy person, the other is a diabetic patient.
 The impact for that problem in a diabetic patient is HIGHER (more risk of infection..., longuer time healing).
 This element is meant to allow for multiple types of impact, including but not limited to: clinical treatment, home functioning, work life.">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -1919,6 +1969,14 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0071"] = <
 					text = <"*DV_TEXT (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
 					description = <"">
 				>
 			>
@@ -2103,6 +2161,14 @@ Uno es una jardinero o un peon de obra; el otro, un pianista.
 El impacto de ese procedimiento en el pianista es MAYOR (baja laboral mas larga, necesidad de rehabilitación funcional completa para ajustar a altos requerimientos de motricidad fina en actividad laboral ).
 Este elemento está destinado a permitir múltiples tipos de impacto, incluidos pero no limitado a: tratamiento clínico, funcionamiento en el hogar o vida laboral.">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -2277,6 +2343,14 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0071"] = <
 					text = <"*DV_TEXT (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
 					description = <"">
 				>
 			>
@@ -2460,6 +2534,14 @@ One is a healthy person, the other is a diabetic patient.
 The impact for that problem in a diabetic patient is HIGHER (more risk of infection..., longuer time healing).
 This element is meant to allow for multiple types of impact, including but not limited to: clinical treatment, home functioning, work life.">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -2640,6 +2722,14 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 				>
 				["at0071"] = <
 					text = <"*DV_TEXT (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
 					description = <"">
 				>
 			>
@@ -2823,6 +2913,14 @@ Un és un jardiner o un peó d'obra; l'altre, un pianista.
 L'impacte d'aquest procediment al pianista és MAJOR (baixa laboral més llarga, necessitat de rehabilitació funcional completa per ajustar a alts requeriments de motricitat fina en activitat laboral).
 Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos però no limitat a: tractament clínic, funcionament a la llar o vida laboral.">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
+					description = <"">
+				>
 			>
 		>
 		["zh-cn"] = <
@@ -2997,6 +3095,14 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 				>
 				["at0071"] = <
 					text = <"*DV_TEXT (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Start datetime (en)">
 					description = <"">
 				>
 			>
