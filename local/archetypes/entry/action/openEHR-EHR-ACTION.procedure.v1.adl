@@ -532,7 +532,7 @@ No s'ha de fer servir per registrar un informe d'operació o procediment complet
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8f016784435eafe851deaff9b807de52">
+		["MD5-CAM-1.0.1"] = <"a245d40a637c921f5b1f35e69ffa21b3">
 		["build_uid"] = <"07d855c5-18e5-4939-b19a-a56dfa268d59">
 		["revision"] = <"1.4.11-alpha">
 	>
@@ -751,7 +751,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0072] occurrences matches {0..1} matches {    -- Intent
+					ELEMENT[at0072] occurrences matches {0..*} matches {    -- Intent
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -795,7 +795,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0066] occurrences matches {0..1} matches {    -- Scheduled date/time
+					ELEMENT[at0066] occurrences matches {0..1} matches {    -- Scheduled datetime
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
@@ -805,7 +805,7 @@ definition
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Final end date/time
+					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Final end datetime
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
@@ -989,7 +989,7 @@ ontology
 					comment = <"Codificação do procedimento é preferível, quando possível.">
 				>
 				["at0060"] = <
-					text = <"Data final / hora">
+					text = <"*Final end datetime (en)">
 					description = <"A data e/ou hora , quando todo o processo , ou o último componente de um procedimento de múltiplas etapas , foi finalizada.">
 					comment = <"Apenas para utilização em associação com o \"Procedimento realizado\" da etapa, e em situações em que o procedimento é repetido em várias ocasiões antes de ser concluído ou houver vários componentes para todo o processo. Este pode ser o mesmo que o atributo para o tempo de RM \"Processo concluído\".">
 				>
@@ -1018,7 +1018,7 @@ ontology
 					comment = <"Utilize este elemento de dados para registrar termos simples ou uma descrição narrativa . Se as condições de registro do método requer uma modelagem mais complexa , então isso pode ser representado por arquétipos adicionais dentro do campo \"Detalhes do procedimento\" deste arquétipo. Se o método está incluído no \"Nome do procedimento\" através de códigos padrão , este elemento de dados torna-se redundante.">
 				>
 				["at0066"] = <
-					text = <"Agendamento data/hora">
+					text = <"*Scheduled datetime (en)">
 					description = <"A data e /ou hora em que o processo está previsto para ocorrer.">
 					comment = <"Apenas para utilização em associação com o \" Procedimento Programado ' para a etapa em curso.">
 				>
@@ -1046,11 +1046,13 @@ ontology
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -1169,7 +1171,7 @@ ontology
 					comment = <"*Coding with a terminology is preferred, where possible.(en)">
 				>
 				["at0060"] = <
-					text = <"*Final end date/time(en)">
+					text = <"*Final end datetime (en)">
 					description = <"*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)">
 					comment = <"*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)">
 				>
@@ -1198,7 +1200,7 @@ ontology
 					comment = <"*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)">
 				>
 				["at0066"] = <
-					text = <"*Scheduled date/time(en)">
+					text = <"*Scheduled datetime (en)">
 					description = <"*The date and/or time on which the procedure is intended to be performed.(en)">
 					comment = <"*Only for use in association with the 'Procedure scheduled' pathway step.(en)">
 				>
@@ -1231,11 +1233,13 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -1357,7 +1361,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Coding with a terminology is preferred, where possible.">
 				>
 				["at0060"] = <
-					text = <"Final end date/time">
+					text = <"Final end datetime">
 					description = <"The date and/or time when the entire procedure, or the last component of a multicomponent procedure, was finished.">
 					comment = <"Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.">
 				>
@@ -1386,7 +1390,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.">
 				>
 				["at0066"] = <
-					text = <"Scheduled date/time">
+					text = <"Scheduled datetime">
 					description = <"The date and/or time on which the procedure is intended to be performed.">
 					comment = <"Only for use in association with the 'Procedure scheduled' pathway step.">
 				>
@@ -1424,11 +1428,13 @@ This element is intended to allow for multiple types of impact, including but no
 				>
 				["at0072"] = <
 					text = <"Intent">
-					description = <"">
+					description = <"The intended outcome of the procedure.">
+					comment = <"For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required.">
 				>
 				["at0073"] = <
 					text = <"Start datetime">
-					description = <"">
+					description = <"The date or datetime when the procedure was actually started.">
+					comment = <"For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step.">
 				>
 			>
 		>
@@ -1547,7 +1553,7 @@ This element is intended to allow for multiple types of impact, including but no
 					comment = <"*Coding with a terminology is preferred, where possible.(en)">
 				>
 				["at0060"] = <
-					text = <"*Final end date/time(en)">
+					text = <"*Final end datetime (en)">
 					description = <"*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)">
 					comment = <"*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)">
 				>
@@ -1576,7 +1582,7 @@ This element is intended to allow for multiple types of impact, including but no
 					comment = <"*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)">
 				>
 				["at0066"] = <
-					text = <"*Scheduled date/time(en)">
+					text = <"*Scheduled datetime (en)">
 					description = <"*The date and/or time on which the procedure is intended to be performed.(en)">
 					comment = <"*Only for use in association with the 'Procedure scheduled' pathway step.(en)">
 				>
@@ -1604,11 +1610,13 @@ This element is intended to allow for multiple types of impact, including but no
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -1727,7 +1735,7 @@ This element is intended to allow for multiple types of impact, including but no
 					comment = <"*Coding with a terminology is preferred, where possible.(en)">
 				>
 				["at0060"] = <
-					text = <"*Final end date/time(en)">
+					text = <"*Final end datetime (en)">
 					description = <"*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)">
 					comment = <"*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)">
 				>
@@ -1756,7 +1764,7 @@ This element is intended to allow for multiple types of impact, including but no
 					comment = <"*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)">
 				>
 				["at0066"] = <
-					text = <"*Scheduled date/time(en)">
+					text = <"*Scheduled datetime (en)">
 					description = <"*The date and/or time on which the procedure is intended to be performed.(en)">
 					comment = <"*Only for use in association with the 'Procedure scheduled' pathway step.(en)">
 				>
@@ -1789,11 +1797,13 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -1915,7 +1925,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Koding med en terminologi er ønskelig, om mulig.">
 				>
 				["at0060"] = <
-					text = <"Dato/tid for avslutning av prosedyren">
+					text = <"*Final end datetime (en)">
 					description = <"Datoen og/eller tiden da hele eller den siste av komponentene i en kompleks prosedyre ble avsluttet.">
 					comment = <"Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre utført\" og i situasjoner der prosedyren gjentas flere ganger før den fullføres, eller det finnes flere komponenter i prosedyren. Dette kan være det samme som referansemodellens \"time\"-atributt for prosesssteget \"Prosedyre utført\".">
 				>
@@ -1944,7 +1954,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Bruk dette dataelementet til å registrere enkle termer eller en fritekstlig beskrivelse. Dersom behovene for beskrivelse av metoden krever mer kompleks modellering, kan dette representeres ved hjelp av tilleggsarketyper i SLOTet \"Prosedyredetaljer\" i denne arketypen. Dersom metoden inkluderes som en del av \"Prosedyrenavn\"-elementet ved hjelp av prekoordinerte koder blir dette dataelementet overflødig.">
 				>
 				["at0066"] = <
-					text = <"Planlagt dato/tid">
+					text = <"*Scheduled datetime (en)">
 					description = <"Dato/tid når prosedyren er planlagt utført.">
 					comment = <"Kun til bruk i forbindelse med prosesstrinnet \"Prosedyre planlagt\".">
 				>
@@ -1973,11 +1983,13 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -2099,7 +2111,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Siempre que sea posible, es preferible codificar con una terminología.">
 				>
 				["at0060"] = <
-					text = <"Fecha/hora de finalización">
+					text = <"*Final end datetime (en)">
 					description = <"La fecha y/o la hora en que finalizó todo el procedimiento, o el último componente de un procedimiento multicomponente.">
 					comment = <"Sólo para su uso en asociación con la etapa \"Procedimiento realizado\", y en situaciones en las que el procedimiento se repite en varias ocasiones antes de completarse, o hay varios componentes en todo el procedimiento. Puede ser el mismo que el atributo de tiempo RM de la etapa \"Procedimiento completado\".">
 				>
@@ -2128,7 +2140,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Utilice este elemento de datos para registrar términos sencillos o una descripción narrativa. Si los requisitos para registrar el método requieren una modelización más compleja, ésta puede representarse mediante arquetipos adicionales dentro del SLOT \"Detalle del procedimiento\", de este arquetipo. Si el método se incluye en el \"Nombre del procedimiento\" mediante códigos precoordinados, este elemento de datos será redundante.">
 				>
 				["at0066"] = <
-					text = <"Fecha/hora programada">
+					text = <"*Scheduled datetime (en)">
 					description = <"Fecha y/u hora en que está previsto realizar el procedimiento.">
 					comment = <"Sólo para su uso en asociación con la etapa \"Procedimiento programado\".">
 				>
@@ -2163,11 +2175,13 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -2289,7 +2303,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"Wenn möglich wird die Kodierung mit einer Terminologie bevorzugt.">
 				>
 				["at0060"] = <
-					text = <"Enddatum/-uhrzeit">
+					text = <"*Final end datetime (en)">
 					description = <"Das Datum und/oder die Uhrzeit, an dem die gesamte Prozedur, oder die letzte Komponente einer mehrstufigen Prozedur, beendet wurde.">
 					comment = <"Nur zur Verwendung in Verbindung mit dem Element \"Prozedur durchgeführt\" und in Situationen, in denen die Prozedur vor dem Abschluss mehrmals wiederholt wird oder die Prozedur sich aus mehreren Komponenten zusammensetzt. Dies kann mit dem RM-Zeitattribut des Elements \"Prozedur beendet\" übereinstimmen.">
 				>
@@ -2318,7 +2332,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"Verwenden Sie dieses Datenelement, um einfache Begriffe oder eine Beschreibung zu erfassen. Wenn die Anforderungen an die Erfassung der Methode eine komplexere Modellierung erfordern, kann dies durch zusätzliche Archetypen innerhalb des SLOTs \"Details zur Prozedur\" in diesem Archetyp dargestellt werden. Wird die Methode über vordefinierte Codes in dem Element \"Name der Prozedur\" aufgenommen, wird dieses Datenelement redundant.">
 				>
 				["at0066"] = <
-					text = <"Geplantes Datum/Uhrzeit">
+					text = <"*Scheduled datetime (en)">
 					description = <"Das Datum und/oder die Uhrzeit für die die Prozedur angesetzt ist.">
 					comment = <"Nur für die Verwendung in Verbindung mit dem Element \"geplanter Termin der Prozedur\" .">
 				>
@@ -2347,11 +2361,13 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -2473,7 +2489,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"A codificação com uma terminologia é preferida, sempre que possível.">
 				>
 				["at0060"] = <
-					text = <"Data/hora final">
+					text = <"*Final end datetime (en)">
 					description = <"A data e/ou hora em que todo o procedimento, ou o último componente de um procedimento com vários componentes, foi concluído.">
 					comment = <"Apenas para utilização em associação com a etapa da via 'Procedimento realizado' e em situações em que o procedimento é repetido em várias ocasiões antes de ser concluído ou há vários componentes em todo o procedimento. Isso pode ser o mesmo que o atributo de tempo RM para a etapa de caminho 'Procedimento concluído'.">
 				>
@@ -2502,7 +2518,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"Use esse elemento de dados para registar termos simples ou uma descrição narrativa. Se os requisitos para o registo do método exigirem uma modelagem mais complexa, isso pode ser representado por arquétipos adicionais dentro do SLOT 'Detalhes do procedimento' neste arquétipo. Se o método for incluído no 'Nome do procedimento' com códigos pré-ordenados, esse elemento de dados ficará redundante.">
 				>
 				["at0066"] = <
-					text = <"Data/hora agendada">
+					text = <"*Scheduled datetime (en)">
 					description = <"A data e/ou hora em que o procedimento se destina a ser realizado.">
 					comment = <"Apenas para utilização em associação com a etapa de caminho 'Procedimento agendado'.">
 				>
@@ -2536,11 +2552,13 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -2668,7 +2686,7 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 					comment = <"Kodning med en terminologi är att föredra, där det är möjligt.">
 				>
 				["at0060"] = <
-					text = <"Datum/tid för färdigställande av åtgärd">
+					text = <"*Final end datetime (en)">
 					description = <"Datumet eller det klockslag då hela åtgärden, eller den sista delåtgärden i åtgärden, slutfördes.">
 					comment = <"Kan endast användas i samband med steget \"Åtgärd utförd\" och i situationer där åtgärden upprepas vid flera tillfällen innan den avslutas eller om det finns flera delåtgärder i hela åtgärden. Detta kan vara detsamma som RM-tidsattributet för steget \"Åtgärd slutförd\".">
 				>
@@ -2697,7 +2715,7 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 					comment = <"Använd detta fält för att dokumentera metoden. Om kraven för dokumentation av metoden kräver mer komplex modellering kan detta representeras av ytterligare arketyper i SLOT \"Åtgärdsdetalj\" i denna arketyp. Om metoden ingår i \"Benämning på åtgärd\" genom prekoordinerade koder blir detta fält överflödigt.">
 				>
 				["at0066"] = <
-					text = <"Bokad datum/tid">
+					text = <"*Scheduled datetime (en)">
 					description = <"Datum eller tid då åtgärden är tänkt att utföras.">
 					comment = <"Ska endast användas i samband med steget \"Åtgärd bokad\".">
 				>
@@ -2726,11 +2744,13 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -2852,7 +2872,7 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 					comment = <"Sempre que sigui possible, és preferible codificar amb una terminologia.">
 				>
 				["at0060"] = <
-					text = <"Data/hora de finalització">
+					text = <"*Final end datetime (en)">
 					description = <"Data i/o hora en què va finalitzar tot el procediment, o l'últim component d'un procediment multicomponent.">
 					comment = <"Només per al seu ús en associació amb l'etapa \"Procediment realitzat\", i en situacions en què el procediment es repeteix diverses vegades abans de completar-se, o hi ha diversos components en tot el procediment. Pot ser el mateix que l'atribut de temps RM de l'etapa \"Procediment completat\".">
 				>
@@ -2881,7 +2901,7 @@ Exempelvis hematuri efter njurbiopsi, vävnadsirritation efter införande av int
 					comment = <"Utilitzeu aquest element de dades per registrar termes senzills o una descripció narrativa. Si els requisits per registrar el mètode requereixen una modelització més complexa, aquesta es pot representar mitjançant arquetips addicionals dins del SLOT \"Detall del procediment\" d'aquest arquetip. Si el mètode s'inclou al \"Nom del procediment\" mitjançant codis precoordinats, aquest element de dades serà redundant.">
 				>
 				["at0066"] = <
-					text = <"Data/hora programada">
+					text = <"*Scheduled datetime (en)">
 					description = <"Data i/o hora en què està previst fer el procediment.">
 					comment = <"Només per utilitzar-lo en associació amb l'etapa \"Procediment programat\".">
 				>
@@ -2915,11 +2935,13 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
@@ -3041,7 +3063,7 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 					comment = <"尽可能优先采用指定的术语标准对紧急程度加以编码。">
 				>
 				["at0060"] = <
-					text = <"最终结束日期/时间">
+					text = <"*Final end datetime (en)">
 					description = <"整个操作（或多组成部分操作之中的最后一个组成部分）完成时的日期和/或时间。">
 					comment = <"仅仅旨在与“已执行的操作”（Procedure performed）路径步骤联合运用，且适用于以下场景：操作在完成之前需多次重复进行，或整个操作包含多个组成部分。该时间可能与“已完成的操作”（Procedure completed）路径步骤的参考模型（RM）时间属性相同。">
 				>
@@ -3070,7 +3092,7 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 					comment = <"请采用本数据元来记录简单的术语或叙述性的描述。若方法的记录需求需要更为复杂的建模，则可在本原始型之中的操作详情槽位（Procedure detail）内利用其他的原始型来表达。若已经利用先组配型代码将方法信息包含在“操作名称”数据元当中，则无需填写本数据元。">
 				>
 				["at0066"] = <
-					text = <"所排程的日期/时间">
+					text = <"*Scheduled datetime (en)">
 					description = <"预定执行此项操作的日期和/或时间。">
 					comment = <"仅仅旨在与“作排程的操作”（Procedure scheduled）路径步骤联合运用。">
 				>
@@ -3099,11 +3121,13 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 				>
 				["at0072"] = <
 					text = <"*Intent (en)">
-					description = <"">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"">
+					description = <"*The date or datetime when the procedure was actually started. (en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 			>
 		>
