@@ -297,7 +297,7 @@ No utilizar para registrar detalles acerca del informe de la operación, para es
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8c9ad08376c0cc6198ca6c2bc50adf3b">
+		["MD5-CAM-1.0.1"] = <"e05712d248ffef20a852ef4ba61fc987">
 		["build_uid"] = <"da7303d8-e462-45e3-b0a7-aecbdc4e986a">
 		["revision"] = <"1.4.1">
 	>
@@ -512,6 +512,11 @@ definition
 						}
 					}
 					ELEMENT[at0070] occurrences matches {0..*} matches {    -- Indication
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0072] occurrences matches {0..*} matches {    -- Intent
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -801,6 +806,11 @@ ontology
 					text = <"*Pathway step duration (en)">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+				>
 			>
 		>
 		["sl"] = <
@@ -972,6 +982,11 @@ ontology
 				["at0071"] = <
 					text = <"*Pathway step duration (en)">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 			>
 		>
@@ -1149,6 +1164,11 @@ ontology
 					text = <"Pathway step duration">
 					description = <"The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step.">
 				>
+				["at0072"] = <
+					text = <"Intent">
+					description = <"The intended outcome of the procedure.">
+					comment = <"For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required.">
+				>
 			>
 		>
 		["ar-sy"] = <
@@ -1321,6 +1341,11 @@ ontology
 					text = <"*Pathway step duration (en)">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+				>
 			>
 		>
 		["ru"] = <
@@ -1492,6 +1517,11 @@ ontology
 				["at0071"] = <
 					text = <"*Pathway step duration (en)">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 			>
 		>
@@ -1669,6 +1699,11 @@ ontology
 					text = <"Varighet av prosesstrinn">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
 				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -1841,6 +1876,11 @@ ontology
 				["at0071"] = <
 					text = <"*Pathway step duration (en)">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 			>
 		>
@@ -2017,6 +2057,11 @@ ontology
 				["at0071"] = <
 					text = <"*Pathway step duration (en)">
 					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+				>
+				["at0072"] = <
+					text = <"*Intent (en)">
+					description = <"*The intended outcome of the procedure. (en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
 				>
 			>
 		>
