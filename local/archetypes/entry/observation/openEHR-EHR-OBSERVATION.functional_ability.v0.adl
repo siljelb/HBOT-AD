@@ -26,13 +26,13 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere en vurdering av et individs funksjonelle evne til å selvstendig utføre en aktivitet på et bestemt tidspunkt.">
-			use = <"Brukes for å registrere en vurdering av et individs funksjonelle evne til å selvstendig utføre en aktivitet på et bestemt tidspunkt, som reflekterer virkningen av funksjonsnedsettelser og kontekstuelle faktorer som er relevante på det gitte tidspunktet. Innenfor denne arketypen defineres "selvstendighet" ved hjelp av ICF: et individ anses som selvstendig når aktiviteten utføres uten noen assistanse fra en annen person. Definisjonen tillater bruk av personlige hjelpemidler, for eksempel smarttelefonpåminnelser, briller, høreapparater, mobilitetshjelpemidler eller et støttedyr.
+			use = <"Brukes for å registrere en vurdering av et individs funksjonelle evne til å selvstendig utføre en aktivitet på et bestemt tidspunkt, som reflekterer virkningen av funksjonsnedsettelser og kontekstuelle faktorer som er relevante på det gitte tidspunktet. Innenfor denne arketypen defineres \"selvstendighet\" ved hjelp av ICF: et individ anses som selvstendig når aktiviteten utføres uten noen assistanse fra en annen person. Definisjonen tillater bruk av personlige hjelpemidler, for eksempel smarttelefonpåminnelser, briller, høreapparater, mobilitetshjelpemidler eller et støttedyr.
 
 Denne arketypen er en av tre relaterte arketyper som er utformet for å representere ulike aspekter av hvordan et individ fungerer i hverdagen. Til sammen støtter disse arketypene en strukturert representasjon av funksjonell evne, de underliggende funksjonsnedsettelsene som kan bidra til funksjonelle begrensninger og den støtten som er nødvendig for å muliggjøre eller assistere et individ til å utføre en aktivitet. De øvrige arketypene er:
 - EVALUATION.functional_impairment_summary og
 - EVALUATION.functional_support_requirements.
 
-Utførelse av en aktivitet er ofte kontekstavhengig og kan variere på grunn av faktorer som miljø, tretthet, smerte eller tilgjengelighet av hjelpemidler. Der en aktivitet utføres under ulike betingelser, for eksempel med og uten hjelpemiddel, kan repeterende "hendelser" bestående av "state"- og "data"-gruppene, registreres i samme forekomst av arketypen. Dette gjør det mulig å fange opp flere varianter av den samme aktiviteten under en enkelt vurdering, som reflekterer virkningen av ulike betingelser på individets evne og vanskelighetsnivå.
+Utførelse av en aktivitet er ofte kontekstavhengig og kan variere på grunn av faktorer som miljø, tretthet, smerte eller tilgjengelighet av hjelpemidler. Der en aktivitet utføres under ulike betingelser, for eksempel med og uten hjelpemiddel, kan repeterende \"hendelser\" bestående av \"state\"- og \"data\"-gruppene, registreres i samme forekomst av arketypen. Dette gjør det mulig å fange opp flere varianter av den samme aktiviteten under en enkelt vurdering, som reflekterer virkningen av ulike betingelser på individets evne og vanskelighetsnivå.
 
 Virkeområdet for funksjonell evne omfatter:
 - Hverdagsfunksjon – vurdering av individets evne til å utføre vanlige aktiviteter som danner grunnlaget for selvstendig livsutfoldelse og sosial samhandling. Dette kan identifisere behovet for støttende intervensjoner.
@@ -350,7 +350,7 @@ ontology
 				["at0004"] = <
 					text = <"Aktivitetsnavn">
 					description = <"Aktiviteten som vurderes.">
-					comment = <"Koding med ekstern terminologi anbefales. Fritekst bør bare tillates der ingen passende kodet verdi er tilgjengelig. For eksempel: Mobilitet – snu seg i sengen, forflytte seg fra seng til stol, gå i trapper; Egenomsorg – pusse tenner, ta på fottøy, menstruasjonshygiene; Kommunikasjon – lese, snakke, skrive; Husarbeid – handle mat, rydde kjøkkenet, vaske klær; Delta i arbeid eller på skole – bruke offentlig transport, søke jobb; Samfunnsdeltakelse – drive med sport, bli med i en klubb, gå på teater.">
+					comment = <"Koding med ekstern terminologi anbefales. Fritekst bør bare tillates der ingen passende kodet verdi er tilgjengelig. For eksempel Mobilitet – snu seg i sengen, forflytte seg fra seng til stol, gå i trapper; Egenomsorg – pusse tenner, ta på fottøy, menstruasjonshygiene; Kommunikasjon – lese, snakke, skrive; Husarbeid – handle mat, rydde kjøkkenet, vaske klær; Delta i arbeid eller på skole – bruke offentlig transport, søke jobb; Samfunnsdeltakelse – drive med sport, bli med i en klubb, gå på teater.">
 				>
 				["at0005"] = <
 					text = <"Funksjonsnivå">
@@ -385,12 +385,12 @@ ontology
 				["at0014"] = <
 					text = <"Vurderingsbetingelser">
 					description = <"Fritekstbeskrivelse av omstendighetene vurderingen er utført under, for å støtte tolkning av vurderingsresultatene.">
-					comment = <"For eksempel: beskrivelse av miljøet, metoden eller situasjonen der vurderingen ble gjennomført.">
+					comment = <"For eksempel beskrivelse av miljøet, metoden eller situasjonen der vurderingen ble gjennomført.">
 				>
 				["at0015"] = <
 					text = <"Detaljer om hjelpemiddel">
 					description = <"Strukturerte detaljer om ett eller flere hjelpemidler brukt av individet under utførelse av aktiviteten.">
-					comment = <"For eksempel: tilpasset spisebestikk, motorisert rullestol eller et støttedyr.">
+					comment = <"For eksempel tilpasset spisebestikk, motorisert rullestol eller et støttedyr.">
 				>
 				["at0016"] = <
 					text = <"Tilleggsinformasjon">
@@ -428,12 +428,12 @@ ontology
 				["at0029"] = <
 					text = <"Beskrivelse av hjelpemidler">
 					description = <"Fritekstbeskrivelse av hjelpemidlene som er i bruk.">
-					comment = <"For eksempel: tilpasset spisebestikk, motorisert rullestol eller et støttedyr.">
+					comment = <"For eksempel tilpasset spisebestikk, motorisert rullestol eller et støttedyr.">
 				>
 				["at0030"] = <
 					text = <"Konfunderende faktorer">
 					description = <"Forhold eller kontekstuelle faktorer som kan påvirke funksjonell evne, ikke fanget opp i andre felt.">
-					comment = <"For eksempel: døgnvariasjoner, nylig anstrengelse, legemiddeleffekt, søvnstatus, humør, motivasjon, situasjonsbetinget angst og sosial kontekst.">
+					comment = <"For eksempel døgnvariasjoner, nylig anstrengelse, legemiddeleffekt, søvnstatus, humør, motivasjon, situasjonsbetinget angst og sosial kontekst.">
 				>
 			>
 		>
