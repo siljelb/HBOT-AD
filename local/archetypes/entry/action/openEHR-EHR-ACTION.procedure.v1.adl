@@ -532,7 +532,7 @@ No s'ha de fer servir per registrar un informe d'operació o procediment complet
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6f635edce137ace11408cfad267e496b">
+		["MD5-CAM-1.0.1"] = <"306deacbef746e488fd2433b18341ea3">
 		["build_uid"] = <"07d855c5-18e5-4939-b19a-a56dfa268d59">
 		["revision"] = <"1.4.11-alpha">
 	>
@@ -805,7 +805,7 @@ definition
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Final end datetime
+					ELEMENT[at0060] occurrences matches {0..1} matches {    -- End datetime
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
@@ -994,7 +994,7 @@ ontology
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Apenas para utilização em associação com o \"Procedimento realizado\" da etapa, e em situações em que o procedimento é repetido em várias ocasiões antes de ser concluído ou houver vários componentes para todo o processo. Este pode ser o mesmo que o atributo para o tempo de RM \"Processo concluído\".">
 				>
@@ -1056,7 +1056,7 @@ ontology
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -1180,7 +1180,7 @@ ontology
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)">
 				>
@@ -1247,7 +1247,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -1374,7 +1374,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Coding of the 'Urgency' with a terminology is recommended, if available.">
 				>
 				["at0060"] = <
-					text = <"Final end datetime">
+					text = <"End datetime">
 					description = <"The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished.">
 					comment = <"Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.">
 				>
@@ -1446,7 +1446,7 @@ This element is intended to allow for multiple types of impact, including but no
 				>
 				["at0073"] = <
 					text = <"Start datetime">
-					description = <"The date or datetime when the procedure was actually started.">
+					description = <"The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started.">
 					comment = <"For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step.">
 				>
 				["at0074"] = <
@@ -1570,7 +1570,7 @@ This element is intended to allow for multiple types of impact, including but no
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)">
 				>
@@ -1632,7 +1632,7 @@ This element is intended to allow for multiple types of impact, including but no
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -1756,7 +1756,7 @@ This element is intended to allow for multiple types of impact, including but no
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)">
 				>
@@ -1823,7 +1823,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -1950,7 +1950,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre utført\" og i situasjoner der prosedyren gjentas flere ganger før den fullføres, eller det finnes flere komponenter i prosedyren. Dette kan være det samme som referansemodellens \"time\"-atributt for prosesssteget \"Prosedyre utført\".">
 				>
@@ -2013,7 +2013,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -2140,7 +2140,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Sólo para su uso en asociación con la etapa \"Procedimiento realizado\", y en situaciones en las que el procedimiento se repite en varias ocasiones antes de completarse, o hay varios componentes en todo el procedimiento. Puede ser el mismo que el atributo de tiempo RM de la etapa \"Procedimiento completado\".">
 				>
@@ -2209,7 +2209,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -2336,7 +2336,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Nur zur Verwendung in Verbindung mit dem Element \"Prozedur durchgeführt\" und in Situationen, in denen die Prozedur vor dem Abschluss mehrmals wiederholt wird oder die Prozedur sich aus mehreren Komponenten zusammensetzt. Dies kann mit dem RM-Zeitattribut des Elements \"Prozedur beendet\" übereinstimmen.">
 				>
@@ -2399,7 +2399,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -2526,7 +2526,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Apenas para utilização em associação com a etapa da via 'Procedimento realizado' e em situações em que o procedimento é repetido em várias ocasiões antes de ser concluído ou há vários componentes em todo o procedimento. Isso pode ser o mesmo que o atributo de tempo RM para a etapa de caminho 'Procedimento concluído'.">
 				>
@@ -2594,7 +2594,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -2726,7 +2726,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Kan endast användas i samband med steget \"Åtgärd utförd\" och i situationer där åtgärden upprepas vid flera tillfällen innan den avslutas eller om det finns flera delåtgärder i hela åtgärden. Detta kan vara detsamma som RM-tidsattributet för steget \"Åtgärd slutförd\".">
 				>
@@ -2789,7 +2789,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -2916,7 +2916,7 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"Només per al seu ús en associació amb l'etapa \"Procediment realitzat\", i en situacions en què el procediment es repeteix diverses vegades abans de completar-se, o hi ha diversos components en tot el procediment. Pot ser el mateix que l'atribut de temps RM de l'etapa \"Procediment completat\".">
 				>
@@ -2984,7 +2984,7 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
@@ -3111,7 +3111,7 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
 				>
 				["at0060"] = <
-					text = <"*Final end datetime (en)">
+					text = <"*End datetime (en)">
 					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
 					comment = <"仅仅旨在与“已执行的操作”（Procedure performed）路径步骤联合运用，且适用于以下场景：操作在完成之前需多次重复进行，或整个操作包含多个组成部分。该时间可能与“已完成的操作”（Procedure completed）路径步骤的参考模型（RM）时间属性相同。">
 				>
@@ -3174,7 +3174,7 @@ Aquest element està destinat a permetre múltiples tipus d'impacte, inclosos pe
 				>
 				["at0073"] = <
 					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the procedure was actually started. (en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
 					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
 				>
 				["at0074"] = <
