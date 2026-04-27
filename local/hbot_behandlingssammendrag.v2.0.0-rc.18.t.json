@@ -802,7 +802,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -1768,7 +1768,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -1990,9 +1990,9 @@
             "text" : "Behandling fullført",
             "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Total tid med oksygen på trykk",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           },
@@ -6241,7 +6241,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "60e09b9264f4bec0d89f0c284e3183bd",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -7104,7 +7104,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -7371,7 +7371,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "c2b58b1969b397fc491ed9cd27de904a",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -8233,7 +8233,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -8405,9 +8405,9 @@
             "text" : "På trykk",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Kompresjonstid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           }
@@ -8538,7 +8538,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "14d1a524530a66facb07041c43cded40",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -9401,7 +9401,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -20542,7 +20542,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "52b6bc93724850d6e03adc6c3ea5c68b",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -21404,7 +21404,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -21612,9 +21612,9 @@
             "text" : "Dekompresjon fullført",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Dekompresjonstid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           }
@@ -26204,7 +26204,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "e9abb174fd58674e5bd2ff5732aebca6",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -27082,7 +27082,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -27263,9 +27263,9 @@
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Pausetid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           },
@@ -27404,7 +27404,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "e9abb174fd58674e5bd2ff5732aebca6",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -28282,7 +28282,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -28493,9 +28493,9 @@
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Pausetid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           },
@@ -28646,7 +28646,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "e9abb174fd58674e5bd2ff5732aebca6",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -29524,7 +29524,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -29735,9 +29735,9 @@
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Pausetid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           },
@@ -29888,7 +29888,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "e9abb174fd58674e5bd2ff5732aebca6",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -30766,7 +30766,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -30977,9 +30977,9 @@
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Pausetid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           },
@@ -31240,16 +31240,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0005.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
       } ],
@@ -32396,7 +32387,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
-          "nodeId" : "at0071.1",
+          "nodeId" : "at0074.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
