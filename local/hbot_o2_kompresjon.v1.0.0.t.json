@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "3ee3e88e33efc02284011d072798bb63",
+      "MD5-CAM-1.0.1" : "b3a29d43627440cdc6e9e96cb84f413e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -206,7 +206,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F55A144B8D43CF6A6CE1A938E89A8180"
+        "PARENT:MD5-CAM-1.0.1" : "AE0C6D76351A5F501F22C12012248216"
       },
       "details" : {
         "de" : {
@@ -2243,7 +2243,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "60e09b9264f4bec0d89f0c284e3183bd",
-        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
+        "PARENT:MD5-CAM-1.0.1" : "C6FB6DB1E0BC90E3BC8A0255BEAF7328"
       },
       "details" : {
         "de" : {
@@ -2339,6 +2339,66 @@
             "codeString" : "es"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Registar informações sobre as atividades necessárias para realizar um procedimento, incluindo planeamento, programação, desempenho, suspensão, cancelamento, documentação e conclusão.",
+          "keywords" : [ "procedimento(pt)", "intervenção(pt)", "cirúrgico(pt)", "médico(pt)", "clínico(pt)", "terapêutico(pt)", "diagnóstico(pt)", "cura(pt)", "tratamento(pt)", "avaliação(pt)", "investigação(pt)", "rastreio(pt)", "paliativo(pt)", "terapia(pt)" ],
+          "use" : "Use para registar informações sobre as atividades necessárias para realizar um procedimento, incluindo o planeamento, programação, desempenho, suspensão, cancelamento, documentação e conclusão. Isso é feito pelo registo de dados contra atividades específicas, conforme definido pelas etapas de fluxo de cuidado 'Pathway' (caminho) neste arquétipo.\r\n\r\nO âmbito deste arquétipo engloba atividades para uma ampla gama de procedimentos clínicos realizados para fins de avaliação, investigação, de triagem, diagnósticos, curativos, terapêuticos ou paliativos. Os exemplos vão desde as atividades relativamente simples, como a inserção de uma catéter intravenoso, até operações cirúrgicas complexas.\r\n\r\nInformações adicionais estruturadas e detalhadas sobre o procedimento podem ser capturadas usando arquétipos específicos inseridos no slot 'Detalhes do procedimento', quando necessário.\r\n\r\nOs prazos relativos a um procedimento podem ser geridos de duas formas:\r\n- Utilizando o modelo de referência - o tempo de execução de qualquer etapa do percurso utilizará o atributo ACTION time para cada etapa.\r\n- Elementos de dados arqueados:\r\n--- o elemento de dados 'Data/hora programada' destina-se a registar a hora exata em que o procedimento está planeado. Nota: o atributo de tempo ACTION correspondente para a etapa Caminho agendado registará o tempo que o procedimento foi programado num sistema, não a data/ hora prevista em que o procedimento deve ser realizado; e\r\n--- A data/hora final destina-se a registar a hora exata em que o procedimento terminou. Ele pode ser usado para documentar os procedimentos complexos com vários componentes. Nota: o atributo de tempo ACTION correspondente para o 'Procedimento executado' documentará o tempo em que cada componente executado foi iniciado. Este elemento de dados 'Data/hora final' registará a data/hora do componente ativo final do procedimento. Isso permitirá calcular a duração total do procedimento ativo.\r\n\r\nNo contexto de um Relatório de Operação, este arquétipo será usado para registar apenas o que foi feito durante o procedimento. Serão utilizados arquétipos separados para registar os outros componentes necessários do Relatório de Operação, incluindo a recolha de amostras de tecido, a utilização de orientação por imagem, os resultados da operação, as instruções pós-operatórias e os planos de acompanhamento.\r\n\r\nNo contexto de uma lista ou resumo de problemas, esse arquétipo pode ser usado para representar procedimentos que foram realizados. O EVALUATION.problem_diagnosis será utilizado para representar os problemas e diagnósticos do doente.\r\n\r\nNa prática, muitos procedimentos (por exemplo, em cuidados ambulatórios) ocorrerão uma vez e não serão solicitados com antecedência. Os detalhes sobre o procedimento serão adicionados contra a etapa do caminho, 'Procedimento concluído'. Em alguns casos, um procedimento recorrente será ordenado, e nesta situação os dados contra a etapa 'Procedimento executado' serão registados em cada ocasião, deixando a instrução no estado ativo. Quando a última ocorrência é registada, a ação 'Procedimento concluído' é registada mostrando que essa ordem está agora no estado concluído.\r\n\r\nNoutras situações, como a assistência secundária, pode haver uma ordem formal para um procedimento usando um arquétipo de INSTRUÇÃO correspondente. Este arquétipo ACTION pode então ser usado para registar o fluxo de trabalho de quando e como o pedido foi realizado.\r\n\r\nRegistar informações usando este arquétipo ACTION indica que algum tipo de atividade realmente ocorreu; isso geralmente será o procedimento em si, mas pode ser uma tentativa fracassada ou outra atividade, como adiar o procedimento. Se houver uma ordem formal para o procedimento, o estado dessa ordem é representado pela etapa Pathway (caminho) contra a qual os dados são registados. Por exemplo, usando este arquétipo, o estado de progresso de uma ordem de Gastroscopia pode ser registado por entradas separadas nas notas de progresso do EHR em cada passo do 'Caminho':\r\n- registar a data/hora de início prevista para a gastroscopia (procedimento agendado); e\r\n- registar que o procedimento de gastroscopia foi concluído, incluindo informações sobre os pormenores do procedimento (procedimento concluído).\r\n\r\nPor favor, note que no openEHR Reference Model existe um atributo 'Time', que se destina a registar a data e a hora em que cada etapa do caminho da Ação foi executada. Este é o atributo a ser usado para registar o início do procedimento (usando a etapa de caminho 'Procedimento realizado') ou o tempo em que o procedimento foi abortado (usando a etapa de caminho 'Procedimento abortado').",
+          "misuse" : "Não deve ser usado para registar detalhes sobre a anestesia - use um arquétipo ACTION separado para essa finalidade.\r\n\r\nNão deve ser usado para registar detalhes sobre exames de imagem - use ACTION.imaging_exam para este propósito.\r\n\r\nNão deve ser usado para registar detalhes sobre testes laboratoriais - use ACTION.laboratory_test para esta finalidade.\r\n\r\nNão deve ser usado para registar detalhes sobre a educação entregue - use ACTION.health_education para este propósito.\r\n\r\nNão deve ser usado para registar detalhes sobre atividades administrativas - use arquétipos ADMIN, específicos para essa finalidade.\r\n\r\nNão deve ser usado para registar detalhes sobre atividades relacionadas, como o uso de amostras congeladas tomadas durante uma operação, medicação administrada como parte do procedimento ou quando a orientação por imagem é usada durante o procedimento - usar arquétipos ACTION separados e específicos dentro do mesmo modelo para esta finalidade.\r\n\r\nNão deve ser usado para registar toda uma operação ou relatório de procedimento - use um modelo no qual este arquétipo é apenas um componente do relatório completo.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera information om de aktiviteter som krävs för att genomföra en åtgärd, inklusive planering, schemaläggning, utförande, avstängning, avbokning, dokumentation och slutförande.",
+          "keywords" : [ "åtgärd", "intervention", "kirurgisk", "medicinsk", "klinisk", "terapeutisk", "diagnostisk", "bota", "behandling", "utredning", "undersökning", "screening", "palliativ", "terapi" ],
+          "use" : "Används för att dokumentera aktiviteter som krävs för att utföra en åtgärd. Detta inkluderar information om alla steg, från planering och schemaläggning till utförande, dokumentation och färdigställande. Varje aktivitet registreras genom specifika processteg som definieras i arketypens \"Pathway\".\r\n\r\nArketypen är flexibel och omfattar:\r\n- Enkla åtgärder som insättning av en intravenös kateter.\r\n- Komplexa åtgärder som kirurgiska ingrepp.\r\nDetaljerad information om åtgärden kan registreras med hjälp av ytterligare arketyper infogade i SLOT \"Åtgärdsdetaljer\" vid behov.\r\n\r\nTider relaterade till en åtgärd hanteras på två sätt:\r\n- Referensmodell – Attributet \"ACTION time\" används för att registrera när ett processteg utfördes, dvs exakta tidpunkter för varje steg i åtgärden, inklusive avbrott och färdigställande.\r\n- Dataelement i en arketyp: \"Schemalagt datum/tid\" registrerar den planerade tidpunkten för åtgärden. \"Datum/tid avslut av åtgärd\" anger exakt tid för åtgärdens avslutning.\r\n\r\nNotera att \"ACTION time\" för schemalagda steg registrerar när en åtgärd dokumenteras i systemet, inte den faktiska tiden för åtgärden. Notera även att vid komplexa åtgärder med flera komponenter registreras durationen av åtgärden genom att dokumentera varje enskilt steg av åtgärden.\r\n\r\nAnvänds för att registrera utförda åtgärder i en operationsrapport (Övriga delar, som provtagning, avbildning och uppföljning, hanteras med separata arketyper.).\r\nAnvänds för att registrera utförda åtgärder i problemlistor eller sammanfattningar (medan EVALUATION.problem_diagnosis hanterar patientens problem och diagnoser).\r\n\r\nAnvänds för att dokumentera arbetsflöden, där åtgärder i vissa situationer kommer registreras i steget \"Åtgärd slutförd\" eftersom de inte registreras i förväg.\r\nAnvänds för att dokumentera återkommande åtgärder, där varje utförd åtgärd dokumenteras individuellt.\r\nAnvänds för att dokumentera formella arbetsflöden, såsom ordningsföljd för åtgärder i specialistvård.\r\n\r\nAnvänds för att dokumentera att en aktivitet faktiskt inträffat. Om en åtgärd avbrutits registreras detta i motsvarande processteg.\r\nExempelvis gastroskopi med\r\n- Schemalagt startdatum/tid registreras som en planerad åtgärd.\r\n- Slutförd gastroskopi registreras med detaljer om åtgärden.",
+          "misuse" : "Ska inte användas för att registrera detaljer om anestesi. Använd en separat ACTION-arketyp för detta ändamål. \r\n\r\nSka inte användas för att registrera detaljer om bildundersökningar. Använd ACTION.imaging_exam för detta ändamål. \r\n\r\nSka inte användas att registrera detaljer om laboratorieundersökningar. Använd ACTION.laboratory_test för detta ändamål. \r\n\r\nSka inte användas för att registrera detaljer om utbildning. Använd ACTION.health_education för detta ändamål. \r\n\r\nSka inte användas för att registrera detaljer om administrativa aktiviteter. Använd specifika ADMIN-arketyper för detta ändamål. \r\n\r\nSka inte användas för att registrera detaljer om relaterade aktiviteter, såsom användning av fryssnitt som tagits under en operation, läkemedel som administreras som en del av åtgärden eller när vägledning för bildvisning används under åtgärden. Använd separata och specifika ACTION-arketyper inom samma template för detta syfte. \r\n\r\nSka inte användas för att registrera en hel operation eller rapport för åtgärd. Använd en template där den här arketypen bara är en av flera komponenter i rapporten.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录为执行某项操作时所需开展的各项活动的相关信息，包括操作的规划/计划编制、排程/排期、执行/实施、暂停、取消/撤销、记载/文档记录以及完成等环节。",
+          "keywords" : [ "操作", "操作项目", "干预", "干预措施", "外科", "外科手术", "医疗", "临床", "治疗性", "治疗类", "诊断性", "诊断类", "治愈", "治疗", "处理", "处置", "评价", "评估", "探查", "检查", "筛查", "姑息治疗", "疗法", "治疗方法" ],
+          "use" : "旨在记录为执行某项操作时所需开展的各项活动的相关信息，包括操作的规划/计划编制、排程/排期、执行/实施、暂停、取消/撤销、记载/文档记录以及完成等环节。为此采取的方法就是记录关于本原始型之中的“路径”（Pathway）照护服务流程步骤所定义的这些具体活动的数据。\r\n\r\n本原始型的适用范围涵盖为了实现评估类、探查类、筛查类、诊断类、治愈类、疗法类或姑息治疗类等目的而开展的各类临床操作的相关活动。示例既包括相对简单的操作（如静脉插管置入），也涵盖复杂的外科手术。\r\n\r\n必要时，通过将针对特定用途的原始型插入到操作详情槽位“Procedure detail”当中，来记录更多其他关于当前操作的结构化详情。\r\n\r\n可采取下列两种方式之一来管理与当前操作相关的时间特征：\r\n\r\n- 采用参考模型：任何路径步骤的执行时间均采用该步骤的行动类时间属性ACTION.time。\r\n- 原始型化的数据元：\r\n--- 排程日期/时间“Scheduled date/time”数据元用于记录为操作编制计划/排程时的精确时间。注：已排程路径步骤相应的行动类时间属性ACTION.time，记录的是将当前操作排程到信息系统之中时的时间，而并非预定开展/执行当前操作时的日期/时间；\r\n--- 最终结束日期/时间“Final end date/time”用于记录操作实际结束时的精确时间。该数据元可用于记录包含多个组成部分的复杂操作。注：针对已执行操作“Procedure performed”的行动类时间属性ACTION.time，记录的是所执行的每个组成部分的实际开始[执行]时间；而最终结束日期/时间数据元则记录的是操作最后一个有效的组成部分的[实际]结束日期/时间。这样，就可以利用这些来计算当前整个有效操作的总时长。\r\n\r\n在“手术报告”（Operation Report）语境下，本原始型仅用于记录手术操作过程中实际执行的内容。对于手术报告所需的其他组成部分（包括组织标本取样、影像引导的使用、手术发现、术后指导及随访计划等），则需要利用其他单独的原始型来加以记录。\r\n\r\n在“问题列表”（Problem list）或“问题摘要”（Problem summary）语境下，本原始型可用于呈现已完成的那些操作。而问题诊断评估类原始型 EVALUATION.problem_diagnosis 则用于表达患者的各类问题和诊断。\r\n\r\n实际应用中，许多的操作（如门诊诊疗中的操作）属于是一次性的执行，且并不会提前下达医嘱。对于此类操作的相关详情，可在“已完成操作”（Procedure completed）路径步骤下加以录入。在某些情况下，会下达关于重复性操作的医嘱；此时，就需在每次执行操作的场合下，在“已执行操作”（Procedure performed）路径步骤之下记录相关的数据，并将相应的操作指令/医嘱保持在有效状态。当记录最后一次[的重复性]操作执行情况时，将会记录“已完成操作”（Procedure completed）行动，以表明该医嘱现已处于完成状态。\r\n\r\n在其他的场景（如二级诊疗/照护服务）下，可能会存在针对某一操作的正式医嘱，并利用相应的指令类原始型（INSTRUCTION）来加以记录。那么，则可以利用本动作类原始型（ACTION）来记录关于该医嘱执行时间和执行方式的工作流信息。\r\n\r\n利用本动作类原始型（ACTION）来记录信息，表明已实际发生了某种活动；该活动通常为当前操作本身，但也可能是一次失败的尝试，或其他的活动（如操作延期）。若当前操作有相应的正式医嘱，则会利用录入数据时所针对的路径步骤来表达该医嘱的状态。例如，每个“路径”步骤上，则可利用本原始型，在电子健康档案（EHR）病程记录当中，采用多个单独的条目，来记录胃镜检查医嘱的进展状态：\r\n\r\n- 记录为胃镜检查（已排程操作）所排程的开始日期/时间；\r\n- 记录胃镜检查已完成，包括操作详情（已完成操作）的相关信息。\r\n\r\n请注意，在openEHR参考模型中，其中设有的时间属性“Time”，用于记录相应行动（Action）之中每个路径步骤的实际执行日期/时间。该属性旨在用于记录当前操作的开始（利用“已执行操作”路径步骤）或当前操作的中止时间（利用“已中止操作”路径步骤）。\r\n",
+          "misuse" : "并非旨在用于记录麻醉的相关详情 —— 应当采用单独的行动类原始型（ACTION）来记录此类的信息。\r\n\r\n并非旨在用于记录影像检查的相关详情 —— 应当采用行动类影像检查原始型（ACTION.imaging_exam）来记录此类的信息。\r\n\r\n并非旨在用于记录实验室检查的相关详情 —— 应当采用行动类实验室检验项目原始型（ACTION.laboratory_test）来记录此类的信息。\r\n\r\n并非旨在用于记录关于所提供的健康教育的相关详情 —— 应当采用行动类健康宣教原始型（ACTION.health_education）来记录此类的信息。\r\n\r\n并非旨在用于记录行政管理类活动的相关详情 —— 应当采用特定的管理类原始型（ADMIN）来记录此类的信息。\r\n\r\n并非旨在用于记录相关活动的详情，如术中冰冻切片的使用、操作过程中所施用的药物或操作过程中所采用的影像引导措施等 —— 应当在同一模板内采用特定单独的行动类原始型（ACTION）来记录此类的信息。\r\n\r\n并非旨在用于记录完整的手术或操作报告 —— 应当采用模板来加以记录，而本原始型则仅仅是作为完整报告的组成部分之一。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar informació sobre les activitats necessàries per dur a terme un procediment, inclosa la planificació, la programació, l'execució, la suspensió, la cancel·lació, la documentació i la finalització.",
+          "keywords" : [ "procediment", "intervenció", "quirúrgic", "metge", "clínic", "terapèutic", "diagnòstic", "curar", "tractament", "avaluació", "investigació", "detecció", "pal·liatiu", "teràpia" ],
+          "use" : "S'utilitza per registrar informació sobre les activitats requerides per dur a terme un procediment, incloent-hi planificació, coordinació, execució, suspensió, cancel·lació, documentació i finalització. Això es fa mitjançant el registre de les dades sobre activitats específiques, segons la definició de les diferents etapes/apartats definit a l'arquetip.\r\n\r\nL'abast d'aquest arquetip inclou activitats per a una àmplia gamma de procediments clínics realitzats amb fins avaluatius, de recerca, cribratge, diagnòstic, curatius, terapèutics o pal·liatius. Els exemples van des d'activitats relativament senzilles, com ara la inserció d'una cànula intravenosa, fins a operacions quirúrgiques complexes.\r\n\r\nEs pot capturar informació addicional estructurada i detallada sobre el procediment utilitzant arquetips específics inserits a l'slot \"Detall del procediment\", quan sigui necessari.\r\n\r\nEls temps relacionats amb un procediment es poden gestionar de dues maneres:\r\n- Utilitzant el model de referència: el temps de realització de qualsevol etapa del procés utilitzarà l‟atribut de temps ACTION de cada etapa.\r\n- Elements de dades arquetipades:\r\n--- l'element de dades \"Data/hora prevista\" té per objecte registrar el moment precís en què està previst fer el procediment. Nota: l'atribut d'hora ACTION corresponent a l'etapa Scheduled registrarà l'hora en què el procediment es va programar en un sistema, no la data/hora prevista en què es vol dur a terme el procediment; i\r\n--- la \"Data/hora de finalització\" té per objecte registrar l'hora exacta en què va finalitzar el procediment. Es pot utilitzar per documentar els procediments complexos amb múltiples components. Nota: l'atribut ACTION time corresponent al \"Procediment realitzat\" documentarà l'hora en què es va iniciar cada component realitzat. Aquest element de dades \"Data/hora final\" registrarà la data/hora del darrer component actiu del procediment. Això permetrà calcular la durada completa del procediment actiu.\r\n\r\nEn el context d'un informe quirúrgic, aquest arquetip s'utilitzarà per registrar únicament allò que es va fer durant el procediment. S'utilitzaran arquetips separats per registrar els altres components requerits de l'informe quirúrgic, inclosa la presa de mostres de teixit, l'ús de guia per imatges, les troballes de l'operació, les instruccions postoperatòries i els plans de seguiment.\r\n\r\nDins del context d'un llistat o resum de problemes, aquest arquetip es pot fer servir per representar procediments que s'han realitzat. L'AVALUATION.problem_diagnosis s'utilitzarà per representar els problemes i els diagnòstics del pacient.\r\n\r\nA la pràctica, molts procediments (per exemple, en atenció ambulatòria) es realitzaran una vegada i no se sol·licitaran amb anticipació. Els detalls sobre el procediment s'afegiran a la fase del procés \"Procediment completat\". En alguns casos, s'ordenarà un procediment recurrent i, en aquesta situació, es registraran les dades de la fase 'Procediment realitzat' cada vegada, deixant la instrucció en estat actiu. Quan es registra la darrera ocurrència, es registra l'acció \"Procediment completat\", cosa que mostra que aquesta ordre ara està en estat completat.\r\n\r\nEn altres situacions, com a l'atenció secundària, hi pot haver una ordre formal per a un procediment utilitzant l'arquetip d'INSTRUCTION corresponent. Aquest arquetip de ACTION es pot utilitzar per registrar el flux de treball de quan i com es va dur a terme l'ordre.\r\n\r\nRegistrar informació utilitzant aquest arquetip de ACTION indica que realment ha passat algun tipus d'activitat; En general, aquest serà el procediment en si, però pot ser un intent fallit o una altra activitat, com ara posposar el procediment. Si hi ha una ordre formal per al procediment, l‟estat d‟aquesta ordre està representat per la fase del procés contra la qual es registren les dades. Per exemple, en utilitzar aquest arquetip, l'estat de progrés d'una ordre de gastroscòpia es pot registrar a través d'entrades separades a les notes de progrés de l'HCE a cada fase del procés:\r\n- registrar la data/hora d'inici programada per a la gastroscòpia (procediment programat); i\r\n- Enregistrar que s'ha completat el procediment de gastroscòpia, inclosa informació sobre els detalls del procediment (Procediment completat).\r\n\r\nCal tenir en compte que al model de referència d'openEHR hi ha un atribut de 'Temps', l'objectiu del qual és registrar la data i l'hora en què es va realitzar cada fase del procés de l'Acció. Aquest és l'atribut que s'utilitzarà per registrar l'inici del procediment (usant la fase 'Procediment realitzat') o el moment en què es va avortar el procediment (usant la fase 'Procediment avortat').",
+          "misuse" : "No s'ha de fer servir per registrar detalls sobre l'anestèsia; per fer-ho, utilitzar un arquetip ACTION diferent.\r\n\r\nNo s'ha de fer servir per registrar detalls sobre estudis per imatge; per fer-ho, utilitzar l'arquetip ACTION.imaging_exam.\r\n\r\nNo s'ha de fer servir per registrar detalls sobre estudis de laboratori; per fer-ho, utilitzar l'arquetip ACTION.laboratory_test.\r\n\r\nNo s'ha de fer servir per registrar dades sobre l'educació impartida; per fer-ho, utilitzar l'arquetip ACTION.health_education.\r\n\r\nNo s'ha de fer servir per registrar detalls sobre activitats administratives; per això, utilitzar arquetips ADMIN específics.\r\n\r\nNo s'ha de fer servir per registrar detalls sobre activitats relacionades, com l'ús de seccions congelades preses durant una operació, medicació administrada durant el procediment o en fer ús de la guia per imatge durant el procediment; per això, utilitzar arquetips ACTION per separat i específics dins de la mateixa plantilla.\r\n\r\nNo s'ha de fer servir per registrar un informe d'operació o procediment complet: utilitzar una plantilla on aquest arquetip sigui només un component de l'informe complet.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3266,7 +3326,11 @@
           }
         },
         "es" : { },
-        "de" : { }
+        "de" : { },
+        "pt-pt" : { },
+        "sv" : { },
+        "ca" : { },
+        "zh-cn" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3353,6 +3417,63 @@
         "codeString" : "es"
       },
       "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : {
+        "name" : "Ana Garcia Niza",
+        "organisation" : "EY",
+        "email" : "ana.niza16@gmail.com"
+      },
+      "accreditation" : "I have no accreditation",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Sofia Lång Janstad, Romi Shweta Pathak, Anette Larsson, Åsa Skagerhult, Per Nemirovski, Anders Thurin, Jörgen Kuylenstierna, Emma Molin, Henrik Nilsson, Sajjad Saffari Miandoab, Mikael Nyström",
+        "organisation" : "SLL, Karolinska universitetssjukhuset, Tieto Sweden AB, openEHR Sverige, Region Östergötland, B3 HealthTech, Västra Götalandsregionen, Region Uppsala, Cambio, Eweave, CAG",
+        "email" : "sofia.lang-janstad@sll.se, romi.pathak@regionstockholm.se, anette.a.larsson@tietoevry.com, asa.skagerhult@regionostergotland.se, per.nemirovski@b3.se, sajjad.saffari-miandoab@regionstockholm.se, jorgen.kuylenstierna@solvikshalsan.se, emma.molin@cambio.se, anders.thurin@vgregion.se, Henrik.Nilsson@cag.se, Mikael.Nystrom@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
       "otherDetails" : { }
     } ]
   } ],
