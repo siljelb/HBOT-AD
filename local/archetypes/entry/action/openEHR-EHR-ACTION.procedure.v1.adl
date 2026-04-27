@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=82e79f18-76b9-4b5c-a930-1115eecbc4b7)
+archetype (adl_version=1.4; uid=a8585fcc-28d7-4902-aa42-31d1c01f7213)
 	openEHR-EHR-ACTION.procedure.v1
 
 concept
@@ -10,9 +10,9 @@ language
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
-				["name"] = <"Kim Sommer, Natalia Strauch">
+				["name"] = <"Kim Sommer, Natalia Strauch, Alina Rehberg">
 				["organisation"] = <"MHH, Medizinische Hochschule Hannover">
-				["email"] = <"sommer.kimkatrin@mh-hannover.de, Strauch.Natalia@mh-hannover.de">
+				["email"] = <"sommer.kimkatrin@mh-hannover.de, Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de">
 			>
 		>
 		["pt-pt"] = <
@@ -44,8 +44,8 @@ language
 			language = <[ISO_639-1::nb]>
 			author = <
 				["name"] = <"John Tore Valand / Silje Ljosland Bakke">
-				["organisation"] = <"Helse Bergen HF / Nasjonal IKT HF">
-				["email"] = <"john.tore.valand@helse-bergen.no">
+				["organisation"] = <"Helse Vest IKT AS">
+				["email"] = <"john.tore.valand@helse-vest-ikt.no, silje.ljosland.bakke@helse-vest-ikt.no">
 			>
 		>
 		["pt-br"] = <
@@ -104,7 +104,7 @@ description
 		["organisation"] = <"Ocean Informatics, Australia">
 		["email"] = <"heather.leslie@oceaninformatics.com">
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"published">
 	other_contributors = <"Morten Aas, Diakonhjemmet Sykehus, Norway","Tomas Alme, DIPS, Norway","Anne Pauline Anderssen, Helse Nord RHF, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (Nasjonal IKT redaktør)","Maria Beate Nupen, Oslo Universitetssykehus, Norway","Lars Bitsch-Larsen, Haukeland University Hospital, Bergen, Norway","Fredrik Borchsenius, Oslo universitetssykehus, Norway","Diego Bosca, VeraTech for Health, Spain","Hanne Marte Bårholm, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, NEHTA, Australia (Editor)","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Kari Beate Engseth, Finnmarkssykehuset HF + Klinikk Kirkenes, Norway","David Evans, Queensland Health, Australia","Shahla Foozonkhah, Iran ministry of health and education, Iran","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Sebastian Garde, Ocean Informatics, Germany","Jacquie Garton-Smith, Royal Perth Hospital and DoHWA, Australia","Bente Gjelsvik, Helse Bergen, Norway","Andrew Goodchild, NEHTA, Australia","Heather Grain, Llewelyn Grain Informatics, Australia","Mikkel Johan Gaup Grønmo, Helse Nord IKT, Norway (Nasjonal IKT redaktør)","Megan Hawkins, Mater Health Services, Australia","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Hilde Hollås, DIPS ASA, Norway","Lars Morgan Karlsen, Nordlandssykehuset Bodø, Norway","Mary Kelaher, NEHTA, Australia","Shinji Kobayashi, Kyoto University, Japan","Kanika Kuwelker, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Liv Laugen, Oslo universitetssykehus, Norway (Nasjonal IKT redaktør)","Sabine Leh, Helse Bergen, Norway","Heather Leslie, Atomica Informatics, Australia","Hugh Leslie, Ocean Informatics, Australia","Hallvard Lærum, Direktoratet for e-helse, Norway","Mike Martyn, The Hobart Anaesthetic Group, Australia","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Lars Ivar Mehlum, Nasjonal IKT HF, Norway","Chris Mitchell, RACGP, Australia","Stewart Morrison, NEHTA, Australia","Maria Beate Nupen-Stieng, Oslo Universitetssykehus, Norway","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Michael Osborne, Mater Health Services, Australia","Chris Pearce, Melbourne East GP Network, Australia","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Peter Scott, Australia","Elizabeth Stanick, Hobart Anaesthetic Group, Australia","Line Sørensen, Helse Bergen, Norway","John Taylor, NEHTA, Australia","Micaela Thierley, Helse Vest IKT, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Line Thomassen, Helse Bergen, Norway","Richard Townley-O'Neill, NEHTA, Australia","John Tore Valand, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Marit Alice Venheim, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Ørjan Vermeer, Haukeland Universitetssjukehus, Kvinneklinikken, Norway","Ivar Yrke, DIPS AS, Norway">
 	details = <
 		["de"] = <
@@ -532,9 +532,9 @@ No s'ha de fer servir per registrar un informe d'operació o procediment complet
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"306deacbef746e488fd2433b18341ea3">
-		["build_uid"] = <"07d855c5-18e5-4939-b19a-a56dfa268d59">
-		["revision"] = <"1.4.11-alpha">
+		["MD5-CAM-1.0.1"] = <"C6FB6DB1E0BC90E3BC8A0255BEAF7328">
+		["build_uid"] = <"ba0af11e-94e9-4fa2-a2fb-febb25648d62">
+		["revision"] = <"1.5.0">
 	>
 
 definition
@@ -1845,7 +1845,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				["at0002"] = <
 					text = <"Prosedyrenavn">
 					description = <"Navnet på prosedyren.">
-					comment = <"*Coding of the 'Procedure name' with a terminology is recommended, if available. (en)">
+					comment = <"Det anbefales å kode \"Prosedyrenavn\" med en terminologi, om mulig.">
 				>
 				["at0003"] = <
 					text = <"Prosedyredetaljer">
@@ -1858,12 +1858,12 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0005"] = <
 					text = <"Kommentar">
-					description = <"*Additional narrative about the procedure or care pathway step not captured in other fields. (en)">
+					description = <"Ytterligere fritekst om prosedyren eller prosesstrinnet som ikke er registrert i andre felt.">
 				>
 				["at0006"] = <
 					text = <"Komplikasjon">
 					description = <"Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.">
-					comment = <"*Use this data element to record simple terms or precoordinated complications. For example: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)">
+					comment = <"Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. For eksempel hematuri etter nyrebiopsi eller vevsirritasjon etter innlegging av intravenøst kateter. Dersom kravene til registrering av komplikasjoner er mer komplekse, anbefales bruk av en spesifikk CLUSTER‑arketype i \"Prosedyredetaljer\"-SLOTet i denne arketypen, og dette dataelementet blir da overflødig.">
 				>
 				["at0007"] = <
 					text = <"Prosedyrerekvisisjon sendt">
@@ -1915,7 +1915,7 @@ This element is meant to allow for multiple types of impact, including but not l
 				["at0048"] = <
 					text = <"Resultat">
 					description = <"Resultatet av den utførte prosedyren.">
-					comment = <"*Coding of the 'Outcome' with a terminology is recommended, if available. (en)">
+					comment = <"Det anbefales å kode \"Resultat\" med en terminologi, om mulig.">
 				>
 				["at0049"] = <
 					text = <"Beskrivelse">
@@ -1947,12 +1947,12 @@ This element is meant to allow for multiple types of impact, including but not l
 				["at0058"] = <
 					text = <"Hastegrad">
 					description = <"Prosedyrens hastegrad.">
-					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
+					comment = <"Det anbefales å kode \"Hastegrad\" med en terminologi, om mulig.">
 				>
 				["at0060"] = <
-					text = <"*End datetime (en)">
-					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
-					comment = <"Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre utført\" og i situasjoner der prosedyren gjentas flere ganger før den fullføres, eller det finnes flere komponenter i prosedyren. Dette kan være det samme som referansemodellens \"time\"-atributt for prosesssteget \"Prosedyre utført\".">
+					text = <"Slutt datotid">
+					description = <"Dato eller datotid da hele prosedyren, eller den siste komponenten i en flerkomponentprosedyre, ble avsluttet.">
+					comment = <"Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre utført\" og i situasjoner der prosedyren gjentas flere ganger før den fullføres, eller det finnes flere komponenter i prosedyren. Dette kan være det samme som RM-attributtet \"time\" for prosesstrinnet \"Prosedyre utført\".">
 				>
 				["at0061"] = <
 					text = <"Total varighet">
@@ -1970,8 +1970,8 @@ This element is meant to allow for multiple types of impact, including but not l
 				>
 				["at0064"] = <
 					text = <"Tilleggsinformasjon">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller eller formalismer.">
+					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR.">
 				>
 				["at0065"] = <
 					text = <"Metode">
@@ -1979,9 +1979,9 @@ This element is meant to allow for multiple types of impact, including but not l
 					comment = <"Bruk dette dataelementet til å registrere enkle termer eller en fritekstlig beskrivelse. Dersom behovene for beskrivelse av metoden krever mer kompleks modellering, kan dette representeres ved hjelp av tilleggsarketyper i SLOTet \"Prosedyredetaljer\" i denne arketypen. Dersom metoden inkluderes som en del av \"Prosedyrenavn\"-elementet ved hjelp av prekoordinerte koder blir dette dataelementet overflødig.">
 				>
 				["at0066"] = <
-					text = <"*Scheduled datetime (en)">
-					description = <"*The date or datetime on which the procedure is intended to be performed. (en)">
-					comment = <"Kun til bruk i forbindelse med prosesstrinnet \"Prosedyre planlagt\".">
+					text = <"Planlagt datotid">
+					description = <"Dato eller datotid for når prosedyren er planlagt utført.">
+					comment = <"Kun til bruk i forbindelse med prosesstrinnet \"Fastsatt tidspunkt for prosedyre\".">
 				>
 				["at0067"] = <
 					text = <"Prosedyretype">
@@ -2000,25 +2000,34 @@ This element is meant to allow for multiple types of impact, including but not l
 				["at0070"] = <
 					text = <"Indikasjon">
 					description = <"Den kliniske eller prosessrelaterte årsaken til prosedyren.">
-					comment = <"*For example: 'Failed bowel preparation' or 'Bowel cancer screening'. Coding of the 'Indication' with a terminology is recommended, if available.  This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+					comment = <"For eksempel \"Mislykket tarmtømming\" eller \"Tarmkreftscreening\". Det anbefales å kode \"Indikasjon\" med en terminologi, om mulig. Dette dataelementet tillater flere forekomster, for å tillate brukeren å registrere flere svar ved behov.">
 				>
 				["at0071"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"">
+					text = <"Konsekvens">
+					description = <"Vurdering av prosedyrens konsekvens eller resultat for individet.">
+					comment = <"Samme prosedyre, med samme alvorlighetsgrad eller utfall, kan ha ulik konsekvens for hver enkelt pasient. Denne relevansfaktoren innebærer å justere den samlede påvirkningen av prosedyren eller utfallet i henhold til pasientens individuelle kjennetegn.
+
+For eksempel: To pasienter har gjennomgått samme prosedyre med samme resultat: osteosyntese av femte finger på ikke-dominant hånd.
+
+Den ene er gartner eller bygningsarbeider, den andre er pianist.
+
+Inngrepets konsekvens for pianisten er STØRRE (lengre sykmelding, behov for full funksjonell rehabilitering for å tilpasse seg de høye kravene til finmotorikk i arbeidet).
+
+Dette elementet er ment å ta høyde for flere typer konsekvenser, inkludert klinisk behandling, funksjon i hjemmet og arbeidsliv.">
 				>
 				["at0072"] = <
-					text = <"*Intent (en)">
-					description = <"*The intended outcome of the procedure. (en)">
-					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+					text = <"Hensikt">
+					description = <"Det ønskede resultatet av prosedyren.">
+					comment = <"For eksempel kan en operasjon planlegges med kurativ hensikt, men under operasjonen blir det oppdaget at kurativ behandling ikke er mulig, og operasjonen utføres med palliativ hensikt i stedet. Det anbefales å kode \"Hensikt\" med en terminologi, om mulig. Dette dataelementet tillater flere forekomster, for å tillate brukeren å registrere flere svar ved behov.">
 				>
 				["at0073"] = <
-					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
-					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+					text = <"Start datotid">
+					description = <"Dato eller datotid da hele prosedyren, eller den første komponenten i en flerkomponentprosedyre, først ble startet.">
+					comment = <"For eksempel tidspunktet for første snitt. Kun til bruk i sammenheng med prosesstrinnene \"Prosedyre utført\", \"Prosedyre midlertidig stanset\", \"Prosedyre avbrutt\" eller \"Prosedyre fullført\". Dette kan være det samme som RM-attributtet \"time\" for prosesstrinnet \"Prosedyre påbegynt\".">
 				>
 				["at0074"] = <
-					text = <"*Pathway step duration (en)">
-					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+					text = <"Varighet av prosesstrinn">
+					description = <"Tidsrommet mellom starten på det forrige prosesstrinnet for denne prosedyren og starten på gjeldende prosesstrinn.">
 				>
 			>
 		>
@@ -2231,7 +2240,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				["at0002"] = <
 					text = <"Name der Prozedur">
 					description = <"Identifizierung der Prozedur über den Namen.">
-					comment = <"*Coding of the 'Procedure name' with a terminology is recommended, if available. (en)">
+					comment = <"Wenn möglich wird die Kodierung der spezifischen Prozedur mit einer Terminologie bevorzugt.">
 				>
 				["at0003"] = <
 					text = <"Details zur Prozedur">
@@ -2244,12 +2253,12 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0005"] = <
 					text = <"Kommentar">
-					description = <"*Additional narrative about the procedure or care pathway step not captured in other fields. (en)">
+					description = <"Zusätzliche Beschreibung der Aktivität oder der \"Pathway\"-Verlaufsschritte, die in anderen Bereichen nicht erfasst wurden.">
 				>
 				["at0006"] = <
 					text = <"Komplikationen">
 					description = <"Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.">
-					comment = <"*Use this data element to record simple terms or precoordinated complications. For example: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)">
+					comment = <"Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters.">
 				>
 				["at0007"] = <
 					text = <"Auftrag für Prozedur versendet">
@@ -2301,7 +2310,7 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				["at0048"] = <
 					text = <"Ausgang">
 					description = <"Ausgang der durchgeführten Prozedur.">
-					comment = <"*Coding of the 'Outcome' with a terminology is recommended, if available. (en)">
+					comment = <"Wenn möglich wird die Kodierung mit einer Terminologie bevorzugt.">
 				>
 				["at0049"] = <
 					text = <"Beschreibung">
@@ -2333,11 +2342,11 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				["at0058"] = <
 					text = <"Dringlichkeit">
 					description = <"Dringlichkeit der Prozedur.">
-					comment = <"*Coding of the 'Urgency' with a terminology is recommended, if available. (en)">
+					comment = <"Wenn möglich wird die Kodierung mit einer Terminologie bevorzugt.">
 				>
 				["at0060"] = <
-					text = <"*End datetime (en)">
-					description = <"*The date or datetime when the entire procedure, or the last component of a multicomponent procedure, was finished. (en)">
+					text = <"Enddatum/-uhrzeit">
+					description = <"Das Datum und/oder die Uhrzeit, an dem die gesamte Prozedur, oder die letzte Komponente einer mehrstufigen Prozedur, beendet wurde.">
 					comment = <"Nur zur Verwendung in Verbindung mit dem Element \"Prozedur durchgeführt\" und in Situationen, in denen die Prozedur vor dem Abschluss mehrmals wiederholt wird oder die Prozedur sich aus mehreren Komponenten zusammensetzt. Dies kann mit dem RM-Zeitattribut des Elements \"Prozedur beendet\" übereinstimmen.">
 				>
 				["at0061"] = <
@@ -2356,8 +2365,8 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				>
 				["at0064"] = <
 					text = <"Erweiterung">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"Zusätzliche Informationen, die erforderlich sind, um lokale Inhalte zu erfassen oder mit anderen Referenzmodellen/Formalismen abzugleichen.">
+					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR- oder CIMI-Äquivalente.">
 				>
 				["at0065"] = <
 					text = <"Methode">
@@ -2365,8 +2374,8 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 					comment = <"Verwenden Sie dieses Datenelement, um einfache Begriffe oder eine Beschreibung zu erfassen. Wenn die Anforderungen an die Erfassung der Methode eine komplexere Modellierung erfordern, kann dies durch zusätzliche Archetypen innerhalb des SLOTs \"Details zur Prozedur\" in diesem Archetyp dargestellt werden. Wird die Methode über vordefinierte Codes in dem Element \"Name der Prozedur\" aufgenommen, wird dieses Datenelement redundant.">
 				>
 				["at0066"] = <
-					text = <"*Scheduled datetime (en)">
-					description = <"*The date or datetime on which the procedure is intended to be performed. (en)">
+					text = <"Geplantes Datum/Uhrzeit">
+					description = <"Das Datum und/oder die Uhrzeit für die die Prozedur angesetzt ist.">
 					comment = <"Nur für die Verwendung in Verbindung mit dem Element \"geplanter Termin der Prozedur\" .">
 				>
 				["at0067"] = <
@@ -2386,25 +2395,34 @@ Este elemento está destinado a permitir múltiples tipos de impacto, incluidos 
 				["at0070"] = <
 					text = <"Indikation">
 					description = <"Der klinische oder prozessbezogene Grund für die Prozedur.">
-					comment = <"*For example: 'Failed bowel preparation' or 'Bowel cancer screening'. Coding of the 'Indication' with a terminology is recommended, if available.  This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+					comment = <"Die Kodierung der Indikation mit einer Terminologie wird nach Möglichkeit bevorzugt. Dieses Datenelement ermöglicht mehrere Vorkommen. Zum Beispiel: \"Fehlgeschlagenen Darmvorbereitung\" oder \"Darmkrebsvorsorge\".">
 				>
 				["at0071"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"">
+					text = <"Auswirkungen">
+					description = <"Beurteilung der Auswirkungen eines Eingriffs oder seines Ergebnisses für einen bestimmten Patienten.">
+					comment = <"Derselbe Eingriff, bei gleichem Schweregrad oder gleichem Ergebnis, kann sich auf jeden Patienten unterschiedlich auswirken. Dieser Relevanzfaktor beinhaltet die Anpassung der Gesamtauswirkungen des Eingriffs oder des Ergebnisses an die individuellen Merkmale des Patienten.
+
+Beispiel: Zwei Patienten haben sich demselben Eingriff mit gleichem Ergebnis unterzogen: einer Osteosynthese des fünften Fingers ihrer nicht-dominanten Hand.
+
+Einer ist Gärtner oder Bauarbeiter, der andere Pianist.
+
+Die Auswirkungen des Eingriffs sind für den Pianisten GRÖSSER (längere Krankschreibung, Notwendigkeit einer umfassenden funktionellen Rehabilitation zur Anpassung an die hohen feinmotorischen Anforderungen seines Berufs).
+
+Dieses Element soll verschiedene Arten von Auswirkungen berücksichtigen, darunter unter anderem die klinische Behandlung, die Alltagsbewältigung und das Berufsleben.">
 				>
 				["at0072"] = <
-					text = <"*Intent (en)">
-					description = <"*The intended outcome of the procedure. (en)">
-					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required. (en)">
+					text = <"*Intent(en)">
+					description = <"*The intended outcome of the procedure.(en)">
+					comment = <"*For example: An operation with curative intent may be planned, while during the operation it is discovered that curative treatment is not possible and the operation is carried out with a palliative intent instead. Coding of the 'Intent' with a terminology is recommended, if available. This data element allows multiple occurrences to enable the user to record multiple responses, if required.(en)">
 				>
 				["at0073"] = <
-					text = <"*Start datetime (en)">
-					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started. (en)">
-					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step. (en)">
+					text = <"*Start datetime(en)">
+					description = <"*The date or datetime when the entire procedure, or the first component of a multicomponent procedure, was first started.(en)">
+					comment = <"*For example: the knife to skin time. Only for use in association with the 'Procedure performed', 'Procedure suspended', 'Procedure aborted' or 'Procedure completed' pathway steps. This may be the same as the RM 'time' attribute for the 'Procedure commenced' pathway step.(en)">
 				>
 				["at0074"] = <
-					text = <"*Pathway step duration (en)">
-					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step. (en)">
+					text = <"*Pathway step duration(en)">
+					description = <"*The duration of time between the start of the most recent pathway step for this procedure and the start of the current pathway step.(en)">
 				>
 			>
 		>
