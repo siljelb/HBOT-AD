@@ -2241,7 +2241,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "14d1a524530a66facb07041c43cded40",
-        "PARENT:MD5-CAM-1.0.1" : "47afe49572ec77dfb2d357ef6c40509c"
+        "PARENT:MD5-CAM-1.0.1" : "bc6f5bb450d0afe8af089318227cc34d"
       },
       "details" : {
         "de" : {
@@ -3090,8 +3090,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3102,7 +3102,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0071.1",
+              "nodeId" : "at0074.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -3121,8 +3121,8 @@
                         "lower" : "PT0S",
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "upperUnbounded" : true,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
                       } ]
                     } ]
                   } ],
@@ -3399,9 +3399,9 @@
             "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
             "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
           },
-          "at0071.1" : {
+          "at0074.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071.1",
+            "code" : "at0074.1",
             "text" : "Dekompresjonstid",
             "description" : "Varigheten av tidsintervallet mellom et tidligere registrert prosesstrinn, og prosesstrinnet som er i ferd med å registreres."
           },
