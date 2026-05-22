@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "77c09f11d46133b4ff3409f8a6fc8ddb",
+      "MD5-CAM-1.0.1" : "ea6ff1b975768b1656b6dec6c8b45ea3",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3695,7 +3695,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "ef7e72edae188ed740c063f3121d82eb"
+        "PARENT:MD5-CAM-1.0.1" : "41779dd1f69ab5afcaf2021ae7e7811f"
       },
       "details" : {
         "de" : {
@@ -3801,6 +3801,36 @@
           "keywords" : [ "medicació", "ordre", "prescriure", "teràpia", "substància", "fàrmac", "terapèutica", "otc", "element terapèutic", "farmacèutica", "producte", "posologia", "tractament", "fluid", "nutrició", "CPOE", "medicina" ],
           "use" : "Utilitzar per a registrar tots els aspectes d'una ordre de medicació, vacuna, producte nutricional o un altre element terapèutic per a un individu identificat.\r\n\r\nEstà destinat a ser emprat per a qualsevol classe de medicació i ordre relacionada, estigui prescrita per un professional sanitari o disponible per la compra \"sense recepta\". L'àmbit d'aplicació d'aquest arquetip de medicació també inclou ordres de vacunació, fluids parenterals o altres productes terapèutics, com ara embenats, productes nutricionals o altres productes que s'apliquen o s'administren per tindre un efecte terapèutic i que tenen un patró comú per al registre de dades.\r\n\r\nAquest arquetip està dissenyat per ser emprat en diversos contextos clínics, incloent-hi però no limitat a:\r\n- un registre en una consulta clínica (COMPOSICIÓ.trobada);\r\n- una recepta escrita per un metge, dentista, infermer facultatiu o un altre professional de la salut designat a distribuir o administrar una medicació o producte nutricional (dins d'una COMPOSICIÓ.prescripció);\r\n- un element en una llista actual de medicació, recepta o gràfic de mediació (dins de COMPOSICIÓ.llista_medicació); i\r\n- un element en un document de resum com ara un trasllat d'atenció (COMPOSICIÓ.resum_trasllat) o una derivació (COMPOSICIÓ.sol·licitud).\r\n\r\nEn molts casos, una ordre de medicació serà simple ― generalment per a un únic element de medicació amb instruccions senzilles per a la dispensació i administració. No obstant això, aquest arquetip també està dissenyat per permetre ordres terapèutiques més complexes. Per exemple:\r\n\r\n- una dosi de reducció de prednisolona durant un període de setmanes;\r\n- titulació (valoració) de la insulina, amb dosificació depenent dels resultats de la prova;\r\n- múltiples medicaments prescrits simultàniament com a part d'un règim d’un únic fàrmac, com una triple teràpia per a úlcera pèptica; i\r\n- Administració intravenosa de medicaments o suplements nutricionals, incloent-hi la nutrició parenteral.\r\n\r\nPer tant, l'arquetip ha estat dissenyat per permetre un rang de complexitat, des de:\r\n- instruccions narratives senzilles per a ordres com \"furosemida 40mg dos comprimits al matí i una al dinar\" per garantir la compatibilitat amb sistemes existents; i\r\n- la quantitat de medicació es representa normalment en termes d'una xifra i la corresponent unitat de dosi, però alternativament pot haver-hi una declaració narrativa per assegurar la compatibilitat amb sistemes existents i la cobertura de tots els escenaris clínics; a través de\r\n- detall estructurat per dosi, ruta i temps d'administració per representar una especificació totalment mesurable.\r\n\r\nTambé s'ha dissenyat de manera que una única estructura d'ordre de medicació pugui representar:\r\n- ordres complexes de medicació seqüencial utilitzant la mateixa dosificació de preparació per ser recolzada dins d'una única estructura d'ordre; i\r\n- es poden encadenar múltiples ordres de medicació en circumstàncies on cal donar seqüencialment diferents medicaments o preparats.\r\nAquest arquetip també és adequat per ordenar fluids parenterals, en entorns assistencials on és pràctica normal fer aquests elements \"prescriptibles\". En altres entorns pot ser apropiada una \"ordre de fluid parental\" separat.\r\n\r\nEls SLOTs que contenen arquetips CLUSTER s'han utilitzat per representar una mica del contingut per tres raons:\r\n- Per a garantir un arquetip central que es pot utilitzar per a tots els anteriors casos d'ús, però permet flexibilitat quan sigui necessari, per exemple el SLOT «Detall de preparació» on es pot afegir detall estructurat addicional. Es va suggerir un arquetip candidat per a Medicacions. És possible que altres arquetips CLUSTER en el futur es puguin necessitar per a altres propòsits com ordres complexes de nutrició parenteral;\r\n- donar suport a la reutilització d'arquetips en situacions en què el contingut s'ha identificat com a també fet servit en altres contextos clínics, en particular l'arquetip aparellat ACCIÓ.medicació per registrar la dispensació real, administració, etc; i\r\n- per a eliminar el contingut menys habitualment usat del marc de l'arquetip base.\r\n\r\nMúltiples ordres es poden representar com a activitats separades dins d'un únic arquetip per portar ordres estretament lligades de diferents medicaments, per exemple, la teràpia H. Pylori quan això no es prescriu com un sol paquet.\r\n\r\nCal assenyalar que aquests usos subsumeixen tant els casos d'ús de l'Ordre de Medicació FHIR com els de la Declaració de Medicació. És a dir, aquest arquetip coincideix amb els dos recursos FHIR, utilitzats en el context apropiat.",
           "misuse" : "No utilitzar-se per a registrar les activitats relacionades amb la realització de l'ordre de medicació, vacuna, producte nutricional o terapèutic, com ara detalls sobre l'administració actual o dispensació. Utilitzeu la ACCIÓ.medicació per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre de productes sanguinis, el qual implica un procés clínic fonamentalment diferent i és probable que requereixi informació de suport diferent. Utilitzeu INSTRUCCIÓ.transfusió per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre d'inserció d'implants o dispositius mèdics com marcapassos i desfibril·ladors. Utilitzeu INSTRUCCIÓ.procediment per a aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sk" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sk"
+          },
+          "purpose" : "*To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.(en)",
+          "keywords" : [ "*medication(en)", "*order(en)", "*prescribe(en)", "*therapy(en)", "*substance(en)", "*drug(en)", "*therapeutic(en)", "*otc(en)", "*therapeutic good(en)", "*pharmaceutical(en)", "*product(en)", "*posology(en)", "*treatment(en)", "*fluid(en)", "*nutrition(en)", "*CPOE(en)", "*medicine(en)" ],
+          "use" : "*Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.(en)",
+          "misuse" : "*Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "*To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.(en)",
+          "keywords" : [ "*medication(en)", "*order(en)", "*prescribe(en)", "*therapy(en)", "*substance(en)", "*drug(en)", "*therapeutic(en)", "*otc(en)", "*therapeutic good(en)", "*pharmaceutical(en)", "*product(en)", "*posology(en)", "*treatment(en)", "*fluid(en)", "*nutrition(en)", "*CPOE(en)", "*medicine(en)" ],
+          "use" : "*Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.(en)",
+          "misuse" : "*Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4427,7 +4457,9 @@
             "text" : "Ordre (2)",
             "description" : "Detalls de la ordre sol·licitada."
           }
-        }
+        },
+        "es" : { },
+        "sk" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4528,6 +4560,34 @@
       "author" : {
         "name" : "Jaqueline Peredo",
         "email" : "jperedo2003@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sk"
+      },
+      "author" : {
+        "name" : "Alica Ciglanska",
+        "organisation" : "Prosoft Košice, a.s.",
+        "email" : "ciglanska.alica@prosoftke.sk"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Elena Calvo Cidoncha",
+        "organisation" : "Hospital Clinic Barcelona",
+        "email" : "elcalvo@clinic.cat"
       },
       "otherDetails" : { }
     } ]
@@ -9301,7 +9361,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "ef7e72edae188ed740c063f3121d82eb"
+        "PARENT:MD5-CAM-1.0.1" : "41779dd1f69ab5afcaf2021ae7e7811f"
       },
       "details" : {
         "de" : {
@@ -9407,6 +9467,36 @@
           "keywords" : [ "medicació", "ordre", "prescriure", "teràpia", "substància", "fàrmac", "terapèutica", "otc", "element terapèutic", "farmacèutica", "producte", "posologia", "tractament", "fluid", "nutrició", "CPOE", "medicina" ],
           "use" : "Utilitzar per a registrar tots els aspectes d'una ordre de medicació, vacuna, producte nutricional o un altre element terapèutic per a un individu identificat.\r\n\r\nEstà destinat a ser emprat per a qualsevol classe de medicació i ordre relacionada, estigui prescrita per un professional sanitari o disponible per la compra \"sense recepta\". L'àmbit d'aplicació d'aquest arquetip de medicació també inclou ordres de vacunació, fluids parenterals o altres productes terapèutics, com ara embenats, productes nutricionals o altres productes que s'apliquen o s'administren per tindre un efecte terapèutic i que tenen un patró comú per al registre de dades.\r\n\r\nAquest arquetip està dissenyat per ser emprat en diversos contextos clínics, incloent-hi però no limitat a:\r\n- un registre en una consulta clínica (COMPOSICIÓ.trobada);\r\n- una recepta escrita per un metge, dentista, infermer facultatiu o un altre professional de la salut designat a distribuir o administrar una medicació o producte nutricional (dins d'una COMPOSICIÓ.prescripció);\r\n- un element en una llista actual de medicació, recepta o gràfic de mediació (dins de COMPOSICIÓ.llista_medicació); i\r\n- un element en un document de resum com ara un trasllat d'atenció (COMPOSICIÓ.resum_trasllat) o una derivació (COMPOSICIÓ.sol·licitud).\r\n\r\nEn molts casos, una ordre de medicació serà simple ― generalment per a un únic element de medicació amb instruccions senzilles per a la dispensació i administració. No obstant això, aquest arquetip també està dissenyat per permetre ordres terapèutiques més complexes. Per exemple:\r\n\r\n- una dosi de reducció de prednisolona durant un període de setmanes;\r\n- titulació (valoració) de la insulina, amb dosificació depenent dels resultats de la prova;\r\n- múltiples medicaments prescrits simultàniament com a part d'un règim d’un únic fàrmac, com una triple teràpia per a úlcera pèptica; i\r\n- Administració intravenosa de medicaments o suplements nutricionals, incloent-hi la nutrició parenteral.\r\n\r\nPer tant, l'arquetip ha estat dissenyat per permetre un rang de complexitat, des de:\r\n- instruccions narratives senzilles per a ordres com \"furosemida 40mg dos comprimits al matí i una al dinar\" per garantir la compatibilitat amb sistemes existents; i\r\n- la quantitat de medicació es representa normalment en termes d'una xifra i la corresponent unitat de dosi, però alternativament pot haver-hi una declaració narrativa per assegurar la compatibilitat amb sistemes existents i la cobertura de tots els escenaris clínics; a través de\r\n- detall estructurat per dosi, ruta i temps d'administració per representar una especificació totalment mesurable.\r\n\r\nTambé s'ha dissenyat de manera que una única estructura d'ordre de medicació pugui representar:\r\n- ordres complexes de medicació seqüencial utilitzant la mateixa dosificació de preparació per ser recolzada dins d'una única estructura d'ordre; i\r\n- es poden encadenar múltiples ordres de medicació en circumstàncies on cal donar seqüencialment diferents medicaments o preparats.\r\nAquest arquetip també és adequat per ordenar fluids parenterals, en entorns assistencials on és pràctica normal fer aquests elements \"prescriptibles\". En altres entorns pot ser apropiada una \"ordre de fluid parental\" separat.\r\n\r\nEls SLOTs que contenen arquetips CLUSTER s'han utilitzat per representar una mica del contingut per tres raons:\r\n- Per a garantir un arquetip central que es pot utilitzar per a tots els anteriors casos d'ús, però permet flexibilitat quan sigui necessari, per exemple el SLOT «Detall de preparació» on es pot afegir detall estructurat addicional. Es va suggerir un arquetip candidat per a Medicacions. És possible que altres arquetips CLUSTER en el futur es puguin necessitar per a altres propòsits com ordres complexes de nutrició parenteral;\r\n- donar suport a la reutilització d'arquetips en situacions en què el contingut s'ha identificat com a també fet servit en altres contextos clínics, en particular l'arquetip aparellat ACCIÓ.medicació per registrar la dispensació real, administració, etc; i\r\n- per a eliminar el contingut menys habitualment usat del marc de l'arquetip base.\r\n\r\nMúltiples ordres es poden representar com a activitats separades dins d'un únic arquetip per portar ordres estretament lligades de diferents medicaments, per exemple, la teràpia H. Pylori quan això no es prescriu com un sol paquet.\r\n\r\nCal assenyalar que aquests usos subsumeixen tant els casos d'ús de l'Ordre de Medicació FHIR com els de la Declaració de Medicació. És a dir, aquest arquetip coincideix amb els dos recursos FHIR, utilitzats en el context apropiat.",
           "misuse" : "No utilitzar-se per a registrar les activitats relacionades amb la realització de l'ordre de medicació, vacuna, producte nutricional o terapèutic, com ara detalls sobre l'administració actual o dispensació. Utilitzeu la ACCIÓ.medicació per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre de productes sanguinis, el qual implica un procés clínic fonamentalment diferent i és probable que requereixi informació de suport diferent. Utilitzeu INSTRUCCIÓ.transfusió per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre d'inserció d'implants o dispositius mèdics com marcapassos i desfibril·ladors. Utilitzeu INSTRUCCIÓ.procediment per a aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sk" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sk"
+          },
+          "purpose" : "*To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.(en)",
+          "keywords" : [ "*medication(en)", "*order(en)", "*prescribe(en)", "*therapy(en)", "*substance(en)", "*drug(en)", "*therapeutic(en)", "*otc(en)", "*therapeutic good(en)", "*pharmaceutical(en)", "*product(en)", "*posology(en)", "*treatment(en)", "*fluid(en)", "*nutrition(en)", "*CPOE(en)", "*medicine(en)" ],
+          "use" : "*Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.(en)",
+          "misuse" : "*Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "*To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.(en)",
+          "keywords" : [ "*medication(en)", "*order(en)", "*prescribe(en)", "*therapy(en)", "*substance(en)", "*drug(en)", "*therapeutic(en)", "*otc(en)", "*therapeutic good(en)", "*pharmaceutical(en)", "*product(en)", "*posology(en)", "*treatment(en)", "*fluid(en)", "*nutrition(en)", "*CPOE(en)", "*medicine(en)" ],
+          "use" : "*Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.(en)",
+          "misuse" : "*Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -10033,7 +10123,9 @@
             "text" : "Ordre mèdica (2)",
             "description" : "Una ordre per una medicació, vacuna, producte nutricional o altre element terapèutic per a un individu identificat."
           }
-        }
+        },
+        "es" : { },
+        "sk" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10134,6 +10226,34 @@
       "author" : {
         "name" : "Jaqueline Peredo",
         "email" : "jperedo2003@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sk"
+      },
+      "author" : {
+        "name" : "Alica Ciglanska",
+        "organisation" : "Prosoft Košice, a.s.",
+        "email" : "ciglanska.alica@prosoftke.sk"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Elena Calvo Cidoncha",
+        "organisation" : "Hospital Clinic Barcelona",
+        "email" : "elcalvo@clinic.cat"
       },
       "otherDetails" : { }
     } ]
@@ -12011,7 +12131,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "ef7e72edae188ed740c063f3121d82eb"
+        "PARENT:MD5-CAM-1.0.1" : "41779dd1f69ab5afcaf2021ae7e7811f"
       },
       "details" : {
         "de" : {
@@ -12117,6 +12237,36 @@
           "keywords" : [ "medicació", "ordre", "prescriure", "teràpia", "substància", "fàrmac", "terapèutica", "otc", "element terapèutic", "farmacèutica", "producte", "posologia", "tractament", "fluid", "nutrició", "CPOE", "medicina" ],
           "use" : "Utilitzar per a registrar tots els aspectes d'una ordre de medicació, vacuna, producte nutricional o un altre element terapèutic per a un individu identificat.\r\n\r\nEstà destinat a ser emprat per a qualsevol classe de medicació i ordre relacionada, estigui prescrita per un professional sanitari o disponible per la compra \"sense recepta\". L'àmbit d'aplicació d'aquest arquetip de medicació també inclou ordres de vacunació, fluids parenterals o altres productes terapèutics, com ara embenats, productes nutricionals o altres productes que s'apliquen o s'administren per tindre un efecte terapèutic i que tenen un patró comú per al registre de dades.\r\n\r\nAquest arquetip està dissenyat per ser emprat en diversos contextos clínics, incloent-hi però no limitat a:\r\n- un registre en una consulta clínica (COMPOSICIÓ.trobada);\r\n- una recepta escrita per un metge, dentista, infermer facultatiu o un altre professional de la salut designat a distribuir o administrar una medicació o producte nutricional (dins d'una COMPOSICIÓ.prescripció);\r\n- un element en una llista actual de medicació, recepta o gràfic de mediació (dins de COMPOSICIÓ.llista_medicació); i\r\n- un element en un document de resum com ara un trasllat d'atenció (COMPOSICIÓ.resum_trasllat) o una derivació (COMPOSICIÓ.sol·licitud).\r\n\r\nEn molts casos, una ordre de medicació serà simple ― generalment per a un únic element de medicació amb instruccions senzilles per a la dispensació i administració. No obstant això, aquest arquetip també està dissenyat per permetre ordres terapèutiques més complexes. Per exemple:\r\n\r\n- una dosi de reducció de prednisolona durant un període de setmanes;\r\n- titulació (valoració) de la insulina, amb dosificació depenent dels resultats de la prova;\r\n- múltiples medicaments prescrits simultàniament com a part d'un règim d’un únic fàrmac, com una triple teràpia per a úlcera pèptica; i\r\n- Administració intravenosa de medicaments o suplements nutricionals, incloent-hi la nutrició parenteral.\r\n\r\nPer tant, l'arquetip ha estat dissenyat per permetre un rang de complexitat, des de:\r\n- instruccions narratives senzilles per a ordres com \"furosemida 40mg dos comprimits al matí i una al dinar\" per garantir la compatibilitat amb sistemes existents; i\r\n- la quantitat de medicació es representa normalment en termes d'una xifra i la corresponent unitat de dosi, però alternativament pot haver-hi una declaració narrativa per assegurar la compatibilitat amb sistemes existents i la cobertura de tots els escenaris clínics; a través de\r\n- detall estructurat per dosi, ruta i temps d'administració per representar una especificació totalment mesurable.\r\n\r\nTambé s'ha dissenyat de manera que una única estructura d'ordre de medicació pugui representar:\r\n- ordres complexes de medicació seqüencial utilitzant la mateixa dosificació de preparació per ser recolzada dins d'una única estructura d'ordre; i\r\n- es poden encadenar múltiples ordres de medicació en circumstàncies on cal donar seqüencialment diferents medicaments o preparats.\r\nAquest arquetip també és adequat per ordenar fluids parenterals, en entorns assistencials on és pràctica normal fer aquests elements \"prescriptibles\". En altres entorns pot ser apropiada una \"ordre de fluid parental\" separat.\r\n\r\nEls SLOTs que contenen arquetips CLUSTER s'han utilitzat per representar una mica del contingut per tres raons:\r\n- Per a garantir un arquetip central que es pot utilitzar per a tots els anteriors casos d'ús, però permet flexibilitat quan sigui necessari, per exemple el SLOT «Detall de preparació» on es pot afegir detall estructurat addicional. Es va suggerir un arquetip candidat per a Medicacions. És possible que altres arquetips CLUSTER en el futur es puguin necessitar per a altres propòsits com ordres complexes de nutrició parenteral;\r\n- donar suport a la reutilització d'arquetips en situacions en què el contingut s'ha identificat com a també fet servit en altres contextos clínics, en particular l'arquetip aparellat ACCIÓ.medicació per registrar la dispensació real, administració, etc; i\r\n- per a eliminar el contingut menys habitualment usat del marc de l'arquetip base.\r\n\r\nMúltiples ordres es poden representar com a activitats separades dins d'un únic arquetip per portar ordres estretament lligades de diferents medicaments, per exemple, la teràpia H. Pylori quan això no es prescriu com un sol paquet.\r\n\r\nCal assenyalar que aquests usos subsumeixen tant els casos d'ús de l'Ordre de Medicació FHIR com els de la Declaració de Medicació. És a dir, aquest arquetip coincideix amb els dos recursos FHIR, utilitzats en el context apropiat.",
           "misuse" : "No utilitzar-se per a registrar les activitats relacionades amb la realització de l'ordre de medicació, vacuna, producte nutricional o terapèutic, com ara detalls sobre l'administració actual o dispensació. Utilitzeu la ACCIÓ.medicació per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre de productes sanguinis, el qual implica un procés clínic fonamentalment diferent i és probable que requereixi informació de suport diferent. Utilitzeu INSTRUCCIÓ.transfusió per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'ordre d'inserció d'implants o dispositius mèdics com marcapassos i desfibril·ladors. Utilitzeu INSTRUCCIÓ.procediment per a aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sk" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sk"
+          },
+          "purpose" : "*To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.(en)",
+          "keywords" : [ "*medication(en)", "*order(en)", "*prescribe(en)", "*therapy(en)", "*substance(en)", "*drug(en)", "*therapeutic(en)", "*otc(en)", "*therapeutic good(en)", "*pharmaceutical(en)", "*product(en)", "*posology(en)", "*treatment(en)", "*fluid(en)", "*nutrition(en)", "*CPOE(en)", "*medicine(en)" ],
+          "use" : "*Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.(en)",
+          "misuse" : "*Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "*To record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.(en)",
+          "keywords" : [ "*medication(en)", "*order(en)", "*prescribe(en)", "*therapy(en)", "*substance(en)", "*drug(en)", "*therapeutic(en)", "*otc(en)", "*therapeutic good(en)", "*pharmaceutical(en)", "*product(en)", "*posology(en)", "*treatment(en)", "*fluid(en)", "*nutrition(en)", "*CPOE(en)", "*medicine(en)" ],
+          "use" : "*Use to record all aspects of an order of a medication, vaccine, nutritional product or other therapeutic item for an identified individual.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations, parenteral fluids or other therapeutic goods, such as bandages, nutritional products or other items that are applied or administered to have a therapeutic effect and which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter);\r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication or nutritional product to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request).\r\n\r\nIn many cases a medication order will be simple – typically for a single medication item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex therapeutic orders. For example:\r\n\r\n- a reducing dose of prednisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements, including parenteral nutrition.\r\n\r\nThe archetype has therefore been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; and\r\n- the amount of medication is usually represented in terms of a number and corresponding dose unit, however there can alternatively be a narrative statement to ensure compatibility with existing systems and coverage of all clinical scenarios; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially.\r\n\r\nThis archetype is also suitable for ordering parenteral fluids, in care settings where it is normal practice to make these 'prescribable' items. In other settings a separate 'parenteral fluid order' may be appropriate.\r\n\r\nSLOTs containing CLUSTER archetypes have been used to represent some of the content for three reasons:\r\n- To ensure a core archetype that can be used for all the above use cases, yet allow flexibility where it is required, for example the ‘Preparation details’ SLOT where additional structured detail can be added. A candidate archetype has been suggested for Medications. It is possible that other CLUSTER archetypes may be required in future for other purposes such as complex parenteral nutrition orders;\r\n- to support archetype re-use in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.\r\n\r\nMultiple orders can be represented as separate activities within this single archetype instance to carry tightly bound orders of different medications, for example, H. pylori therapy when this is not prescribed as a single pack.\r\n\r\nIt should be noted that these uses subsume both the FHIR Medication Order and Medication Statement use cases. i.e this archetype is a match for both FHIR resources, used in the appropriate context.(en)",
+          "misuse" : "*Not to be used to record the activities related to carrying out the order for medication, vaccine, nutritional product or therapeutic item, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products, which involves a fundamentally different clinical process and is likely to require different supporting information Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12751,7 +12901,9 @@
             "text" : "Ordre mèdica (3)",
             "description" : "Una ordre per una medicació, vacuna, producte nutricional o altre element terapèutic per a un individu identificat."
           }
-        }
+        },
+        "es" : { },
+        "sk" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12852,6 +13004,34 @@
       "author" : {
         "name" : "Jaqueline Peredo",
         "email" : "jperedo2003@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sk"
+      },
+      "author" : {
+        "name" : "Alica Ciglanska",
+        "organisation" : "Prosoft Košice, a.s.",
+        "email" : "ciglanska.alica@prosoftke.sk"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Elena Calvo Cidoncha",
+        "organisation" : "Hospital Clinic Barcelona",
+        "email" : "elcalvo@clinic.cat"
       },
       "otherDetails" : { }
     } ]
@@ -16564,7 +16744,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F55A144B8D43CF6A6CE1A938E89A8180"
+        "PARENT:MD5-CAM-1.0.1" : "AE0C6D76351A5F501F22C12012248216"
       },
       "details" : {
         "de" : {
@@ -17645,6 +17825,55 @@
                     "value" : "local"
                   },
                   "constraint" : [ "at0044" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0158.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0158" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -20075,7 +20304,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F55A144B8D43CF6A6CE1A938E89A8180"
+        "PARENT:MD5-CAM-1.0.1" : "AE0C6D76351A5F501F22C12012248216"
       },
       "details" : {
         "de" : {
@@ -21156,6 +21385,55 @@
                     "value" : "local"
                   },
                   "constraint" : [ "at0044" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0158.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0158" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -22862,7 +23140,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F55A144B8D43CF6A6CE1A938E89A8180"
+        "PARENT:MD5-CAM-1.0.1" : "AE0C6D76351A5F501F22C12012248216"
       },
       "details" : {
         "de" : {
@@ -23953,6 +24231,55 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
           "occurrences" : "0..0",
+          "nodeId" : "at0158.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0158" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0008.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -24729,7 +25056,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DAA8CBB21AACEDEB9452A030D6037AEC",
+        "PARENT:MD5-CAM-1.0.1" : "D0FD295F81B2BD1EC60C84C986331F15",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -24869,6 +25196,51 @@
           "misuse" : "*Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录针对指定问题或诊断的临床上下文/语境特异性或时间特异性的限定词。",
+          "keywords" : [ "问题", "诊断", "现行有效", "有效", "无效", "节段", "服务节段" ],
+          "use" : "旨在用于记录针对指定问题或诊断的临床上下文/语境特异性或时间特异性的限定词。这些限定词提供录制之时相关/贴合的其他详情，或者是在记录问题或诊断的临床上下文/语境当中相关/贴合的其他详情。对于其他的时间或其他的临床上下文/语境，这种限定词可能并不合适。\r\n\r\n本原始型在设计上预定包含在评价型问题/诊断原始型 EVALUATION.problem_diagnosis 的状态槽位 \"Status\" 当中。目的则是让评价型问题/诊断原始型 EVALUATION.problem_diagnosis 能够收纳/保存适用于所有上下文/语境的所有信息，而当前这一原始型则仅仅描述的是那些依赖于相应应用上下文/语境（context of use）的信息。\r\n\r\n针对实施工作的重要说明：\r\n\r\n- 在此，并未有意规定或暗示在同一上下文/语境或时段当中使用任何或全部这些限定词。与通常的原始型设计相反，在此故意将本原始型设计成为将很多常见的限定词收集在一处，以努力在非常混乱的临床实践领域中尝试一些简单的标准化。众所周知，本原始型之中所收纳的数据元涉及到许多不同的概念，有时甚至是相互竞争/冲突的概念。这样做主要是为了避免需要多个的限定词原始型，不然每个原始型都仅仅会收纳一个或两个数据元。\r\n\r\n- 如果在同一上下文/语境当中同时使用其中的一些数据元，它们可能会发生直接的冲突。例如，“无效”问题与“进行中/正在进行”的服务节段（Episode）的并存会讲不通/缺乏合理性。因此，应当极其小心地运用这些状态限定词，因为它们在实践当中的运用变化不定，除非在相应的临床社区内明确定义用法指南，否则无法保证互操作性；在临床社区当中，可能会共享“问题/诊断”与“问题/诊断限定词”原始型对。\r\n\r\n完整的 DRG 编码将需要当前原始型之中与 DRG 相关的数据元结合来自其他原始型的数据元。\r\n",
+          "misuse" : "并非旨在用于表达鉴别诊断 - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于表达诊断确定性 - 对此，请采用评价型问题/诊断原始型 EVALUATION.problem_diagnosis 之中的诊断确定性数据元 \"Diagnostic certainty\"。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar un qualificador clínic específic del context o específic del temps per a un problema o diagnòstic especificat.",
+          "keywords" : [ "problema", "actiu", "inactiu", "estat", "episodi", "diagnòstic" ],
+          "use" : "S'utilitza per registrar un qualificador específic de context o específic de temps que proporciona detalls addicionals que són rellevants en el moment de registrar o dins del context clínic on es registra un problema o diagnòstic. El qualificador pot no ser apropiat en un altre moment o en un altre context clínic.\r\n\r\nAquest arquetip està dissenyat per a ser inclòs en el SLOTd'estat en l'arquetip EVALUATION.problem_diagnosis. La intenció és que l'arquetip EVALUATION.problem_diagnosis contingui tota la informació que s'aplica en tots els contextos, en contrast amb aquest arquetip descrivint només informació que depèn del context d'ús.\r\n\r\nNOTES IMPORTANTS PER A LA IMPLEMENTACIÓ:\r\n- No es pretén ni implica que cap o tots aquests qualificadors s'utilitzin en el mateix context o període de temps. En contrast amb el disseny habitual d'arquetips, aquest arquetip ha estat dissenyat deliberadament per recollir una sèrie de qualificadors comuns en un sol lloc en un esforç per intentar una estandardització simple dins d'una àrea molt desordenada de la pràctica clínica. Es reconeix que els elements de dades continguts en aquest arquetip abasten molts conceptes diferents, i de vegades fins i tot contraposats. Això s'ha fet principalment per evitar la necessitat de múltiples arquetips qualificadors, cadascun dels quals conté només un o dos elements de dades.\r\n- Alguns d'aquests elements de dades són potencialment conflictius directament si s'utilitzen simultàniament dins del mateix context, per exemple, no tindria sentit tenir un problema \"inactiu\" juntament amb un episodi que està \"en curs\". Com a tal, aquests qualificadors d'estat s'han d'utilitzar amb cura extrema, ja que s'apliquen de manera variable en la pràctica i la interoperabilitat no es pot assegurar tret que les directrius d'ús es defineixin clarament dins de la comunitat clínica en la qual es poden compartir el parell d'arquetips \"Problema/Diagnòstic\".\r\n\r\nLa codificació completa del DRG requerirà els elements de dades relacionats amb el DRG d'aquest arquetip en combinació amb els elements de dades d'altres arquetips.",
+          "misuse" : "No utilitzar-se per representar un diagnòstic diferencial - utilitzar l'arquetip EVALUATION.differential_diagnosis per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per representar la certesa diagnòstica - utilitzeu l'element de dades de \"certesa diagnòstica\" dins de l'arquetip EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar un calificador específico del contexto clínico o del tiempo para un problema o diagnóstico concreto.",
+          "keywords" : [ "problema", "activo", "inactivo", "estado", "episodio", "diagnóstico" ],
+          "use" : "Utilícese para registrar un calificador pertinente específico del contexto o del momento que proporcione detalles adicionales que sean pertinentes en el momento del registro o dentro del contexto clínico en el que se registra un problema o diagnóstico. El calificador puede no ser apropiado en otro momento o en otro contexto clínico.\r\n\r\nEste arquetipo está diseñado para incluirse en Status SLOT en el arquetipo EVALUATION.problem_diagnosis. La intención es que el arquetipo EVALUATION.problem_diagnosis contenga toda la información que se aplica en todos los contextos, a diferencia de este arquetipo, que sólo describe la información que depende del contexto de uso.\r\n\r\nNOTAS IMPORTANTES PARA LA APLICACIÓN:\r\n- No está previsto ni implícito que alguno o todos estos calificadores deban utilizarse dentro del mismo contexto o periodo de tiempo. En contraste con el diseño habitual de los arquetipos, este arquetipo se ha diseñado deliberadamente para recopilar una serie de calificadores comunes en un solo lugar, en un esfuerzo por intentar una normalización sencilla dentro de un área muy desordenada de la práctica clínica. Se reconoce que los elementos de datos contenidos en este arquetipo abarcan muchos conceptos diferentes, y a veces incluso opuestos. Esto se ha hecho principalmente para evitar la necesidad de múltiples arquetipos de calificadores, cada uno de los cuales contiene sólo uno o dos elementos de datos.\r\n- Algunos de estos elementos de datos pueden entrar en conflicto directo si se utilizan simultáneamente en el mismo contexto; por ejemplo, no tendría sentido tener un problema «inactivo» junto con un episodio «en curso». Como tales, estos calificadores de estado deben utilizarse con extremo cuidado, ya que se aplican de forma variable en la práctica y la interoperabilidad no puede garantizarse a menos que las directrices de uso estén claramente definidas dentro de la comunidad clínica en la que el par de arquetipos «Problema/Diagnóstico» y «Calificador Problema/Diagnóstico» puede ser compartido. \r\n\r\nLa codificación DRG completa requerirá los elementos de datos relacionados con DRG de este arquetipo en combinación con elementos de datos de otros arquetipos.",
+          "misuse" : "No debe utilizarse para representar un diagnóstico diferencial - utilice el arquetipo EVALUATION.differential_diagnosis para este fin.\r\n\r\nNo debe utilizarse para representar la certeza diagnóstica - utilice el elemento de datos \"Certeza diagnóstica\" dentro del arquetipo EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -24917,6 +25289,13 @@
               "attributeTuples" : [ ]
             } ]
           } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0111.1",
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -25376,6 +25755,30 @@
             "code" : "ac0.6",
             "description" : ""
           }
+        },
+        "zh-cn" : {
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
+            "description" : ""
+          }
         }
       },
       "termBindings" : {
@@ -25544,6 +25947,48 @@
         "name" : "Yexuan Cheng",
         "organisation" : "浙江大学",
         "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "TRADCREA, Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -26240,7 +26685,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DAA8CBB21AACEDEB9452A030D6037AEC",
+        "PARENT:MD5-CAM-1.0.1" : "D0FD295F81B2BD1EC60C84C986331F15",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -26380,6 +26825,51 @@
           "misuse" : "*Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录针对指定问题或诊断的临床上下文/语境特异性或时间特异性的限定词。",
+          "keywords" : [ "问题", "诊断", "现行有效", "有效", "无效", "节段", "服务节段" ],
+          "use" : "旨在用于记录针对指定问题或诊断的临床上下文/语境特异性或时间特异性的限定词。这些限定词提供录制之时相关/贴合的其他详情，或者是在记录问题或诊断的临床上下文/语境当中相关/贴合的其他详情。对于其他的时间或其他的临床上下文/语境，这种限定词可能并不合适。\r\n\r\n本原始型在设计上预定包含在评价型问题/诊断原始型 EVALUATION.problem_diagnosis 的状态槽位 \"Status\" 当中。目的则是让评价型问题/诊断原始型 EVALUATION.problem_diagnosis 能够收纳/保存适用于所有上下文/语境的所有信息，而当前这一原始型则仅仅描述的是那些依赖于相应应用上下文/语境（context of use）的信息。\r\n\r\n针对实施工作的重要说明：\r\n\r\n- 在此，并未有意规定或暗示在同一上下文/语境或时段当中使用任何或全部这些限定词。与通常的原始型设计相反，在此故意将本原始型设计成为将很多常见的限定词收集在一处，以努力在非常混乱的临床实践领域中尝试一些简单的标准化。众所周知，本原始型之中所收纳的数据元涉及到许多不同的概念，有时甚至是相互竞争/冲突的概念。这样做主要是为了避免需要多个的限定词原始型，不然每个原始型都仅仅会收纳一个或两个数据元。\r\n\r\n- 如果在同一上下文/语境当中同时使用其中的一些数据元，它们可能会发生直接的冲突。例如，“无效”问题与“进行中/正在进行”的服务节段（Episode）的并存会讲不通/缺乏合理性。因此，应当极其小心地运用这些状态限定词，因为它们在实践当中的运用变化不定，除非在相应的临床社区内明确定义用法指南，否则无法保证互操作性；在临床社区当中，可能会共享“问题/诊断”与“问题/诊断限定词”原始型对。\r\n\r\n完整的 DRG 编码将需要当前原始型之中与 DRG 相关的数据元结合来自其他原始型的数据元。\r\n",
+          "misuse" : "并非旨在用于表达鉴别诊断 - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于表达诊断确定性 - 对此，请采用评价型问题/诊断原始型 EVALUATION.problem_diagnosis 之中的诊断确定性数据元 \"Diagnostic certainty\"。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar un qualificador clínic específic del context o específic del temps per a un problema o diagnòstic especificat.",
+          "keywords" : [ "problema", "actiu", "inactiu", "estat", "episodi", "diagnòstic" ],
+          "use" : "S'utilitza per registrar un qualificador específic de context o específic de temps que proporciona detalls addicionals que són rellevants en el moment de registrar o dins del context clínic on es registra un problema o diagnòstic. El qualificador pot no ser apropiat en un altre moment o en un altre context clínic.\r\n\r\nAquest arquetip està dissenyat per a ser inclòs en el SLOTd'estat en l'arquetip EVALUATION.problem_diagnosis. La intenció és que l'arquetip EVALUATION.problem_diagnosis contingui tota la informació que s'aplica en tots els contextos, en contrast amb aquest arquetip descrivint només informació que depèn del context d'ús.\r\n\r\nNOTES IMPORTANTS PER A LA IMPLEMENTACIÓ:\r\n- No es pretén ni implica que cap o tots aquests qualificadors s'utilitzin en el mateix context o període de temps. En contrast amb el disseny habitual d'arquetips, aquest arquetip ha estat dissenyat deliberadament per recollir una sèrie de qualificadors comuns en un sol lloc en un esforç per intentar una estandardització simple dins d'una àrea molt desordenada de la pràctica clínica. Es reconeix que els elements de dades continguts en aquest arquetip abasten molts conceptes diferents, i de vegades fins i tot contraposats. Això s'ha fet principalment per evitar la necessitat de múltiples arquetips qualificadors, cadascun dels quals conté només un o dos elements de dades.\r\n- Alguns d'aquests elements de dades són potencialment conflictius directament si s'utilitzen simultàniament dins del mateix context, per exemple, no tindria sentit tenir un problema \"inactiu\" juntament amb un episodi que està \"en curs\". Com a tal, aquests qualificadors d'estat s'han d'utilitzar amb cura extrema, ja que s'apliquen de manera variable en la pràctica i la interoperabilitat no es pot assegurar tret que les directrius d'ús es defineixin clarament dins de la comunitat clínica en la qual es poden compartir el parell d'arquetips \"Problema/Diagnòstic\".\r\n\r\nLa codificació completa del DRG requerirà els elements de dades relacionats amb el DRG d'aquest arquetip en combinació amb els elements de dades d'altres arquetips.",
+          "misuse" : "No utilitzar-se per representar un diagnòstic diferencial - utilitzar l'arquetip EVALUATION.differential_diagnosis per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per representar la certesa diagnòstica - utilitzeu l'element de dades de \"certesa diagnòstica\" dins de l'arquetip EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar un calificador específico del contexto clínico o del tiempo para un problema o diagnóstico concreto.",
+          "keywords" : [ "problema", "activo", "inactivo", "estado", "episodio", "diagnóstico" ],
+          "use" : "Utilícese para registrar un calificador pertinente específico del contexto o del momento que proporcione detalles adicionales que sean pertinentes en el momento del registro o dentro del contexto clínico en el que se registra un problema o diagnóstico. El calificador puede no ser apropiado en otro momento o en otro contexto clínico.\r\n\r\nEste arquetipo está diseñado para incluirse en Status SLOT en el arquetipo EVALUATION.problem_diagnosis. La intención es que el arquetipo EVALUATION.problem_diagnosis contenga toda la información que se aplica en todos los contextos, a diferencia de este arquetipo, que sólo describe la información que depende del contexto de uso.\r\n\r\nNOTAS IMPORTANTES PARA LA APLICACIÓN:\r\n- No está previsto ni implícito que alguno o todos estos calificadores deban utilizarse dentro del mismo contexto o periodo de tiempo. En contraste con el diseño habitual de los arquetipos, este arquetipo se ha diseñado deliberadamente para recopilar una serie de calificadores comunes en un solo lugar, en un esfuerzo por intentar una normalización sencilla dentro de un área muy desordenada de la práctica clínica. Se reconoce que los elementos de datos contenidos en este arquetipo abarcan muchos conceptos diferentes, y a veces incluso opuestos. Esto se ha hecho principalmente para evitar la necesidad de múltiples arquetipos de calificadores, cada uno de los cuales contiene sólo uno o dos elementos de datos.\r\n- Algunos de estos elementos de datos pueden entrar en conflicto directo si se utilizan simultáneamente en el mismo contexto; por ejemplo, no tendría sentido tener un problema «inactivo» junto con un episodio «en curso». Como tales, estos calificadores de estado deben utilizarse con extremo cuidado, ya que se aplican de forma variable en la práctica y la interoperabilidad no puede garantizarse a menos que las directrices de uso estén claramente definidas dentro de la comunidad clínica en la que el par de arquetipos «Problema/Diagnóstico» y «Calificador Problema/Diagnóstico» puede ser compartido. \r\n\r\nLa codificación DRG completa requerirá los elementos de datos relacionados con DRG de este arquetipo en combinación con elementos de datos de otros arquetipos.",
+          "misuse" : "No debe utilizarse para representar un diagnóstico diferencial - utilice el arquetipo EVALUATION.differential_diagnosis para este fin.\r\n\r\nNo debe utilizarse para representar la certeza diagnóstica - utilice el elemento de datos \"Certeza diagnóstica\" dentro del arquetipo EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -26428,6 +26918,13 @@
               "attributeTuples" : [ ]
             } ]
           } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0111.1",
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -26887,6 +27384,30 @@
             "code" : "ac0.11",
             "description" : ""
           }
+        },
+        "zh-cn" : {
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.11",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.11",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.11",
+            "description" : ""
+          }
         }
       },
       "termBindings" : {
@@ -27080,6 +27601,48 @@
         "name" : "Yexuan Cheng",
         "organisation" : "浙江大学",
         "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "TRADCREA, Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
